@@ -1,0 +1,2027 @@
+
+.ROZSAH
+13 5 7 : 3 7
+
+.HODINY
+1 7.30 - 9.00
+2 9.15 - 10.45
+3 11.00 - 12.30
+4 13.30 - 15.00
+5 15.15 - 16.45
+6 17.00 - 18.30
+7 18.35 - 20.00
+
+.KATEDRY
+Neznama_katedra KAAA 728 0 
+Katedra_ekonomickej_teorie KET 654 0 
+Katedra_hospodarskej_politiky KHP 664 0 
+Katedra_verejnej_spravy_a_regionalneho_rozvoja KVSRR 674 0 
+Katedra_socialneho_rozvoja_a_prace KSR 683 0 
+Katedra_financii KF 692 0 
+Katedra_bankovnictva_a_medzinarodnych_financii KBMF 620 0 
+Katedra_Pedagogiky KPED 719 0 
+Katedra_poistovnictva KPO 709 0 
+Katedra_aplikovanej_informatiky_a_vyp_techniky KAIVT 502 0 
+Katedra_marketingu KMR 206 0 
+Katedra_medzinarodneho_obchodu KMO 359 0 
+Katedra_sluzieb_a_cestovneho_ruchu KSCR 296 0 
+Katedra_tovaroznalectva_a_kvality_tovaru KTKT 467 0 
+Katedra_obchodneho_prava KOP 557 0 
+Katedra_informatiky_obchodnych_firiem KIOF 548 0 
+Katedra_aplikovanej_informatiky KAI 720 1 
+Katedra_matematiky KM 723 0 
+Katedra_operacneho_vyskumu_a_ekonometrie KOVE 644 1 
+Katedra_statistiky KS 565 1 
+Katedra_uctovnictva KU 727 1 
+Katedra_podnikovohospodarska KPH 54 1 
+Katedra_manazmentu KMZ 67 1 
+Katedra_podnikovych_financii KPF 69 1 
+Katedra_manazmentu_vyroby_a_logistiky KMVAL 78 1 
+Katedra_informacneho_manazmentu KIM 154 1 
+Katedra_anglickeho_jazyka KAJ 323 1 
+Katedra_nemeckeho_jazyka KNJ 323 1 
+Katedra_slovanskych_jazykov KSJ 323 1 
+Katedra_romanskych_jazykov KRJ 323 1 
+Katedra_politologie KPOL 703 1 
+Katedra_diplomacie_a_medzinarodnych_vztahov KDMV 704 1 
+Katedra_svetovej_ekonomiky KSE 705 1 
+Katedra_medzinarodneho_prava KMEP 706 1 
+Katedra_humanitnych_vied KHV 624 1 
+Vyskumny_ustav_narodohospod VUNH 500 0 
+
+
+.MIESTNOSTI
+U SM_I 80
+U SM_II 175
+U A4_05 30
+U A4_06 30
+U A4_07 30
+U A4_08 30
+U A5_05 30
+U A5_06 30
+U A5_07 30
+U A5_08 30
+U A5_13 30
+U A5_14 30
+U A5_15 30
+U A5_16 30
+U A5_17 30
+U A6_05 30
+U A6_06 30
+U A6_07 30
+U A6_08 30
+U A6_14 30
+U A6_15 30
+U A6_16 30
+U A6_17 30
+U A7_04 54
+U A7_05 70
+U A7_07 30
+U A7_12 58
+U A7_13 80
+U A7_15 52
+U A7_17 30
+U B101 30
+U B102 30
+U B103 30
+U B104 30
+U B105 30
+U B106 30
+U B107 319
+U B108 319
+U B1_02 284
+U B1_03 284
+U B1_04 159
+U B1_05 159
+U B1_06 92
+U B1_07 92
+U B1_08 92
+U B1_09 92
+U B1_10 92
+U B201 30
+U B202 30
+U B203 30
+U B204 30
+U B205 30
+U B206 30
+U B207 30
+U B208 30
+U B209 30
+U B210 30
+U B211 31
+U B212 31
+U C1_06 92
+U C1_07 92
+U C1_08 92
+U C1_09 92
+U C1_10 92
+U D101 30
+U D102 30
+U D103 30
+U D104 30
+U D109 30
+U D110 50
+U D111 120
+U D112 120
+U D113 120
+U D114 120
+U D115 84
+U D116 84
+U D117 84
+U 3B57 25
+U 4C02 25
+U 4C14 10
+U 5B44 15
+U SB0018 20
+L LAB1 20
+L LAB2 20
+L LAB3 20
+L LAB4 20
+L LAB5 20
+S D2_06 30
+S A4_09 30
+S A4_13 30
+S A4_14 30
+S A4_15 30
+S A4_16 30
+S A4_17 30
+S D105 30
+S D106 30
+S D107 30
+S D108 30
+S D202 30
+S D203 30
+S D204 30
+S D205 30
+S D206 30
+S E1_06 22
+S E1_08 22
+S E1_10 22
+S E1_12 22
+S E2_06 22
+S E2_08 22
+S E2_10 22
+S E2_12 22
+S SB0016 20
+I 2A03 15
+I 2B01 25
+I 3B01 25
+I 4B01 25
+I 5B01 25
+I 5D02 25
+I A5_04 25
+I A5_12 25
+I A6_12 25
+I A6_13 25
+I A8_04 23
+I A8_05 13
+I A8_06 11
+I A8_07 12
+I A8_08 13
+I A8_12 25
+I A8_13 13
+I A8_14 12
+I A8_15 12
+I A8_16 12
+I A8_17 10
+I A9_05 13
+I A9_06 13
+I A9_07 20
+I A9_08 15
+I A9_09 12
+I A9_13 3
+I A9_14 10
+I A9_15 10
+I A9_16 10
+I A9_17 10
+I D208-D 10
+I D209-D 10
+I D210-D 7
+I D211-D 46
+I D214-D 25
+
+.UCITELIA
+
+Adamkova_Hana KMZ Mgr : U
+Alexy_Julius KSR Prof : U
+Antalova_ KU Ing : U
+Antalova_Maria KSR Ing : U
+Baca_Jozef KBMF Ing : U
+Bacisin_ KET Mgr : U
+Bacova_Viera KHP Doc : U
+Balaz_Peter KMO Doc : U
+Balazi_Peter KF Ing : U
+Balhar_Vitezslav KDMV prof : U
+Barac_Ludovit KAJ PHDr : U
+Baranek_Ivan KMVAL Doc : U
+BaranovaCiderova_ KMO Ing : U
+Barat_Peter KPOL PhDr : U
+Baratova_Jana KHV PHDr : U
+Barri_Tibor KMZ Ing : U
+Bartakova_Gabriela KSCR Ing : U
+Basova_Alena KF Ing : U
+Bastincova_Anna KU Doc : U
+Belas_Jaroslav KBMF Ing : U
+Belickova_Kornelia KF Doc : U
+Benova_Elena KF Doc : U
+Beregszaszi_Patrick KSCR Ing : U
+Bican_ KDMV ext : U
+Bikar_Milos KPF Ing : U
+Bilikova_Maria KM RNDr : U
+Blahova_Maria KAJ PHDr : U
+Blaskova_Maria KHP Doc : U
+Bobocka_Julia KMO Doc : U
+Bockova_Viera KAJ PHDr : U
+Bodnar_ KNJ KNJ : U
+Bolgac_Jan KS Ing : U
+Borodovcak_Michal KF Ing : U
+Bouskova_Dagmar KU Ing : U
+Bracjun_Anatolij KHP Doc : U
+Brevenikova_Daniela KAJ Doc : U
+Brezina_Ivan KOVE Doc : U
+Breznanova_Gabriela KNJ PHDr : U
+Breznikova_ KPOL Ing : U
+Brixova_Janette KAI Ing : U
+Bucek_Milan KVSRR Prof : U
+Bujnova_Darina KPH Ing : U
+Busik_ KVSRR doc : U
+Caplanova_Anetta KET Ing : U
+Carachova_Magdalena KAI Ing : U
+Cech_Roman KET Ing : U
+Cejkova_Miriam KET Ing : U
+Cemicka_Katarina KOVE pm : U
+Cervenova_Magdalena KF Ing : U
+Chabadova_Helena KSJ KSJ : U
+Cheben_ KMR Ing : U
+Chocholata_Michaela KOVE PhD : U
+Chodasova_Alena KPH Doc : U
+Choluj_Vladimir KHP Ing : U
+Chovan_Pavel KPO Ing : U
+Chovancova_Bozena KBMF Ing : U
+Chvalova_Eva KU Ing : U
+Cickova_Zuzana KOVE Ing : U
+Ciernik_ KF Ing : U
+Cihovska_Viera KMR Doc : U
+Cimo_Jozef KMR Doc : U
+Corbaiova_Eva KF Doc : U
+Csabay_Marek KDMV Ing : U
+Cunderlik_Dusan KPH Doc : U
+Dano_Ferdinand KMR Doc : U
+David_Arnold KM Doc : U
+Deakova_ KPH Doc : U
+Dendis_Lubomir KSCR Ing : U
+Djebari_ KMO Ing : U
+Dovciak_Peter KET Ing : U
+Drescher_Karl KNJ Mgr : U
+Drugdova_Barbora KPO Ing : U
+Dubcova_ KPH Ing : U
+Dudas_Tomas KSE Ing : U
+Dudova_Iveta KSR Ing : U
+Dupal_Andrej KMVAL Doc : U
+Durdovicova_Marta KHP Ing : U
+Durinova_Ivona KPF Ing : U
+Duris_Michal KMEP JUDr : U
+Dzurova_Maria KMR Ing : U
+Eliasova_Darina KSCR Ing : U
+Fajcakova_Jarmila KPO Ing : U
+Faltus_Jozef KET Prof : U
+Fecenko_Jozef KM Doc : U
+Fendek_Michal KOVE Doc : U
+Fendekova_Eleonora KPH Doc : U
+Ferencikova_Sona KMO Doc : U
+Fetisovova_Elena KPF Doc : U
+Fifek_Edmund KMO Ing : U
+Fifekova_Elena KHP Ing : U
+Filak_Andrej KF Ing : U
+Filo_Peter KMR Ing : U
+Finkova_Zuzana KS Doc : U
+Fischer_Frank KNJ Mgr : U
+Flochova_Eleonora KNJ PHDr : U
+Foltinova_Alzbeta KPH Ing : U
+Francova_Zuzana KMR Ing : U
+Fuzyova_Lubica KMZ Ing : U
+Galisova_Edita KS Mgr : U
+Gasperanova_ KAIVT Ing : U
+Gavalova_Viera KMO Doc : U
+Goga_Marian KOVE Doc : U
+Gonda_Vladimir KET Doc : U
+Grafnetterova_Michaela KMZ Ing : U
+Grancicova_Katarina KPH Ing : U
+Gregus_Peter KHV PHDr : U
+Grell_Michal KAI Ing : U
+Greno_Jozef KPH Ing : U
+Gress_Martin KDMV Ing : U
+Groshek_ KET Ing : U
+Grossmanova_Marta KAJ Doc : U
+Grun_Lubomir KOP JUDr : U
+Grznar_Miroslav KMZ Prof : U
+Gyurcsovics_Zoltan KIOF Ing : U
+Haas_ KHV U : U
+Hacik_Vladimir KF Prof : U
+Halak_Peter KPO Ing : U
+Halama_J KBMF Ing : U
+Halenar_Vladimir KRJ Mgr : U
+Hamalova_Marta KVSRR Doc : U
+Hanak_Jan KAI Ing : U
+Hansenova_Heda KMO Ing : U
+Hanulakova_Eva KMR Ing : U
+Harna_Stefan KMR Doc : U
+Harumova_Anna KPF Ing : U
+Hasprova_Maria KMR Ing : U
+Helmova_Milena KNJ PHDr : U
+Hlavata_Irena KBMF Prof : U
+Hloska_Branislav KTKT Doc : U
+Hnilican_Vladimir KDMV Ing : U
+Hodal_ KOP Ing : U
+Holkova_Vieroslava KHP Ing : U
+Holub_ KOP JUDr : U
+Homer_Michal KIM Ing : U
+Hontyova_Kajetana KET Prof : U
+Horakova_Galina KM RNDr : U
+Horecka_Katarina KMZ Doc : U
+Hornak_ KSJ Ing : U
+Hornakova_Beata KOP JUDr : U
+Horvathova_Zuzana KTKT Ing : U
+Horvatova_Eva KBMF Ing : U
+Hrasko_Pavol KMR Doc : U
+Hrivikova_Tatiana KAJ PHDr : U
+Hrnciarova_Lubica KS Doc : U
+Hromada_Ivan KDMV PhDr : U
+Hromny_Bruno KDMV Ing : U
+Hruskova_Gabriela KNJ Mgr : U
+Hruskova_Maria KNJ PHDr : U
+Hrvolova_Bozena KPF Ing : U
+Hulajova_Lubica KAJ U : U
+Husar_Jaroslav KOVE Doc : U
+Huska_Augustin KHP Prof : U
+Huskova_Silvia KU Ing : U
+Husovska_Michaela KPF Ing : U
+Hvozdarova_Janka KU Ing : U
+Hvozdarova_Maria KOP Doc : U
+Hysko_Miroslav KAI Ing : U
+Institoris_Juraj KM RNDr : U
+Isa_Jan KET Doc : U
+Ivanickova_Alzbeta KVSRR Ing : U
+Ivanicova_Zlatica KOVE Doc : U
+Jakubec_ KPH Ing : U
+Jakubekova_Viera KSJ PaeDr : U
+Jancikova_Eva KDMV Ing : U
+Janickova_Eva KNJ KNJ : U
+Jankovska_Anezka KBMF Doc : U
+Janok_Michal KHP Doc : U
+Janosikova_Alzbeta KOP JUDr : U
+Janosova_Veronika KPF Ing : U
+Joniakova_Zuzana KMZ Ing : U
+Jonova_Rut KRJ PHDr : U
+Juhaszova_Zuzana KU Mgr : U
+Jurasek_Prokop KMVAL Prof : U
+Jurik_Roman KMEP JUDr : U
+Jurikova_Benita KIM Ing : U
+Jurikova_Renata KU Bc : U
+Kaba_Mamadou KBMF Ing : U
+Kacaniova_Jarmila KPED PhDr : U
+Kacenak_Igor KTKT Ing : U
+Kachanakova_Anna KMZ Doc : U
+Kadlecikova_Olga KU Ing : U
+Kamenca_Juraj KOP JUDr : U
+Kamensky_Kristian KIM Ing : U
+Kanisova_Zdenka KNJ PHDr : U
+Karaskova_Anna KRJ PHDr : U
+Kardos_ KPH Ing : U
+Kares_Ladislav KU Ing : U
+Karkalikova_Marta KTKT RnDr : U
+Kastakova_Elena KMO Mgr : U
+Kaveschanova_ KOP Ing : U
+Kesela_Jaroslava KOP JUDr : U
+Kita_Jaroslav KMR Ing : U
+Kittova_ KMO Doc : U
+Klenova_Michaela KOP Mgr : U
+Klepochova_Dagmar KMR Ing : U
+Klimikova_Maria KBMF Doc : U
+Kmetova_Lubomira KPH Ing : U
+Knapik_Peter KMO Ing : U
+Kniezova_Jaroslava KAI Ing : U
+Kocisova_Zuzana KNJ KNJ : U
+Koganova_Viera KPOL Mgr : U
+Kokles_Mojmir KIM Doc : U
+Kollar_Vojtech KTKT Doc : U
+Kompoltova_Sona KPED PhDr : U
+Kontsek_Jan KPED Doc : U
+Koraus_Antonin KPO Ing : U
+Korcek_Ludovit KET Prof : U
+Kordosova_Alena KU Ing : U
+Kosir_Igor KMO Doc : U
+Kosirelova_ KSJ KSJ : U
+Kosnar_Jozef KF Prof : U
+Kosorin_Frantisek KHP Doc : U
+Kosutova_Tatiana KTKT Ing : U
+Kotlan_Richard KPH Ing : U
+Kotlebova_Jana KBMF Ing : U
+Kovac_ KSR Ing : U
+Kovac_Branislav KU Bc : U
+Kovacik_Vladimir KBMF Ing : U
+Kovacova_Eva KPH Ing : U
+Kovacova_Monika KBMF Ing : U
+Kovacsova_Eva KNJ PHDr : U
+Koval_Ladislav KOVE Doc : U
+Kovalcikova_Antonia KU Ing : U
+Kozlova_Lubomira KNJ PHDr : U
+Kozub_Frantisek KPO Ing : U
+Krajc_Pavol KHP Ing : U
+Kralik_Juraj KDMV JUDr : U
+Kralovic_Jozef KPF Doc : U
+Kramplova_Gabriela KAJ KAJ : U
+Krasnanska_Jarmila KU Ing : U
+Kratka_Zuzana KPO Ing : U
+Kratochvila_Jan KSJ Doc : U
+Krcmar_ KMZ Ing : U
+Krcmova_Darina KSJ PHDr : U
+Krcova_ KM Ing : U
+Krcova_Ingrid KMEP JUDr : U
+Kriska_Mojmir KMZ Bc : U
+Kristova_Gabriela KIOF Doc : U
+Kristova_L KTKT Ing : U
+Krivanova_Jela KAJ KAJ : U
+Kubica_Milan KPH Ing : U
+Kubickova_Viera KSCR Ing : U
+Kubicova_Jana KF Ing : U
+Kucerova_Elena KNJ Mgr : U
+Kultan_Jaroslav KAI Ing : U
+Kupkovic_Milan KPH Doc : U
+Kupkovic_Miroslav KPOL Mgr : U
+Kurdelova_Lubica KAJ PHDr : U
+Kurucz_ KDMV Ing : U
+Kvietkova_Anna KAI Doc : U
+Labaj_Jozef KHP Ing : U
+Labska_Helena KMR Doc : U
+Lackova_Alica KTKT Ing : U
+Laky_Jaroslav KAI Ing : U
+Laluha_Ivan KSR Doc : U
+Lapsansky_Ladislav KRJ Doc : U
+Laskovicova_Tatiana KAJ KAJ : U
+Lauko_Marcel KF Ing : U
+Laurencikova_Erika KNJ Doc : U
+Ledvenyi_Stanislav KAIVT Ing : U
+Lenartova_Gizela KPF Ing : U
+Lenghardtova_Jana KRJ Doc : U
+Lesakova_Dagmar KMR Prof : U
+Lescisin_Michal KMVAL Prof : U
+Lidak_Jan KPOL Doc : U
+Lipianska_Julia KMR Ing : U
+Lipkova_Ludmila KDMV Doc : U
+Lipkova_Martina KAJ Mgr : U
+Liptak_Juraj KF Prof : U
+Liskova_Danusa KNJ Doc : U
+Lisy_Jan KET Prof : U
+Litomericky_Juraj KSCR Ing : U
+Littvova_ KPO Ing : U
+Lubyova_Martina KS Mgr : U
+Lukacik_Jan KHP Doc : U
+Lukacik_Martin KOVE Ing : U
+Lukacikova_Adriana KOVE Ing : U
+Lukacovicova_Iva KOP JUDr : U
+Luknic_Arnold KIOF U : U
+Luptakova_Olga KPF Doc : U
+Lysak_Ladislav KSE Ing : U
+Machalova_Maria KNJ PHDr : U
+Machovic_ KMO Ing : U
+Mackova_Zdenka KPED PhDr : U
+Majcher_Milan KF Prof : U
+Majduchova_Helena KPH Ing : U
+Majercikova_ KPED Ing : U
+Majtan_Miroslav KMZ Doc : U
+Majtan_Stefan KPH Doc : U
+Majtanova_Anna KPO Doc : U
+Makarova_Viera KNJ KNJ : U
+Makuch_Jozef KBMF Doc : U
+Malacka_Viera KBMF Ing : U
+Marhefkova_Martina KMZ Bc : U
+Marias_Miroslav KMR Ing : U
+Markovic_Peter KPF Ing : U
+Markus_Ludovit KAI PhD : U
+Martincova_Marta KET Ing : U
+Marton_Milan KHV Doc : U
+Masarova_Helena KET Doc : U
+Mascali_Manuela KRJ Mgr : U
+Mattos_Boris KDMV Ing : U
+Matusovic_ KPH Ing : U
+Matusovicova_Monika KMR Ing : U
+Mazikova_Katarina KU Ing : U
+Medved_Lubomir KPH Ing : U
+Medvedova_Eva KAI Mgr : U
+Mekotova_Erika KNJ Mgr : U
+Melisek_Frantisek KHP Doc : U
+Melsitova_Jolana KAJ PAEDDr : U
+Meluchova_Jitka KU Ing : U
+Mesarosova_Miriam KBMF Ing : U
+Mestanek_Jozef KPH Doc : U
+Michalkova_Anna KSCR Ing : U
+Michalova_Valeria KSCR Doc : U
+Mihalik_Jozef KSR Prof : U
+Mikova_Olga KPF Doc : U
+Mikulec_Vladimir KHP Doc : U
+Misik_Vladimir KPH Doc : U
+Misunova_Ema KVSRR Doc : U
+Mlakay_Jozef KTKT Ing : U
+Mlynkova_Drahomira KSCR Ing : U
+Mocko_Zdenko KVSRR Prof : U
+Mogyorosiova_Zuzana KMO Ing : U
+Mojzisova_Elena KM U : U
+Mokry_Vladimir KHP Prof : U
+Moravcik_Alexander KHP Doc : U
+Moravcikova_Elena KPF Ing : U
+Moravcikova_Gabriela KS Mgr : U
+Morvay_ KHP Ing : U
+Mraz_Stanislav KMEP JUDr : U
+Mruskovic_Jozef KRJ PHDr : U
+Mucha_ KM Mgr : U
+Muchova_Eva KET Ing : U
+Mulikova_Marieta KMZ Ing : U
+Nachtmannova_Olga KMZ Mgr : U
+Navracic_Lubomir KBMF Ing : U
+Nemec_Marian KET Ing : U
+Nemeth_Boris KU Ing : U
+Nemethova_Ildiko KAJ Mgr : U
+Neubauerova_Erika KF Ing : U
+Neumannova_Anna KPH Ing : U
+Neuvirthova_Renata KU Mgr : U
+Nguyen_Cong_Ai KMO Ing : U
+Ninacova_Valeria KPF Doc : U
+Nizka_Helena KMR Ing : U
+Novacka_Ludmila KSCR Doc : U
+Novak_Jaromir KPED Ing : U
+Novotny_Branislav KU Bc : U
+Obertasova_Monika KPO Ing : U
+Ochotnicky_Pavol KF Ing : U
+Okruhlica_Frantisek KMZ PhDr : U
+Ondrckova_Eva KNJ Doc : U
+Ondrejkova_Anna KAI Ing : U
+Ondrejova_Zuzana KAJ PHDr : U
+Ondrouskova_Katarina KPO Ing : U
+Oravec_Roden KDMV Ing : U
+Orbanova_Darina KPED Ing : U
+Pacakova_Viera KS RNDr : U
+Pachingerova_Maria KSCR Doc : U
+Papulova_ KMZ Doc : U
+Pardelova_Ruzena KS Doc : U
+Paskova_Hana KAJ PHDr : U
+Pastier_Jozef KPED Prof : U
+Pastorakova_Erika KPO Ing : U
+Pasztorova_Jana KMO RnDr : U
+Pauhoffova_ KET Ing : U
+Pauleova_Milada KAJ Mgr : U
+Pavelka_ KMO Ing : U
+Pavlikova_Maria KPF Ing : U
+Pazitna_Maria KS Ing : U
+Peczeova_Eleonora KNJ PHDr : U
+Peczeova_Eleonora2 KNJ PHDr : U
+Pekar_Juraj KOVE Mgr : U
+Peller_Frantisek KM Prof : U
+Pepy_Anne KRJ U : U
+Petrenka_Jan KF Prof : U
+Petricova_Jarmila KET Doc : U
+Petrikova_Lubica KRJ PHDr : U
+Pilch_Ctibor KBMF Ing : U
+Pinda_Ludovit KM Doc : U
+Pinter_Michal KMO Ing : U
+Piovarciova_Veronika KET Doc : U
+Pitonak_Andrej KMEP JUDr : U
+Plavkova_ KHV Ing : U
+Plesnik_Pavol KSCR RnDr : U
+Pokojny_Vladimir KMZ Ing : U
+Polacek_Marian KIOF Ing : U
+Polavkova_Katarina KPO Ing : U
+Polednakova_Anna KPF Ing : U
+Poliacik_ KMO Ing : U
+Poliak_Pavel KOP Mgr : U
+Polivkova_Dagmar KPOL PhDr : U
+Polya_Attila KIOF Mgr : U
+Porvaznik_Jan KMZ prof : U
+Pospisilova_Jana KNJ PHDr : U
+Privarova_Magdalena KET Doc : U
+Prockova_Adriana KMR Ing : U
+Pupala_Ladislav KET Doc : U
+Rabatinova_ KF Ing : U
+Rajnak_Milan KPH Prof : U
+Rajt_Stefan KMR Doc : U
+Rakovska_ KMVAL Ing : U
+Rakovska_Eva KAI RNDr : U
+Rehak_ KVSRR Ing : U
+Remisova_Anna KPOL Doc : U
+Rendek_Peter KBMF Ing : U
+Rendkova_Adriana KPED Ing : U
+Retova_ KIOF Ing : U
+Richterova_Kornelia KMR Doc : U
+Rievajova_Eva KSR Doc : U
+Rigaszova_Dana KBMF Ing : U
+Riha_Dusan KSCR Ing : U
+Roman_Emil KTKT Ing : U
+Romancikova_Eva KF Doc : U
+Romanova_Anita KIM Ing : U
+Rozborilova_Daria KET Doc : U
+Rublikova_Eva KS RNDr : U
+Rusinak_Peter KMEP JUDr : U
+Rusnak_Urban KDMV Mgr : U
+Russev_Stojan KAI Prof : U
+Rybarova_Daniela KPH Ing : U
+Sabikova_Ingrid KF Ing : U
+Sabo_Mikulas KOP JUDr : U
+Sajgalikova_Helena KAJ PHDr : U
+Sakalova_Katarina KM Doc : U
+Sakova_Beata KMO Ing : U
+Sand_Jan KET Doc : U
+Sandtnerova_Sona KS Ing : U
+Saradinova_Martina KBMF Ing : U
+Satkova_Blanka KPH Doc : U
+Saxunova_Darina KAJ RNDr : U
+Schultzova_Anna KF Doc : U
+Sebejova_Katarina KPF Ing : U
+Sebestova_Olga KOP JUDr : U
+Sebestova_Valentina KSJ Doc : U
+Sedlacek_Jozef KU Doc : U
+Sedlacko_ KSE Ing : U
+Sedlak_Mikulas KMZ Prof : U
+Sehnalova_ KPED Ing : U
+Sekerova_Viera KM RNDr : U
+Semancikova_Seman KOP U : U
+Seresova_Katarina KNJ Mgr : U
+Serina_ KPH ext : U
+Serinova_ KPO Ing : U
+Sibl_Drahos KMO Prof : U
+Sika_Peter KSR Ing : U
+Sikula_Milan KMO Ing : U
+Simkovic_Jan KF Prof : U
+Simonka_ KM Ing : U
+Sindelka_Miroslav KDMV Ing : U
+Sinsky_Peter KMZ Ing : U
+Sipko_Juraj KSE Ing : U
+Sivak_Rudolf KF Doc : U
+Sivasova_Daniela KS RNDr : U
+Skovajsa_Juraj KDMV Ing : U
+Skrovankova_Lea KM Doc : U
+Skurla_Stan KBMF Ing : U
+Skvarcekova_Olga KIOF Ing : U
+Skvrnda_Frantisek KDMV Doc : U
+Slavik_Stefan KMZ Doc : U
+Slosar_Rudolf KPED Doc : U
+Slosarova_Anna KU Doc : U
+Smolenova_Elena KRJ Mgr : U
+Smrekova_Marta KMO Doc : U
+Snircova_Jana KPF Ing : U
+Sniscak_Vincent KSCR Prof : U
+Sobek_Oto KBMF Prof : U
+Sochor_Milan KPF Ing : U
+Sodomova_Eva KS Doc : U
+Sokira_Jozef KF Doc : U
+Soltes_Erik KS U : U
+Sos_Ivan KAIVT Ing : U
+Soukupova_Bozena KU Doc : U
+Srna_Otakar VUNH Ing : U
+Srsnova_Jana KMZ Doc : U
+Stanek_Peter KET Doc : U
+Stanek_Vojtech KSR Doc : U
+Stanekova_Eva KET Ing : U
+Stano_Roman KSCR Ing : U
+Stareckova_Anna KM RNDr : U
+Starickova_Zuzana KF Ing : U
+Stasak_Jozef KAI Ing : U
+Stefanek_Jan KAI Prof : U
+Stensova_Antonia KMR Doc : U
+Stern_Juraj KMVAL Doc : U
+Stofilova_Jana KMR Doc : U
+Stracar_Vladislav KMZ Prof : U
+Strazovska_Helena KSCR Prof : U
+Strazovska_Lubomira KSCR Ing : U
+Strelkova_Katarina KSJ PHDr : U
+Stresnakova_Anna KM RNDr : U
+Strhan_Rastislav KTKT Ing : U
+Strieska_Lubomir KPH Doc : U
+Strinkova_Viera KPH Doc : U
+Strizencova_ KPF Ing : U
+Stubnova_Ludmila KU Doc : U
+Sturc_Boris KBMF Ing : U
+Subertova_Elena KPH Doc : U
+Suchter_Jozef KAI Ing : U
+Suntingerova_Ludmila KMZ PHDr : U
+Surovy_Vladimir KU Ing : U
+Suterova_Viola KSCR Ing : U
+Svaty_Fedor KMVAL Doc : U
+Sviticova_Renata KBMF Ing : U
+Svitkova_Maria KNJ Doc : U
+Svobodova_Valeria KMO Ing : U
+Sysakova_Viera KBMF Doc : U
+Szabo_Luboslav KMZ Doc : U
+Szabova_Angela KSR Ing : U
+Szarkova_Miroslava KMZ Doc : U
+Szivosova_Maria KAI Ing : U
+Szomolanyi_ KOP Mgr : U
+Sztukova_Maria KAJ PHDr : U
+Tajtakova_Maria KMR Ing : U
+Talar_Peter KF Ing : U
+Tancosova_Judita KET Doc : U
+Taragelova_Maria KU Ing : U
+Tekulova_Zuzana KSR Ing : U
+Terek_Milan KS Doc : U
+Thomasova_Elena KMZ Ing : U
+Tkac_ KU Ing : U
+Tkac_Marian KET Ing : U
+Tkac_Vojtech KMEP JUDr : U
+Tkacikova_Janette KIOF Ing : U
+Tkacikova_Jarmila KMR Ing : U
+Tkacova_Dana KBMF Ing : U
+Tkacova_Maria KF Ing : U
+Tokarova_Maria KHP Ing : U
+Torma_Stefan KMO Doc : U
+Toth_Ludovit KDMV Prof : U
+Toth_Miroslav KPH Ing : U
+Trefil_Peter KSCR Ing : U
+Trochanova_Hana KAI Ing : U
+Trojak_ KF Doc : U
+Trstanska_Alena KPH Doc : U
+Truchly_P KBMF Ing : U
+Tuharska_Eleonora KHP Doc : U
+Tumpach_Milos KU Ing : U
+Turna_Lubomir KAI RNDr : U
+Tvrdon_Jozef KVSRR Doc : U
+Uncovsky_Ladislav KBMF Prof : U
+Urban_Eduard KMO Prof : U
+Urbanova_Natasa KTKT Ing : U
+Uzik_Jan KU Ing : U
+Valach_Vladimir KDMV Dr : U
+Valkova_Katarina KOP Doc : U
+Vasekova_ KU Ing : U
+Vavra_Viktor KMR Doc : U
+Vavrova_Katarina KPF Ing : U
+Vehnerova_Eva KAJ PHDr : U
+Velichova_Ludmila KPED Ing : U
+Vepyova_Maria KU Ing : U
+Vercek_Peter KMO Doc : U
+Veselovska_Stanislava KPO Ing : U
+Vesely_Eugen KIOF Ing : U
+Vidova_Jarmila KHP Ing : U
+Viestova_Kristina KMR Prof : U
+Viktoryova_Eva KAJ PHDr : U
+Vincur_Pavol KHP Prof : U
+Vita_Tiziano KRJ Mgr : U
+Vitkovic_Marian KBMF Ing : U
+Vlachynsky_Karol KPF Prof : U
+Vlckova_Viera KVSRR Doc : U
+Vojtkova_Maria KS Ing : U
+Vokalova_Emilia KPOL PAEDDr : U
+Vokounova_Dana KMR Ing : U
+Volar_ KMZ Ing : U
+Vorlickova_Jana KHP Ing : U
+Vovk_ KAIVT Ing : U
+Vybiralova_Julia KMVAL Ing : U
+Vybostokova_Alena KPF Ing : U
+Weiss_Peter KDMV PHDr : U
+William_Edward KAJ Mgr : U
+Winkler_ KOP JUDr : U
+Workie_Menbere KBMF Ing : U
+Zahorak_Pavol KMVAL Ing : U
+Zakova_Jozefina KPO JUDr : U
+Zalai_Karol KPF Prof : U
+Zalezakova_Eliska KMZ PHDr : U
+Zarska_Elena KVSRR Doc : U
+Zavodny_Peter KAI Prof : U
+Zavodska_ KOP JUDr : U
+Zelenayova_Alojzia KAJ PHDr : U
+Zelienkova_Zdenka KMR Ing : U
+Zemanovicova_Daniela KPH Doc : U
+Zorkociova_Otilia KMO Ing : U
+Zsapkova_Eleonora KAJ PHDr : U
+Zubalova_ KPED Ing : U
+Zubalova_Alena KF Ing : U
+Zwiebova_Darina KPH Doc : U
+
+.PARALELKY
+
+ 1_rocnik 1 
+  $ Narodohospodarska_fakulta NHF 
+    $$ Financie_bankovnictvo_a_investovanie FBI 300/1-12
+    $$ Poistovnictvo POI 25/1
+    $$ Narodne_hospodarstvo NH 94/1-4
+    $$ Ludske_zdroje_socialnoekonomickom_rozvoji LZSER 50/1-2
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 34/1-2
+  $ Obchodna_fakulta OF 
+    $$ Podnikanie_v_obchode_a_CR POCR 320/1-12
+    $$ Zahranicnoobchodne_podnikanie ZOP 210/1-8
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Medzinarodne_ekonomicke_vztahy MEV 150/1-6
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_man_podniku EMP 450/1-17
+    $$ Financny_manazment FM 100/1-4
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Hospodarska_informatika HI 150/1-5
+    $$ Manaz_rozhod_a_inf_technol MRIT 120/1-4
+    $$ Uctovnictvo UC 150/1-5
+    $$ Uctovnictvo_a_hospodarska_informatika UHI 150/1-5
+ 2_rocnik 2 
+  $ Narodnohospodarska_fakulta NHF 
+    $$ Financie_bankovnictvo_a_investovanie FBI 354/1-14
+    $$ Poistovnictvo POI 40/1-2
+    $$ Narodne_hospodarstvo NH 94/1-4
+    $$ Ludske_zdroje_socialnoekonomickom_rozvoji LZSER 24/1
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 34/1-2
+  $ Obchodna_fakulta OF 
+    $$ Podnikanie_v_obchode_a_CR POCR 364/1-14
+    $$ Zahranicnoobchodne_podnikanie ZOP 250/1-10
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Medzinarodne_ekonomicke_vztahy MEV 200/1-8
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_man_podniku EMP 510/1-20
+    $$ Financny_manazment FM 85/1-4
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Hospodarska_informatika HI 163/1-5
+    $$ Manaz_rozhod_a_inf_technol MRIT 128/1-5
+    $$ Uctovnictvo UC 163/1-6
+    $$ Uctovnictvo_a_hospodarska_informatika UHI 160/1-6
+ 3_rocnik 3 
+  $ Narodohospodarska_fakulta NHF 
+    $$ Financie_bankovnictvo_a_investovanie FBI 218/1-11
+    $$ Poistovnictvo POI 23/1
+    $$ Narodne_hospodarstvo NH 84/1-5
+    $$ Ludske_zdroje_sociálnoekonomickom_rozvoji LZSER 21/1
+    $$ Ucitelstvo_praktickych_ekon_predmetov UPEP 11/1
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 37/1-2
+    $$ Dopln_pedagog_studium DPS 24/1-2
+  $ Obchodna_fakulta OF 
+    $$ Podnikanie_v_obchode_a_CR POCR 280/1-14
+    $$ Zahranicnoobchodne_podnikanie ZOP 168/1-8
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Medzinarodne_vztahy MV 129/1-6
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_man_podniku EMP 313/1-17
+    $$ Financny_manazment FM 78/1-4
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Hospodarska_informatika HI 87/1-4
+    $$ Manaz_rozhod_a_inf_technol MRIT 86/1-4
+    $$ Uctovnictvo UC 124/1-5
+ 4_rocnik 4 
+  $ Narodohospodarska_fakulta NHF 
+    $$ Bankovnictvo BANK 97/1-4
+    $$ Financie FIN 101/1-4
+    $$ Danovnictvo_a_danove_poradenstvo DDP 71/1-3
+    $$ Poistovnictvo POI 36/1-2
+    $$ Hospodarska_politika HP 62/1-3
+    $$ Socialny_rozvoj_a_praca SR 33/1-2
+    $$ Ekonom_teoria_a_ekonomicka_zurnal ETZ 15/1
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 71/1-3
+    $$ Dopln_pedagog_studium DPS 40/1-3
+  $ Obchodna_fakulta OF 
+    $$ Medzinarodne_podnikanie MP 175/1-7
+    $$ Obchod_a_marketing OaM 138/1-6
+    $$ Cestovny_ruch CR 115/1-5
+    $$ Obchodny_manazment OM 25/1
+    $$ Manazment_cestovneho_ruchu MCR 25/1
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Medzinarodne_vztahy MV 108/1-5
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_manazment_podniku EMP 
+      $$$ Vseobecny_manazment VMZ 39/1-2
+      $$$ Manazment_vyroby_a_logist MVL 59/1-3
+      $$$ Personalny_manazment PMZ 39/1-2
+      $$$ Ekonomika_podnikat_subj EPS 52/1-3
+    $$ Financny_manazment_podniku FMP 
+      $$$ Financny_man_a_uct_podn FMUP 53/1-2
+      $$$ Podnikove_financie PF 55/1-3
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Uctovnictvo_a_auditorstvo UA 117/1-5
+    $$ Uctovnictvo_a_financne_riadenie UFR 39/1-2
+    $$ Operacny_vykum_a_ekonometria OVE 40/1-2
+    $$ Aktuárstvo AKT 30/1
+    $$ Statisticke_metody_v_ekon SME 25/1
+    $$ Hospodarska_informatika HI 146/1-5
+ 5_rocnik 5 
+  $ Narodohospodarska_fakulta NHF 
+    $$ Bankovnictvo BANK 99/1-4
+    $$ Financie FIN 68/1-3
+    $$ Danovnictvo_a_danove_poradenstvo DDP 47/1-2
+    $$ Poistovnictvo POI 19/1
+    $$ Hospodarska_politika HP 23/1-2
+    $$ Socialny_rozvoj_a_praca SR 9/1
+    $$ Ekonomicka_teoria_a_ekonomicka_zurnal ETZ 8/1
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 36/1-2
+    $$ Dopln_pedagog_studium DPS 24/1-2
+  $ Obchodna_fakulta OF 
+    $$ Medzinarodne_podnikanie MP 120/1-6
+    $$ Obchod_a_marketing OaM 120/1-6
+    $$ Cestovny_ruch CR 95/1-5
+    $$ Marketingovy_manazment MM 25/1
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Medzinarodne_vztahy MV 118/1-5
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_manazment_podniku EMP 
+      $$$ Vseobecny_manazment VMZ 34/1-2
+      $$$ Manazment_vyroby_a_logist MVL 36/1-2
+      $$$ Personalny_manazment PMZ 25/1
+      $$$ Ekonomika_podnikat_subj EPS 69/1-3
+    $$ Financny_manazment_podniku FMP 
+      $$$ Financny_man_a_uct_podn FMUP 34/1-2
+      $$$ Podnikove_financie PF 63/1-3
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Aplikovana_statistika AS 18/1
+    $$ Informac_syst_a_technol_v_ekonomike ISTE 26/1
+    $$ Informacne_technologie IT 71/1-4
+    $$ Operacny_vykum_a_ekonometria OVE 32/1-2
+    $$ Poistna_matematika PM 18/1
+    $$ Uctovnictvo_a_auditorstvo UA 65/1-3
+    $$ Uctovnictvo_a_financne_riadenie UFR 18/1
+
+.PREDMETY
+
+
+
+1_FMV_MEV 31001/2: KAI: P V | InformatikaA INF Carachova_Magdalena 1/1 150 ;57
+~ 720 1
+$1 B1_04 4 4 0 Carachova_Magdalena
+&1 A8_06 4 5 1 0 
+&1 A8_05 4 2 2 0 
+&1 A8_05 4 3 3 0 
+&1 A8_05 4 5 4 0 
+&1 A8_06 2 3 5 0 
+&1 A8_06 4 2 6 0 
+
+1_FHI_HI 11003/1: KET: P V | Vseobec_ekon_teor VET AAA_ucitel 1/1 200 ;84
+~ 654 0
+$1 B1_05 1 3 0
+&1 A7_07 1 4 1 0 
+&1 A6_16 1 5 2 0 
+&1 B207 3 2 3 0 
+&1 A6_07 2 1 4 0 
+&1 A6_05 2 2 5 0 
+
+1_FHI_HI 41001/1: KPH: P V | Podnikove_hospod PH Kovacova_Eva 1/1 200 ;85
+~ 54 1
+$1 B1_02 1 2 0 Kovacova_Eva
+&1 A6_17 3 2 1 0 
+&1 A7_07 4 6 2 0 
+&1 A4_08 3 3 3 0 
+&1 A7_17 4 1 4 0 
+&1 A5_05 2 3 5 0 
+
+1_FHI_HI 25003/1: KOP: P V | Pravo PRA Holub_ 2/0 200 ;86
+~ 557 0
+$2 B1_02 3 6 0
+
+1_FHI_HI 32003/3: KM: P V | Matematika_A MATA Krcova_ 1/1 200 ;87
+~ 723 0
+$1 B1_03 4 2 0 Krcova_
+&1 A7_05 3 4 1 0 
+&1 B1_06 3 4 2 0 
+&1 A7_12 1 1 3 0 
+&1 A6_17 2 2 4 0 
+&1 A7_04 1 1 5 0 
+
+1_FHI_HI 31001/3: KAI: P V | Informatika_A INFA Carachova_Magdalena 1/1 200 ;88
+~ 720 1
+$1 B1_05 4 3 0 Carachova_Magdalena
+&1 A8_05 3 3 1 0 
+&1 A8_07 4 5 2 0 
+&1 A8_05 3 1 3 0 
+&1 A8_05 1 6 4 0 
+&1 A8_05 4 1 5 0 
+
+1_FHI_HI 31001/5: KAI: V 1 V | Informatika_A/AJ INFAAJ AAA_ucitel 1/1 10 ;89
+~ 720 1
+$1 A8_06 1 6 0
+&1 A8_06 1 7 1 0 
+
+
+1_FHI_MRIT 31001/5: KAI: V 1 V | Informatika_A/AJ INFAAJ AAA_ucitel 1/1 10 ;90
+~ 720 1
+$1 A8_06 1 6 0
+&1 A8_06 1 7 1 0 
+
+1_FHI_MRIT 32003/5: KM: V 1 V | Matematika_A/AJ MATAAJ Sakalova_Katarina 1/1 30 ;91
+~ 723 0
+$1 C1_06 1 4 0 Sakalova_Katarina
+&1 A7_04 1 5 1 0 
+
+1_FHI_MRIT 11003/3: KET: P V | Vseobec_ekon_teor VET AAA_ucitel 1/1 200 ;92
+~ 654 0
+$1 B1_04 2 3 0
+&1 A7_07 4 4 1 0 
+&1 A5_16 4 3 2 0 
+&1 C1_06 3 6 3 0 
+&1 A6_08 3 1 4 0 
+
+1_FHI_MRIT 41001/1: KPH: P V | Podnikove_hospod PH Kovacova_Eva 1/1 200 ;93
+~ 54 1
+$1 B1_02 1 2 0 Kovacova_Eva
+&1 A7_07 3 4 1 0 
+&1 A7_07 2 1 2 0 
+&1 A4_08 3 5 3 0 
+&1 A7_15 4 5 4 0 
+
+1_FHI_MRIT 21009/3: KMR: P V | Marketing MAR Lipianska_Julia 1/1 200 ;94
+~ 206 0
+$1 B1_04 1 3 0 Lipianska_Julia
+&1 C1_06 4 7 1 0 
+&1 A7_07 4 5 2 0 
+&1 C1_06 2 1 3 0 
+&1 A7_17 4 6 4 0 
+
+1_FHI_MRIT 32003/1: KM: P V | Matematika_A MATA Horakova_Galina 1/1 200 ;95
+~ 723 0
+$1 B1_03 3 3 0 Horakova_Galina
+&1 A7_04 3 5 1 0 
+&1 A7_05 3 1 2 0 
+&1 B1_09 1 5 3 0 
+&1 A7_07 3 2 4 0 
+
+1_FHI_MRIT 31001/4: KAI: P V | Informatika_A INFA Suchter_Jozef 1/1 200 ;96
+~ 720 1
+$1 B1_02 1 1 0 Suchter_Jozef
+&1 A8_07 4 3 1 0 
+&1 A8_04 4 4 2 0 
+&1 A8_05 2 2 3 0 
+&1 A8_04 4 7 4 0 
+
+
+1_FHI_UC 11003/2: KET: P V | Vseobec_ekon_teor VET AAA_ucitel 1/1 150 ;97
+~ 654 0
+$1 B1_03 1 3 0
+&1 A5_07 2 2 1 0 
+&1 A7_12 4 4 2 0 
+&1 A5_08 2 1 3 0 
+&1 A6_08 1 6 4 0 
+&1 A5_05 1 5 5 0 
+
+1_FHI_UC 41001/2: KPH: P V | Podnikove_hospod PH Majtan_Stefan 1/1 150 ;98
+~ 54 1
+$1 B1_03 3 5 0 Majtan_Stefan
+&1 A7_07 1 5 1 0 
+&1 A7_05 1 7 2 0 
+&1 A5_07 4 6 3 0 
+&1 A6_07 1 5 4 0 
+&1 A7_12 1 6 5 0 
+
+1_FHI_UC 25003/1: KOP: P V | Pravo PRA Holub_ 2/0 150 ;99
+~ 557 0
+$2 B1_02 3 6 0
+
+1_FHI_UC 32008/1: KM: P V | Matematika_A MATA Peller_Frantisek 1/1 150 ;100
+~ 723 0
+$1 B1_05 1 2 0 Peller_Frantisek
+&1 B1_09 2 3 1 0 
+&1 A5_08 1 6 2 0 
+&1 A7_15 4 4 3 0 
+&1 A7_12 4 5 4 0 
+&1 A7_04 4 1 5 0 
+
+1_FHI_UC 31001/1: KAI: P V | Informatika_A INFA Szivosova_Maria 1/1 150 ;101
+~ 720 1
+$1 B1_03 4 3 0 Szivosova_Maria
+&1 A8_05 1 7 1 0 
+&1 A8_05 1 5 2 0 
+&1 A8_06 2 2 3 0 
+&1 A8_04 4 6 4 0 
+&1 A8_05 2 3 5 0 
+
+
+1_FHI_UHI 11003/2: KET: P V | Vseobec_ekon_teor VET AAA_ucitel 1/1 200 ;102
+~ 654 0
+$1 B1_03 1 3 0
+&1 A6_16 1 2 1 0 
+&1 A4_07 1 4 2 0 
+&1 A6_16 3 2 3 0 
+&1 A7_12 1 2 4 0 
+&1 A5_13 4 2 5 0 
+
+1_FHI_UHI 41001/2: KPH: P V | Podnikove_hospod PH Majtan_Stefan 1/1 200 ;103
+~ 54 1
+$1 B1_03 3 5 0 Majtan_Stefan
+&1 A5_14 4 2 1 0 
+&1 A6_16 2 3 2 0 
+&1 A4_08 3 6 3 0 
+&1 A6_15 2 2 4 0 
+&1 A5_16 3 6 5 0 
+
+1_FHI_UHI 31033/1: KAI: P V | Informacna_ekonomika IE Grell_Michal 1/0 200 ;104
+~ 720 1
+$1 B1_05 1 1 0 Grell_Michal
+
+1_FHI_UHI 32008/2: KM: P V | Matematika_A MATA Fecenko_Jozef 1/1 200 ;105
+~ 723 0
+$1 B1_04 4 1 0 Fecenko_Jozef
+&1 A7_04 3 1 1 0 
+&1 A7_04 1 2 2 0 
+&1 A7_07 1 2 3 0 
+&1 A7_04 3 6 4 0 
+&1 A5_07 3 3 5 0 
+
+1_FHI_UHI 31001/1: KAI: P V | Informatika_A INFA Szivosova_Maria 1/1 200 ;106
+~ 720 1
+$1 B1_03 4 3 0 Szivosova_Maria
+&1 A8_05 3 2 1 0 
+&1 A8_05 4 4 2 0 
+&1 A8_04 1 4 3 0 
+&1 A8_06 2 1 4 0 
+&1 A8_06 3 4 5 0 
+
+1_FHI_UHI 31001/5: KAI: V 1 V | Informatika_A/AJ INFAAJ AAA_ucitel 1/1 10 ;107
+~ 720 1
+$1 A8_06 1 6 0
+&1 A8_06 1 7 1 0 
+
+
+2_FHI_HI 31032: KAI: V 0 V | Etika_v_informatike EVI Trochanova_Hana 1/0 50 ;173
+~ 720 1
+$1 C1_07 1 4 0 Trochanova_Hana
+
+2_FHI_HI 31030: KAI: V 0 V | Manazerska_informatika MI Kvietkova_Anna 1/0 25 ;174
+~ 720 1
+$1 C1_06 3 4 0 Kvietkova_Anna :F
+
+2_FHI_HI 34001/1: KS: P V | Statistika_A STAA Soltes_Erik 1/1 163 ;175
+~ 565 1
+$1 B1_03 2 1 0 Soltes_Erik
+&1 A8_08 3 4 1 0 
+&1 A8_08 3 3 2 0 
+&1 A8_08 1 6 3 0 
+&1 A8_08 1 2 4 0 
+&1 A8_08 3 1 5 0 
+
+2_FHI_HI 35003/2: KU: P V | Uctovnictvo_A UCTA Mazikova_Katarina 1/1 163 ;176
+~ 727 1
+$1 D112 2 2 0 Mazikova_Katarina
+&1 C1_07 1 2 1 0 
+&1 C1_07 1 2 2 0 
+&1 C1_07 3 2 3 0 
+&1 C1_07 3 2 4 0 
+&1 A7_05 1 2 5 0 
+
+2_FHI_HI 31020/1: KAI: P V | Databazove_syst_a_dat_sklady DSDS Kultan_Jaroslav 1/1 163 ;177
+~ 720 1
+$1 B1_02 1 3 0 Kultan_Jaroslav :F
+&1 A8_15 3 3 1 0 
+&1 A8_15 3 2 2 0 
+&1 A8_15 4 4 3 0 
+&1 A8_15 3 1 4 0 
+&1 A8_05 3 4 5 0 
+
+2_FHI_HI 31002/1: KAI: P V | Programovanie_A PROA Hanak_Jan 1/1 163 ;178
+~ 720 1
+$1 B1_03 4 6 0 Hanak_Jan
+&1 A8_12 3 2 1 0 
+&1 A8_12 3 1 2 0 
+&1 A8_12 1 2 3 0 
+&1 A8_12 1 1 4 0 
+&1 A8_12 3 3 5 0 
+
+2_FHI_HI 31022: KAI: P V | Pocitacove_pravo POPR Ondrejkova_Anna 1/0 163 ;179
+~ 720 1
+$1 B1_02 4 5 0 Ondrejkova_Anna
+
+
+2_FHI_MRIT 32015: KM: V 0 V | Financna_matematika1 FMAT1 Sakalova_Katarina 1/0 10 ;180
+~ 723 0
+$1 A7_15 4 3 0 Sakalova_Katarina
+
+2_FHI_MRIT 31030: KAI: V 0 V | Manazerska_informatika MI Kvietkova_Anna 1/0 25 ;181
+~ 720 1
+$1 C1_06 3 4 0 Kvietkova_Anna :F
+
+2_FHI_MRIT 12001/3: KHP: P V | Narodohospodarska_polit NHP AAA_ucitel 2/0 128 ;182
+~ 664 0
+$2 B1_05 4 5 0
+
+2_FHI_MRIT 42003/5: KMZ: P V | Manazment MAN AAA_ucitel 1/1 128 ;183
+~ 67 1
+$1 C1_08 1 2 0
+&1 A6_17 4 1 1 0 
+&1 A5_07 3 2 2 0 
+&1 A6_17 3 3 3 0 
+&1 A5_15 4 2 4 0 
+&1 A7_17 1 6 5 0 
+
+2_FHI_MRIT 25003/3: KOP: P V | Pravo PRA AAA_ucitel 2/0 128 ;184
+~ 557 0
+$2 C1_09 3 5 0
+
+2_FHI_MRIT 34001/1: KS: P V | Statistika_A STAA Soltes_Erik 1/1 128 ;185
+~ 565 1
+$1 B1_03 2 1 0 Soltes_Erik
+&1 A8_08 4 3 1 0 
+&1 A8_08 4 4 2 0 
+&1 A8_08 4 2 3 0 
+&1 A8_08 2 2 4 0 
+&1 A8_08 4 1 5 0 
+
+2_FHI_MRIT 35003/3: KU: P V | Uctovnictvo_B UCTB Juhaszova_Zuzana 1/1 128 ;186
+~ 727 1
+$1 C1_09 2 3 0 Juhaszova_Zuzana
+&1 A7_15 1 5 1 0 
+&1 A7_15 1 6 2 0 
+&1 A5_17 3 2 3 0 
+&1 A7_13 1 7 4 0 
+&1 A6_06 2 2 5 0 
+
+2_FHI_MRIT 31002/2: KAI: P V | Programovanie_A PROA Hanak_Jan 1/1 128 ;187
+~ 720 1
+$1 B1_03 1 4 0 Hanak_Jan :F
+&1 A8_12 4 4 1 0 
+&1 A8_12 4 1 2 0 
+&1 A8_12 4 3 3 0 
+&1 A8_12 1 3 4 0 
+&1 A8_14 1 3 5 0 
+
+
+2_FHI_UC 42010/2: KMZ: V 2 V | Komunikacia_v_manaz KM Volar_ 1/1 50 ;188
+~ 67 1
+$1 C1_06 4 5 0 Volar_
+&1 A7_07 3 5 1 0 
+&1 A7_07 3 6 2 0 
+
+2_FHI_UC 13024: KVSRR: V 0 V | Hospodarska_geograf_sv HGS Misunova_Ema 1/0 25 ;189
+~ 674 0
+$1 C1_08 3 1 0 Misunova_Ema
+
+2_FHI_UC 75021: KHV: V 1 V | Podnikatelska_etika PET Marton_Milan 0/1 25 ;190
+~ 624 1
+&1 C1_07 3 4 1 0 
+
+2_FHI_UC 22002/1: KMO: P V | Medzinarodny_obchod MO Balaz_Peter 2/0 163 ;191
+~ 359 0
+$2 B1_05 4 1 0 Balaz_Peter
+
+2_FHI_UC 35003/1: KU: P V | Uctovnictvo_A UCTA Slosarova_Anna 1/1 163 ;192
+~ 727 1
+$1 B1_02 2 2 0 Slosarova_Anna :F
+&1 A7_13 3 1 1 0 
+&1 A7_13 2 1 2 0 
+&1 A7_15 3 4 3 0 
+&1 A7_07 2 3 4 0 
+&1 A7_07 1 6 5 0 
+&1 A5_05 3 3 6 0 
+
+2_FHI_UC 43002: KPF: P V | Podnikove_financie PF Fetisovova_Elena 1/1 163 ;193
+~ 69 1
+$1 B1_05 3 5 0 Fetisovova_Elena
+&1 A6_06 4 3 1 0 
+&1 A6_07 4 4 2 0 
+&1 A7_05 1 3 3 0 
+&1 A6_08 1 5 4 0 
+&1 A7_15 1 4 5 0 
+&1 A7_15 1 2 6 0 
+
+2_FHI_UC 34001/2: KS: P V | Statistika_A STAA Vojtkova_Maria 1/1 163 ;194
+~ 565 1
+$1 B1_03 3 2 0 Vojtkova_Maria
+&1 A8_08 2 3 1 0 
+&1 A8_08 4 5 2 0 
+&1 A8_08 1 1 3 0 
+&1 A8_08 1 4 4 0 
+&1 A8_08 1 5 5 0 
+&1 A8_08 1 3 6 0 
+
+2_FHI_UC 18001/1: KPO: P V | Poistovnictvo POIS Drugdova_Barbora 1/0 163 ;195
+~ 709 0
+$1 B1_05 3 6 0 Drugdova_Barbora
+
+
+2_FHI_UHI 32015: KM: V 0 V | Financna_matematika1 FMAT1 Sakalova_Katarina 1/0 10 ;196
+~ 723 0
+$1 A7_15 4 3 0 Sakalova_Katarina
+
+2_FHI_UHI 31022: KAI: V 0 V | Pocitacove_pravo POPR Ondrejkova_Anna 1/0 16 ;197
+~ 720 1
+$1 B1_02 4 5 0 Ondrejkova_Anna
+
+2_FHI_UHI 31030: KAI: V 0 V | Manazerska_informatika MI Kvietkova_Anna 1/0 25 ;198
+~ 720 1
+$1 C1_06 3 4 0 Kvietkova_Anna :F
+
+2_FHI_UHI 35003/1: KU: P V | Uctovnictvo_A UCTA Slosarova_Anna 1/1 160 ;199
+~ 727 1
+$1 B1_02 2 2 0 Slosarova_Anna :F
+&1 A7_05 4 1 1 0 
+&1 A6_17 2 3 2 0 
+&1 A7_07 3 1 3 0 
+&1 A7_15 4 6 4 0 
+&1 B1_07 1 5 5 0 
+&1 A7_15 4 2 6 0 
+
+2_FHI_UHI 34001/2: KS: P V | Statistika_A STAA Vojtkova_Maria 1/1 160 ;200
+~ 565 1
+$1 B1_03 3 2 0 Vojtkova_Maria
+&1 A8_08 2 1 1 0 
+&1 A8_08 4 6 2 0 
+&1 A8_07 1 2 3 0 
+&1 A8_08 4 7 4 0 
+&1 A8_08 3 5 5 0 
+&1 A8_08 3 6 6 0 
+
+2_FHI_UHI 31002/2: KAI: P V | Programovanie_A PROA Hanak_Jan 1/1 160 ;201
+~ 720 1
+$1 B1_03 1 4 0 Hanak_Jan :F
+&1 A8_15 1 6 1 0 
+&1 A8_15 1 7 2 0 
+&1 A8_15 1 1 3 0 
+&1 A8_15 1 2 4 0 
+&1 A8_15 3 6 5 0 
+&1 A8_15 3 7 6 0 
+
+2_FHI_UHI 31020/1: KAI: P V | Databazove_syst_a_dat_sklady DSDS Kultan_Jaroslav 1/1 160 ;202
+~ 720 1
+$1 B1_02 1 3 0 Kultan_Jaroslav :F
+&1 A8_13 1 7 1 0 
+&1 A8_13 1 6 2 0 
+&1 A8_12 1 7 3 0 
+&1 A8_12 1 6 4 0 
+&1 A8_14 3 1 5 0 
+&1 A8_14 3 3 6 0 
+
+3_FHI_HI 31032: KAI: V 0 V | Etika_v_informatike EVI Trochanova_Hana 1/0 50 ;291
+~ 720 1
+$1 C1_07 1 4 0 Trochanova_Hana
+
+3_FHI_HI 31030: KAI: V 0 V | Manazerska_informatika MI Kvietkova_Anna 1/0 25 ;292
+~ 720 1
+$1 C1_06 3 4 0 Kvietkova_Anna :F
+
+3_FHI_HI 31026: KAI: P V | Operacne_syst OS Markus_Ludovit 1/1 87 ;293
+~ 720 1
+$1 B1_05 2 5 0 Markus_Ludovit :F
+&1 A8_14 3 4 1 0  : F
+&1 A8_14 3 5 2 0 
+&1 A8_14 2 2 3 0 
+&1 A8_14 2 1 4 0 
+
+3_FHI_HI 31033/1: KAI: P V | Informacna_ekonomika IE Grell_Michal 1/0 87 ;294
+~ 720 1
+$1 B1_05 1 1 0 Grell_Michal
+
+3_FHI_HI 31011/3: KAI: P V | Umela_intelig_a_exp_sys_B UIESB Rakovska_Eva 1/1 87 ;295
+~ 720 1
+$1 C1_06 3 3 0 Rakovska_Eva
+&1 A8_05 1 2 1 0 
+&1 A8_04 3 4 2 0 
+&1 A8_05 2 4 3 0 
+&1 A8_04 2 2 4 0 
+
+3_FHI_HI 21009/1: KMR: P V | Marketing MAR AAA_ucitel 1/1 87 ;296
+~ 206 0
+$1 B108 4 1 0
+&1 A7_04 4 2 1 0 
+&1 A7_17 2 1 2 0 
+&1 A6_08 2 3 3 0 
+&1 A4_06 3 2 4 0 
+
+3_FHI_HI 31004/1: KAI: P V | Databazove_technologie DT Laky_Jaroslav 1/1 87 ;297
+~ 720 1
+$1 C1_06 3 1 0 Laky_Jaroslav
+&1 A8_15 1 3 1 0 
+&1 A8_15 2 2 2 0 
+&1 A8_14 3 2 3 0 
+&1 A8_14 1 2 4 0 
+
+
+3_FHI_MRIT 34018: KS: V 2 V | Metody_stat_porovn MSP Pazitna_Maria 1/1 50 ;298
+~ 565 1
+$1 C1_06 1 6 0 Pazitna_Maria
+&1 A6_17 2 6 1 0 
+&1 A6_17 2 7 2 0 
+
+3_FHI_MRIT 32015: KM: V 0 V | Financna_matematika1 FMAT1 Sakalova_Katarina 1/0 10 ;299
+~ 723 0
+$1 A7_15 4 3 0 Sakalova_Katarina
+
+3_FHI_MRIT 31030: KAI: V 0 V | Manazerska_informatika MI Kvietkova_Anna 1/0 25 ;300
+~ 720 1
+$1 C1_06 3 4 0 Kvietkova_Anna :F
+
+3_FHI_MRIT 33001/3: KOVE: V 1 V | Operacny_vyskum/NJ OV/NJ Ivanicova_Zlatica 1/1 10 ;301
+~ 644 1
+$1 A8_04 3 1 0 Ivanicova_Zlatica
+&1 A8_04 3 2 1 0 
+
+3_FHI_MRIT 33001/2: KOVE: P V | Operacny_vyskum OV Brezina_Ivan 1/1 86 ;302
+~ 644 1
+$1 C1_06 2 4 0 Brezina_Ivan
+&1 A8_04 4 2 1 0 
+&1 A8_07 3 6 2 0 
+&1 A8_04 4 3 3 0 
+&1 A8_04 4 1 4 0 
+
+3_FHI_MRIT 34023/2: KS: P V | Hospodarska_statistika HS Bolgac_Jan 1/1 86 ;303
+~ 565 1
+$1 C1_09 2 2 0 Bolgac_Jan
+&1 A6_15 2 3 1 0 
+&1 A7_07 4 2 2 0 
+&1 A7_15 4 1 3 0 
+&1 A7_17 4 5 4 0 
+
+3_FHI_MRIT 31020: KAI: P V | Databazove_syst_a_dat_sklady DSDS Kultan_Jaroslav 1/1 86 ;304
+~ 720 1
+$1 C1_06 4 4 0 Kultan_Jaroslav
+&1 A8_15 4 5 1 0 
+&1 A8_15 1 4 2 0 
+&1 A8_15 4 6 3 0 
+&1 A8_15 1 5 4 0 
+
+3_FHI_MRIT 33028: KOVE: P V | Makroekonomicka_analyza MA Husar_Jaroslav 1/1 86 ;305
+~ 644 1
+$1 C1_09 3 3 0 Husar_Jaroslav
+&1 A7_13 3 2 1 0 
+&1 A8_04 4 5 2 0 
+&1 A7_04 3 4 3 0 
+&1 A8_05 4 6 4 0 
+
+3_FHI_MRIT 31026: KAI: P V | Operacne_syst OS Markus_Ludovit 1/1 86 ;306
+~ 720 1
+$1 B1_05 2 5 0 Markus_Ludovit :F
+&1 A8_15 2 6 1 0 
+&1 A8_15 4 1 2 0 
+&1 A8_14 3 6 3 0 
+&1 A8_15 4 2 4 0 
+
+
+3_FHI_UC 35031: KU: V 2 V | Uctovnictvo_C UCTC Vasekova_ 0/1 50 ;307
+~ 727 1
+&1 A7_12 2 5 1 0 
+&1 A7_12 2 6 2 0 
+
+3_FHI_UC 42010/2: KMZ: V 2 V | Komunikacia_v_manaz KM Volar_ 1/1 50 ;308
+~ 67 1
+$1 C1_06 4 5 0 Volar_
+&1 A5_06 4 6 1 0 
+&1 A5_06 4 7 2 0 
+
+3_FHI_UC 13024: KVSRR: V 0 V | Hospodarska_geograf_sv HGS Misunova_Ema 1/0 25 ;309
+~ 674 0
+$1 C1_08 3 1 0 Misunova_Ema
+
+3_FHI_UC 75021: KHV: V 1 V | Podnikatelska_etika PET Marton_Milan 0/1 25 ;310
+~ 624 1
+&1 C1_07 3 4 1 0 
+
+3_FHI_UC 33001/3: KOVE: V 1 V | Operacny_vyskum/NJ OV/NJ Ivanicova_Zlatica 1/1 10 ;311
+~ 644 1
+$1 A8_04 3 1 0 Ivanicova_Zlatica
+&1 A8_04 3 2 1 0 
+
+3_FHI_UC 21009/1: KMR: P V | Marketing MAR AAA_ucitel 1/1 124 ;312
+~ 206 0
+$1 B108 4 1 0
+&1 A5_08 2 2 1 0 
+&1 A7_07 4 3 2 0 
+&1 A7_05 2 1 3 0 
+&1 A7_05 2 4 4 0 
+&1 A7_05 4 4 5 0 
+
+3_FHI_UC 33001/1: KOVE: P V | Operacny_vyskum OV Brezina_Ivan 1/1 124 ;313
+~ 644 1
+$1 B1_07 2 3 0 Brezina_Ivan
+&1 A8_07 1 3 1 0 
+&1 A8_07 2 2 2 0 
+&1 A8_07 1 4 3 0 
+&1 A8_04 2 1 4 0 
+&1 A8_07 3 1 5 0 
+
+3_FHI_UC 35006: KU: P V | Nakladove_uctovnictvo NU Tumpach_Milos 1/1 124 ;314
+~ 727 1
+$1 C1_07 4 2 0 Tumpach_Milos
+&1 A7_15 2 1 1 0 
+&1 A5_15 2 1 2 0 
+&1 A7_13 2 2 3 0 
+&1 A5_15 2 2 4 0 
+&1 A7_15 2 6 5 0 
+
+3_FHI_UC 35030: KU: P V | Automatizacia_uctovnictva AU AAA_ucitel 0/2 124 ;315
+~ 727 1
+&2 A8_16 1 1 1 0  : F
+&2 A8_16 1 3 2 0  : F
+&2 A8_16 1 5 3 0  : F
+&2 A8_16 3 1 4 0  : F
+&2 A8_16 3 3 5 0  : F
+
+
+4_FHI 75004: KPOL: V 4 V | Demokracia_a_ludske_prava DLP Koganova_Viera 0/1 100 ;489
+~ 703 1
+&1 A7_05 1 6 1 0 
+&1 A7_05 4 6 2 0 
+&1 A7_05 1 5 3 0 
+&1 A7_05 4 7 4 0 
+
+
+4_FHI_UA 25018: KOP: P V | Financne_pravo FP Zavodska_ 1/0 130 ;490
+~ 557 0
+$1 B1_05 5 3 0 Zavodska_
+
+4_FHI_UA 35009: KU: P V | Financne_uctovnictvo FU Soukupova_Bozena 1/1 130 ;491
+~ 727 1
+$1 B1_05 2 2 0 Soukupova_Bozena
+&1 A7_13 2 3 1 0  : F
+&1 A7_13 2 5 2 0  : F
+&1 A7_13 2 4 3 0 
+&1 A7_15 3 3 4 0 
+&1 A7_17 4 2 5 0 
+
+4_FHI_UA 43008: KPF: P V | Financny_manazment FMAN Polednakova_Anna 1/1 130 ;492
+~ 69 1
+$1 B1_05 3 2 0 Polednakova_Anna
+&1 A7_15 2 4 1 0 
+&1 A7_17 2 6 2 0  : F
+&1 A7_05 2 3 3 0 
+&1 A7_17 3 5 4 0 
+&1 A7_04 4 3 5 0 
+
+4_FHI_UA 35011: KU: P V | Uctovnictvo_R_PO_O URPO Kovalcikova_Antonia 1/1 130 ;493
+~ 727 1
+$1 B1_05 5 2 0 Kovalcikova_Antonia
+&1 A7_17 4 3 1 0 
+&1 A7_17 4 4 2 0 
+&1 A7_15 3 5 3 0 
+&1 A7_15 3 6 4 0 
+&1 A7_12 4 1 5 0 
+
+4_FHI_UA 35012: KU: P V | Uctovnictvo_vlastn_transak UVT Mazikova_Katarina 2/0 130 ;494
+~ 727 1
+$2 B1_04 4 5 0 Mazikova_Katarina
+
+
+4_FHI_UFR 25018: KOP: P V | Financne_pravo FP Zavodska_ 1/0 60 ;495
+~ 557 0
+$1 B1_05 5 3 0 Zavodska_
+
+4_FHI_UFR 35009: KU: P V | Financne_uctovnictvo FU Soukupova_Bozena 1/1 60 ;496
+~ 727 1
+$1 B1_05 2 2 0 Soukupova_Bozena
+&1 A7_13 2 6 1 0  : F
+&1 A7_13 4 1 2 0 
+
+4_FHI_UFR 43008: KPF: P V | Financny_manazment FMAN Polednakova_Anna 1/1 60 ;497
+~ 69 1
+$1 B1_05 3 2 0 Polednakova_Anna
+&1 A7_07 2 5 1 0 
+&1 A7_12 4 2 2 0 
+
+4_FHI_UFR 35011: KU: P V | Uctovnictvo_R_PO_O URPO Kovalcikova_Antonia 1/1 60 ;498
+~ 727 1
+$1 B1_05 5 2 0 Kovalcikova_Antonia
+&1 A7_13 3 4 1 0 
+&1 A7_13 3 3 2 0 
+
+4_FHI_UFR 35012: KU: P V | Uctovnictvo_vlastn_transak UVT Mazikova_Katarina 2/0 60 ;499
+~ 727 1
+$2 B1_04 4 5 0 Mazikova_Katarina
+
+
+4_FHI_OVE 34024: KS: V 2 V | Narodohospodarska_statistika NHS Pardelova_Ruzena 1/1 50 ;500
+~ 565 1
+$1 A7_05 3 2 0 Pardelova_Ruzena
+&1 A7_04 4 6 1 0 
+&1 A7_04 4 7 2 0 
+
+4_FHI_OVE 34026: KS: V 2 V | Socialna_statistika SST Sodomova_Eva 1/1 50 ;501
+~ 565 1
+$1 A7_04 1 4 0 Sodomova_Eva
+&1 A7_04 1 6 1 0 
+&1 A7_04 1 7 2 0 
+
+4_FHI_OVE 33099/1: KOVE: V 2 V | Softver_podpora_rozhod SPR AAA_ucitel 0/1 50 ;502
+~ 644 1
+&1 A8_05 3 5 1 0 
+&1 A8_05 3 6 2 0 
+
+4_FHI_OVE 33099/2: KOVE: V 1 V | Vybrane_partie_z_ekon VPEK AAA_ucitel 1/1 25 ;503
+~ 644 1
+$1 A7_12 3 5 0
+&1 A8_16 3 6 1 0 
+
+4_FHI_OVE 33030/2: KOVE: P V | Linearne_programovanie LINP Fendek_Michal 1/1 100 ;504
+~ 644 1
+$1 B1_05 3 4 0 Fendek_Michal
+&1 A8_07 4 2 1 0 
+&1 A8_06 4 3 2 0 
+
+4_FHI_OVE 33004: KOVE: P V | Ekonometria2 EKO2 Ivanicova_Zlatica 1/1 100 ;505
+~ 644 1
+$1 C1_08 2 4 0 Ivanicova_Zlatica
+&1 A8_05 2 6 1 0 
+&1 A8_05 2 5 2 0 
+
+4_FHI_OVE 33012: KOVE: P V | Logistika LOG Cickova_Zuzana 1/1 100 ;506
+~ 644 1
+$1 A7_12 2 2 0 Cickova_Zuzana :F
+&1 A7_04 2 5 1 0 
+&1 A7_04 2 6 2 0 
+
+4_FHI_OVE 33023: KOVE: P V | Input_output_analyza IOA Goga_Marian 1/1 100 ;507
+~ 644 1
+$1 C1_07 3 3 0 Goga_Marian
+&1 A8_16 4 3 1 0 
+&1 A8_16 4 4 2 0 
+
+
+4_FHI_AKT 33009: KOVE: V 1 V | Financne_modelovanie FMOD Pekar_Juraj 1/1 25 ;508
+~ 644 1
+$1 A7_12 3 4 0 Pekar_Juraj
+&1 A7_12 3 1 1 0 
+
+4_FHI_AKT 34027: KS: V 1 V | Analyza_casov_radov ACR Rublikova_Eva 1/1 25 ;509
+~ 565 1
+$1 A7_17 3 6 0 Rublikova_Eva
+&1 A8_12 3 7 1 0 
+
+4_FHI_AKT 33030/2: KOVE: V 1 V | Linearne_programovanie LINP Fendek_Michal 1/1 25 ;510
+~ 644 1
+$1 B1_05 3 4 0 Fendek_Michal
+&1 A8_06 3 5 1 0 
+
+4_FHI_AKT 34022: KS: P V | Aktuarska_demografia AD Sivasova_Daniela 1/0 30 ;511
+~ 565 1
+$1 A7_04 4 4 0 Sivasova_Daniela
+
+4_FHI_AKT 18001: KPO: P V | Poistenie POI Kratka_Zuzana 1/0 30 ;512
+~ 709 0
+$1 C1_08 1 4 0 Kratka_Zuzana
+
+4_FHI_AKT 32007: KM: P V | Poistna_matematika1 PM1 Krcova_ 1/1 30 ;513
+~ 723 0
+$1 A7_15 2 2 0 Krcova_ :F
+&1 A7_17 2 3 1 0 
+
+4_FHI_AKT 18020: KPO: P V | Poistne_pravo POIP Zakova_Jozefina 1/0 30 ;514
+~ 709 0
+$1 D116 2 1 0 Zakova_Jozefina :F
+
+4_FHI_AKT 34005: KS: P V | Regresna_analyza RA Soltes_Erik 1/1 30 ;515
+~ 565 1
+$1 A7_04 4 5 0 Soltes_Erik
+&1 A8_12 4 7 1 0 
+
+4_FHI_AKT 34006: KS: P V | Statisticka_indukcia SI Pacakova_Viera 1/1 30 ;516
+~ 565 1
+$1 A7_15 1 3 0 Pacakova_Viera
+&1 A8_12 1 5 1 0 
+
+4_FHI_AKT 32006: KM: P V | Teoria_pravdepodob2 TP2 Stareckova_Anna 1/1 30 ;517
+~ 723 0
+$1 A7_15 3 2 0 Stareckova_Anna :F
+&1 A7_17 3 3 1 0 
+
+
+4_FHI_SME 34027/1: KS: V 1 V | Analyza_kateg_udajov AKU Sandtnerova_Sona 1/1 25 ;518
+~ 565 1
+$1 A7_07 4 1 0 Sandtnerova_Sona
+&1 A8_12 4 2 1 0 
+
+4_FHI_SME 34027: KS: P V | Analyza_casov_radov ACR Rublikova_Eva 1/1 25 ;519
+~ 565 1
+$1 A7_17 3 6 0 Rublikova_Eva
+&1 A8_12 2 4 1 0 
+
+4_FHI_SME 34024: KS: P V | Narodohospodarska_statistika NHS Pardelova_Ruzena 1/1 25 ;520
+~ 565 1
+$1 A7_05 3 2 0 Pardelova_Ruzena
+&1 A7_07 3 3 1 0 
+
+4_FHI_SME 34005: KS: P V | Regresna_a_korel_analyza RKA Soltes_Erik 1/1 30 ;521
+~ 565 1
+$1 A7_04 4 5 0 Soltes_Erik
+&1 A8_12 4 6 1 0 
+
+4_FHI_SME 34006: KS: P V | Statisticka_indukcia SI Pacakova_Viera 1/1 25 ;522
+~ 565 1
+$1 A7_15 1 3 0 Pacakova_Viera
+&1 A8_05 1 4 1 0 
+
+
+4_FHI_HI 31039: KAI: V 0 V | Elektronicke_podnikanie ELP Carachova_Magdalena 1/0 100 ;523
+~ 720 1
+$1 C1_09 3 4 0 Carachova_Magdalena
+
+4_FHI_HI 31040: KAI: V 2 V | Inform_podpora_rozh_procesov IPRP Stasak_Jozef 1/1 50 ;524
+~ 720 1
+$1 C1_09 2 6 0 Stasak_Jozef
+&1 A8_13 4 1 1 0 
+&1 A8_13 4 2 2 0 
+
+4_FHI_HI 31035: KAI: V 0 V | Neuronove_siete NES Markus_Ludovit 1/0 100 ;525
+~ 720 1
+$1 C1_07 2 7 0 Markus_Ludovit
+
+4_FHI_HI 31037: KAI: P V | Distr_sprac_dat DSD Zavodny_Peter 1/1 150 ;526
+~ 720 1
+$1 B1_04 1 2 0 Zavodny_Peter
+&1 A8_14 1 5 1 0 
+&1 A8_12 1 4 2 0 
+&1 A8_13 2 5 3 0 
+&1 A8_13 2 3 4 0 
+&1 A8_14 2 4 5 0 
+
+4_FHI_HI 31008/2: KAI: P V | Softverove_inzinierstvoB SWIB Kniezova_Jaroslava 1/1 150 ;527
+~ 720 1
+$1 C1_08 3 3 0 Kniezova_Jaroslava
+&1 A8_14 4 1 1 0 
+&1 A8_14 4 2 2 0 
+&1 A8_14 4 3 3 0 
+&1 A8_15 2 4 4 0 
+&1 A8_15 2 5 5 0 
+
+4_FHI_HI 31008/1: KAI: P V | Softverove_inzinierstvoA SWIA Kniezova_Jaroslava 1/1 150 ;528
+~ 720 1
+$1 B1_04 3 2 0 Kniezova_Jaroslava
+&1 A8_15 3 4 1 0 
+&1 A8_14 1 7 2 0 
+&1 A8_15 3 5 3 0 
+&1 A8_13 1 4 4 0 
+&1 A8_14 1 6 5 0 
+
+4_FHI_HI 31013: KAI: P V | Typove_aplik_sw_produkty TASP Stasak_Jozef 1/1 150 ;529
+~ 720 1
+$1 C1_06 1 3 0 Stasak_Jozef
+&1 A8_12 2 3 1 0 
+&1 A8_12 2 2 2 0 
+&1 A8_12 2 1 3 0 
+&1 A8_14 2 5 4 0 
+&1 A8_14 1 4 5 0 
+
+
+5_FMV 31044: KAI: P V | Informatika_C INFC AAA_ucitel 0/1 118 ;634
+~ 720 1
+&1 A8_04 3 7 1 0 
+&1 A8_04 3 5 2 0 
+&1 A8_04 2 5 3 0 
+&1 A8_04 2 6 4 0 
+&1 A8_04 3 6 5 0 
+
+5_FHI 13008: KVSRR: V 1 V | Ekonomika_miest_a_obci EMO Zarska_Elena 1/1 25 ;709
+~ 674 0
+$1 C1_07 3 5 0 Zarska_Elena
+&1 C1_07 3 6 1 0 
+
+5_FHI 75005: KHV: V 0 V | Filozofia FIL Gregus_Peter 1/0 150 ;710
+~ 624 1
+$1 B1_05 1 7 0 Gregus_Peter
+
+5_FHI 34028: KS: V 1 V | Hlbkova_analyza_udajov HAU Terek_Milan 1/1 25 ;711
+~ 565 1
+$1 A8_12 2 6 0 Terek_Milan
+&1 A8_12 2 7 1 0 
+
+5_FHI 75012: KHV: V 0 V | Sociol_metody_priesk_trhu SMPT Plavkova_ 1/0 50 ;712
+~ 624 1
+$1 B1_04 1 5 0 Plavkova_
+
+5_FHI 72022: KDMV: V 0 V | Europska_unia EURU AAA_ucitel 1/0 100 ;713
+~ 704 1
+$1 C1_09 1 4 0
+
+5_FHI 32009: KM: V 0 V | Financna_matematika2 FMAT2 Pinda_Ludovit 1/0 25 ;714
+~ 723 0
+$1 A7_12 2 1 0 Pinda_Ludovit :F
+
+5_FHI 32031: KM: V 0 V | Diskretna_matematika DM Fecenko_Jozef 1/0 25 ;715
+~ 723 0
+$1 A7_17 2 4 0 Fecenko_Jozef
+
+5_FHI 11010/1: KET: V 0 V | Dejiny_ekonomickych_teorii DET Petricova_Jarmila 1/0 25 ;716
+~ 654 0
+$1 D114 4 4 0 Petricova_Jarmila
+
+5_FHI 75007: KHV: V 4 V | Uvod_do_log_myslenia ULM Gregus_Peter 0/1 100 ;717
+~ 624 1
+&1 C1_08 4 4 1 0 
+&1 C1_08 4 5 2 0 
+&1 A7_05 3 6 3 0 
+&1 A7_05 3 7 4 0 
+
+
+5_FHI_AS 34018: KS: V 1 V | Metody_stat_porovn MSP Pazitna_Maria 1/1 25 ;718
+~ 565 1
+$1 C1_06 1 6 0 Pazitna_Maria
+&1 A7_17 1 7 1 0 
+
+5_FHI_AS 34019: KS: P V | Diplomovy_seminar_statistika DSS AAA_ucitel 0/1 18 ;719
+~ 565 1
+&1 A7_17 5 7 1 0 
+
+5_FHI_AS 34025: KS: P V | Podnikohosp_statistika PHS Sodomova_Eva 1/1 18 ;720
+~ 565 1
+$1 A7_17 1 3 0 Sodomova_Eva
+&1 A7_17 1 5 1 0 
+
+5_FHI_AS 34008: KS: P V | Syst_nar_uctov SNU Pardelova_Ruzena 1/0 18 ;721
+~ 565 1
+$1 A7_04 2 3 0 Pardelova_Ruzena :F
+
+5_FHI_AS 34009: KS: P V | Statistic_riad_kvality SRK Terek_Milan 1/0 18 ;722
+~ 565 1
+$1 A7_04 3 3 0 Terek_Milan
+
+5_FHI_AS 34010: KS: P V | Viacrozm_stat_metody VSM Vojtkova_Maria 1/1 18 ;723
+~ 565 1
+$1 A7_15 3 1 0 Vojtkova_Maria
+&1 A8_12 3 4 1 0 
+
+5_FHI_AS 33005: KOVE: P V | Ekonometria1 EKO1 Lukacik_Martin 1/1 18 ;724
+~ 644 1
+$1 A8_16 2 2 0 Lukacik_Martin
+&1 A8_16 2 1 1 0 
+
+
+5_FHI_ISTE 31014: KAI: P V | Diplomovy_seminar DSI AAA_ucitel 0/1 26 ;725
+~ 720 1
+&1 A7_05 5 7 1 0 
+
+5_FHI_ISTE 31015: KAI: P V | IS_v_ekonomike ISE Stasak_Jozef 1/1 26 ;726
+~ 720 1
+$1 C1_07 2 4 0 Stasak_Jozef
+&1 A7_05 2 5 1 0 
+
+5_FHI_ISTE 34025: KS: P V | Podnikohosp_statistika PHS Sodomova_Eva 1/1 26 ;727
+~ 565 1
+$1 A7_17 1 3 0 Sodomova_Eva
+&1 A7_17 1 4 1 0 
+
+5_FHI_ISTE 31028/1: KAI: P V | Riadenie_projektov_IS RPIS Zavodny_Peter 1/1 26 ;728
+~ 720 1
+$1 C1_06 2 3 0 Zavodny_Peter
+&1 A8_13 2 6 1 0 
+
+5_FHI_ISTE 31037: KAI: P V | Distr_sprac_dat DSD Zavodny_Peter 1/1 26 ;729
+~ 720 1
+$1 B1_04 1 2 0 Zavodny_Peter
+&1 A8_13 2 7 1 0 
+
+
+5_FHI_IT 31037: KAI: P V | Distr_sprac_dat DSD Zavodny_Peter 1/1 71 ;730
+~ 720 1
+$1 B1_04 1 2 0 Zavodny_Peter
+&1 A8_12 3 6 1 0 
+&1 A8_14 2 6 2 0 
+&1 A8_13 3 7 3 0 
+&1 A8_12 3 5 4 0 
+
+5_FHI_IT 31021/1: KAI: P V | Pripadove_studie_A PSA AAA_ucitel 1/1 71 ;731
+~ 720 1
+$1 B1_04 1 6 0
+&1 A8_13 1 5 1 0 
+&1 A8_13 2 4 2 0 
+&1 A8_13 2 2 3 0 
+&1 A8_13 1 5 4 0 
+
+5_FHI_IT 31034/1: KAI: P V | Pripadove_studie_B PSB AAA_ucitel 0/1 71 ;732
+~ 720 1
+&1 A8_13 3 2 1 0 
+&1 A8_13 3 4 2 0 
+&1 A8_13 3 3 3 0 
+&1 A8_13 3 4 4 0 
+
+5_FHI_IT 31028/1: KAI: P V | Riadenie_projektov_IS RPIS Zavodny_Peter 1/1 71 ;733
+~ 720 1
+$1 C1_06 2 3 0 Zavodny_Peter
+&1 A8_12 2 5 1 0 
+&1 A8_13 3 5 2 0 
+&1 A8_13 3 6 3 0 
+&1 A8_13 3 6 4 0 
+
+5_FHI_IT 31010: KAI: P V | Sys_aut_proj_a_progr_B SAPPB Hanak_Jan 1/1 71 ;734
+~ 720 1
+$1 A7_05 4 3 0 Hanak_Jan
+&1 A8_13 4 6 1 0 
+&1 A8_13 4 5 2 0 
+&1 A8_13 4 4 3 0 
+&1 A8_13 4 4 4 0 
+
+5_FHI_IT 31011/1: KAI: P V | Umela_intelig_a_exp_sys_A UIESA Rakovska_Eva 1/0 71 ;735
+~ 720 1
+$1 C1_08 1 3 0 Rakovska_Eva
+
+5_FHI_IT 31014: KAI: P V | Diplomovy_seminar DSI AAA_ucitel 0/1 71 ;736
+~ 720 1
+&1 A7_05 5 7 1 0 
+&1 A7_05 5 7 2 0 
+&1 A7_05 5 7 3 0 
+&1 A7_05 5 7 4 0 
+
+5_FHI_IT 31011/2: KAI: V 1 V | Umela_intelig_a_ES_A/AJ UI/AJ Rakovska_Eva 1/0 25 ;737
+~ 720 1
+$1 A7_05 1 4 0 Rakovska_Eva
+
+
+5_FHI_OVE 33008: KOVE: P V | Nelinearne_programov NP Fendek_Michal 1/1 32 ;738
+~ 644 1
+$1 A7_12 2 3 0 Fendek_Michal
+&1 A7_12 1 4 1 0 
+&1 A7_12 1 5 2 0 
+
+5_FHI_OVE 33009: KOVE: P V | Financne_modelovanie FMOD Pekar_Juraj 1/1 32 ;739
+~ 644 1
+$1 A7_12 3 4 0 Pekar_Juraj
+&1 A7_12 3 2 1 0 
+&1 A7_12 3 3 2 0 
+
+5_FHI_OVE 33006: KOVE: P V | Modelov_ekonomickych_procesov_1 MEP1 Husar_Jaroslav 1/1 32 ;740
+~ 644 1
+$1 A7_12 1 3 0 Husar_Jaroslav :F
+&1 A8_16 2 5 1 0 
+&1 A8_16 2 4 2 0 
+
+5_FHI_OVE 33007: KOVE: P V | Teoria_hier TH Cemicka_Katarina 1/1 32 ;741
+~ 644 1
+$1 A7_12 4 3 0 Cemicka_Katarina
+&1 A7_07 2 4 1 0 
+&1 A7_17 2 5 2 0 
+
+5_FHI_OVE 33026: KOVE: P V | Diplomovy_seminar_OV DSO AAA_ucitel 0/1 32 ;742
+~ 644 1
+&1 A7_12 5 7 1 0 
+&1 A7_12 5 7 2 0 
+
+
+5_FHI_PM 32005: KM: P V | Diplomovy_seminar_matemat DSM Fecenko_Jozef 0/1 18 ;743
+~ 723 0
+&1 A7_15 5 7 1 0 Fecenko_Jozef
+
+5_FHI_PM 18017: KPO: P V | Financna_analyza_v_poistovn FIAP Pastorakova_Erika 1/1 18 ;744
+~ 709 0
+$1 D116 3 2 0 Pastorakova_Erika :F
+&1 B211 3 1 1 0 
+
+5_FHI_PM 32025: KM: P V | Poistna_matematika_3 PM3 Bilikova_Maria 1/1 18 ;745
+~ 723 0
+$1 A7_05 4 2 0 Bilikova_Maria
+&1 A7_04 2 4 1 0 
+
+5_FHI_PM 32011: KM: P V | Teoria_rizika_v_poist TRP Horakova_Galina 1/1 18 ;746
+~ 723 0
+$1 A7_15 2 3 0 Horakova_Galina
+&1 C1_06 4 3 1 0 Horakova_Galina
+
+5_FHI_PM 32012: KM: P V | Zivotne_poistenie ZP Sakalova_Katarina 1/1 18 ;747
+~ 723 0
+$1 C1_09 2 5 0 Sakalova_Katarina
+&1 A8_04 3 3 1 0 
+
+
+5_FHI_UA 35027: KU: P V | Auditorstvo_1 AUD1 Kares_Ladislav 1/1 65 ;748
+~ 727 1
+$1 A7_13 4 3 0 Kares_Ladislav :F
+&1 A7_13 4 4 1 0 
+&1 A7_13 4 5 2 0 
+&1 A7_13 4 6 3 0 
+
+5_FHI_UA 35028: KU: P V | Diplomovy_seminar DSU AAA_ucitel 0/1 65 ;749
+~ 727 1
+&1 A7_13 5 7 1 0 
+&1 A7_13 5 7 2 0 
+&1 A7_13 5 7 3 0 
+
+5_FHI_UA 35015: KU: P V | Interna_kontrola IK Vepyova_Maria 1/1 65 ;750
+~ 727 1
+$1 A7_13 4 2 0 Vepyova_Maria
+&1 A7_05 3 3 1 0 
+&1 A7_04 3 2 2 0 
+&1 A7_04 1 3 3 0 
+
+5_FHI_UA 35024: KU: P V | Konsolid_uct_zavierky KUZ Hvozdarova_Janka 1/1 65 ;751
+~ 727 1
+$1 C1_08 3 4 0 Hvozdarova_Janka
+&1 A7_13 1 6 1 0 
+&1 A7_13 1 4 2 0 
+&1 A7_13 1 5 3 0 
+
+5_FHI_UA 35029: KU: P V | Medzinarodne_uctovnictvo MU Surovy_Vladimir 1/1 65 ;752
+~ 727 1
+$1 C1_07 2 2 0 Surovy_Vladimir :F
+&1 A7_13 3 6 1 0 
+&1 A7_13 3 5 2 0 
+&1 A7_15 2 5 3 0 
+
+5_FHI_UA 35016: KU: P V | Uctovnictvo_poistovni UP Meluchova_Jitka 1/1 65 ;753
+~ 727 1
+$1 C1_07 2 3 0 Meluchova_Jitka :F
+&1 A7_13 1 3 1 0 
+&1 A7_13 1 1 2 0 
+&1 A7_13 1 2 3 0 
+
+
+5_FHI_UFR 35028: KU: P V | Diplomovy_seminar DSU AAA_ucitel 0/1 18 ;754
+~ 727 1
+&1 A7_13 5 7 1 0 
+
+5_FHI_UFR 35024: KU: P V | Konsolid_uct_zavierky KUZ Hvozdarova_Janka 1/1 18 ;755
+~ 727 1
+$1 C1_08 3 4 0 Hvozdarova_Janka
+&1 A7_07 1 3 1 0 
+
+5_FHI_UFR 35029: KU: P V | Medzinarodne_uctovnictvo MU Surovy_Vladimir 1/1 18 ;756
+~ 727 1
+$1 C1_07 2 2 0 Surovy_Vladimir :F
+&1 A7_12 2 4 1 0 
+
+5_FHI_UFR 43012: KPF: P V | Medzinar_finan_manaz MFM Polednakova_Anna 1/1 18 ;757
+~ 69 1
+$1 B1_05 3 3 0 Polednakova_Anna
+&1 A7_07 2 6 1 0 
+
+5_FHI_UFR 35016: KU: P V | Uctovnictvo_poistovni UP Meluchova_Jitka 1/1 18 ;758
+~ 727 1
+$1 C1_07 2 3 0 Meluchova_Jitka :F
+&1 A6_17 2 5 1 0 
+.KONIEC

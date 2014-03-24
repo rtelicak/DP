@@ -1,0 +1,41 @@
+1. tabulka 'kruzok' chyba rocnik
+2. v PARALELKACH
+	$ Fakulta_podnikoveho_manazmentu FPM 
+		$$ Ekonomika_a_manazment_podniku EMP 
+			$$$ Vseobecny_manazment VMZ 39/1-2
+			$$$ Manazment_vyroby_a_logist MVL 59/1-3
+			$$$ Personalny_manazment PMZ 39/1-2
+			$$$ Ekonomika_podnikat_subj EPS 52/1-3
+		$$ Financny_manazment_podniku FMP 
+			$$$ Financny_man_a_uct_podn FMUP 53/1-2
+			$$$ Podnikove_financie PF 55/1-3
+
+
+3. nastavit autoincrement na id poliach
+
+4. v .par subore je raz Narodohospodarska_fakulta a raz Narodnohospodarska_fakulta (v .PARALELKY)
+
+5. premysliet viazanost FK (treba ?), problem s mazanim tabuliek
+
+6. roky niesu poriesene
+
+7. odkial zistim aka katedra patri k akej fakulte
+
+8. pridat stlpec kapacita v tabulke miestnost (ked uz tu info mame, preco ju tam nevlozit)
+
+9. tabulka vyuka stlpec polrok allow null
+
+10. zmazal som indexes pre dev process, vratte nazad
+
+11. tabula predmet pridaj column skratka
+
+12. naco je table vyucujuci
+
+13. 4_FHI 75004: KPOL: V 4 V | Demokracia_a_ludske_prava DLP Koganova_Viera 0/1 100 ;489 (chyba specializacia)
+
+14. ako viem v tabulke vyuka ci row hovori o cviku alebo prednaske - doplneny column v tablke vyuka - prednaska int(1)
+
+
+
+
+TODO: ucitel fk pri vyucbe

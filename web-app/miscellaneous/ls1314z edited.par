@@ -1,0 +1,6062 @@
+.DATUM
+.FAKULTA
+
+.FAKULTA
+Ekonomická univerzita, Dolnozemská 1b, 851 04 Bratislava
+
+.OBDOBIE
+Letný semester 2013/2014
+
+.ZADAVATEL
+Marta Bohunicka
+
+.ROZSAH
+13 5 7 : 3 7
+
+.HODINY
+1 7.30 - 9.00
+2 9.15 - 10.45
+3 11.00 - 12.30
+4 13.30 - 15.00
+5 15.15 - 16.45
+6 17.00 - 18.30
+7 18.35 - 20.05
+
+.KATEDRY
+Neznama_katedra KAAA 728 0 
+Katedra_ekonomickej_teorie KET 675 9 
+Katedra_hospodarskej_politiky KHP 662 9 
+Katedra_verejnej_spravy_a_regionalneho_rozvoja KVSRR 674 0 
+Katedra_socialneho_rozvoja_a_prace KSRP 679 0 
+Katedra_financii KF 692 0 
+Katedra_bankovnictva_a_medzinarodnych_financii KBMF 620 0 
+Katedra_Pedagogiky KPED 719 0 
+Katedra_poistovnictva KPO 709 0 
+Katedra_aplikovanej_informatiky_a_vyp_techniky KAIVT 502 0 
+Katedra_marketingu KMR 206 0 
+Katedra_medzinarodneho_obchodu KMO 359 0 
+Katedra_sluzieb_a_cestovneho_ruchu KSCR 61 0 
+Katedra_tovaroznalectva_a_kvality_tovaru KTKT 467 0 
+Katedra_obchodneho_prava KOP 557 0 
+Katedra_informatiky_obchodnych_firiem KIOF 548 0 
+Katedra_aplikovanej_informatiky KAI 720 1 
+Katedra_matematiky KM 725 0 
+Katedra_operacneho_vyskumu_a_ekonometrie KOVE 644 1 
+Katedra_statistiky KS 565 1 
+Katedra_uctovnictva_a_auditorstva KUA 727 1 
+Katedra_podnikovohospodarska KPH 54 1 
+Katedra_manazmentu KMZ 67 1 
+Katedra_podnikovych_financii KPF 69 1 
+Katedra_manazmentu_vyroby_a_logistiky KMVAL 78 1 
+Katedra_informacneho_manazmentu KIM 154 1 
+Katedra_medzinarod_ekonom_vztah_a_Hospod_diplom KMVHD 704 1 
+Katedra_medzinarodneho_prava KMEP 706 1 
+Katedra_medzin_politic_vztahov KMPV 624 1 
+Katedra_jazykovedy_a_translatologie KJaT 50 0 
+
+
+.MIESTNOSTI
+U SM_I 80
+U SM_II 175
+U 3B19 20
+U 3B26 30
+U 4B26 25
+U 4B57 25
+U 4C02 25
+U 4C14 25
+U 4B19 25
+U 5B19 25
+U 5B44 20
+U 3B57 20
+U A3_12 40
+U A4_05 30
+U A4_06 30
+U A4_07 30
+U A4_08 30
+U A5_05 30
+U A5_06 30
+U A5_07 30
+U A5_08 30
+U A5_13 30
+U A5_14 30
+U A5_15 30
+U A5_16 30
+U A5_17 30
+U A6_05 30
+U A6_06 30
+U A6_07 30
+U A6_08 30
+U A6_14 30
+U A6_15 30
+U A6_16 30
+U A6_17 30
+U A7_04 54
+U A7_05 70
+U A7_07 30
+U A7_13 80
+U A7_15 52
+U A7_17 30
+U A9_07 20
+U A9_08 20
+U A9_17 20
+U B101 30
+U B102 30
+U B103 30
+U B104 30
+U B105 30
+U B106 30
+U B107 319
+U B108 319
+U B1_02 284
+U B1_03 284
+U B1_04 159
+U B1_05 159
+U B1_06 92
+U B1_07 92
+U B1_08 92
+U B1_09 92
+U B1_10 92
+U B201 30
+U B202 30
+U B203 30
+U B204 30
+U B205 30
+U B206 30
+U B207 30
+U B208 30
+U B209 30
+U B210 30
+U B211 31
+U B212 31
+U C1_06 92
+U C1_07 92
+U C1_08 92
+U C1_09 92
+U C1_10 92
+U D101 30
+U D102 30
+U D103 30
+U D104 30
+U D109 30
+U D110 50
+U D111 120
+U D112 120
+U D113 120
+U D114 120
+U D115 84
+U D116 84
+U A8_08 13
+L LAB1 20
+L LAB2 20
+L LAB3 20
+L LAB4 20
+L LAB5 20
+S D2_06 30
+S A4_09 30
+S A4_13 30
+S A4_14 30
+S A4_15 30
+S A4_16 30
+S A4_17 30
+S D105 30
+S D106 30
+S D107 30
+S D108 30
+S D202 30
+S D203 30
+S D204 30
+S D205 30
+S D206 30
+S E1_06 22
+S E1_08 22
+S E1_09 22
+S E1_10 22
+S E1_12 22
+S E2_06 22
+S E2_08 22
+S E2_10 22
+S E2_12 22
+S SB0016 20
+I SB18 20
+I 2B01 25
+I 3B01 25
+I 4B01 25
+I 5B01 25
+I 5D02 25
+I A5_04 25
+I A5_12 25
+I A6_12 25
+I A6_13 25
+I A8_04 23
+I A8_05 13
+I A8_06 11
+I A8_07 12
+I A8_12 25
+I A8_13 13
+I A8_14 12
+I A8_15 12
+I A8_17 10
+I A9_14 10
+I A9_15 10
+I A9_16 10
+I D208 20
+I D210 10
+I D211 40
+I D214 20
+
+.UCITELIA
+
+Adamcova_Livia KJaT Prof : U
+Adamcova_Silvia KJaT Mgr : U
+Adamik_ KBMF PhD : U
+Adamkova_Hana KMZ Mgr : U
+Adamkova_Miriam KJaT Mgr : U
+Adaskova_ KMPV PhD : U
+Ahlrep_ KJaT PhD : U
+Alexy_Julius KSRP Prof : U
+Alexy_Martin KF Ing : U
+Antalova_Maria KSRP Ing : U
+Antalova_Renata KUA Ing : U
+Arendas_ KBMF PhD : U
+Bacisin_Vladimir KET Mgr : U
+Bajusova_ KVSRR Ing : U
+Balaz_Peter KMO Doc : U
+Balazi_Peter KF PhD : U
+Balhar_Vitazoslav KMVHD Prof : U
+Banduric_Igor KAI Ing : U
+Barac_Ludovit KJaT PHDr : U
+Barat_Peter KMPV PhDr : U
+Bartalska_ KOP Mgr : U
+Basova_Alena KF Ing : U
+Bastincova_Anna KUA Prof : U
+Bednar_Peter KAI Doc : U
+Belanova_Katarina KF PhD : U
+Belas_Jaroslav KBMF Ing : U
+Belickova_Kornelia KF Doc : U
+Belkovicsova_ KF Ing : U
+Benesova_Dana KSCR Ing : U
+Benova_Elena KF Doc : U
+Bernatova_ KOP Mgr : U
+Bikar_Milos KPF Ing : U
+Bilikova_ KJaT Mgr : U
+Bilikova_Maria KM RNDr : U
+Billy_Lubomir KMVHD Ing : U
+Bircar_ KVSRR PhD : U
+Blahova_Maria KJaT PHDr : U
+Blahusiak_Martin KAI Ing : U
+Blahusiakova_Miriama KUA Ing : U
+Blaskova_Maria KHP Doc : U
+Blstakova_Jana KMZ Ing : U
+Bocora_Jan KMVHD Ing : U
+Bodnar_Zoltan KJaT Mgr : U
+Bolgac_Jan KS Ing : U
+Borgula_ KMR Ing : U
+Borodovcak_ KOP Ing : U
+Borodovcak_Michal KF Ing : U
+Bouskova_Dagmar KUA PhD : U
+Bracjun_Anatolij KHP Doc : U
+Brevenikova_Daniela KJaT Doc : U
+Brezina_ KOVE Ing : U
+Brezina_Ivan KOVE Doc : U
+Breznikova_Sona KMPV PhDr : U
+Brincikova_Zuzana KET PhD : U
+Brixova_Janette KAI Ing : U
+Brokesova_ KPO Ing : U
+Bucek_Milan KVSRR Prof : U
+Budjac_Milan KMEP JUDr : U
+Bujnova_Darina KPH Ing : U
+Buriak_Jaroslav KET Ing : U
+Burova_Sidonia KET Ing : U
+Busik_Jozef KVSRR doc : U
+Caplanova_Anetta KET Doc : U
+Carachova_Magdalena KAI Ing : U
+Cech_Lubomir KMPV RSDr : U
+Cemicka_Katarina KOVE U : U
+Cerepkaiova_Viktoria KPED Ing : U
+Cernekova_Zuzana KAIVT PhD : U
+Cernenko_Tomas KVSRR Ing : U
+Cernota_Mikulas KMVHD Ing : U
+Cervenka_ KIOF Ing : U
+Cervenova_Magdalena KF Ing : U
+Chandoga_ KHP Ing : U
+Cheben_Juraj KMR Ing : U
+Chinoracka_Andrea KSRP Ing : U
+Chocholata_Michaela KOVE PhD : U
+Chochulova_ KOP Ing : U
+Chodasova_Alena KPH Doc : U
+Choluj_Vladimir KHP Doc : U
+Chomova_ KMR Ing : U
+Chorvatovic_ KBMF Prof : U
+Chovancova_Bozena KBMF Ing : U
+Cickova_Zuzana KOVE Ing : U
+Ciderova_ KMO Ing : U
+Ciernik_Anton KF PhD : U
+Cihovska_Viera KMR Doc : U
+Cimo_Jozef KMR Doc : U
+Csabay_Marek KMVHD Ing : U
+Csanyi_ KJaT PhD : U
+Csefalvayova_ KMVHD PhD : U
+Cunderlik_Dusan KPH Doc : U
+Curlejova_ KBMF Ing : U
+Dano_Ferdinand KMR Doc : U
+Deakova_Stanislava KPH Doc : U
+Dendis_Lubomir KSCR Ing : U
+Djebari_ KMO Ing : U
+Dlabikova_ KPO Ing : U
+Dolinajcova_ KOVE Ing : U
+Domonkos_Tomas KOVE Ing : U
+Drabik_ KMR Ing : U
+Drienikova_ KMO Ing : U
+Drugdova_Barbora KPO PhD : U
+Dubcova_Gabriela KPH Ing : U
+Dudakova_ KBMF Ing : U
+Dudas_Tomas KMVHD Ing : U
+Dudova_Iveta KSRP Doc : U
+Dujava_ KET Ing : U
+Dulebova_Irina KJaT Mgr : U
+Dupal_Andrej KMVAL Prof : U
+Durco_ KJaT PhD : U
+Durinova_Ivona KPF Ing : U
+Durka_Peter KS Ing : U
+Dvorak_ KET Mgr : U
+Dzivakova_Micaela KJaT PHDr : U
+Dzubakova_ KMVAL Ing : U
+Dzurova_Maria KMR Ing : U
+Eliasova_Darina KSCR Ing : U
+Fecenko_Jozef KM Doc : U
+Feketeova_Renata KUA Ing : U
+Fendek_Michal KOVE Prof : U
+Fendekova_Eleonora KPH Doc : U
+Fercikova_ KVSRR PhD : U
+Fetisovova_Elena KPF Doc : U
+Fifek_Edmund KMO Ing : U
+Fifekova_Elena KHP PhD : U
+Filo_Peter KMR Ing : U
+Finkova_Zuzana KS Doc : U
+Fliegelova_Jana KHP PhD : U
+Flochova_Eleonora KJaT PHDr : U
+Fodranova_ KSCR Ing : U
+Fogasova_ KMR Ing : U
+Foltinova_Alzbeta KPH Ing : U
+Francova_Zuzana KMR Ing : U
+Frandoferova_ KOVE Ing : U
+Fraterova_Zuzana KJaT PHDr : U
+Furdova_ KMO PhD : U
+Furkova_Andrea KOVE Ing : U
+Fuzyova_Lubica KMZ Ing : U
+Gabrielova_Petra KMVHD Ing : U
+Gajdova_ KPH PhD : U
+Gajniak_ KOP Ing : U
+Galata_ KVSRR Ing : U
+Galik_ KMZ Ing : U
+Gasperanova_Agnesa KAIVT RNDr : U
+Gavalova_Viera KMO Doc : U
+Gertler_Lubomir KF PHDr : U
+Gesko_Martin KF Ing : U
+Gezik_Pavel KOVE Ing : U
+Goga_Marian KOVE Doc : U
+Gogola_ KM Ing : U
+Gonda_Vladimir KET Prof : U
+Gondova_Daniela KJaT PHDr : U
+Grancay_Martin KMVHD Ing : U
+Grancicova_Katarina KPH Ing : U
+Grell_Michal KAI Ing : U
+Gress_Martin KMVHD Ing : U
+Grisakova_ KPH PhD : U
+Grossmanova_Marta KJaT Doc : U
+Grznar_Miroslav KMZ Prof : U
+Gyurcsovics_Zoltan KIOF Ing : U
+Hajnovicova_ KHP PhD : U
+Halasova_Darina KJaT PaeDr : U
+Hanak_ KIM Ing : U
+Hanak_Jan KAI Ing : U
+Hansenova_Heda KMO Ing : U
+Hanulakova_Eva KMR Doc : U
+Hanus_ KVSRR Ing : U
+Harumova_Anna KPF Doc : U
+Hasan_Jamal KIOF Ing : U
+Hasprova_Maria KMR Ing : U
+Havettova_Miroslava KHP PhD : U
+Helmova_Milena KJaT PHDr : U
+Hlavacikova_Jana KPH PhD : U
+Hnilican_Vladimir KMVHD Ing : U
+Hodal_Matej KOP Ing : U
+Holkova_Vieroslava KET Doc : U
+Holla_ KOVE Ing : U
+Holub_Dusan KOP JUDr : U
+Hontyova_Kajetana KET Prof : U
+Horakova_Galina KM RNDr : U
+Hornikova_ KS Mgr : U
+Horvat_ KOP Mgr : U
+Horvatova_Eva KBMF Doc : U
+Hrivikova_Tatiana KJaT PHDr : U
+Hrnciarova_Lubica KS Doc : U
+Hrusovska_ KPH Ing : U
+Hrvolova_Bozena KPF Doc : U
+Hudcovsky_ KHP Ing : U
+Hudikova_Stanislava KJaT Mgr : U
+Hulajova_Lubica KJaT U : U
+Hulmanova_Margita KMVHD Ing : U
+Hurbankova_Lubica KS Ing : U
+Hurna_Lucia KMEP JUDr : U
+Husakova_Maria KSRP Ing : U
+Husar_Jaroslav KOVE Prof : U
+Hvizdova_ KMR Ing : U
+Hvozdarova_Janka KUA Prof : U
+Hyranek_Eduard KPF Ing : U
+Ihnatisinova_ KF PhDr : U
+Institoris_Juraj KM RNDr : U
+Ivancova_Ladislava KJaT Mgr : U
+Ivanickova_Alzbeta KVSRR Doc : U
+Ivanicova_Zlatica KOVE Prof : U
+Ivanova_Pavlina KET PhD : U
+Jacko_ KVSRR PhD : U
+Jakubec_Miroslav KPH Ing : U
+Jamborova_ KMO Ing : U
+Jancek_ KAI Ing : U
+Jancikova_Eva KMVHD Ing : U
+Jancok_ KJaT PhD : U
+Jancovicova_Bognarova KF Ing : U
+Janickova_Eva KJaT Mgr : U
+Jankovska_Anezka KBMF Prof : U
+Janosova_Veronika KPF Ing : U
+Jarossova_ KTKT Ing : U
+Jemala_ KMVAL Ing : U
+Joniakova_Zuzana KMZ Ing : U
+Jonova_Rut KJaT PHDr : U
+Juhaszova_Zuzana KUA Doc : U
+Jurik_ KAI PhD : U
+Jurik_Roman KMEP JUDr : U
+Jurikova_Benita KIM Ing : U
+Jurisova_ KJaT Mgr : U
+Kacenak_Igor KTKT Ing : U
+Kachanakova_Anna KMZ Doc : U
+Kadlecikova_Olga KUA Ing : U
+Kanalikova_ KAI PhD : U
+Kanisova_Zdenka KJaT PHDr : U
+Kapralikova_ KJaT Mgr : U
+Karabinos_ KHP PhD : U
+Kardos_Peter KPH Ing : U
+Kares_Ladislav KUA Doc : U
+Karkalikova_Marta KTKT RnDr : U
+Kastakova_Elena KMO Mgr : U
+Kastlerova_Sylvia KUA Ing : U
+Kita_Jaroslav KMR Ing : U
+Kita_Pavol KMR Doc : U
+Kitova_ KF Ing : U
+Kittova_Zuzana KMO Doc : U
+Klepochova_Dagmar KMR Ing : U
+Klimikova_Maria KBMF Doc : U
+Klimko_ KSRP Ing : U
+Kmetko_ KPF Ing : U
+KMO_ KMO Prof : U
+Knapik_Peter KMO Ing : U
+Kniezova_Jaroslava KAI Ing : U
+Knoskova_ KTKT PhD : U
+Kocisova_ KHP Ing : U
+Kocisova_Zuzana KJaT U : U
+Koganova_Viera KMPV Mgr : U
+Kokles_Mojmir KIM Doc : U
+Kolencik_Pavol KBMF PhD : U
+Kollar_Vojtech KTKT Doc : U
+Kompoltova_ KET Mgr : U
+Kompoltova_Sona KPED Doc : U
+Konecny_ KSRP Ing : U
+Konig_ KOVE Ing : U
+Kopanicova_ KMR Ing : U
+Kopkas_Peter KHP PhD : U
+Kordosova_Alena KUA Ing : U
+Kostal_ KAI Ing : U
+Kosutova_Tatiana KTKT Ing : U
+Kotlebova_Eva KS RNDr : U
+Kotlebova_Jana KBMF Doc : U
+Kovacova_Eva KPH Ing : U
+Koval_Ladislav KOVE Doc : U
+Kovalcikova_Antonia KUA Doc : U
+Kovalev_Andrej KPH PhD : U
+Kozlova_Lubomira KJaT PHDr : U
+Kozovsky_Dusan KVSRR PhD : U
+Kracmar_Jan KMZ Ing : U
+Krajcik_Daniel KMO Ing : U
+Kralik_Juraj KMVHD JUDr : U
+Kratka_Zuzana KPO Ing : U
+Krauspe_Kamil KAI PhD : U
+Kravarik_Jan KJaT PHDr : U
+Kristova_G KAI Doc : U
+Kristova_Ludmila KTKT Ing : U
+Kropaj_ KOP Mgr : U
+Kroslakova_ KSCR Ing : U
+Krsekova_Marianna KUA Ing : U
+Krsjak_ KAI Ing : U
+Kuban_Heike KJaT Mgr : U
+Kubascikova_Zuzana KUA Ing : U
+Kubica_Milan KPH Ing : U
+Kubickova_Viera KSCR Ing : U
+Kubicova_Jana KF PhD : U
+Kucharcik_Rudolf KMPV PhDr : U
+Kulakova_Maria KPED PhD : U
+Kultan_Jaroslav KAI Ing : U
+Kunovska_Ingrid KJaT PHDr : U
+Kupkovic_Milan KPH Doc : U
+Kupkovic_Miroslav KMPV Mgr : U
+Kurdelova_Lubica KJaT PHDr : U
+Kusnirova_Jana KF Ing : U
+Kvapil_Roman KJaT Mgr : U
+Kvietkova_Anna KAI Doc : U
+Labaj_Martin KHP PhD : U
+Labska_Helena KMR Doc : U
+Labudova_Viera KS RNDr : U
+Lacek_ KMO Ing : U
+Lackova_Alica KTKT Ing : U
+Laky_Jaroslav KAI Ing : U
+Lancaric_ KJaT Mgr : U
+Lapsansky_Ladislav KJaT Doc : U
+Laskovicova_Tatiana KJaT U : U
+Lenartova_Gizela KPF Doc : U
+Lenghardtova_Jana KJaT Doc : U
+Lennerova_ KET PhD : U
+Lesakova_Dagmar KMR Prof : U
+Lescisin_Michal KMVAL Prof : U
+Levy_David KF Ing : U
+Lichner_ KOVE Ing : U
+Lidak_Jan KMPV Doc : U
+Lipianska_Julia KMR Ing : U
+Lipkova_Beata KMVHD Ing : U
+Lipkova_Ludmila KMVHD Doc : U
+Liskova_Danusa KJaT Doc : U
+Lisy_Jan KET Prof : U
+Litomericky_Juraj KSCR Ing : U
+Littvova_Veronika KPH PhD : U
+Littvova_Zuzana KPO PhD : U
+Longauerova_ KBMF PhD : U
+Loydlova_ KMR Ing : U
+Lubyova_Martina KS JUDr : U
+Lukacik_Jan KHP Doc : U
+Lukacik_Martin KOVE Ing : U
+Lukacikova_Adriana KOVE Ing : U
+Lukacovicova_Iva KOP JUDr : U
+Luptacik_Mikulas KHP PhD : U
+Lysak_Ladislav KMVHD Ing : U
+Maarova_ KJaT Mgr : U
+Machovic_ KMO Ing : U
+Mackova_Zdenka KPED Doc : U
+Madera_Frantisek KUA Ing : U
+Maier_Tomas KJaT Mgr : U
+Majduchova_Helena KPH Ing : U
+Majtan_Miroslav KMZ Doc : U
+Majtan_Stefan KPH Doc : U
+Majtanova_Anna KPO Prof : U
+Makuch_Jozef KBMF Doc : U
+Malacka_Viera KBMF PhD : U
+Marko_Peter KPO PhD : U
+Markovic_Peter KPF Doc : U
+Markus_Ludovit KAI PhD : U
+Marsina_Stefan KMZ Ing : U
+Martincova_Marta KET Doc : U
+Marton_Milan KMPV Doc : U
+Martyniv_Halina KMEP JUDr : U
+Masarova_Helena KET Doc : U
+Mateasakova_ KJaT PhD : U
+Mateasova_Martina KUA Ing : U
+Matouskova_Eleonora KET PhD : U
+Mattos_Boris KMVHD Ing : U
+Matulcikova_ KMZ Ing : U
+Matusovic_Martin KPH Ing : U
+Matusovicova_Monika KMR Ing : U
+Mazikova_Katarina KUA Doc : U
+Medvedova_Eva KAI Mgr : U
+Melsitova_Jolana KJaT PAEDDr : U
+Meluchova_Jitka KUA Ing : U
+Melusova_Elena KJaT PHDr : U
+Michalkova_Anna KSCR Ing : U
+Michalova_Valeria KSCR Doc : U
+Miklosik_ KMR PhD : U
+Mikocziova_Jana KF PhD : U
+Mikolajova_Zuzana KJaT Mgr : U
+Mikova_Olga KPF Doc : U
+Mikulec_Vladimir KHP Doc : U
+Mikusova_Nora KPH Ing : U
+Misik_Vladimir KPH Doc : U
+Misunova_Ema KVSRR Doc : U
+Misura_ KOP Mgr : U
+Mlakay_Jozef KTKT Ing : U
+Mojzisova_Elena KM Doc : U
+Mokosova_Dasa KUA Ing : U
+Molnar_Pavol KMVAL Doc : U
+Moravcik_ KMR Ing : U
+Moravcik_Jergus KAIVT Mgr : U
+Moravcikova_Elena KPF Ing : U
+Moravek_Stefan KMVHD PhD : U
+Morvay_Karol KHP PhD : U
+Mraz_Stanislav KMEP Prof : U
+Mrazova_Maria KJaT Ing : U
+Mruskovic_Jozef KJaT PHDr : U
+Mrva_ KVSRR Ing : U
+Mucha_Vladimir KM Mgr : U
+Muchova_Eva KET Doc : U
+Nachtmannova_Olga KMZ Mgr : U
+Napolitano_Barbara KAIVT Ing : U
+Nedjari_Fatima KJaT Mgr : U
+Nekanovic_Miloslav KF Ing : U
+Nemcova_ KJaT Mgr : U
+Nemec_Marian KBMF PhD : U
+Nemethova_Ildiko KJaT Mgr : U
+Neubauerova_Erika KF Doc : U
+Neumannova_Anna KPH Ing : U
+Neupauerova_Zuzana KF PhD : U
+Nezinsky_Eduard KHP Ing : U
+Novacka_Ludmila KSCR Doc : U
+Novak_Jaromir KPED PhD : U
+Novak_Marcel KET PhD : U
+Novak_Martin KAIVT Ing : U
+Ochotnicky_Pavol KF Doc : U
+Okruhlica_Frantisek KMZ PhDr : U
+Olah_ KMR Ing : U
+Oliva_ KAI Ing : U
+Ondrckova_Eva KJaT Doc : U
+Ondrejkova_Anna KAI Ing : U
+Ondrejkova_Krcova KM Ing : U
+Ondrejova_Zuzana KJaT PHDr : U
+Ondrouskova_Katarina KPO Ing : U
+Ondruska_ KPO Ing : U
+Ondrusova_Lucia KUA Ing : U
+Ondrusova_Terezia KJaT Ing : U
+Oravikova_ KBMF PhD : U
+Orban_ KET Ing : U
+Orbanova_Darina KPED PhD : U
+Oresky_Milan KMR Ing : U
+Orgonas_ KMR Ing : U
+Ostrihon_ KOVE Ing : U
+Pacakova_Viera KS RNDr : U
+Pachingerova_Maria KSCR Doc : U
+Pajtinka_Viliam KMVHD Ing : U
+Paksiova_ KUA Ing : U
+Palackova_Dana KPO PhD : U
+Palkova_Jana KJaT Mgr : U
+Papaiova_ KJaT Mgr : U
+Papulova_Emilia KMZ Doc : U
+Parajka_Branislav KUA Ing : U
+Pardelova_Ruzena KS Doc : U
+Parisova_Renata KUA Ing : U
+Pasiar_Ladislav KPED Ing : U
+Paskova_Hana KJaT PHDr : U
+Pastor_Rudolf KVSRR PhD : U
+Pastorakova_Erika KPO Doc : U
+Pasztorova_Jana KMO RnDr : U
+Patakyova_ KOVE Ing : U
+Pauhofova_Iveta KMVHD Doc : U
+Pauleova_Milada KJaT Mgr : U
+Pavelka_Lubos KMO Ing : U
+Pazitna_Maria KS Ing : U
+Pechova_Michaela KSRP PhD : U
+Peczeova_Eleonora KJaT PHDr : U
+Pekar_Juraj KOVE Mgr : U
+Peliova_Jana KF PhD : U
+Peller_Frantisek KM Prof : U
+Petricova_Jarmila KET Doc : U
+Petrikova_Gabriela KJaT Mgr : U
+Petrikova_Lubica KJaT PHDr : U
+Piber_Clemens KJaT Mgr : U
+Pilch_Ctibor KBMF Ing : U
+Pinda_Ludovit KM Doc : U
+Piovarciova_Veronika KET Doc : U
+Pittner_ KAI Ing : U
+Plavkova_Olga KMPV Doc : U
+Plesnik_Pavol KSCR RnDr : U
+Podmanicka_Martina KUA Ing : U
+Podoliakova_ KBMF PhD : U
+Polacek_Marian KIOF Ing : U
+Polackova_Hana KET Ing : U
+Polednakova_Anna KPF Doc : U
+Polgar_Michal KMVHD PhD : U
+Polya_Attila KIOF Mgr : U
+Pongraczova_Eva KSRP Ing : U
+Popelkova_Ingrid KJaT PhDr : U
+Porvaznik_Jan KMZ prof : U
+Pospisilova_Jana KJaT PHDr : U
+Potiskova_Ingrid KIOF Ing : U
+Povchanic_Stefan KJaT Prof : U
+Prazenka_Dusan KAI PhD : U
+Prieckova_Katarina KMZ PhD : U
+Privara_Andrej KSRP Ing : U
+Privarova_Magdalena KET Doc : U
+Prochazkova_ KMZ Ing : U
+Procikova_Julia KJaT Mgr : U
+Pruzinsky_ KHP Ing : U
+Puchovsky_Maros KJaT PHDr : U
+Pupala_Ladislav KET Doc : U
+Puskarova_Paula KMVHD Ing : U
+Pytelova_Klaudia KMEP Mgr : U
+Rabatinova_Marcela KF PhD : U
+Rajnak_Milan KPH Prof : U
+Rakovska_Eva KAI RNDr : U
+Rakovska_Julia KMVAL Ing : U
+Raneta_Leonid KMVHD PhD : U
+Raslavska_Ivana KMVHD PhDR : U
+Rechtorikova_Gabriela KJaT PAEDr : U
+Rehak_Stefan KVSRR PhD : U
+Reiff_Marian KOVE Ing : U
+Repkova_Denisa KF PhD : U
+Retkovsky_Peter KMVHD Ing : U
+Richterova_Kornelia KMR Doc : U
+Rievajova_Eva KSRP Prof : U
+Rizekova_Iveta KJaT PhDR : U
+Romancikova_Eva KF Doc : U
+Romanova_Anita KIM Ing : U
+Rosenberg_Miloslav KMO Ing : U
+Rozborilova_Daria KET Doc : U
+Rublikova_Eva KS RNDr : U
+Rumpelova_Daniela KHP PhD : U
+Rusinak_Peter KMVHD JUDr : U
+Rusinakova_Jarmila KJaT PHDr : U
+Rybarova_Daniela KPH Ing : U
+Sabikova_Ingrid KF Ing : U
+Sabo_Marian KMVHD Ing : U
+Sabo_Mikulas KOP JUDr : U
+Sabolova_ KBMF PhD : U
+Sajgalikova_Helena KJaT PHDr : U
+Sakalova_Katarina KM Doc : U
+Sanchez_ KJaT Mgr : U
+Sand_Jan KET Doc : U
+Sandtnerova_Sona KS Ing : U
+Scepan_Michal KMVHD PhDR : U
+Schmidt_ KAI PhD : U
+Schultzova_Anna KF Prof : U
+Schwarzova_Maria KBMF Ing : U
+Sedlak_Miroslav KJaT Mgr : U
+Sehnal_Roman KJaT PHDr : U
+Sekeresova_Gabriela KHP PhD : U
+Seresova_Katarina KJaT Mgr : U
+Serina_ KPH PhD : U
+Serinova_Katarina KPO Ing : U
+Sihelsky_ KAI PhD : U
+Sika_Peter KSRP Ing : U
+Sikula_Milan KMO Ing : U
+Silanic_ KHP Ing : U
+Silna_ KMO Ing : U
+Silna_Renata KUA Ing : U
+Simo_ KMO KMO : U
+Simon_Eszter KMVHD PhD : U
+Simonka_Zsolt KM Ing : U
+Sinsky_Peter KMZ Ing : U
+Sipikal_Miroslav KVSRR PhD : U
+Sipikalova_Silvia KSRP PhD : U
+Sipkova_Lubica KS Ing : U
+Sirotkova_Anna KSCR Ing : U
+Sivak_Rudolf KF Prof : U
+Sivakova_Alzbeta KJaT PHDr : U
+Sivasova_Daniela KS RNDr : U
+Skalak_Pavol KAIVT Ing : U
+Skerlikova_ KOVE Ing : U
+Sklenka_Milos KUA Ing : U
+Skorvagova_Simona KMO Ing : U
+Skrovankova_Lea KM Doc : U
+Skurla_Peter KAI PhD : U
+Skvarcekova_Olga KIOF Ing : U
+Skvrnda_Frantisek KMPV Doc : U
+Slavik_Stefan KMZ Prof : U
+Slobodnikova_Lubica KF PhDr : U
+Slosar_Rudolf KPED Prof : U
+Slosarova_Anna KUA Prof : U
+Smolenova_Elena KJaT Mgr : U
+Snircova_Jana KPF Doc : U
+Sobek_Oto KBMF Prof : U
+Sochor_Milan KPF Ing : U
+Sodomova_Eva KS Doc : U
+Solik_Jan KUA Ing : U
+Soltes_Erik KS Doc : U
+Soltesova_Tatiana KM Ing : U
+Sorby_Karol KMPV Doc : U
+Soukupova_Bozena KUA Prof : U
+Sovinec_ KJaT Mgr : U
+Spisiakova_ KJaT Mgr : U
+Srsnova_Jana KMZ Doc : U
+Stachova_Ernestina KBMF Ing : U
+Stanek_P KSRP Doc : U
+Stanek_Peter KET Doc : U
+Stanek_Vojtech KSRP Prof : U
+Stanekova_Eva KET PhD : U
+Stano_Roman KSCR Ing : U
+Stareckova_Anna KM RNDr : U
+Starickova_Zuzana KF PhD : U
+Stasak_Jozef KAI Ing : U
+Stefancik_ KJaT Mgr : U
+Stefanek_Jan KAI Prof : U
+Stern_Juraj KMVAL Prof : U
+Stikarova_ KHP Ing : U
+Stofilova_Jana KMR Doc : U
+Stradiotova_Eva KJaT PAEDr : U
+Strazovska_Helena KSCR Prof : U
+Strazovska_Lubomira KSCR Ing : U
+Strelecka_ KBMF PhD : U
+Strelinger_Jan KJaT Mgr : U
+Strelkova_Katarina KJaT PHDr : U
+Strhan_Rastislav KTKT Ing : U
+Strieska_Lubomir KPH Doc : U
+Strizencova_ KPF Ing : U
+Strobl_ KJaT Mgr : U
+Sturc_Boris KBMF Ing : U
+Subertova_Elena KPH Doc : U
+Suchter_Jozef KAI Ing : U
+Suntingerova_Ludmila KMZ PHDr : U
+Surmanova_Kvetoslava KOVE Ing : U
+Surovy_Vladimir KUA Ing : U
+Suterova_Viola KSCR Ing : U
+Svaty_Fedor KMVAL Doc : U
+Svobodova_Valeria KMO Ing : U
+Szabo_Luboslav KMZ Doc : U
+Szarkova_Miroslava KMZ Doc : U
+Szasz_Marek KUA Ing : U
+Szaszova_Renata KUA Ing : U
+Szeherova_Eva KJaT Doc : U
+Szikorova_Nora KMVHD Ing : U
+Szitasiova_ KVSRR PhD : U
+Szivosova_Maria KAI Ing : U
+Szomolanyi_Karol KOVE Ing : U
+Sztukova_Maria KJaT PHDr : U
+Tallova_Eva KJaT PHDr : U
+Tariskova_Natalia KMZ PhD : U
+Terek_Milan KS Prof : U
+Thomasova_Elena KMZ Doc : U
+Tiruneh_Workie KBMF Ing : U
+Tkacikova_Jarmila KMR Ing : U
+Tkacova_Dana KBMF Doc : U
+Tokarova_Maria KHP Doc : U
+Tomekova_Ingrid KMVHD PhD : U
+Toth_Miroslav KPH Ing : U
+Trefil_Peter KSCR Ing : U
+Trnovsky_Karol KET PhD : U
+Trochanova_Hana KAI Ing : U
+Trstanska_Alena KPH Doc : U
+Truchly_Peter KBMF Ing : U
+Tucnik_Miroslav KBMF Ing : U
+Tumpach_Milos KUA Doc : U
+Turna_Lubomir KAI RNDr : U
+Tuzinska_ KJaT Mgr : U
+Tvrdon_Jozef KVSRR Doc : U
+Uhliar_ KPH Ing : U
+Uzik_ KUA Ing : U
+Vachalkova_ KPO PhD : U
+Vacokova_ KOP Mgr : U
+Valach_Matej KET Ing : U
+Valera_Cano KJaT Mgr : U
+Valkova_Katarina KOP Doc : U
+Vargova_ KMO Ing : U
+Vasekova_Miroslava KUA Ing : U
+Vavrova_Katarina KPF Ing : U
+Vehnerova_Eva KJaT PHDr : U
+Velichova_Ludmila KPED PhD : U
+Vepyova_Maria KUA Ing : U
+Vercek_Peter KMO Doc : U
+Veselkova_Alexandra KET PhD : U
+Veselovska_Stanislava KHP Ing : U
+Veternikova_ KOP Ing : U
+Vidova_Jarmila KHP PhD : U
+Vita_Tiziano KJaT Mgr : U
+Vlachynsky_Karol KPF Prof : U
+Vlckova_Viera KVSRR Doc : U
+Vogl_ KMZ Ing : U
+Vojtkova_ KBMF Ing : U
+Vojtkova_Maria KS Ing : U
+Vokalova_Emilia KMPV PAEDDr : U
+Vokounova_Dana KMR Ing : U
+Volar_Jozef KMZ Doc : U
+Vondrova_ KHP PhD : U
+Vongrej_Marian KET Ing : U
+Vorlickova_Jana KHP Ing : U
+Vovk_Martin KBMF PhD : U
+Vovkova_ KBMF PhD : U
+Vrabelova_ KMO Ing : U
+Vybiralova_Julia KMVAL Doc : U
+Weiss_Peter KMPV PHDr : U
+Winkler_Martin KOP JUDr : U
+Woltemar_Richard KMVHD PhD : U
+Workie_Menbere KBMF Ing : U
+Zabojnik_ KMO Ing : U
+Zagorsekova_ KMPV Mgr : U
+Zahorak_Pavol KMVAL Ing : U
+Zalai_Karol KPF Prof : U
+Zalezakova_Eliska KMZ PHDr : U
+Zarska_Elena KVSRR Prof : U
+Zavodny_Peter KAI Prof : U
+Zelina_Michal KIM Ing : U
+Zemanovicova_Daniela KPH Doc : U
+Zoldakova_ KBMF PhD : U
+Zorkociova_Otilia KMO Ing : U
+Zsapkova_Eleonora KJaT PHDr : U
+Zubalova_Alena KF Doc : U
+Zubalova_Lubica KMO Ing : U
+
+.PARALELKY
+
+ 1_rocnik 1 
+  $ Narodohospodarska_fakulta NHF 
+    $$ Financie_bankovnictvo_a_investovanie FBI 174/1-9
+    $$ Poistovnictvo POI 31/1-2
+    $$ Narodne_hospodarstvo NH 74/1-4
+    $$ Ludske_zdroje_a_socialny_manazment LZSM 30/1-2
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 17/1
+    $$ Ekonomicka_teoria_a_ekonomicka_zurnal ETZ 14/1
+  $ Obchodna_fakulta OF 
+    $$ Podnikanie_v_obchode_a_CR POCR 197/1-10
+    $$ Zahranicnoobchodne_podnikanie ZOP 110/1-5
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Medzinarodne_ekonomicke_vztahy MEV 147/1-8
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_man_podniku EMP 291/1-16
+    $$ Financny_manazment FM 48/1-3
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Hospodarska_informatika HI 79/1-4
+    $$ Manaz_rozhod_a_inf_technol MRIT 74/1-4
+    $$ Uctovnictvo UC 111/1-5
+  $ Ustav_medzinar_program UMP 
+    $$ Ustav_medzinar_progr UMP 40/1
+  $ Fakulta_aplikovanych_jazykov FAJ 
+    $$ Cudzie_jazyky_a_IK_1 CJIK1 60/1-4
+    $$ Cudzie_jazyky_a_IK_2 CJIK2 15/1
+    $$ Cudzie_jazyky_a_IK_3 CJIK3 15/1
+ 2_rocnik 2 
+  $ Narodnohospodarska_fakulta NHF 
+    $$ Financie_bankovnictvo_a_investovanie FBI 161/1-8
+    $$ Poistovnictvo POI 34/1-2
+    $$ Narodne_hospodarstvo NH 46/1-2
+    $$ Ludske_zdroje_a_socialny_manazment LZSM 32/1-2
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 19/1
+    $$ Ekonomicka_teoria_a_ekonomicka_zurnal ETZ 14/1
+  $ Obchodna_fakulta OF 
+    $$ Podnikanie_v_obchode_a_CR POCR 171/1-10
+    $$ Zahranicnoobchodne_podnikanie ZOP 100/1-5
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Medzinarodne_ekonomicke_vztahy MEV 155/1-8
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_man_podniku EMP 216/1-15
+    $$ Financny_manazment FM 61/1-4
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Hospodarska_informatika HI 57/1-3
+    $$ Manaz_rozhod_a_inf_technol MRIT 69/1-4
+    $$ Uctovnictvo UC 92/1-5
+  $ Ustav_medzinar_program UMP 
+    $$ Ustav_medzinar_progr UMP 40/1
+  $ Fakulta_aplikovanych_jazykov FAJ 
+    $$ Cudzie_jazyky_a_IK_1 CJIK1 49/1-3
+    $$ Cudzie_jazyky_a_IK_2 CJIK2 13/1
+    $$ Cudzie_jazyky_a_IK_3 CJIK3 10/1
+ 3_rocnik 3 
+  $ Narodohospodarska_fakulta NHF 
+    $$ Financie_bankovnictvo_a_investovanie FBI 129/1-8
+    $$ Poistovnictvo POI 25/1
+    $$ Narodne_hospodarstvo NH 54/1-3
+    $$ Ludske_zdroje_a_socialny_manazment LZSM 30/1-2
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 34/1-2
+    $$ Ekonomicka_teoria_a_ekonomicka_zurnal ETZ 15/1
+  $ Obchodna_fakulta OF 
+    $$ Podnikanie_v_obchode_a_CR POCR 155/1-10
+    $$ Zahranicnoobchodne_podnikanie ZOP 83/1-5
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Medzinarodne_ekonomicke_vztahy MEV 109/1-5
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_man_podniku EMP 197/1-12
+    $$ Financny_manazment FM 58/1-4
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Hospodarska_informatika HI 64/1-3
+    $$ Manaz_rozhod_a_inf_technol MRIT 56/1-3
+    $$ Uctovnictvo UC 142/1-6
+  $ Ustav_medzinar_program UMP 
+    $$ Ustav_medzinar_progr UMP 40/1
+  $ Fakulta_aplikovanych_jazykov FAJ 
+    $$ Cudzie_jazyky_a_interk_komunik CJIK 45/1-3
+ 4_rocnik 4 
+  $ Narodohospodarska_fakulta NHF 
+    $$ Bankovnictvo BANK 75/1-4
+    $$ Financie FIN 41/1-2
+    $$ Danovnictvo_a_danove_poradenstvo DDP 68/1-4
+    $$ Poistovnictvo POI 13/1
+    $$ Hospodarska_politika HP 43/1-2
+    $$ Socialny_rozvoj_a_soc_politika SRSP 27/1-2
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 35/1-2
+    $$ Ekonomicka_teoria_a_ekonomicka_zurnal ETZ 13/1
+    $$ Medzinarodne_financie_v_AJ MF 13/1
+    $$ Dopln_pedagog_studium DPS 32/1
+  $ Obchodna_fakulta OF 
+    $$ Medzinarodny_obchod MO 49/1-3
+    $$ Obchodny_manazment OMz 68/1-4
+    $$ Marketingovy_manazment MMz 81/1-4
+    $$ Manazment_cestovneho_ruchu MCR 46/1-3
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Hospodarska_diplomacia HD 76/1-4
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_manazment_podniku EMP 
+      $$$ Vseobecny_manazment VMZ 43/1-2
+      $$$ Manazment_vyroby_a_logist MVL 24/1
+      $$$ Personalny_manazment_podniku PMZ 36/1-2
+      $$$ Ekonomika_podniku EP 75/1-4
+    $$ Financny_manazment FM 
+      $$$ Podnikove_financie PF 61/1-3
+      $$$ Manazment_a_ekonom_znalectvo MEZ 16/1
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Manaz_rozhod_a_inf_technol MRIT 63/1-3
+    $$ Aktuárstvo AKT 18/1
+    $$ Operacny_vykum_a_ekonometria OVE 20/1
+    $$ Statisticke_metody_v_ekon SME 30/1-2
+    $$ Uctovnictvo_a_auditorstvo UA 118/1-6
+  $ Ustav_medzinarod_programov UMP 
+    $$ Medzinarodny_manazment_AJ MMzAJ 35/1
+  $ Ustav_medzinar_program UMP 
+    $$ Ustav_medzinar_progr UMP 40/1
+  $ Fakulta_aplikovanych_jazykov FAJ 
+    $$ Cudzie_jazyky_a_interk_komunik CJIK 20/1-2
+ 5_rocnik 5 
+  $ Narodohospodarska_fakulta NHF 
+    $$ Bankovnictvo BANK 88/1-4
+    $$ Financie FIN 73/1-3
+    $$ Danovnictvo_a_danove_poradenstvo DDP 65/1-3
+    $$ Poistovnictvo POI 13/1
+    $$ Hospodarska_politika HP 42/1-2
+    $$ Socialny_rozvoj_a_soc_politika SRSP 25/1
+    $$ Verejna_sprava_a_regionalny_rozvoj VSRR 32/1-2
+    $$ Ekonomicka_teoria_a_ekonomicka_zurnal ETZ 9/1
+    $$ Dopln_pedagog_studium DPS 15/1
+  $ Obchodna_fakulta OF 
+    $$ Medzinarodny_obchod MO 112/1-6
+    $$ Obchodny_manazment OMz 78/1-4
+    $$ Marketingovy_manazment MMz 75/1-4
+    $$ Manazment_cestovneho_ruchu MCR 78/1-5
+  $ Fakulta_medzinarodnych_vztahov FMV 
+    $$ Hospodarska_diplomacia HD 85/1-4
+  $ Fakulta_podnikoveho_manazmentu FPM 
+    $$ Ekonomika_a_manazment_podniku EMP 
+      $$$ Vseobecny_manazment VMZ 73/1-4
+      $$$ Manazment_vyroby_a_logist MVL 24/1
+      $$$ Personalny_manazment_podniku PMZ 56/1-3
+      $$$ Ekonomika_podniku EP 91/1-5
+    $$ Financny_manazment FM 
+      $$$ Podnikove_financie PF 64/1-3
+      $$$ Manazment_a_ekonom_znalectvo MEZ 57/1-3
+  $ Fakulta_hospodarskej_informatiky FHI 
+    $$ Manaz_rozhod_a_inf_technol MRIT 89/1-5
+    $$ Aktuárstvo AKT 28/1
+    $$ Operacny_vykum_a_ekonometria OVE 36/1-2
+    $$ Statisticke_metody_v_ekon SME 25/1
+    $$ Uctovnictvo_a_auditorstvo UA 191/1-7
+  $ Fakulta_aplikovanych_jazykov FAJ 
+    $$ Cudzie_jazyky_a_interk_komunik CJIK 13/1
+  $ Ustav_medzinar_program UMP 
+    $$ Ustav_medzinar_progr UMP 40/1
+  $ Ustav_medzinarod_programov UMP 
+    $$ Medzinarodny_manazment_AJ MMzAJ 35/1
+
+
+.PREKAZKY
+M D115 E aiesec baukova 1/7
+M D115 E aiesec baukova 2/7
+M D115 E aiesec baukova 3/7
+M D115 E aiesec baukova 4/7
+M D115 E aiesec baukova 5/7
+M D101 E aiesec baukova 1/7
+M D101 E aiesec baukova 2/7
+M D101 E aiesec baukova 3/7
+M D101 E aiesec baukova 4/7
+M D101 E aiesec baukova 5/7
+M A4_08 E FAJ LS 5/1-3
+M A4_07 E FAJ LS 5/1-3
+M C1_10 E nemeckof studium 1/1-4
+M C1_10 E nemeckof studium 2/1-4
+M C1_10 E nemeckof studium 3/1-7
+M C1_10 E nemeckof studium 4/1-7
+M C1_10 E nemeckof studium 5/1-7
+M C1_10 E nemeckof studium 1/7
+M C1_10 E nemeckof studium 2/7
+M A4_05 E FMV celý_LS 3/1-3
+M D101 E PhD_OF LS 5/1-5
+M D211 E KMR_Filo ls1314 1/4-7
+M D211 E KMR_Filo ls1314 2/4-7
+M D211 E KMR_Filo ls1314 3/4-7
+M D211 E KMR_Filo ls1314 4/4-7
+M C1_09 E CNSAS ls1314 2/4-7
+M C1_09 E CNSAS ls1314 4/4-7
+M C1_08 E diplomac ls1314 2/3
+M D115 E E_commer ls1314 3/6
+M LAB2 E TOV pocr1 3/2
+M LAB2 E TOV pocr2 1/2
+M LAB2 E TOV zop5 1/3
+M LAB2 E TOV pocr6 1/5
+M LAB2 E TOV pocr7 2/4
+M LAB2 E TOV pocr5 3/4
+M LAB2 E TOV zop3 1/4
+M LAB2 E TOV zop2 4/2
+M LAB4 E TOVP pocr1 2/3
+M LAB4 E TOVP pocr2 2/4
+M LAB4 E TOVP pocr6 3/2
+M LAB4 E TOVP poc10 4/3
+M LAB4 E TOVP pocr5 3/3
+M LAB4 E TOVP zop2 3/4
+M LAB4 E TOVP zop3 3/5
+M LAB4 E TOVP zop5 1/4
+M LAB4 E TOVP pocr7 4/4
+M LAB2 E TOV poc10 4/4
+M B1_05 E Daòo 0104 2/5-7
+M A9_17 E FMV_AJ LS1314 2/4
+M A4_05 E FMV_AJ LS1314 5/4
+M 4C02 E KPED LS1314 1/2-5
+M 4C02 E KPED LS1314 2/1-4
+M 4C02 E KPED LS1314 5/1-4
+M 4B01 E KPED LS1314 1/2-5
+M 4B01 E KPED LS1314 3/1-4
+M 4B01 E KPED LS1314 4/1-4
+M 5B01 E skalak ls1314 1/4
+M B209 E UTV_Elia ls1314 5/3
+M B208 E PhD_FMV ls1314 5/2-3
+M A7_15 E Stareck_ 1902 3/1
+M A7_15 E Horáková ls1314 3/2
+M A6_05 E ÈiJ_1MEV ls1314 2/5
+M A4_07 E ÈiJ_1MEV ls1314 4/1
+M A4_06 E ÈiJ_2MEV ls1314 3/1
+M A4_06 E ÈiJ_2MEV ls1314 4/3
+M D116 E KSPS/NJ ls1314 2/3
+M B1_04 E 283a1104 KMA_Bili 5/4
+M B1_03 E 0904 KMA_Star 3/1
+M B1_04 E 0404 KMA_Šolt 5/2
+M B1_07 E Prenos_2 ls1314 2/6
+M A4_06 E 2/1_FMV ls1314 5/1-5
+M A5_06 E 2/2_FMV ls1314 5/1-5
+M B1_02 E PPR_3OF 1504 2/5
+
+.PREDMETY
+
+1_NHF 15101: KF: S V | Financie_a_mena FM Zubalova_Alena 1/0 197 ;0
+# 1 2 3 4 5 6 7 8 9 10 11 
+~ 692 0
+$1 B107 2 5 0 Zubalova_Alena :F
+
+1_NHF 15101/1: KF: S V | Financie_a_mena FM Belickova_Kornelia 1/0 143 ;1
+# 12 13 14 15 16 17 18 19 
+~ 692 0
+$1 D112 2 5 0 Belickova_Kornelia :F
+
+
+1_NHF_FBI 11215: KET: S V | ET_Makroekonomia_I ET_MA1 Lisy_Jan 1/1 116 ;2
+# 1 2 3 4 5 6 
+~ 675 9
+$1 D114 2 2 0 Lisy_Jan
+&1 B206 2 6 1 0 
+&1 D203 2 4 2 0 
+&1 D103 2 1 3 0 
+&1 D107 3 1 4 0 
+&1 D108 3 3 5 0 
+&1 D202 3 3 6 0 
+
+1_NHF_FBI 11215/2: KET: S V | ET_Makroekonomia_I ET_MA1 Muchova_Eva 1/1 58 ;3
+# 7 8 9 
+~ 675 9
+$1 D112 2 2 0 Muchova_Eva
+&1 D101 1 1 7 0 
+&1 D103 1 2 8 0 
+&1 D104 1 2 9 0 
+
+1_NHF_FBI 19021: KAIVT: P V | Informatika_2 INF2 AAA_ucitel 0/1 174 ;4
+~ 502 0
+&1 2B01 1 1 1 0 
+&1 3B01 1 1 2 0 
+&1 2B01 3 4 3 0 
+&1 2B01 2 4 4 0 
+&1 3B01 2 4 5 0 
+&1 3B01 3 4 6 0 
+&1 2B01 2 1 7 0 
+&1 3B01 2 1 8 0 
+&1 2B01 3 1 9 0 
+
+1_NHF_FBI 19921: KAIVT: V 1 V | Informat_2_AJ INF2AJ Skalak_Pavol 0/1 17 ;5
+~ 502 0
+&1 3B01 2 6 1 0 Skalak_Pavol 
+
+1_NHF_FBI 21001: KMR: P V | Marketing MAR AAA_ucitel 1/1 174 ;6
+~ 206 0
+$1 B107 1 3 0 :F
+&1 B205 3 1 1 0 
+&1 B207 3 1 2 0 
+&1 B211 3 1 3 0 
+&1 D104 4 4 4 0 
+&1 B210 3 1 5 0 
+&1 B209 2 4 6 0 
+&1 D108 3 4 7 0 
+&1 D115 3 4 8 0 
+&1 B201 2 4 9 0 
+
+1_NHF_FBI 25010: KOP: P V | Pravo PRA Holub_Dusan 1/0 174 ;7
+~ 557 0
+$1 B107 3 2 0 Holub_Dusan
+
+1_NHF_FBI 34001: KS: P V | Statistika STA Hornikova_ 1/1 174 ;8
+~ 565 1
+$1 B1_03 2 3 0 Hornikova_
+&1 A8_14 4 4 1 0 
+&1 A8_13 2 6 2 0 
+&1 A8_13 3 3 3 0 
+&1 A8_14 3 3 4 0 
+&1 A8_14 3 4 5 0 
+&1 A8_14 1 2 6 0 
+&1 A6_05 1 2 7 0 
+&1 A8_13 2 4 8 0 
+&1 A8_13 1 1 9 0 
+
+1_NHF_FBI 15330: KF: S V | PVP_Dejiny_finan DEJF Balazi_Peter 1/0 97 ;9
+# 1 2 3 4 5 
+~ 692 0
+$1 B107 1 2 0 Balazi_Peter
+
+1_NHF_FBI 15330/9: KF: S V | PVP_Dejiny_finan DEJF Balazi_Peter 1/0 77 ;10
+# 6 7 8 9 
+~ 692 0
+$1 D114 4 4 0 Balazi_Peter
+
+1_NHF_FBI 11209: KET: V 0 V | VP_Vseob_hospod_dejiny VHD Vongrej_Marian 1/0 21 ;11
+~ 675 9
+$1 D116 4 5 0 Vongrej_Marian
+
+1_NHF_FBI 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 87 ;12
+~ 704 1
+$1 B1_02 5 1 0
+
+
+1_NHF_POI 11215/1: KET: P V | ET_Makroekonomia_I ET_MA1 Piovarciova_Veronika 1/1 31 ;13
+~ 675 9
+$1 D113 2 2 0 Piovarciova_Veronika
+&1 D104 1 1 1 0 
+&1 D103 1 1 2 0 
+
+1_NHF_POI 19021: KAIVT: P V | Informatika_2 INF2 AAA_ucitel 0/1 31 ;14
+~ 502 0
+&1 3B01 1 2 1 0 
+&1 2B01 1 2 2 0 
+
+1_NHF_POI 21001: KMR: P V | Marketing MAR AAA_ucitel 1/1 31 ;15
+~ 206 0
+$1 B107 1 3 0 :F
+&1 B205 3 2 1 0 
+&1 B204 3 2 2 0 
+
+1_NHF_POI 25010/1: KOP: P V | Pravo PRA Holub_Dusan 1/0 31 ;16
+~ 557 0
+$1 D114 2 3 0 Holub_Dusan
+
+1_NHF_POI 34001/2: KS: P V | Statistika STA AAA_ucitel 1/1 31 ;17
+~ 565 1
+$1 B1_06 3 1 0
+&1 A9_08 4 4 1 0 
+&1 A9_08 4 5 2 0 
+
+1_NHF_POI 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 1 ;18
+~ 704 1
+$1 B1_02 5 1 0
+
+
+1_NHF_NH 11215/2: KET: P V | ET_Makroekonomia_I ET_MA1 Muchova_Eva 1/1 74 ;19
+~ 675 9
+$1 D112 2 2 0 Muchova_Eva
+&1 B208 1 2 1 0 
+&1 D203 3 4 2 0 
+&1 B201 3 1 3 0 
+&1 B203 3 1 4 0 
+
+1_NHF_NH 19021: KAIVT: P V | Informatika_2 INF2 AAA_ucitel 0/1 74 ;20
+~ 502 0
+&1 3B01 3 5 1 0 
+&1 2B01 3 5 2 0 
+&1 4B01 2 6 3 0 
+&1 2B01 2 7 4 0 
+
+1_NHF_NH 19921: KAIVT: V 1 V | Informat_2_AJ INF2AJ Skalak_Pavol 0/1 4 ;21
+~ 502 0
+&1 3B01 2 6 1 0 Skalak_Pavol 
+
+1_NHF_NH 21001: KMR: P V | Marketing MAR AAA_ucitel 1/1 74 ;22
+~ 206 0
+$1 B107 1 3 0 :F
+&1 B201 3 3 1 0 
+&1 D101 3 3 2 0 
+&1 B202 2 4 3 0 
+&1 B101 2 4 4 0 
+
+1_NHF_NH 25010/1: KOP: P V | Pravo PRA Holub_Dusan 1/0 74 ;23
+~ 557 0
+$1 D114 2 3 0 Holub_Dusan
+
+1_NHF_NH 34001/1: KS: P V | Statistika STA AAA_ucitel 1/1 74 ;24
+~ 565 1
+$1 B1_08 3 2 0
+&1 B207 1 1 1 0 
+&1 B207 1 2 2 0 
+&1 B1_07 1 2 3 0 
+&1 A6_14 1 1 4 0 
+
+1_NHF_NH 11209: KET: V 0 V | VP_Vseob_hospod_dejiny VHD Vongrej_Marian 1/0 10 ;25
+~ 675 9
+$1 D116 4 5 0 Vongrej_Marian
+
+1_NHF_NH 11209/9: KET: V 0 V | VP_General_Econom_Hist VHD/AJ Vongrej_Marian 1/0 2 ;26
+~ 675 9
+$1 D116 4 6 0 Vongrej_Marian
+
+1_NHF_NH 75048: KMPV: V 1 V | VP_Sociologia SOC AAA_ucitel 0/1 6 ;27
+~ 624 1
+&1 B1_07 5 2 1 0 
+
+1_NHF_NH 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 45 ;28
+~ 704 1
+$1 B1_02 5 1 0
+
+
+1_NHF_LZSM 11215/1: KET: P V | ET_Makroekonomia_I ET_MA1 Piovarciova_Veronika 1/1 30 ;29
+~ 675 9
+$1 D113 2 2 0 Piovarciova_Veronika
+&1 B201 4 4 1 0 
+&1 B212 4 4 2 0 
+
+1_NHF_LZSM 19021: KAIVT: P V | Informatika_2 INF2 AAA_ucitel 0/1 30 ;30
+~ 502 0
+&1 2B01 3 2 1 0 
+&1 3B01 3 2 2 0 
+
+1_NHF_LZSM 19921: KAIVT: V 1 V | Informat_2_AJ INF2AJ Skalak_Pavol 0/1 1 ;31
+~ 502 0
+&1 3B01 2 6 1 0 Skalak_Pavol 
+
+1_NHF_LZSM 21001: KMR: P V | Marketing MAR AAA_ucitel 1/1 30 ;32
+~ 206 0
+$1 B107 1 3 0 :F
+&1 D110 3 3 1 0 
+&1 B106 3 3 2 0 
+
+1_NHF_LZSM 25010/1: KOP: P V | Pravo PRA Holub_Dusan 1/0 30 ;33
+~ 557 0
+$1 D114 2 3 0 Holub_Dusan
+
+1_NHF_LZSM 34001/2: KS: P V | Statistika STA AAA_ucitel 1/1 30 ;34
+~ 565 1
+$1 B1_06 3 1 0
+&1 A6_08 1 2 1 0 
+&1 A6_08 1 1 2 0 
+
+1_NHF_LZSM 11209: KET: V 0 V | VP_Vseob_hospod_dejiny VHD Vongrej_Marian 1/0 5 ;35
+~ 675 9
+$1 D116 4 5 0 Vongrej_Marian
+
+1_NHF_LZSM 75048: KMPV: V 1 V | VP_Sociologia SOC AAA_ucitel 0/1 2 ;36
+~ 624 1
+&1 B1_07 5 2 1 0 
+
+1_NHF_LZSM 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 23 ;37
+~ 704 1
+$1 B1_02 5 1 0
+
+
+1_NHF_VSRR 11215/1: KET: P V | ET_Makroekonomia_I ET_MA1 Piovarciova_Veronika 1/1 17 ;38
+~ 675 9
+$1 D113 2 2 0 Piovarciova_Veronika
+&1 D102 1 1 1 0 
+
+1_NHF_VSRR 19021: KAIVT: P V | Informatika_2 INF2 AAA_ucitel 0/1 17 ;39
+~ 502 0
+&1 2B01 3 3 1 0 
+
+1_NHF_VSRR 21001: KMR: P V | Marketing MAR AAA_ucitel 1/1 17 ;40
+~ 206 0
+$1 B107 1 3 0 :F
+&1 B202 3 2 1 0 
+
+1_NHF_VSRR 25010/1: KOP: P V | Pravo PRA Holub_Dusan 1/0 17 ;41
+~ 557 0
+$1 D114 2 3 0 Holub_Dusan
+
+1_NHF_VSRR 34001/2: KS: P V | Statistika STA AAA_ucitel 1/1 17 ;42
+~ 565 1
+$1 B1_06 3 1 0
+&1 A5_14 2 4 1 0 
+
+1_NHF_VSRR 11209: KET: V 0 V | VP_Vseob_hospod_dejiny VHD Vongrej_Marian 1/0 2 ;43
+~ 675 9
+$1 D116 4 5 0 Vongrej_Marian
+
+1_NHF_VSRR 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 11 ;44
+~ 704 1
+$1 B1_02 5 1 0
+
+
+1_NHF_ETZ 11215/1: KET: P V | ET_Makroekonomia_I ET_MA1 Piovarciova_Veronika 1/1 14 ;45
+~ 675 9
+$1 D113 2 2 0 Piovarciova_Veronika
+&1 B204 4 4 1 0 
+
+1_NHF_ETZ 19021: KAIVT: P V | Informatika_2 INF2 AAA_ucitel 0/1 14 ;46
+~ 502 0
+&1 3B01 3 3 1 0 
+
+1_NHF_ETZ 21001: KMR: P V | Marketing MAR AAA_ucitel 1/1 14 ;47
+~ 206 0
+$1 B107 1 3 0 :F
+&1 D104 2 1 1 0 
+
+1_NHF_ETZ 25010/1: KOP: P V | Pravo PRA Holub_Dusan 1/0 14 ;48
+~ 557 0
+$1 D114 2 3 0 Holub_Dusan
+
+1_NHF_ETZ 34001/2: KS: P V | Statistika STA AAA_ucitel 1/1 14 ;49
+~ 565 1
+$1 B1_06 3 1 0
+&1 A9_08 3 2 1 0 
+
+1_NHF_ETZ 11209: KET: P V | PVP_Vseob_hospod_dejiny VHD Vongrej_Marian 1/0 14 ;50
+~ 675 9
+$1 D116 4 5 0 Vongrej_Marian
+
+
+1_OF 32021: KM: V 1 V | Vybr_kapitol_z_matem VKMAT AAA_ucitel 0/1 15 ;51
+~ 725 0
+&1 A9_17 1 1 1 0 
+
+1_OF 32022: KM: V 2 V | Zaklady_poistn_matemat ZPMAT AAA_ucitel 0/1 50 ;52
+~ 725 0
+&1 C1_09 1 4 1 0 
+&1 C1_09 4 1 2 0 
+
+
+1_OF_POCR 32002: KM: V 10 V | Financna_matematika_1 FMAT1 AAA_ucitel 0/1 180 ;53
+~ 725 0
+&1 B1_06 1 1 1 0 
+&1 C1_07 4 1 2 0 
+&1 C1_07 4 1 3 0 
+&1 B1_06 1 1 4 0 
+&1 B1_07 1 1 5 0 
+&1 B1_07 1 1 6 0 
+&1 C1_07 4 3 7 0 
+&1 C1_07 4 3 8 0 
+&1 A6_14 3 1 9 0 
+&1 A6_14 3 1 10 0 
+
+1_OF_POCR 22046: KMO: P V | Europska_unia EU Ciderova_ 1/1 197 ;54
+~ 359 0
+$1 B108 4 2 0 Ciderova_
+&1 D102 2 6 1 0 
+&1 D103 2 6 2 0 
+&1 D104 1 4 3 0 
+&1 B106 2 5 4 0 
+&1 B103 4 3 5 0 
+&1 D104 4 3 6 0 
+&1 B103 3 3 7 0 
+&1 B104 3 3 8 0 
+&1 B102 3 2 9 0 
+&1 B104 3 2 10 0 
+
+1_OF_POCR 18090: KPO: P V | Financie_a_mena FM Drugdova_Barbora 1/0 197 ;55
+~ 709 0
+$1 B107 3 4 0 Drugdova_Barbora :F
+
+1_OF_POCR 34002/1: KS: S V | Statistika STA AAA_ucitel 1/1 138 ;56
+# 1 2 3 4 5 6 7 
+~ 565 1
+$1 B1_05 1 3 0
+&1 A6_16 1 2 1 0 
+&1 D204 2 5 2 0 
+&1 A7_07 3 2 3 0 
+&1 A6_15 1 2 4 0 
+&1 B1_10 3 5 5 0 
+&1 A7_17 3 3 6 0 
+&1 B1_08 3 5 7 0 
+
+1_OF_POCR 34002/9: KS: S V | Statistika STA AAA_ucitel 1/1 59 ;57
+# 8 9 10 
+~ 565 1
+$1 B1_06 1 4 0
+&1 A6_17 1 3 8 0 
+&1 B106 4 3 9 0 
+&1 A6_15 1 3 10 0 
+
+1_OF_POCR 13012: KVSRR: P V | Hospodarska_geografia HG AAA_ucitel 1/0 197 ;58
+~ 674 0
+$1 B108 2 4 0
+
+1_OF_POCR 42001: KMZ: P V | Psychologia_v_obchode POB Szarkova_Miroslava 1/0 197 ;59
+~ 67 1
+$1 B1_02 1 5 0 Szarkova_Miroslava
+
+1_OF_POCR 26001: KIOF: P V | Informatika2 INF2 AAA_ucitel 0/1 197 ;60
+~ 548 0
+&1 D214 3 1 1 0 
+&1 D208 3 1 2 0 
+&1 D208 4 3 3 0 
+&1 D214 4 3 4 0 
+&1 D214 4 1 5 0 
+&1 D208 4 1 6 0 
+&1 D208 3 2 7 0 
+&1 D214 3 2 8 0 
+&1 D214 3 3 9 0 
+&1 D208 3 3 10 0 
+
+
+1_OF_ZOP 32002: KM: V 5 V | Financna_matematika_1 FMAT1 AAA_ucitel 0/1 100 ;61
+~ 725 0
+&1 D111 4 3 1 0 
+&1 D111 4 3 2 0 
+&1 A5_06 3 1 3 0 
+&1 B1_10 4 1 4 0 
+&1 B1_10 4 1 5 0 
+
+1_OF_ZOP 22046: KMO: P V | Europska_unia EU Ciderova_ 1/1 110 ;62
+~ 359 0
+$1 B108 4 2 0 Ciderova_
+&1 D101 3 1 1 0 
+&1 D104 3 1 2 0 
+&1 B204 2 6 3 0 
+&1 D115 2 5 4 0 
+&1 B207 3 5 5 0 
+
+1_OF_ZOP 18090/1: KPO: P V | Financie_a_mena FM Pastorakova_Erika 1/0 110 ;63
+~ 709 0
+$1 D113 1 2 0 Pastorakova_Erika
+
+1_OF_ZOP 34002/2: KS: P V | Statistika STA AAA_ucitel 1/1 110 ;64
+~ 565 1
+$1 B1_06 1 3 0
+&1 A6_05 4 1 1 0 
+&1 A5_17 4 1 2 0 
+&1 A7_15 3 4 3 0 
+&1 A5_13 4 3 4 0 
+&1 A6_08 2 5 5 0 
+
+1_OF_ZOP 13012: KVSRR: P V | Hospodarska_geografia HG AAA_ucitel 1/0 110 ;65
+~ 674 0
+$1 B108 2 4 0
+
+1_OF_ZOP 22002: KMO: P V | Medzinar_ek_organizacie MEO AAA_ucitel 1/0 110 ;66
+~ 359 0
+$1 D111 3 6 0
+
+1_OF_ZOP 26001: KIOF: P V | Informatika2 INF2 AAA_ucitel 0/1 110 ;67
+~ 548 0
+&1 D208 1 4 1 0 
+&1 D214 1 4 2 0 
+&1 D214 2 5 3 0 
+&1 D214 2 6 4 0 
+&1 D214 3 4 5 0 
+
+
+1_FMV 41093/2: KPH: V 1 V | Podnik_hospod_NJ PH/NJ AAA_ucitel 1/1 25 ;68
+~ 54 1
+$1 B1_09 2 6 0
+&1 B1_09 2 7 1 0 
+
+1_FMV 41993: KPH: V 1 V | Podnik_hospod_RJ PH/RJ Kovalev_Andrej 1/1 7 ;69
+~ 54 1
+$1 A6_08 2 6 0 Kovalev_Andrej
+&1 A6_08 2 7 1 0 Kovalev_Andrej 
+
+
+1_FMV_MEV 11027: KET: P V | Ekonomicka_teoria ET Rozborilova_Daria 1/1 147 ;70
+~ 675 9
+$1 D113 4 3 0 Rozborilova_Daria
+&1 D104 1 3 1 0 
+&1 B104 1 3 2 0 
+&1 B202 1 3 3 0 
+&1 B101 2 3 4 0 
+&1 B212 2 3 5 0 
+&1 B206 2 2 6 0 
+&1 B104 2 2 7 0 
+&1 B105 2 1 8 0 
+
+1_FMV_MEV 31053: KAI: P V | Informatika2 INF2 AAA_ucitel 0/1 147 ;71
+~ 720 1
+&1 A8_15 2 1 1 0 Ondrejkova_Anna
+&1 A8_05 2 2 2 0 Brixova_Janette
+&1 A8_15 2 3 3 0 Rakovska_Eva
+&1 A8_05 1 1 4 0 Krsjak_
+&1 A8_15 2 2 5 0 Ondrejkova_Anna
+&1 A8_05 2 3 6 0 Ondrejkova_Anna
+&1 A8_15 3 5 7 0 Brixova_Janette
+&1 A8_05 4 2 8 0 Ondrejkova_Anna
+
+1_FMV_MEV 21020: KMR: P V | Marketing MAR AAA_ucitel 1/1 147 ;72
+~ 206 0
+$1 D112 1 2 0
+&1 B205 1 4 1 0 
+&1 B203 1 4 2 0 
+&1 B106 1 4 3 0 
+&1 B206 1 3 4 0 
+&1 D102 1 3 5 0 
+&1 B212 1 3 6 0 
+&1 B104 2 1 7 0 
+&1 B105 2 2 8 0 
+
+1_FMV_MEV 41020: KPH: P V | Podnikove_hospodarstvo PH Serina_ 1/1 147 ;73
+~ 54 1
+$1 B1_05 3 4 0 Serina_
+&1 A4_07 2 3 1 0 
+&1 A6_07 2 3 2 0 
+&1 A5_06 2 2 3 0 
+&1 A5_17 1 4 4 0 
+&1 A6_07 1 5 5 0 
+&1 A5_08 4 1 6 0 
+&1 A6_06 4 2 7 0 
+&1 A5_07 3 5 8 0 
+
+1_FMV_MEV 32005/6: KM: P V | Vybrane_kapitoly_z_matem VKMAT AAA_ucitel 0/1 147 ;74
+~ 725 0
+&1 A5_17 2 2 1 0 
+&1 A6_07 2 1 2 0 
+&1 A6_05 4 2 3 0 
+&1 A7_07 4 2 4 0 
+&1 A6_14 4 2 5 0 
+&1 A5_05 4 2 6 0 
+&1 A6_08 4 1 7 0 
+&1 A6_06 4 1 8 0 
+
+
+1_FPM 72008/9: KMVHD: V 0 V | Svetova_ekonomika SE AAA_ucitel 1/0 19 ;75
+~ 704 1
+$1 B1_07 4 7 0
+
+1_FPM 34093: KS: V 1 V | Statistika STA/AJ AAA_ucitel 1/1 10 ;76
+~ 565 1
+$1 A9_17 4 5 0
+&1 A9_17 4 6 1 0 
+
+1_FPM 15359: KF: V 0 V | Financie_a_mena FM/AJ AAA_ucitel 1/0 10 ;77
+~ 692 0
+$1 D116 5 3 0
+
+1_FPM 41093: KPH: V 1 V | Enterprice_Economy PHAJ Littvova_Veronika 1/1 10 ;78
+~ 54 1
+$1 C1_06 1 4 0 Littvova_Veronika
+&1 A5_07 1 6 1 0 Littvova_Veronika 
+
+1_FPM 21019/4: KMR: V 1 V | Marketing_AJ MAR/AJ Oresky_Milan 1/1 10 ;79
+~ 206 0
+$1 C1_08 3 2 0 Oresky_Milan
+&1 C1_08 3 3 1 0 Chomova_ 
+
+1_FPM 45097: KIM: V 1 V | Informatics_2 INF2AJ Zelina_Michal 0/1 10 ;80
+~ 154 1
+&1 A6_12 1 6 1 0 Zelina_Michal 
+
+1_FPM 32005/3: KM: V 1 V | Vybr_kapit_z_matem_AJ VKMAJ AAA_ucitel 0/1 5 ;81
+~ 725 0
+&1 A6_05 4 4 1 0 
+
+
+1_FPM_EMP 34003/3: KS: S V | Statistika STA AAA_ucitel 1/1 105 ;82
+# 1 2 3 4 5 6 
+~ 565 1
+$1 B1_02 3 1 0
+&1 A6_14 4 1 1 0 
+&1 A6_16 4 1 2 0 
+&1 A6_16 3 3 3 0 
+&1 A5_07 3 3 4 0 
+&1 A5_16 4 3 5 0 
+&1 A5_17 4 3 6 0 
+
+1_FPM_EMP 34003/1: KS: S V | Statistika STA AAA_ucitel 1/1 105 ;83
+# 7 8 9 10 11 12 
+~ 565 1
+$1 B1_04 3 1 0
+&1 A5_17 3 2 7 0 
+&1 A6_07 3 2 8 0 
+&1 A6_05 4 3 9 0 
+&1 A6_07 4 3 10 0 
+&1 A6_14 3 2 11 0 
+&1 A6_05 3 2 12 0 
+
+1_FPM_EMP 34003/2: KS: S V | Statistika STA AAA_ucitel 1/1 71 ;84
+# 13 14 15 16 
+~ 565 1
+$1 B1_04 3 3 0
+&1 A6_07 3 1 13 0 
+&1 A5_14 3 1 14 0 
+&1 A6_07 2 2 15 0 
+&1 A6_08 2 2 16 0 
+
+1_FPM_EMP 16350: KBMF: S V | Financie_a_mena FM Pilch_Ctibor 1/0 182 ;85
+# 1 2 3 4 5 6 7 8 9 10 
+~ 620 0
+$1 B107 2 6 0 Pilch_Ctibor
+
+1_FPM_EMP 16350/8: KBMF: S V | Financie_a_mena FM Jankovska_Anezka 1/0 109 ;86
+# 11 12 13 14 15 16 
+~ 620 0
+$1 B108 2 6 0 Jankovska_Anezka
+
+1_FPM_EMP 45007/1: KIM: P V | Informatika_II INFII AAA_ucitel 0/1 281 ;87
+~ 154 1
+&1 A6_12 2 5 1 0 
+&1 A5_12 2 5 2 0 
+&1 A5_12 3 2 3 0 
+&1 A6_12 3 2 4 0 
+&1 A6_12 3 3 5 0 
+&1 A5_12 3 3 6 0 
+&1 A6_12 4 1 7 0 
+&1 A5_12 4 1 8 0 
+&1 A5_12 4 4 9 0 
+&1 A6_12 4 4 10 0 
+&1 A5_12 2 2 11 0 
+&1 A6_12 2 2 12 0 
+&1 A6_12 2 1 13 0 
+&1 A5_12 2 1 14 0 
+&1 A6_12 2 3 15 0 
+&1 A5_12 2 3 16 0 
+
+1_FPM_EMP 41003: KPH: S V | Podnikove_hospodarstvo PH Majduchova_Helena 1/1 182 ;88
+# 1 2 3 4 5 6 7 8 9 10 
+~ 54 1
+$1 B1_02 2 2 0 Majduchova_Helena
+&1 A6_17 2 3 1 0 
+&1 A6_14 2 3 2 0 
+&1 A4_06 2 3 3 0 
+&1 A5_17 2 3 4 0 
+&1 A6_08 3 2 5 0 
+&1 A4_07 3 2 6 0 
+&1 A6_17 3 3 7 0 
+&1 A5_05 3 3 8 0 
+&1 A5_15 3 2 9 0 
+&1 A6_06 3 3 10 0 
+
+1_FPM_EMP 41003/1: KPH: S V | Podnikove_hospodarstvo PH Neumannova_Anna 1/1 79 ;89
+# 11 12 13 14 15 16 
+~ 54 1
+$1 B1_02 1 4 0 Neumannova_Anna
+&1 A6_15 2 1 11 0 
+&1 A6_17 2 1 12 0 
+&1 A6_14 2 2 13 0 
+&1 A4_06 2 2 14 0 
+&1 A6_08 1 5 15 0 
+&1 A6_06 1 5 16 0 
+
+1_FPM_EMP 21003/1: KMR: S V | Marketing MAR AAA_ucitel 1/1 110 ;90
+# 1 2 3 4 15 16 
+~ 206 0
+$1 B107 4 2 0
+&1 B105 3 2 1 0 Francova_Zuzana : F
+&1 B105 3 3 2 0 Francova_Zuzana : F
+&1 B207 4 5 3 0 
+&1 B105 4 3 4 0 
+&1 B207 4 3 15 0 
+&1 B211 3 2 16 0 
+
+1_FPM_EMP 21093/1: KMR: S V | Marketing MAR AAA_ucitel 1/1 181 ;91
+# 5 6 7 8 9 10 11 12 13 14 
+~ 206 0
+$1 B107 2 3 0
+&1 B203 4 4 5 0 
+&1 B210 4 4 6 0 
+&1 B209 2 1 7 0 
+&1 B208 2 1 8 0 
+&1 B206 2 1 9 0 
+&1 A6_16 4 2 10 0 
+&1 B201 2 5 11 0 
+&1 B202 2 5 12 0 
+&1 B212 2 5 13 0 
+&1 B212 4 3 14 0 
+
+1_FPM_EMP 32005/3: KM: V 16 V | Vybrane_kapitoly_z_matem VKMAT AAA_ucitel 0/1 291 ;92
+~ 725 0
+&1 A6_05 2 1 1 0 
+&1 A5_08 2 1 2 0 
+&1 A5_15 2 1 3 0 
+&1 B1_06 4 1 4 0 
+&1 B1_07 2 1 5 0 
+&1 B1_09 4 1 6 0 
+&1 A5_07 5 1 7 0 
+&1 A7_13 5 1 8 0 
+&1 A5_08 5 1 9 0 
+&1 A7_15 5 2 10 0 
+&1 A7_13 5 2 11 0 
+&1 A5_07 5 2 12 0 
+&1 A7_15 5 3 13 0 
+&1 A7_13 5 3 14 0 
+&1 A5_08 3 1 15 0 
+&1 A5_07 3 1 16 0 
+
+
+1_FPM_FM 34003/2: KS: P V | Statistika STA AAA_ucitel 1/1 48 ;93
+~ 565 1
+$1 B1_04 3 3 0
+&1 A6_06 3 1 1 0 
+&1 A6_08 3 1 2 0 
+&1 A6_08 2 3 3 0 
+
+1_FPM_FM 16350/8: KBMF: P V | Financie_a_mena FM Jankovska_Anezka 1/0 48 ;94
+~ 620 0
+$1 B108 2 6 0 Jankovska_Anezka
+
+1_FPM_FM 41003/1: KPH: P V | Podnikove_hospodarstvo PH Neumannova_Anna 1/1 48 ;95
+~ 54 1
+$1 B1_02 1 4 0 Neumannova_Anna
+&1 A5_07 3 2 1 0 
+&1 A5_14 3 2 2 0 
+&1 A5_13 3 2 3 0 
+
+1_FPM_FM 21003/1: KMR: P V | Marketing MAR AAA_ucitel 1/1 48 ;96
+~ 206 0
+$1 B107 4 2 0
+&1 D109 1 5 1 0 
+&1 D110 1 5 2 0 
+&1 D102 4 1 3 0 
+
+1_FPM_FM 45007/1: KIM: P V | Informatika_II INFII AAA_ucitel 0/1 48 ;97
+~ 154 1
+&1 A5_12 4 3 1 0 
+&1 A6_12 4 3 2 0 
+&1 A5_12 1 5 3 0 
+
+1_FPM_FM 32005/4: KM: V 3 V | Vybrane_kapitoly_z_matem VKMAT AAA_ucitel 0/1 48 ;98
+~ 725 0
+&1 A5_15 4 1 1 0 
+&1 A9_07 2 1 2 0 
+&1 A9_08 2 2 3 0 
+
+
+1_FHI_HI 12001: KHP: P V | Hospodarska_politika HPOL Choluj_Vladimir 1/0 79 ;99
+~ 662 9
+$1 D115 4 2 0 Choluj_Vladimir
+
+1_FHI_HI 32005: KM: P V | Vybrane_kapitoly_z_matemat VKMAT Fecenko_Jozef 1/1 79 ;100
+~ 725 0
+$1 B1_06 2 2 0 Fecenko_Jozef
+&1 A8_04 1 3 1 0 
+&1 A8_07 2 1 2 0 
+&1 A8_04 1 1 3 0 
+&1 A8_06 2 3 4 0 
+
+1_FHI_HI 32006/9: KM: P V | Teoria_pravdepodobnosti_1 TP1 Mucha_Vladimir 1/1 79 ;101
+~ 725 0
+$1 B1_09 3 2 0 Mucha_Vladimir
+&1 A9_07 2 3 1 0 
+&1 B1_09 3 4 2 0 
+&1 A7_07 1 3 3 0 
+&1 A6_15 1 4 4 0 
+
+1_FHI_HI 31001/3: KAI: P V | Informatika_2 INF2 Carachova_Magdalena 1/1 79 ;102
+~ 720 1
+$1 B1_10 3 3 0 Carachova_Magdalena
+&1 A8_15 3 4 1 0 Kultan_Jaroslav
+&1 A8_05 3 5 2 0 Kultan_Jaroslav
+&1 A8_06 3 5 3 0 Skurla_Peter
+&1 A8_15 4 4 4 0 Sihelsky_
+
+1_FHI_HI 15102: KF: P V | Financie_a_mena FM Neubauerova_Erika 1/1 79 ;103
+~ 692 0
+$1 B108 4 3 0 Neubauerova_Erika :F
+&1 D101 1 4 1 0 
+&1 D102 1 4 2 0 
+&1 B103 1 4 3 0 
+&1 D101 1 3 4 0 
+
+1_FHI_HI 31075: KAI: P V | Pocitac_pravo POPR Ondrejkova_Anna 1/0 79 ;104
+~ 720 1
+$1 A7_13 1 2 0 Ondrejkova_Anna
+
+
+1_FHI_MRIT 12004: KHP: P V | Hospodarska_politika HPOL Fifekova_Elena 1/1 74 ;105
+~ 662 9
+$1 D116 4 2 0 Fifekova_Elena
+&1 B1_09 4 3 1 0 
+&1 B1_08 4 3 2 0 
+&1 B1_09 4 4 3 0 
+&1 B1_08 4 4 4 0 
+
+1_FHI_MRIT 25020/9: KOP: P V | Pravo PRA Veternikova_ 1/0 74 ;106
+~ 557 0
+$1 D115 2 3 0 Veternikova_
+
+1_FHI_MRIT 32005/1: KM: P V | Vybrane_kapitoly_z_matemat VKMAT Sakalova_Katarina 1/1 74 ;107
+~ 725 0
+$1 B1_08 4 1 0 Sakalova_Katarina :F
+&1 A9_07 1 3 1 0 
+&1 A5_16 2 2 2 0 
+&1 A9_07 1 1 3 0 
+&1 C1_07 1 2 4 0 
+
+1_FHI_MRIT 31001/2: KAI: P V | Informatika_2 INF2 Kristova_G 1/1 74 ;108
+~ 720 1
+$1 C1_09 3 3 0 Kristova_G
+&1 A8_05 3 6 1 0 Krsjak_
+&1 A8_05 1 2 2 0 Prazenka_Dusan
+&1 A8_04 3 7 3 0 Skurla_Peter
+&1 A8_15 1 3 4 0 Prazenka_Dusan
+
+1_FHI_MRIT 32006: KM: P V | Teoria_pravdepodobnosti_1 TP1 Horakova_Galina 1/1 74 ;109
+~ 725 0
+$1 C1_07 3 1 0 Horakova_Galina :F
+&1 A9_07 1 2 1 0 
+&1 A9_08 1 3 2 0 
+&1 A9_08 1 2 3 0 
+&1 A7_17 2 2 4 0 
+
+
+1_FHI_UC 35302: KUA: V 0 V | Zaklady_uctovn ZU AAA_ucitel 1/0 25 ;110
+~ 727 1
+$1 B1_08 4 5 0
+
+1_FHI_UC 13053/1: KVSRR: V 0 V | Hospod_geograf_sveta HGS AAA_ucitel 1/0 80 ;111
+~ 674 0
+$1 D113 2 3 0
+
+1_FHI_UC 12002: KHP: P V | Hospodarska_politika HPOL Blaskova_Maria 1/0 111 ;112
+~ 662 9
+$1 D111 3 5 0 Blaskova_Maria
+
+1_FHI_UC 15102: KF: P V | Financie_a_mena FM Neubauerova_Erika 1/1 111 ;113
+~ 692 0
+$1 B108 4 3 0 Neubauerova_Erika :F
+&1 B102 1 3 1 0 
+&1 A5_08 1 3 2 0 
+&1 B103 1 2 3 0 
+&1 A5_07 1 2 4 0 
+&1 B104 1 2 5 0 
+
+1_FHI_UC 15102/9: KF: P V | Financie_a_mena FM Neubauerova_Erika 1/0 111 ;114
+~ 692 0
+$1 B108 4 4 0 Neubauerova_Erika
+
+1_FHI_UC 32005/2: KM: P V | Vybrane_kapitoly_z_matemat VKMAT Soltesova_Tatiana 1/1 111 ;115
+~ 725 0
+$1 B1_05 3 1 0 Soltesova_Tatiana
+&1 A7_07 1 4 1 0 
+&1 A7_13 1 4 2 0 
+&1 A7_13 3 3 3 0 
+&1 A9_07 3 3 4 0 
+&1 C1_09 3 2 5 0 
+
+1_FHI_UC 25078: KOP: P V | Hospod_a_obchod_pravo HOPR Holub_Dusan 2/1 111 ;116
+~ 557 0
+$2 D111 1 5 0 Holub_Dusan
+&1 B103 2 2 1 0 Veternikova_
+&1 B103 2 2 2 0 Veternikova_
+&1 B103 2 1 3 0 Veternikova_
+&1 B103 2 1 4 0 Veternikova_
+&1 B209 1 3 5 0 Veternikova_
+
+1_FHI_UC 32099: KM: P V | Financna_matematika_1 FMAT1 Simonka_Zsolt 1/1 111 ;117
+~ 725 0
+$1 C1_07 4 2 0 Simonka_Zsolt
+&1 B1_09 3 3 1 0 
+&1 B1_09 3 3 2 0 
+&1 B1_09 1 3 3 0 
+&1 B1_09 1 3 4 0 
+&1 A9_17 3 3 5 0 
+
+
+1_UMP_UMP 41093: KPH: V 1 V | Enterprice_Economy PHAJ Littvova_Veronika 1/1 20 ;118
+~ 54 1
+$1 C1_06 1 4 0 Littvova_Veronika
+&1 C1_06 1 5 1 0 Gajdova_ 
+
+1_UMP_UMP 22046/9: KMO: V 1 V | European_Union EU/AJ Ciderova_ 1/1 26 ;119
+~ 359 0
+$1 C1_08 2 4 0 Ciderova_
+&1 C1_08 2 5 1 0 Ciderova_ 
+
+1_UMP_UMP 21019/4: KMR: V 1 V | Marketing_AJ MAR/AJ Oresky_Milan 1/1 20 ;120
+~ 206 0
+$1 C1_08 3 2 0 Oresky_Milan
+&1 C1_08 3 3 1 0 Chomova_ 
+
+1_UMP_UMP 26444: KIOF: V 1 V | Informatics_1 INF1AJ Hasan_Jamal 1/1 5 ;121
+~ 548 0
+$1 D208 2 5 0 Hasan_Jamal
+&1 D208 2 6 1 0 Hasan_Jamal 
+
+1_UMP_UMP 34020: KS: V 1 V | Statistique STAFJ Terek_Milan 1/1 5 ;122
+~ 565 1
+$1 A8_14 3 5 0 Terek_Milan
+&1 A8_14 3 6 1 0 Terek_Milan 
+
+1_UMP_UMP 19921: KAIVT: V 1 V | Informatics_2 INF2AJ Skalak_Pavol 0/1 6 ;123
+~ 502 0
+&1 3B01 2 7 1 0 Skalak_Pavol 
+
+
+1_FAJ 81055: KJaT: P V | Realie_Spoj_kralov_A_Kanady RKAN AAA_ucitel 1/1 90 ;124
+~ 50 0
+$1 C1_06 3 1 0 Nemethova_Ildiko
+&1 E2_06 3 2 1 0 Nemethova_Ildiko
+&1 E2_06 3 3 2 0 Nemethova_Ildiko
+&1 E2_06 4 4 3 0 Blahova_Maria
+&1 E2_08 3 2 4 0 Blahova_Maria
+&1 E2_08 3 3 5 0 Blahova_Maria
+&1 E2_06 4 5 6 0 Blahova_Maria
+
+1_FAJ 81011: KJaT: P V | Vseob_jazyk_a_komunik_v_AJ VKAJ AAA_ucitel 0/1 90 ;125
+~ 50 0
+&1 E2_10 1 1 1 0 Barac_Ludovit
+&1 E2_10 1 2 2 0 Barac_Ludovit
+&1 D205 1 2 3 0 Nemcova_
+&1 D205 1 1 4 0 Nemcova_
+&1 E2_10 1 3 5 0 Barac_Ludovit
+&1 D205 1 3 6 0 Nemcova_
+
+1_FAJ 81011/9: KJaT: P V | Vseob_jazyk_a_komunik_v_AJ VKAJ AAA_ucitel 0/1 90 ;126
+~ 50 0
+&1 D105 3 4 1 0 Nemcova_
+&1 D105 3 5 2 0 Nemcova_
+&1 E2_10 3 5 3 0 Barac_Ludovit
+&1 E2_10 3 4 4 0 Barac_Ludovit
+&1 D105 3 6 5 0 Nemcova_
+&1 E2_10 3 6 6 0 Barac_Ludovit
+
+1_FAJ 81048: KJaT: P V | Lingvisticka_charakt_sucan_AJ LCHSAJ Brevenikova_Daniela 1/1 90 ;127
+~ 50 0
+$1 B1_07 4 2 0 Brevenikova_Daniela
+&1 E2_06 5 1 1 0 Lancaric_
+&1 E2_06 5 2 2 0 Lancaric_
+&1 E2_06 5 3 3 0 Lancaric_
+&1 E2_06 5 4 4 0 Lancaric_
+&1 E2_06 5 5 5 0 Lancaric_
+&1 E2_06 5 5 6 0 Lancaric_
+
+1_FAJ 81057: KJaT: P V | Odb_AJ_v_akadem_prostred OAJAP AAA_ucitel 0/1 90 ;128
+~ 50 0
+&1 D204 1 3 1 0 
+&1 D204 1 1 2 0 
+&1 D106 2 5 3 0 
+&1 D204 1 2 4 0 
+&1 D106 2 4 5 0 
+&1 D106 2 3 6 0 
+
+1_FAJ 21019/7: KMR: P V | Marketing MAR Hasprova_Maria 1/1 90 ;129
+~ 206 0
+$1 D112 4 3 0 Hasprova_Maria
+&1 B203 5 2 1 0 
+&1 B203 5 3 2 0 
+&1 A6_07 4 5 3 0 
+&1 A6_07 4 4 4 0 
+&1 D203 3 5 5 0 
+&1 B206 4 4 6 0 
+
+
+1_FAJ_CJIK1 81012: KJaT: P V | Vseob_jazyk_a_komunik_v_NJ VKNJ AAA_ucitel 0/1 50 ;130
+~ 50 0
+&1 E1_10 1 2 1 0 Pospisilova_Jana
+&1 E1_10 1 3 2 0 Pospisilova_Jana
+&1 E1_10 1 1 3 0 Pospisilova_Jana
+&1 D105 2 3 4 0 Pospisilova_Jana
+
+1_FAJ_CJIK1 81012/9: KJaT: P V | Vseob_jazyk_a_komunik_v_NJ VKNJ AAA_ucitel 0/1 50 ;131
+~ 50 0
+&1 E2_12 3 5 1 0 Pospisilova_Jana
+&1 E2_12 3 6 2 0 Pospisilova_Jana
+&1 E2_12 3 4 3 0 Pospisilova_Jana
+&1 E1_10 4 1 4 0 Pospisilova_Jana
+
+1_FAJ_CJIK1 81044: KJaT: P V | Lingvisticka_charakt_sucan_NJ LCHSNJ Adamcova_Livia 1/1 50 ;132
+~ 50 0
+$1 B1_09 2 2 0 Adamcova_Livia
+&1 E1_06 2 3 1 0 Adamcova_Silvia
+&1 E1_06 4 4 2 0 Adamcova_Silvia
+&1 E1_06 2 4 3 0 Adamcova_Silvia
+&1 E1_06 4 5 4 0 Adamcova_Silvia
+
+1_FAJ_CJIK1 81058: KJaT: P V | Odb_NJ_v_akadem_prostred ONJAP AAA_ucitel 0/1 50 ;133
+~ 50 0
+&1 E2_08 2 4 1 0 Szeherova_Eva
+&1 E2_08 2 3 2 0 Szeherova_Eva
+&1 E1_06 1 3 3 0 Stefancik_
+&1 E1_06 2 5 4 0 Szeherova_Eva
+
+1_FAJ_CJIK1 81056: KJaT: P V | Ralie_nemecky_hovor_kraj RNEM AAA_ucitel 1/1 50 ;134
+~ 50 0
+$1 B1_09 1 4 0 Stefancik_
+&1 E1_10 1 5 1 0 Stefancik_
+&1 E2_06 2 4 2 0 Stefancik_
+&1 E2_06 2 3 3 0 Stefancik_
+&1 E1_10 1 6 4 0 Stefancik_
+
+
+1_FAJ_CJIK2 81212: KJaT: P V | Vseob_jazyk_a_komunik_v_FJ VKFJ Nedjari_Fatima 0/1 19 ;135
+~ 50 0
+&1 E1_06 1 2 1 0 Nedjari_Fatima
+
+1_FAJ_CJIK2 81212/9: KJaT: P V | Vseob_jazyk_a_komunik_v_FJ VKFJ Nedjari_Fatima 0/1 19 ;136
+~ 50 0
+&1 E1_08 3 4 1 0 Nedjari_Fatima
+
+1_FAJ_CJIK2 81244: KJaT: P V | Lingvisticka_charakt_sucan_FJ LCHSFJ Melusova_Elena 1/1 19 ;137
+~ 50 0
+$1 E2_08 2 1 0 Melusova_Elena
+&1 E2_08 2 2 1 0 Melusova_Elena
+
+1_FAJ_CJIK2 81258: KJaT: P V | Odb_FJ_v_akadem_prostred OFJAP AAA_ucitel 0/1 19 ;138
+~ 50 0
+&1 E1_06 1 1 1 0 Rizekova_Iveta
+
+1_FAJ_CJIK2 81256: KJaT: P V | Ralie_francz_hovor_kraj RFRAN AAA_ucitel 1/1 19 ;139
+~ 50 0
+$1 E2_12 1 4 0 Povchanic_Stefan
+&1 E2_12 1 5 1 0 Povchanic_Stefan
+
+
+1_FAJ_CJIK3 81356: KJaT: P V | Ralie_span_hovor_kraj RSPAN AAA_ucitel 1/1 21 ;140
+~ 50 0
+$1 E2_10 1 4 0 Tuzinska_
+&1 E2_10 1 5 1 0 Tuzinska_
+
+1_FAJ_CJIK3 81312: KJaT: P V | Vseob_jazyk_a_komunik_v_SpJ VKSpJ AAA_ucitel 0/1 21 ;141
+~ 50 0
+&1 E1_08 1 6 1 0 Sanchez_
+
+1_FAJ_CJIK3 81312/9: KJaT: P V | Vseob_jazyk_a_komunik_v_SpJ VKSpJ AAA_ucitel 0/1 21 ;142
+~ 50 0
+&1 E1_06 3 4 1 0 Sanchez_
+
+1_FAJ_CJIK3 81344: KJaT: P V | Lingvist_charakt_sucan_SpJ LCHSpJ Spisiakova_ 1/1 11 ;143
+~ 50 0
+$1 E2_12 2 2 0 Spisiakova_
+&1 E1_12 2 4 1 0 Spisiakova_
+
+1_FAJ_CJIK3 81358: KJaT: P V | Odb_SpJ_v_akadem_prostred OSpJAP AAA_ucitel 0/1 11 ;144
+~ 50 0
+&1 E1_08 1 2 1 0 Fraterova_Zuzana
+
+
+2_NHF 11030: KET: S V | Dejiny_ekonomickych_teorii DET Caplanova_Anetta 1/0 170 ;145
+# 1 2 3 4 5 6 7 8 9 
+~ 675 9
+$1 B108 1 2 0 Caplanova_Anetta
+
+2_NHF 11030/1: KET: S V | Dejiny_ekonomickych_teorii DET Lisy_Jan 1/0 132 ;146
+# 10 11 12 13 14 15 16 
+~ 675 9
+$1 D114 1 2 0 Lisy_Jan
+
+2_NHF 19021: KAIVT: V 1 V | Prenos_Informat_2 P_INF2 AAA_ucitel 0/1 20 ;147
+~ 502 0
+&1 3B01 4 5 1 0 
+
+
+2_NHF_FBI 42003/1: KMZ: P V | Manazment MAN Thomasova_Elena 1/1 161 ;148
+~ 67 1
+$1 B1_05 3 2 0 Thomasova_Elena
+&1 A6_06 3 4 1 0 
+&1 A6_06 3 5 2 0 
+&1 A5_17 3 4 3 0 
+&1 A5_17 3 5 4 0 
+&1 A5_13 4 4 5 0 
+&1 A5_13 4 5 6 0 
+&1 A6_06 4 4 7 0 
+&1 A6_06 4 5 8 0 
+
+2_NHF_FBI 43012: KPF: P V | Podnikove_financie PFIN Hyranek_Eduard 1/1 161 ;149
+~ 69 1
+$1 B1_05 2 4 0 Hyranek_Eduard
+&1 A6_05 3 5 1 0 
+&1 A6_07 3 4 2 0 
+&1 A5_13 3 5 3 0 
+&1 A6_15 3 4 4 0 
+&1 A5_14 4 5 5 0 
+&1 A5_16 4 4 6 0 
+&1 A5_16 4 5 7 0 
+&1 A6_08 4 4 8 0 
+
+2_NHF_FBI 22001: KMO: P V | Medzinarodny_obchod MO Kastakova_Elena 1/0 161 ;150
+~ 359 0
+$1 B108 3 3 0 Kastakova_Elena
+
+2_NHF_FBI 16033: KBMF: P V | Bankovnictvo BAN Horvatova_Eva 1/1 161 ;151
+~ 620 0
+$1 B108 2 5 0 Horvatova_Eva :F
+&1 B101 4 4 1 0 
+&1 D109 4 4 2 0 
+&1 D109 4 5 3 0 
+&1 B101 4 5 4 0 
+&1 B106 2 2 5 0 
+&1 D101 2 2 6 0 
+&1 D101 2 3 7 0 
+&1 B102 2 1 8 0 
+
+2_NHF_FBI 11157: KET: V 4 V | VP_Zaklady_masov_komun ZMK Trnovsky_Karol 0/1 114 ;152
+~ 675 9
+&1 D115 3 5 1 0 Trnovsky_Karol 
+&1 B211 3 6 2 0 Trnovsky_Karol 
+&1 B211 3 7 3 0 Trnovsky_Karol 
+&1 B211 4 7 4 0 Trnovsky_Karol 
+
+2_NHF_FBI 11209/9: KET: V 0 V | VP_General_Econom_Hist VHD/AJ Vongrej_Marian 1/0 2 ;153
+~ 675 9
+$1 D116 4 6 0 Vongrej_Marian
+
+2_NHF_FBI 14071: KSRP: V 1 V | VP_Social_zabezpec SZ AAA_ucitel 1/1 6 ;154
+~ 679 0
+$1 D113 1 3 0
+&1 B212 3 6 1 0 
+
+2_NHF_FBI 12912: KHP: V 1 V | VP_Hospod_polit_EU HPEU Chandoga_ 0/1 14 ;155
+~ 662 9
+&1 B203 2 1 1 0 Chandoga_ 
+
+2_NHF_FBI 12012: KHP: V 1 V | VP_Uvod_do_empir_vysk UEV AAA_ucitel 0/1 15 ;156
+~ 662 9
+&1 B212 3 1 1 0 
+
+2_NHF_FBI 14420: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 9 ;157
+~ 679 0
+&1 B212 4 6 1 0 Privara_Andrej 
+
+2_NHF_FBI 17620: KPED: V 3 V | VP_Tvorba_odb_prac_a_prezent_zruc TOPPZ AAA_ucitel 0/1 76 ;158
+~ 719 0
+&1 4C02 2 6 1 0 
+&1 4C02 2 7 2 0 
+&1 4C02 3 4 3 0 
+
+2_NHF_FBI 17630: KPED: V 1 V | VP_Praktik_z_psychol PPSYCH Mackova_Zdenka 0/1 4 ;159
+~ 719 0
+&1 A6_17 4 5 1 0 Mackova_Zdenka 
+
+2_NHF_FBI 75048: KMPV: V 1 V | VP_Sociologia SOC AAA_ucitel 0/1 24 ;160
+~ 624 1
+&1 A4_05 1 1 1 0 
+
+2_NHF_FBI 75049: KMPV: V 2 V | VP_Politolog POL AAA_ucitel 0/1 37 ;161
+~ 624 1
+&1 A5_05 5 1 1 0 
+&1 A5_05 5 2 2 0 
+
+2_NHF_FBI 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 31 ;162
+~ 704 1
+$1 B1_02 5 1 0
+
+2_NHF_FBI 32021/1: KM: V 2 V | VP_Vybr_kapitol_z_matem VKMAT AAA_ucitel 0/1 40 ;163
+~ 725 0
+&1 C1_09 5 2 1 0 
+&1 C1_09 5 3 2 0 
+
+2_NHF_FBI 19921: KAIVT: V 1 V | VP_Informat_2_AJ INF2AJ Skalak_Pavol 0/1 1 ;164
+~ 502 0
+&1 3B01 2 7 1 0 Skalak_Pavol 
+
+
+2_NHF_POI 42003/2: KMZ: P V | Manazment MAN Matulcikova_ 1/1 34 ;165
+~ 67 1
+$1 B1_04 2 3 0 Matulcikova_
+&1 A6_08 3 3 1 0 
+&1 A5_08 3 2 2 0 
+
+2_NHF_POI 22001/1: KMO: P V | Medzinarodny_obchod MO Zabojnik_ 1/0 34 ;166
+~ 359 0
+$1 B1_04 4 4 0 Zabojnik_
+
+2_NHF_POI 43012: KPF: P V | Podnikove_financie PFIN Hyranek_Eduard 1/1 34 ;167
+~ 69 1
+$1 B1_05 2 4 0 Hyranek_Eduard
+&1 A5_16 3 2 1 0 
+&1 A5_15 3 3 2 0 
+
+2_NHF_POI 16033: KBMF: P V | Bankovnictvo BAN Horvatova_Eva 1/1 34 ;168
+~ 620 0
+$1 B108 2 5 0 Horvatova_Eva :F
+&1 D107 3 4 1 0 
+&1 D204 3 4 2 0 
+
+2_NHF_POI 18272: KPO: P V | PVP_Riziko_v_poist RPOI AAA_ucitel 1/0 34 ;169
+~ 709 0
+$1 D110 3 5 0
+
+2_NHF_POI 11157: KET: V 1 V | VP_Zaklady_masov_komun ZMK Trnovsky_Karol 0/1 14 ;170
+~ 675 9
+&1 B212 2 7 1 0 Trnovsky_Karol 
+
+2_NHF_POI 14071: KSRP: V 1 V | VP_Social_zabezpec SZ AAA_ucitel 1/1 2 ;171
+~ 679 0
+$1 D113 1 3 0
+&1 B212 3 6 1 0 
+
+2_NHF_POI 14420: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 15 ;172
+~ 679 0
+&1 B212 4 6 1 0 Privara_Andrej 
+
+2_NHF_POI 12912: KHP: V 1 V | VP_Hospod_polit_EU HPEU Chandoga_ 0/1 5 ;173
+~ 662 9
+&1 B203 2 1 1 0 Chandoga_ 
+
+2_NHF_POI 12012: KHP: V 1 V | VP_Uvod_do_empir_vysk UEV AAA_ucitel 0/1 1 ;174
+~ 662 9
+&1 B212 3 1 1 0 
+
+2_NHF_POI 17620: KPED: V 1 V | VP_Tvorba_odb_prac_a_prezent_zruc TOPPZ AAA_ucitel 0/1 16 ;175
+~ 719 0
+&1 4C02 3 7 1 0 
+
+2_NHF_POI 17630: KPED: V 1 V | VP_Praktik_z_psychol PPSYCH Mackova_Zdenka 0/1 3 ;176
+~ 719 0
+&1 A6_17 4 5 1 0 Mackova_Zdenka 
+
+2_NHF_POI 75048: KMPV: V 1 V | VP_Sociologia SOC AAA_ucitel 0/1 2 ;177
+~ 624 1
+&1 A4_05 1 1 1 0 
+
+2_NHF_POI 75049: KMPV: V 1 V | VP_Politolog POL AAA_ucitel 0/1 5 ;178
+~ 624 1
+&1 A5_05 5 3 1 0 
+
+2_NHF_POI 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 10 ;179
+~ 704 1
+$1 B1_02 5 1 0
+
+2_NHF_POI 32021/1: KM: V 1 V | VP_Vybr_kapitol_z_matem VKMAT AAA_ucitel 0/1 2 ;180
+~ 725 0
+&1 C1_09 5 2 1 0 
+
+
+2_NHF_NH 42003/2: KMZ: P V | Manazment MAN Matulcikova_ 1/1 46 ;181
+~ 67 1
+$1 B1_04 2 3 0 Matulcikova_
+&1 A6_08 2 1 1 0 
+&1 A6_15 2 2 2 0 
+
+2_NHF_NH 43012: KPF: P V | Podnikove_financie PFIN Hyranek_Eduard 1/1 46 ;182
+~ 69 1
+$1 B1_05 2 4 0 Hyranek_Eduard
+&1 A4_07 2 2 1 0 
+&1 A6_06 2 1 2 0 
+
+2_NHF_NH 22001/1: KMO: P V | Medzinarodny_obchod MO Zabojnik_ 1/0 46 ;183
+~ 359 0
+$1 B1_04 4 4 0 Zabojnik_
+
+2_NHF_NH 12912/8: KHP: P V | PVP_Uvod_do_makr_polit UMAEP AAA_ucitel 0/2 46 ;184
+~ 662 9
+&2 D101 3 4 1 0 
+&2 B203 3 2 2 0 
+
+2_NHF_NH 11157: KET: V 1 V | VP_Zaklady_masov_komun ZMK Trnovsky_Karol 0/1 23 ;185
+~ 675 9
+&1 B211 4 6 1 0 Trnovsky_Karol 
+
+2_NHF_NH 14071: KSRP: V 1 V | VP_Social_zabezpec SZ AAA_ucitel 1/1 3 ;186
+~ 679 0
+$1 D113 1 3 0
+&1 B212 3 6 1 0 
+
+2_NHF_NH 14420: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 4 ;187
+~ 679 0
+&1 B212 4 7 1 0 Privara_Andrej 
+
+2_NHF_NH 12912: KHP: V 1 V | VP_Hospod_polit_EU HPEU Chandoga_ 0/1 1 ;188
+~ 662 9
+&1 B203 2 1 1 0 Chandoga_ 
+
+2_NHF_NH 17620: KPED: V 1 V | VP_Tvorba_odb_prac_a_prezent_zruc TOPPZ AAA_ucitel 0/1 18 ;189
+~ 719 0
+&1 4C02 3 5 1 0 
+
+2_NHF_NH 17630: KPED: V 1 V | VP_Praktik_z_psychol PPSYCH Mackova_Zdenka 0/1 3 ;190
+~ 719 0
+&1 A6_17 4 5 1 0 Mackova_Zdenka 
+
+2_NHF_NH 75048: KMPV: V 1 V | VP_Sociologia SOC AAA_ucitel 0/1 12 ;191
+~ 624 1
+&1 B1_07 5 2 1 0 
+
+2_NHF_NH 75049: KMPV: V 1 V | VP_Politolog POL AAA_ucitel 0/1 6 ;192
+~ 624 1
+&1 A5_05 5 3 1 0 
+
+2_NHF_NH 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 10 ;193
+~ 704 1
+$1 B1_02 5 1 0
+
+2_NHF_NH 32021/1: KM: V 1 V | VP_Vybr_kapitol_z_matem VKMAT AAA_ucitel 0/1 6 ;194
+~ 725 0
+&1 C1_09 5 3 1 0 
+
+2_NHF_NH 19921: KAIVT: V 1 V | VP_Informat_2_AJ INF2AJ Skalak_Pavol 0/1 2 ;195
+~ 502 0
+&1 3B01 2 7 1 0 Skalak_Pavol 
+
+
+2_NHF_LZSM 42003/2: KMZ: P V | Manazment MAN Matulcikova_ 1/1 28 ;196
+~ 67 1
+$1 B1_04 2 3 0 Matulcikova_
+&1 A4_06 3 2 1 0 
+&1 A4_06 3 3 2 0 
+
+2_NHF_LZSM 43012: KPF: P V | Podnikove_financie PFIN Hyranek_Eduard 1/1 28 ;197
+~ 69 1
+$1 B1_05 2 4 0 Hyranek_Eduard
+&1 A5_15 3 1 1 0 
+&1 A6_17 3 2 2 0 
+
+2_NHF_LZSM 22001/1: KMO: P V | Medzinarodny_obchod MO Zabojnik_ 1/0 28 ;198
+~ 359 0
+$1 B1_04 4 4 0 Zabojnik_
+
+2_NHF_LZSM 11157: KET: V 1 V | VP_Zaklady_masov_komun ZMK Trnovsky_Karol 0/1 26 ;199
+~ 675 9
+&1 B212 2 6 1 0 Trnovsky_Karol 
+
+2_NHF_LZSM 11209/9: KET: V 0 V | VP_General_Econom_Hist VHD/AJ Vongrej_Marian 1/0 1 ;200
+~ 675 9
+$1 D116 4 6 0 Vongrej_Marian
+
+2_NHF_LZSM 14071: KSRP: V 1 V | VP_Social_zabezpec SZ AAA_ucitel 1/1 1 ;201
+~ 679 0
+$1 D113 1 3 0
+&1 B212 3 6 1 0 
+
+2_NHF_LZSM 14420: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 6 ;202
+~ 679 0
+&1 B212 4 7 1 0 Privara_Andrej 
+
+2_NHF_LZSM 12912: KHP: V 1 V | VP_Hospod_polit_EU HPEU Chandoga_ 0/1 3 ;203
+~ 662 9
+&1 B203 2 1 1 0 Chandoga_ 
+
+2_NHF_LZSM 12012: KHP: V 1 V | VP_Uvod_do_empir_vysk UEV AAA_ucitel 0/1 7 ;204
+~ 662 9
+&1 B212 3 1 1 0 
+
+2_NHF_LZSM 17620: KPED: V 1 V | VP_Tvorba_odb_prac_a_prezent_zruc TOPPZ AAA_ucitel 0/1 13 ;205
+~ 719 0
+&1 4C02 3 6 1 0 
+
+2_NHF_LZSM 17630: KPED: V 1 V | VP_Praktik_z_psychol PPSYCH Mackova_Zdenka 0/1 9 ;206
+~ 719 0
+&1 A6_17 4 5 1 0 Mackova_Zdenka 
+
+2_NHF_LZSM 75048: KMPV: V 1 V | VP_Sociologia SOC AAA_ucitel 0/1 11 ;207
+~ 624 1
+&1 B1_07 5 2 1 0 
+
+2_NHF_LZSM 75049: KMPV: V 1 V | VP_Politolog POL AAA_ucitel 0/1 11 ;208
+~ 624 1
+&1 A5_05 5 3 1 0 
+
+2_NHF_LZSM 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 3 ;209
+~ 704 1
+$1 B1_02 5 1 0
+
+2_NHF_LZSM 32021/1: KM: V 1 V | VP_Vybr_kapitol_z_matem VKMAT AAA_ucitel 0/1 2 ;210
+~ 725 0
+&1 C1_09 5 3 1 0 
+
+2_NHF_LZSM 19921: KAIVT: V 1 V | VP_Informat_2_AJ INF2AJ Skalak_Pavol 0/1 2 ;211
+~ 502 0
+&1 3B01 2 7 1 0 Skalak_Pavol 
+
+
+2_NHF_VSRR 42003/2: KMZ: P V | Manazment MAN Matulcikova_ 1/1 19 ;212
+~ 67 1
+$1 B1_04 2 3 0 Matulcikova_
+&1 A5_16 2 5 1 0 
+
+2_NHF_VSRR 43012: KPF: P V | Podnikove_financie PFIN Hyranek_Eduard 1/1 19 ;213
+~ 69 1
+$1 B1_05 2 4 0 Hyranek_Eduard
+&1 A5_17 2 6 1 0 
+
+2_NHF_VSRR 22001/1: KMO: P V | Medzinarodny_obchod MO Zabojnik_ 1/0 19 ;214
+~ 359 0
+$1 B1_04 4 4 0 Zabojnik_
+
+2_NHF_VSRR 13030: KVSRR: P V | PVP_Ekonom_verej_sektora EVS Cernenko_Tomas 1/1 19 ;215
+~ 674 0
+$1 D110 3 2 0 Cernenko_Tomas
+&1 D107 3 3 1 0 Bircar_
+
+2_NHF_VSRR 11157: KET: V 1 V | VP_Zaklady_masov_komun ZMK Trnovsky_Karol 0/1 11 ;216
+~ 675 9
+&1 B212 2 7 1 0 Trnovsky_Karol 
+
+2_NHF_VSRR 14071: KSRP: V 1 V | VP_Social_zabezpec SZ AAA_ucitel 1/1 1 ;217
+~ 679 0
+$1 D113 1 3 0
+&1 B212 3 6 1 0 
+
+2_NHF_VSRR 14420: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 3 ;218
+~ 679 0
+&1 B212 4 7 1 0 Privara_Andrej 
+
+2_NHF_VSRR 12012: KHP: V 1 V | VP_Uvod_do_empir_vysk UEV AAA_ucitel 0/1 1 ;219
+~ 662 9
+&1 B212 3 1 1 0 
+
+2_NHF_VSRR 17620: KPED: V 1 V | VP_Tvorba_odb_prac_a_prezent_zruc TOPPZ AAA_ucitel 0/1 6 ;220
+~ 719 0
+&1 4C02 3 6 1 0 
+
+2_NHF_VSRR 17630: KPED: V 1 V | VP_Praktik_z_psychol PPSYCH Mackova_Zdenka 0/1 1 ;221
+~ 719 0
+&1 A6_17 4 5 1 0 Mackova_Zdenka 
+
+2_NHF_VSRR 75048: KMPV: V 1 V | VP_Sociologia SOC AAA_ucitel 0/1 1 ;222
+~ 624 1
+&1 A4_05 1 1 1 0 
+
+2_NHF_VSRR 75049: KMPV: V 1 V | VP_Politolog POL AAA_ucitel 0/1 1 ;223
+~ 624 1
+&1 A5_05 5 3 1 0 
+
+2_NHF_VSRR 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 1 ;224
+~ 704 1
+$1 B1_02 5 1 0
+
+2_NHF_VSRR 19921: KAIVT: V 1 V | VP_Informat_2_AJ INF2AJ Skalak_Pavol 0/1 1 ;225
+~ 502 0
+&1 3B01 2 7 1 0 Skalak_Pavol 
+
+
+2_NHF_ETZ 42003/2: KMZ: P V | Manazment MAN Matulcikova_ 1/1 14 ;226
+~ 67 1
+$1 B1_04 2 3 0 Matulcikova_
+&1 A6_15 2 6 1 0 
+
+2_NHF_ETZ 43012: KPF: P V | Podnikove_financie PFIN Hyranek_Eduard 1/1 14 ;227
+~ 69 1
+$1 B1_05 2 4 0 Hyranek_Eduard
+&1 A6_15 2 5 1 0 
+
+2_NHF_ETZ 22001/1: KMO: P V | Medzinarodny_obchod MO Zabojnik_ 1/0 14 ;228
+~ 359 0
+$1 B1_04 4 4 0 Zabojnik_
+
+2_NHF_ETZ 11004: KET: P V | PVP_Zaklady_styl ZST Dvorak_ 2/0 14 ;229
+~ 675 9
+$2 B205 3 5 0 Dvorak_
+
+2_NHF_ETZ 11066: KET: P V | PVP_Zaklady_retor ZRET Kompoltova_ 0/1 14 ;230
+~ 675 9
+&1 4C14 3 4 1 0 Kompoltova_
+
+2_NHF_ETZ 12012: KHP: V 1 V | VP_Uvod_do_empir_vysk UEV AAA_ucitel 0/1 1 ;231
+~ 662 9
+&1 B212 3 1 1 0 
+
+2_NHF_ETZ 17620: KPED: V 1 V | VP_Tvorba_odb_prac_a_prezent_zruc TOPPZ AAA_ucitel 0/1 3 ;232
+~ 719 0
+&1 4C02 3 7 1 0 
+
+2_NHF_ETZ 17630: KPED: V 1 V | VP_Praktik_z_psychol PPSYCH Mackova_Zdenka 0/1 1 ;233
+~ 719 0
+&1 A6_17 4 5 1 0 Mackova_Zdenka 
+
+2_NHF_ETZ 75048: KMPV: V 1 V | VP_Sociologia SOC AAA_ucitel 0/1 1 ;234
+~ 624 1
+&1 A4_05 1 1 1 0 
+
+2_NHF_ETZ 75049: KMPV: V 1 V | VP_Politolog POL AAA_ucitel 0/1 4 ;235
+~ 624 1
+&1 A5_05 5 3 1 0 
+
+2_NHF_ETZ 72007/9: KMVHD: V 0 V | VP_Svetova_ekonom SE AAA_ucitel 1/0 6 ;236
+~ 704 1
+$1 B1_02 5 1 0
+
+2_NHF_ETZ 32021/1: KM: V 1 V | VP_Vybr_kapitol_z_matem VKMAT AAA_ucitel 0/1 1 ;237
+~ 725 0
+&1 C1_09 5 3 1 0 
+
+2_NHF_ETZ 14420: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 6 ;238
+~ 679 0
+&1 B212 4 7 1 0 Privara_Andrej 
+
+
+2_OF_POCR 42003/3: KMZ: P V | Manazment MAN Thomasova_Elena 1/1 171 ;239
+~ 67 1
+$1 B1_02 4 2 0 Thomasova_Elena
+&1 A5_15 1 1 1 0 
+&1 A5_15 1 2 2 0 
+&1 A5_14 1 1 3 0 
+&1 A5_14 1 2 4 0 
+&1 A6_07 1 4 5 0 
+&1 A5_17 1 5 6 0 
+&1 A5_16 1 4 7 0 
+&1 A6_16 1 5 8 0 
+&1 A6_05 2 4 9 0 
+&1 A6_07 2 5 10 0 
+
+2_OF_POCR 43012/1: KPF: P V | Podnikove_financie PFIN Fetisovova_Elena 1/1 171 ;240
+~ 69 1
+$1 B1_03 3 2 0 Fetisovova_Elena
+&1 A5_16 1 2 1 0 
+&1 A5_16 1 1 2 0 
+&1 A5_05 1 2 3 0 
+&1 A5_05 1 1 4 0 
+&1 A5_07 1 5 5 0 
+&1 A6_16 1 4 6 0 
+&1 A5_13 1 5 7 0 
+&1 A5_08 1 4 8 0 
+&1 A6_06 2 5 9 0 
+&1 A6_07 2 4 10 0 
+
+2_OF_POCR 25004: KOP: P V | Hospodarske_a_obch_pravo HOP Sabo_Mikulas 1/1 171 ;241
+~ 557 0
+$1 B107 3 3 0 Sabo_Mikulas :F
+&1 B206 3 4 1 0 Veternikova_
+&1 B206 3 5 2 0 Veternikova_
+&1 B210 3 4 3 0 Horvat_
+&1 B202 3 5 4 0 Horvat_
+&1 B205 2 6 5 0 Horvat_
+&1 B204 2 5 6 0 Horvat_
+&1 B206 1 1 7 0 Bartalska_
+&1 B206 1 2 8 0 Bartalska_
+&1 D109 1 4 9 0 
+&1 D104 1 5 10 0 
+
+2_OF_POCR 23001/2: KSCR: P V | Obchodno-podnik_sluzby OPS Michalova_Valeria 1/1 171 ;242
+~ 61 0
+$1 B108 1 3 0 Michalova_Valeria
+&1 D102 2 4 1 0 
+&1 B101 2 5 2 0 
+&1 B203 2 4 3 0 
+&1 B205 2 5 4 0 
+&1 B203 3 4 5 0 
+&1 B208 3 5 6 0 
+&1 B205 3 4 7 0 
+&1 B210 3 5 8 0 
+&1 B210 1 2 9 0 
+&1 B210 1 1 10 0 
+
+2_OF_POCR 23002/1: KSCR: P V | Cestovny_ruch CR Novacka_Ludmila 1/1 171 ;243
+~ 61 0
+$1 B107 4 3 0 Novacka_Ludmila :F
+&1 D103 2 5 1 0 
+&1 D103 2 4 2 0 
+&1 B210 2 5 3 0 
+&1 B208 2 4 4 0 
+&1 B204 3 5 5 0 
+&1 B204 3 4 6 0 
+&1 B211 3 5 7 0 
+&1 B207 3 4 8 0 
+&1 B201 2 6 9 0 
+&1 B205 1 2 10 0 
+
+
+2_OF_ZOP 42003/4: KMZ: P V | Manazment MAN Matulcikova_ 1/1 100 ;244
+~ 67 1
+$1 B1_10 3 2 0 Matulcikova_
+&1 A5_16 4 1 1 0 
+&1 A5_16 4 2 2 0 
+&1 A6_17 4 1 3 0 
+&1 A6_08 4 2 4 0 
+&1 A5_17 1 3 5 0 
+
+2_OF_ZOP 43012/2: KPF: P V | Podnikove_financie PFIN Janosova_Veronika 1/1 100 ;245
+~ 69 1
+$1 B1_08 3 3 0 Janosova_Veronika
+&1 A5_13 4 2 1 0 
+&1 A5_14 4 1 2 0 
+&1 A6_07 4 2 3 0 
+&1 A5_05 4 1 4 0 
+&1 A5_06 1 2 5 0 
+
+2_OF_ZOP 25004/1: KOP: P V | Hospodarske_a_obch_pravo HOP Sabo_Mikulas 1/1 100 ;246
+~ 557 0
+$1 D112 1 5 0 Sabo_Mikulas
+&1 B202 2 6 1 0 
+&1 B202 2 7 2 0 
+&1 B204 2 4 3 0 
+&1 D110 2 5 4 0 
+&1 D101 4 2 5 0 
+
+2_OF_ZOP 23001/1: KSCR: P V | Obchodno-podnik_sluzby OPS Michalova_Valeria 1/1 100 ;247
+~ 61 0
+$1 D112 1 4 0 Michalova_Valeria
+&1 B101 1 2 1 0 
+&1 D109 1 3 2 0 
+&1 B201 1 2 3 0 
+&1 B105 1 3 4 0 
+&1 D103 3 5 5 0 
+
+2_OF_ZOP 23002/1: KSCR: P V | Cestovny_ruch CR Novacka_Ludmila 1/1 100 ;248
+~ 61 0
+$1 B107 4 3 0 Novacka_Ludmila :F
+&1 B101 1 3 1 0 
+&1 B102 1 2 2 0 
+&1 B201 1 3 3 0 
+&1 B105 1 2 4 0 
+&1 D103 3 4 5 0 
+
+
+2_FMV_MEV 11927: KET: V 0 V | Prenos_Ekonom_teoria P_ET AAA_ucitel 1/0 50 ;249
+~ 675 9
+$1 D116 2 1 0
+
+2_FMV_MEV 32095: KM: V 1 V | Prenos_Vybr_kapit_z_matem P_VKM AAA_ucitel 0/1 30 ;250
+~ 725 0
+&1 C1_09 1 1 1 0 
+
+2_FMV_MEV 12100: KHP: P V | Hospodarska_politika HP Blaskova_Maria 1/1 155 ;251
+~ 662 9
+$1 B108 1 4 0 Blaskova_Maria
+&1 D101 1 5 1 0 Blaskova_Maria
+&1 D101 1 5 2 0 Blaskova_Maria
+&1 B209 2 3 3 0 Blaskova_Maria
+&1 B209 2 3 4 0 Blaskova_Maria
+&1 B209 2 5 5 0 Blaskova_Maria
+&1 B209 2 5 6 0 Blaskova_Maria
+&1 D116 2 4 7 0 Blaskova_Maria
+&1 D116 2 4 8 0 Blaskova_Maria
+
+2_FMV_MEV 72004: KMVHD: P V | Specialny_seminar SS AAA_ucitel 0/1 155 ;252
+~ 704 1
+&1 A4_08 2 3 1 0 
+&1 A4_08 1 3 2 0 
+&1 A4_08 2 5 3 0 
+&1 A4_06 2 4 4 0 
+&1 B1_10 2 3 5 0 
+&1 A6_08 3 5 6 0 
+&1 A4_05 4 2 7 0 
+&1 A4_05 4 1 8 0 
+
+2_FMV_MEV 43012/3: KPF: P V | Podnikove_financie PFIN Fetisovova_Elena 1/1 155 ;253
+~ 69 1
+$1 B1_04 3 4 0 Fetisovova_Elena :F
+&1 A6_17 3 5 1 0 
+&1 A5_16 3 5 2 0 
+&1 A6_05 3 6 3 0 
+&1 A6_08 3 6 4 0 
+&1 A6_15 4 2 5 0 
+&1 A5_17 4 2 6 0 
+&1 A6_08 4 3 7 0 
+&1 A6_15 4 3 8 0 
+
+2_FMV_MEV 72007: KMVHD: P V | Svetova_ekonomika SE Dudas_Tomas 1/1 155 ;254
+~ 704 1
+$1 B1_04 1 2 0 Dudas_Tomas
+&1 A4_06 1 3 1 0 
+&1 A4_05 2 3 2 0 
+&1 A4_08 2 4 3 0 
+&1 A4_07 2 5 4 0 
+&1 A5_15 3 6 5 0 
+&1 A6_06 3 6 6 0 
+&1 A4_08 4 1 7 0 
+&1 A4_08 4 2 8 0 
+
+2_FMV_MEV 35005/6: KUA: P V | Uctovnictvo UCT AAA_ucitel 1/1 155 ;255
+~ 727 1
+$1 B1_04 2 2 0
+&1 A9_07 2 4 1 0 
+&1 A9_08 2 4 2 0 
+&1 A9_07 4 2 3 0 
+&1 A5_15 4 2 4 0 
+&1 A8_08 4 1 5 0 
+&1 A9_07 4 1 6 0 
+&1 A9_17 2 5 7 0 
+&1 A9_08 2 5 8 0 
+
+
+2_FPM_EMP 22003/1: KMO: P V | Medzinarodny_obchod MO AAA_ucitel 1/1 216 ;256
+~ 359 0
+$1 B107 1 5 0
+&1 B209 1 4 1 0 
+&1 B204 1 7 2 0 
+&1 B209 3 3 3 0 
+&1 B101 3 3 4 0 
+&1 B105 3 1 5 0 
+&1 B106 3 1 6 0 
+&1 D101 2 1 7 0 
+&1 D102 2 1 8 0 
+&1 D102 2 2 9 0 
+&1 D103 2 2 10 0 
+&1 B201 3 2 11 0 
+&1 B208 3 2 12 0 
+&1 B106 2 3 13 0 
+&1 B207 2 3 14 0 
+&1 B212 1 6 15 0 
+
+2_FPM_EMP 35005/3: KUA: S V | Uctov_podnik_subjekt UCTPS AAA_ucitel 1/1 144 ;257
+# 1 2 3 4 5 6 7 8 9 10 
+~ 727 1
+$1 B1_02 3 2 0
+&1 A9_08 2 1 1 0 
+&1 A9_17 2 1 2 0 
+&1 A9_07 2 2 3 0 
+&1 A9_17 2 2 4 0 
+&1 A6_08 1 4 5 0 
+&1 A8_08 1 4 6 0 
+&1 A8_08 4 2 7 0 
+&1 A9_08 4 2 8 0 
+&1 A9_17 4 3 9 0 
+&1 A9_08 4 3 10 0 
+
+2_FPM_EMP 35005/4: KUA: S V | Uctov_podnik_subjekt UCTPS AAA_ucitel 1/1 72 ;258
+# 11 12 13 14 15 
+~ 727 1
+$1 B1_04 2 1 0
+&1 A9_17 2 3 11 0 
+&1 A8_08 4 5 12 0 
+&1 A9_17 4 4 13 0 
+&1 A6_17 4 4 14 0 
+&1 A8_08 2 3 15 0 
+
+2_FPM_EMP 41004: KPH: P V | Mikroekonomia MIKEK Grisakova_ 1/1 216 ;259
+~ 54 1
+$1 B1_03 2 4 0 Grisakova_ :F
+&1 A5_08 2 2 1 0 
+&1 A5_05 2 2 2 0 
+&1 A5_16 2 1 3 0 
+&1 A5_05 2 1 4 0 
+&1 A6_06 2 3 5 0 
+&1 A6_05 2 3 6 0 
+&1 A5_07 4 3 7 0 
+&1 A6_06 4 3 8 0 
+&1 A5_08 4 2 9 0 
+&1 A4_06 4 2 10 0 
+&1 A6_14 4 4 11 0 
+&1 A6_15 4 4 12 0 
+&1 A6_15 4 5 13 0 
+&1 A6_14 4 5 14 0 
+&1 A5_05 2 5 15 0 
+
+2_FPM_EMP 18153: KPO: V 0 V | Podnikove_poistenie PPOI Drugdova_Barbora 1/0 58 ;260
+~ 709 0
+$1 D112 2 6 0 Drugdova_Barbora
+
+2_FPM_EMP 24033: KTKT: V 1 V | Dizajn_produktu DPROD Mlakay_Jozef 0/1 19 ;261
+~ 467 0
+&1 D108 4 2 1 0 Mlakay_Jozef 
+
+2_FPM_EMP 24025: KTKT: V 1 V | Balenie_tovaru BLT Jarossova_ 0/1 5 ;262
+~ 467 0
+&1 B208 1 6 1 0 Jarossova_ 
+
+2_FPM_EMP 21035: KIOF: V 1 V | Aplik_on-line_market_nastr APLMN Hasan_Jamal 0/1 18 ;263
+~ 548 0
+&1 D211 4 3 1 0 Hasan_Jamal 
+
+2_FPM_EMP 32002: KM: V 1 V | Financna_matematika_1 FMAT1 AAA_ucitel 0/1 12 ;264
+~ 725 0
+&1 A5_06 3 1 1 0 
+
+2_FPM_EMP 45088: KIM: V 1 V | Ekonom_aplik_v_MS_Office EAMSO AAA_ucitel 0/1 20 ;265
+~ 154 1
+&1 A5_12 1 6 1 0 
+
+2_FPM_EMP 41035: KPH: V 0 V | Neziskov_organizacie NEO Majduchova_Helena 1/0 91 ;266
+~ 54 1
+$1 B1_07 2 5 0 Majduchova_Helena
+
+
+2_FPM_FM 22003/1: KMO: P V | Medzinarodny_obchod MO AAA_ucitel 1/1 61 ;267
+~ 359 0
+$1 B107 1 5 0
+&1 D102 4 2 1 0 
+&1 D104 4 2 2 0 
+&1 D104 4 1 3 0 
+&1 D103 4 1 4 0 
+
+2_FPM_FM 41004/2: KPH: P V | Mikroekonomia MIKEK Fendekova_Eleonora 1/1 61 ;268
+~ 54 1
+$1 C1_07 2 3 0 Fendekova_Eleonora
+&1 B212 4 1 1 0 
+&1 B210 4 3 2 0 
+&1 B208 4 2 3 0 
+&1 A6_08 2 4 4 0 
+
+2_FPM_FM 35005/4: KUA: P V | Uctov_podnik_subjekt UCTPS AAA_ucitel 1/1 61 ;269
+~ 727 1
+$1 B1_04 2 1 0
+&1 A8_08 2 4 1 0 
+&1 A9_07 3 2 2 0 
+&1 A6_15 3 2 3 0 
+&1 A6_14 3 3 4 0 
+
+2_FPM_FM 18153: KPO: V 0 V | Podnikove_poistenie PPOI Drugdova_Barbora 1/0 23 ;270
+~ 709 0
+$1 D112 2 6 0 Drugdova_Barbora
+
+2_FPM_FM 24033: KTKT: V 1 V | Dizajn_produktu DPROD Mlakay_Jozef 0/1 2 ;271
+~ 467 0
+&1 D108 4 2 1 0 Mlakay_Jozef 
+
+2_FPM_FM 21035: KIOF: V 1 V | Aplik_on-line_market_nastr APLMN Hasan_Jamal 0/1 1 ;272
+~ 548 0
+&1 D211 4 3 1 0 Hasan_Jamal 
+
+2_FPM_FM 32002: KM: V 1 V | Financna_matematika_1 FMAT1 AAA_ucitel 0/1 3 ;273
+~ 725 0
+&1 A5_06 3 1 1 0 
+
+2_FPM_FM 45088: KIM: V 1 V | Ekonom_aplik_v_MS_Office EAMSO AAA_ucitel 0/1 20 ;274
+~ 154 1
+&1 A5_12 1 7 1 0 
+
+2_FPM_FM 41035: KPH: V 0 V | Neziskov_organizacie NEO Majduchova_Helena 1/0 14 ;275
+~ 54 1
+$1 B1_07 2 5 0 Majduchova_Helena
+
+
+2_FHI_HI 32095: KM: V 1 V | Prenos_Vybr_kapit_z_matem P_VKM AAA_ucitel 0/1 20 ;276
+~ 725 0
+&1 A8_04 1 1 1 0 
+
+2_FHI_HI 34004: KS: P V | Statist_metody STM Vojtkova_Maria 1/1 57 ;277
+~ 565 1
+$1 B1_04 3 2 0 Vojtkova_Maria
+&1 A8_13 2 2 1 0 
+&1 A8_13 4 3 2 0 
+&1 A8_13 4 2 3 0 
+
+2_FHI_HI 35005/2: KUA: P V | Uctovn_podnik_subjektov_1 UCTPS1 AAA_ucitel 1/1 57 ;278
+~ 727 1
+$1 B1_08 1 2 0
+&1 A8_08 4 3 1 0 
+&1 A7_17 2 3 2 0 
+&1 A8_08 4 4 3 0 
+
+2_FHI_HI 22003/3: KMO: P V | Medzinarodny_obchod MO Gavalova_Viera 1/0 57 ;279
+~ 359 0
+$1 B107 2 1 0 Gavalova_Viera
+
+2_FHI_HI 42003: KMZ: P V | Manazment MAN AAA_ucitel 1/1 57 ;280
+~ 67 1
+$1 B1_02 3 3 0
+&1 A6_17 4 2 1 0 
+&1 A9_07 1 4 2 0 
+&1 A6_17 4 3 3 0 
+
+2_FHI_HI 31041: KAI: P V | Programovanie_2 PRG2 Kostal_ 1/1 57 ;281
+~ 720 1
+$1 B1_09 3 1 0 Kostal_
+&1 A8_07 2 3 1 0 Pittner_
+&1 A8_07 2 2 2 0 Pittner_
+&1 A8_07 1 4 3 0 Pittner_
+
+2_FHI_HI 31051: KAI: P V | Pocit_siete_a_distr_sprac_dat_1 PSDSD1 Zavodny_Peter 1/1 57 ;282
+~ 720 1
+$1 B1_10 1 3 0 Zavodny_Peter
+&1 A8_12 1 4 1 0 Schmidt_
+&1 A8_12 1 5 2 0 Schmidt_
+&1 A8_07 3 5 3 0 Schmidt_
+
+
+2_FHI_MRIT 32095: KM: V 1 V | Prenos_Vybr_kapit_z_matem P_VKM AAA_ucitel 0/1 20 ;283
+~ 725 0
+&1 C1_07 1 2 1 0 
+
+2_FHI_MRIT 15102: KF: P V | Financie_a_mena FM Neubauerova_Erika 1/1 69 ;284
+~ 692 0
+$1 B108 4 3 0 Neubauerova_Erika :F
+&1 B101 2 2 1 0 
+&1 B204 2 2 2 0 
+&1 B207 2 2 3 0 
+&1 B210 2 2 4 0 
+
+2_FHI_MRIT 22003/3: KMO: P V | Medzinarodny_obchod MO Gavalova_Viera 1/0 69 ;285
+~ 359 0
+$1 B107 2 1 0 Gavalova_Viera
+
+2_FHI_MRIT 35005/1: KUA: P V | Uctovn_podnik_subjekt_1 UCTPS1 AAA_ucitel 1/1 69 ;286
+~ 727 1
+$1 A7_13 1 3 0
+&1 A9_07 3 1 1 0 
+&1 A9_08 3 3 2 0 
+&1 A8_08 3 1 3 0 
+&1 A8_08 3 3 4 0 
+
+2_FHI_MRIT 34004: KS: P V | Statist_metody STM Vojtkova_Maria 1/1 69 ;287
+~ 565 1
+$1 B1_04 3 2 0 Vojtkova_Maria
+&1 A8_13 1 2 1 0 
+&1 A8_13 4 1 2 0 
+&1 A8_13 3 4 3 0 
+&1 A8_13 3 1 4 0 
+
+2_FHI_MRIT 33030: KOVE: P V | Mikroek_analyza MIKA Fendek_Michal 1/1 69 ;288
+~ 644 1
+$1 B1_05 2 3 0 Fendek_Michal
+&1 A7_17 1 1 1 0 
+&1 A7_13 4 4 2 0 
+&1 A7_17 1 2 3 0 
+&1 A7_13 4 1 4 0 
+
+2_FHI_MRIT 33018/7: KOVE: V 3 V | Modelovanie_ekonomic_procesov1 MEP1 AAA_ucitel 1/1 76 ;289
+~ 644 1
+$1 A7_13 4 2 0
+&1 A7_17 4 5 1 0 
+&1 A7_07 3 5 2 0 
+&1 A7_07 3 6 3 0 
+
+
+2_FHI_UC 32095: KM: V 1 V | Prenos_Vybr_kapit_z_matem P_VKM AAA_ucitel 0/1 30 ;290
+~ 725 0
+&1 C1_09 1 1 1 0 
+
+2_FHI_UC 35005: KUA: P V | Uctovn_podnik_subjekt_1 UCTPS1 AAA_ucitel 1/1 92 ;291
+~ 727 1
+$1 C1_09 1 2 0
+&1 A8_08 3 2 1 0 
+&1 A8_08 1 3 2 0 
+&1 A7_07 2 2 3 0 
+&1 A8_08 2 2 4 0 
+&1 A9_17 1 3 5 0 
+
+2_FHI_UC 42003: KMZ: P V | Manazment MAN AAA_ucitel 1/1 92 ;292
+~ 67 1
+$1 B1_02 3 3 0
+&1 A5_06 3 4 1 0 
+&1 A6_06 2 2 2 0 
+&1 A6_16 2 1 3 0 
+&1 A5_06 2 1 4 0 
+&1 A6_16 2 2 5 0 
+
+2_FHI_UC 34004/1: KS: P V | Statist_metody STM Soltes_Erik 1/1 92 ;293
+~ 565 1
+$1 B1_07 3 1 0 Soltes_Erik
+&1 A8_13 2 1 1 0 
+&1 A8_13 2 3 2 0 
+&1 A8_13 1 5 3 0 
+&1 A8_13 1 3 4 0 
+&1 A8_13 3 2 5 0 
+
+2_FHI_UC 15010: KF: P V | Danova_teoria_a_polit_1 DTP1 Schultzova_Anna 1/0 92 ;294
+~ 692 0
+$1 D113 4 2 0 Schultzova_Anna
+
+2_FHI_UC 44001: KMVAL: P V | Manazment_vyroby MV Dupal_Andrej 1/1 92 ;295
+~ 78 1
+$1 B1_07 1 4 0 Dupal_Andrej
+&1 A6_05 2 2 1 0 
+&1 A6_14 2 1 2 0 
+&1 A6_08 1 3 3 0 
+&1 A6_07 4 1 4 0 
+&1 A5_08 2 3 5 0 
+
+2_FHI_UC 33008: KOVE: P V | Ekonometria1 EKO1 Konig_ 1/1 92 ;296
+~ 644 1
+$1 C1_09 4 3 0 Konig_
+&1 A8_14 4 5 1 0 Konig_
+&1 A8_12 4 4 2 0 Konig_
+&1 A8_14 3 2 3 0 Konig_
+&1 A8_14 2 3 4 0 Konig_
+&1 A8_14 2 1 5 0 Konig_
+
+
+2_UMP_UMP 33098: KOVE: V 1 V | Econometrics_1 EKO/AJ Reiff_Marian 1/1 15 ;297
+~ 644 1
+$1 A8_13 1 6 0 Reiff_Marian
+&1 A8_13 1 7 1 0 Reiff_Marian 
+
+2_UMP_UMP 21016: KMR: V 1 V | Etude_de_cas_de_marketing PSMFJ Kita_Jaroslav 0/1 3 ;298
+~ 206 0
+&1 C1_08 2 2 1 0 
+
+2_UMP_UMP 21916: KMR: V 1 V | Marketing_Case_Studies PSMAJ AAA_ucitel 0/1 15 ;299
+~ 206 0
+&1 C1_08 1 3 1 0 
+
+2_UMP_UMP 11209/9: KET: V 0 V | General_Econom_Hist VHD/AJ Vongrej_Marian 1/0 8 ;300
+~ 675 9
+$1 D116 4 6 0 Vongrej_Marian
+
+2_UMP_UMP 33619: KOVE: V 1 V | Microeconomic_Analysis MI/AJ Furkova_Andrea 1/1 2 ;301
+~ 644 1
+$1 A7_07 4 4 0 Furkova_Andrea
+&1 A7_07 4 5 1 0 Furkova_Andrea 
+
+
+2_FAJ 82046: KJaT: P V | Odbor_jazyk_a_komunik_v_AJ OJKAJ Barac_Ludovit 0/1 72 ;302
+~ 50 0
+&1 D105 1 4 1 0 Blahova_Maria
+&1 D105 1 5 2 0 Blahova_Maria
+&1 D106 1 5 3 0 Nemcova_
+&1 D105 1 3 4 0 Papaiova_
+&1 D105 1 2 5 0 Papaiova_
+
+2_FAJ 81066: KJaT: P V | Obchod_rokovanie_v_AJ ORAJ AAA_ucitel 0/1 72 ;303
+~ 50 0
+&1 D206 2 2 1 0 Papaiova_
+&1 D206 2 1 2 0 Papaiova_
+&1 D205 3 5 3 0 Papaiova_
+&1 D206 2 3 4 0 Papaiova_
+&1 D205 3 4 5 0 Papaiova_
+
+2_FAJ 81068: KJaT: P V | Preklad_seminar_AJ PSAJ Pauleova_Milada 0/1 72 ;304
+~ 50 0
+&1 D106 3 5 1 0 
+&1 D106 3 4 2 0 
+&1 E2_10 2 3 3 0 Pauleova_Milada
+&1 E2_10 2 2 4 0 Pauleova_Milada
+&1 E2_10 2 1 5 0 Pauleova_Milada
+
+2_FAJ 81039: KJaT: V 5 V | Treti_cudzi_Jazyk 3CJ AAA_ucitel 0/1 72 ;305
+~ 50 0
+&1 E1_08 2 6 1 0 Jancok_ 
+&1 E2_12 2 6 2 0 Sanchez_ 
+&1 D106 2 6 3 0 Kvapil_Roman 
+&1 A4_15 2 6 4 0 Strelkova_Katarina 
+&1 D105 2 6 5 0 Sehnal_Roman 
+
+2_FAJ 22088: KMO: P V | Manazment_medzin_podnikania MMP Gavalova_Viera 1/1 72 ;306
+~ 359 0
+$1 D116 3 1 0 Gavalova_Viera
+&1 B205 4 3 1 0 Vargova_
+&1 B106 3 2 2 0 Vargova_
+&1 B106 3 4 3 0 Vargova_
+&1 B204 3 3 4 0 Vargova_
+&1 D204 3 5 5 0 Vargova_
+
+2_FAJ 81073: KJaT: P V | Vybrane_kapitol_z_dejin_lit VKDL Blahova_Maria 1/1 72 ;307
+~ 50 0
+$1 C1_07 1 1 0 Blahova_Maria
+&1 E2_12 2 5 1 0 Blahova_Maria
+&1 E2_12 1 3 2 0 Blahova_Maria
+&1 E2_12 2 4 3 0 Blahova_Maria
+&1 E2_12 1 2 4 0 Blahova_Maria
+&1 E2_12 2 3 5 0 Blahova_Maria
+
+2_FAJ 81070: KJaT: P V | Jazyk_tlace_v_AJ JTAJ AAA_ucitel 0/1 72 ;308
+~ 50 0
+&1 E2_06 3 4 1 0 Csanyi_
+&1 D205 2 2 2 0 Csanyi_
+&1 D205 2 1 3 0 Csanyi_
+&1 E2_06 3 5 4 0 Csanyi_
+&1 E2_06 3 6 5 0 Csanyi_
+
+
+2_FAJ_CJIK1 81047: KJaT: P V | Odbor_jazyk_a_komunik_vNJ OJKNJ Liskova_Danusa 0/1 49 ;309
+~ 50 0
+&1 E2_06 1 2 1 0 Liskova_Danusa
+&1 E2_06 1 4 2 0 Liskova_Danusa
+&1 E2_06 1 3 3 0 Liskova_Danusa
+
+2_FAJ_CJIK1 81067: KJaT: P V | Obchod_rokovanie_v_NJ ORNJ AAA_ucitel 0/1 49 ;310
+~ 50 0
+&1 D205 2 4 1 0 Helmova_Milena
+&1 D205 2 3 2 0 Helmova_Milena
+&1 D205 2 5 3 0 Helmova_Milena
+
+2_FAJ_CJIK1 81069: KJaT: P V | Preklad_seminar_NJ PSNJ Seresova_Katarina 0/1 49 ;311
+~ 50 0
+&1 E1_12 1 3 1 0 Seresova_Katarina
+&1 E1_12 1 2 2 0 Seresova_Katarina
+&1 E2_08 1 2 3 0 Sovinec_
+
+
+2_FAJ_CJIK2 81547: KJaT: P V | Odbor_jazyk_a_komunik_v_FJ OJKFJ AAA_ucitel 0/1 13 ;312
+~ 50 0
+&1 E2_08 1 4 1 0 Lapsansky_Ladislav
+
+2_FAJ_CJIK2 81567: KJaT: P V | Obchod_rokovanie_v_FJ ORFJ AAA_ucitel 0/1 13 ;313
+~ 50 0
+&1 E2_08 1 5 1 0 Lapsansky_Ladislav
+
+2_FAJ_CJIK2 81569: KJaT: P V | Preklad_seminar_FJ PSFJ AAA_ucitel 0/1 13 ;314
+~ 50 0
+&1 D107 2 1 1 0 Mateasakova_
+
+
+2_FAJ_CJIK3 81647: KJaT: P V | Odbor_jazyk_a_komunik_v_SpJ OJKSpJ AAA_ucitel 0/1 10 ;315
+~ 50 0
+&1 D106 1 3 1 0 Sanchez_
+
+2_FAJ_CJIK3 81667: KJaT: P V | Obchod_rokovanie_v_SpJ ORSpJ AAA_ucitel 0/1 10 ;316
+~ 50 0
+&1 E1_08 1 4 1 0 Palkova_Jana
+
+2_FAJ_CJIK3 81669: KJaT: P V | Preklad_seminar_SpJ PSSpJ AAA_ucitel 0/1 10 ;317
+~ 50 0
+&1 D107 2 2 1 0 Palkova_Jana
+
+
+3_NHF 35995: KUA: V 0 V | Prenos_Uctov_podnik_subj_1 P_UPS1 AAA_ucitel 1/0 15 ;318
+~ 727 1
+$1 B1_06 5 2 0
+
+
+3_NHF_FBI 16933: KBMF: V 2 V | Prenos_Bankovnictvo P_BAN Horvatova_Eva 0/1 50 ;319
+~ 620 0
+&1 B206 2 3 1 0 Horvatova_Eva 
+&1 B210 2 4 2 0 Horvatova_Eva 
+
+3_NHF_FBI 16234: KBMF: P V | Penazne_trhy PT Malacka_Viera 1/1 129 ;320
+~ 620 0
+$1 B108 2 2 0 Malacka_Viera :F
+&1 B105 4 4 1 0 
+&1 B105 4 5 2 0 
+&1 B101 3 2 3 0 
+&1 D114 3 3 4 0 
+&1 B102 2 4 5 0 
+&1 B104 2 3 6 0 
+&1 B212 3 4 7 0 
+&1 D116 3 5 8 0 
+
+3_NHF_FBI 14012: KSRP: V 1 V | VP_Ekonom_vzdel EKVZ AAA_ucitel 1/1 16 ;321
+~ 679 0
+$1 D112 2 3 0
+&1 B207 2 1 1 0 
+
+3_NHF_FBI 14420/9: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 1 ;322
+~ 679 0
+&1 B212 4 5 1 0 Privara_Andrej 
+
+3_NHF_FBI 12131/9: KHP: V 3 V | VP_Strat_soc_ekon_rozvoja SSER Fifekova_Elena 1/1 73 ;323
+~ 662 9
+$1 D116 4 3 0 Fifekova_Elena
+&1 B103 1 5 1 0 
+&1 B103 1 6 2 0 
+&1 B104 1 5 3 0 
+
+3_NHF_FBI 18191: KPO: V 1 V | VP_Životne_poist ZPOI Drugdova_Barbora 1/1 5 ;324
+~ 709 0
+$1 D115 1 3 0 Drugdova_Barbora
+&1 B212 1 5 1 0 Ondruska_ 
+
+3_NHF_FBI 13030: KVSRR: V 1 V | VP_Ekonom_verej_sektora EVS Cernenko_Tomas 1/1 1 ;325
+~ 674 0
+$1 D110 3 2 0 Cernenko_Tomas
+&1 D107 3 3 1 0 Bircar_ 
+
+
+3_NHF_POI 11209/9: KET: V 0 V | VP_General_Econ_Hist VHD/AJ Vongrej_Marian 1/0 1 ;326
+~ 675 9
+$1 D116 4 6 0 Vongrej_Marian
+
+3_NHF_POI 16234: KBMF: P V | Penazne_trhy PT Malacka_Viera 1/1 23 ;327
+~ 620 0
+$1 B108 2 2 0 Malacka_Viera :F
+&1 D114 2 5 1 0 
+
+3_NHF_POI 18191: KPO: P V | PVP_Životne_poist ZPOI Drugdova_Barbora 1/1 23 ;328
+~ 709 0
+$1 D115 1 3 0 Drugdova_Barbora
+&1 B212 1 4 1 0 Ondruska_
+
+3_NHF_POI 14012: KSRP: V 1 V | VP_Ekonom_vzdel EKVZ AAA_ucitel 1/1 17 ;329
+~ 679 0
+$1 D112 2 3 0
+&1 B106 1 2 1 0 
+
+3_NHF_POI 12131/9: KHP: V 1 V | VP_Strat_soc_ekon_rozvoja SSER Fifekova_Elena 1/1 2 ;330
+~ 662 9
+$1 D116 4 3 0 Fifekova_Elena
+&1 B103 1 6 1 0 
+
+
+3_NHF_NH 12131: KHP: P V | Strategia_soc_ekon_rozvoja SSER Fifekova_Elena 1/1 54 ;331
+~ 662 9
+$1 D112 3 4 0 Fifekova_Elena
+&1 B103 3 5 1 0 
+&1 B209 3 5 2 0 
+&1 D109 3 5 3 0 
+
+3_NHF_NH 12111: KHP: P V | Narodne_ucty NAU Morvay_Karol 1/1 54 ;332
+~ 662 9
+$1 D113 3 2 0 Morvay_Karol
+&1 B105 1 5 1 0 Hudcovsky_
+&1 B105 1 6 2 0 Hudcovsky_
+&1 B205 4 1 3 0 Hudcovsky_
+
+3_NHF_NH 14071: KSRP: P V | Socialne_zabezpecenie SZ AAA_ucitel 1/1 54 ;333
+~ 679 0
+$1 D113 1 3 0
+&1 D106 1 4 1 0 
+&1 B209 1 5 2 0 
+&1 B201 4 2 3 0 
+
+3_NHF_NH 11209/9: KET: V 0 V | VP_General_Econ_Hist VHD/AJ Vongrej_Marian 1/0 2 ;334
+~ 675 9
+$1 D116 4 6 0 Vongrej_Marian
+
+3_NHF_NH 14012: KSRP: V 1 V | VP_Ekonom_vzdel EKVZ AAA_ucitel 1/1 7 ;335
+~ 679 0
+$1 D112 2 3 0
+&1 B106 1 2 1 0 
+
+3_NHF_NH 14420/9: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 1 ;336
+~ 679 0
+&1 B212 4 5 1 0 Privara_Andrej 
+
+
+3_NHF_LZSM 12131: KHP: P V | Strategia_soc_ekon_rozvoja SSER Fifekova_Elena 1/1 30 ;337
+~ 662 9
+$1 D112 3 4 0 Fifekova_Elena
+&1 B1_06 2 5 1 0 
+&1 B1_06 2 6 2 0 
+
+3_NHF_LZSM 14012: KSRP: P V | PVP_Ekonomia_vzdelav EKVZ AAA_ucitel 1/1 30 ;338
+~ 679 0
+$1 D112 2 3 0
+&1 B1_08 2 4 1 0 
+&1 B1_08 2 5 2 0 
+
+3_NHF_LZSM 18191: KPO: V 1 V | VP_Životne_poist ZPOI Drugdova_Barbora 1/1 7 ;339
+~ 709 0
+$1 D115 1 3 0 Drugdova_Barbora
+&1 B212 1 5 1 0 Ondruska_ 
+
+
+3_NHF_VSRR 13172: KVSRR: P V | PVP_Tvorba_prog_a_proj TPP Ivanickova_Alzbeta 1/1 34 ;340
+~ 674 0
+$1 D110 2 4 0 Ivanickova_Alzbeta
+&1 B102 3 5 1 0 Ivanickova_Alzbeta
+&1 B102 3 6 2 0 Ivanickova_Alzbeta
+
+3_NHF_VSRR 12131: KHP: P V | Strategia_soc_ekon_rozvoja SSER Fifekova_Elena 1/1 34 ;341
+~ 662 9
+$1 D112 3 4 0 Fifekova_Elena
+&1 B106 3 6 1 0 
+&1 B106 3 5 2 0 
+
+3_NHF_VSRR 11209/9: KET: V 0 V | VP_General_Econ_Hist VHD/AJ Vongrej_Marian 1/0 1 ;342
+~ 675 9
+$1 D116 4 6 0 Vongrej_Marian
+
+3_NHF_VSRR 14012: KSRP: V 1 V | VP_Ekonom_vzdel EKVZ AAA_ucitel 1/1 24 ;343
+~ 679 0
+$1 D112 2 3 0
+&1 B103 3 1 1 0 
+
+3_NHF_VSRR 14420/9: KSRP: V 1 V | VP_Vybr_probl_SP_EU_AJ VPSPAJ Privara_Andrej 0/1 7 ;344
+~ 679 0
+&1 B212 4 5 1 0 Privara_Andrej 
+
+3_NHF_VSRR 13030: KVSRR: V 1 V | VP_Ekonom_verej_sektora EVS Cernenko_Tomas 1/1 4 ;345
+~ 674 0
+$1 D110 3 2 0 Cernenko_Tomas
+&1 D107 3 3 1 0 Bircar_ 
+
+
+3_NHF_ETZ 16234: KBMF: P V | Penazne_trhy PT Malacka_Viera 1/1 15 ;346
+~ 620 0
+$1 B108 2 2 0 Malacka_Viera :F
+&1 B209 2 6 1 0 
+
+3_NHF_ETZ 34030: KS: P V | Hospod_statistika HS AAA_ucitel 1/1 15 ;347
+~ 565 1
+$1 A9_17 3 2 0
+&1 A9_07 2 5 1 0 
+
+3_NHF_ETZ 11008: KET: P V | PVP_Technol_a_media TaM AAA_ucitel 0/1 15 ;348
+~ 675 9
+&1 5B01 2 4 1 0 
+
+
+3_OF_POCR 24010: KTKT: P V | Tovaroznalectvo TOV AAA_ucitel 1/1 155 ;349
+~ 467 0
+$1 B107 2 2 0
+&1 LAB1 3 2 1 0 
+&1 LAB1 1 2 2 0 
+&1 LAB1 3 3 3 0 
+&1 LAB2 3 3 4 0 
+&1 LAB1 3 4 5 0 
+&1 LAB1 1 5 6 0 
+&1 LAB1 2 4 7 0 
+&1 LAB1 2 3 8 0 
+&1 LAB2 2 3 9 0 
+&1 LAB1 4 4 10 0 
+
+3_OF_POCR 24006: KTKT: P V | Tovaroznalectvo_potravin TOVP AAA_ucitel 0/1 155 ;350
+~ 467 0
+&1 LAB3 2 3 1 0 
+&1 LAB3 2 4 2 0 
+&1 LAB3 1 3 3 0 
+&1 LAB4 1 3 4 0 
+&1 LAB3 3 3 5 0 
+&1 LAB3 3 2 6 0 
+&1 LAB3 4 4 7 0 
+&1 LAB4 4 2 8 0 
+&1 LAB3 4 2 9 0 
+&1 LAB3 4 3 10 0 
+
+3_OF_POCR 21035: KMR: P V | Obchodna_prevadzka OBP Kita_Pavol 0/1 155 ;351
+~ 206 0
+&1 B210 3 3 1 0 
+&1 B203 1 3 2 0 
+&1 B202 1 2 3 0 
+&1 B202 3 4 4 0 
+&1 B205 2 4 5 0 
+&1 D109 2 3 6 0 
+&1 B102 2 3 7 0 
+&1 B106 2 4 8 0 
+&1 B208 4 3 9 0 
+&1 B212 4 2 10 0 
+
+3_OF_POCR 23007: KSCR: P V | Male_a_stredne_podnik_v_obchode MSPO AAA_ucitel 0/1 155 ;352
+~ 61 0
+&1 B104 3 4 1 0 
+&1 D102 2 3 2 0 
+&1 B210 3 2 3 0 
+&1 B209 1 2 4 0 
+&1 D104 2 3 5 0 
+&1 B103 2 4 6 0 
+&1 B205 4 2 7 0 
+&1 B201 4 3 8 0 
+&1 B207 4 1 9 0 
+&1 B207 1 3 10 0 
+
+3_OF_POCR 23005: KSCR: P V | Geografia_cestovn_ruchu GCR Plesnik_Pavol 1/0 155 ;353
+~ 61 0
+$1 B107 1 4 0 Plesnik_Pavol
+
+
+3_OF_ZOP 24010: KTKT: P V | Tovaroznalectvo TOV AAA_ucitel 1/1 83 ;354
+~ 467 0
+$1 B107 2 2 0
+&1 LAB1 4 3 1 0 
+&1 LAB1 4 2 2 0 
+&1 LAB1 1 4 3 0 
+&1 LAB2 4 3 4 0 
+&1 LAB1 1 3 5 0 
+
+3_OF_ZOP 24006/1: KTKT: P V | Tovaroznalectvo_potravin TOVP AAA_ucitel 0/1 83 ;355
+~ 467 0
+&1 LAB4 1 2 1 0 
+&1 LAB3 3 4 2 0 
+&1 LAB3 3 5 3 0 
+&1 LAB3 1 2 4 0 
+&1 LAB3 1 4 5 0 
+
+3_OF_ZOP 22031: KMO: P V | Zahranicnoobchodn_polit ZOP Rosenberg_Miloslav 1/1 83 ;356
+~ 359 0
+$1 D112 4 4 0 Rosenberg_Miloslav
+&1 B103 1 3 1 0 Rosenberg_Miloslav
+&1 D109 2 4 2 0 Rosenberg_Miloslav
+&1 B210 1 5 3 0 Rosenberg_Miloslav
+&1 B206 1 4 4 0 Rosenberg_Miloslav
+&1 D103 2 3 5 0 
+
+3_OF_ZOP 22039: KMO: P V | Analyza_zahran_obchodu_SR AZO AAA_ucitel 0/1 83 ;357
+~ 359 0
+&1 B208 3 7 1 0 
+&1 D104 3 5 2 0 
+&1 D103 3 6 3 0 
+&1 B210 4 2 4 0 
+&1 B205 4 6 5 0 
+
+
+3_FMV 35095: KUA: V 0 V | Prenos_Uctov_podnik_subj_1 P_UPS1 AAA_ucitel 1/0 15 ;358
+~ 727 1
+$1 B1_06 5 4 0
+
+
+3_FMV_MEV 72003: KMVHD: P V | Metod_tvorby_pis_prac_II MTPP2 AAA_ucitel 0/1 109 ;359
+~ 704 1
+&1 A4_05 2 1 1 0 
+&1 A4_05 2 1 2 0 
+&1 A4_05 1 3 3 0 
+&1 A4_07 4 2 4 0 
+&1 A4_07 4 2 5 0 
+
+3_FMV_MEV 72046: KMVHD: P V | Tvorba_a_manazm_projekt TMP Cernota_Mikulas 0/1 109 ;360
+~ 704 1
+&1 A5_07 4 2 1 0 Cernota_Mikulas
+&1 A4_05 4 3 2 0 Cernota_Mikulas
+&1 A4_05 1 4 3 0 Cernota_Mikulas
+&1 A6_06 1 2 4 0 Cernota_Mikulas
+&1 A6_07 1 3 5 0 Cernota_Mikulas
+
+3_FMV_MEV 71010: KMEP: P V | Medzinarodne_pravo_obchodne MPO AAA_ucitel 1/1 109 ;361
+~ 706 1
+$1 B1_10 4 6 0
+&1 A4_06 3 7 1 0 
+&1 A4_05 3 5 2 0 
+&1 A4_06 1 2 3 0 
+&1 A5_15 1 3 4 0 
+&1 A4_06 4 1 5 0 
+
+3_FMV_MEV 75079: KMPV: P V | Medzinarodna_politika MPOL AAA_ucitel 1/1 109 ;362
+~ 624 1
+$1 B1_10 2 6 0
+&1 A5_05 1 3 1 0 
+&1 A4_07 1 2 2 0 
+&1 A4_05 2 5 3 0 
+&1 A5_08 2 4 4 0 
+&1 A4_06 1 4 5 0 
+
+3_FMV_MEV 72045: KMVHD: P V | Teoria_medzinar_hospod_vzt TMHV Grancay_Martin 1/1 109 ;363
+~ 704 1
+$1 B1_05 1 1 0 Grancay_Martin
+&1 A4_05 1 2 1 0 Grancay_Martin
+&1 A4_07 1 3 2 0 Grancay_Martin
+&1 A5_16 2 4 3 0 Grancay_Martin
+&1 A4_06 2 5 4 0 Grancay_Martin
+&1 A4_06 1 5 5 0 Grancay_Martin
+
+3_FMV_MEV 75066: KMPV: V 1 V | Glob_kriza_na_zaciatku_21_st GK21 Skvrnda_Frantisek 0/1 20 ;364
+~ 624 1
+&1 A4_05 3 6 1 0 Skvrnda_Frantisek 
+
+3_FMV_MEV 75067: KMPV: V 1 V | Hospod_sociologia HSOC Plavkova_Olga 0/1 20 ;365
+~ 624 1
+&1 A4_06 3 6 1 0 Plavkova_Olga 
+
+3_FMV_MEV 72068: KMVHD: V 1 V | Medzin_aktuality_v_FJ MA/FJ Csefalvayova_ 0/1 20 ;366
+~ 704 1
+&1 A4_06 1 6 1 0 Csefalvayova_ 
+
+3_FMV_MEV 75068: KMPV: V 1 V | Polit_systemy_sever_statov PSSS Adaskova_ 0/1 20 ;367
+~ 624 1
+&1 A6_16 4 4 1 0 Adaskova_ 
+
+3_FMV_MEV 75069: KMPV: V 1 V | Stredn_Azia_vo_svet_polit SASVP Cech_Lubomir 0/1 20 ;368
+~ 624 1
+&1 A4_07 3 6 1 0 Cech_Lubomir 
+
+
+3_FPM 35995: KUA: V 0 V | Prenos_Uctov_podnik_subj_1 P_UPS1 AAA_ucitel 1/0 15 ;369
+~ 727 1
+$1 B1_06 5 2 0
+
+
+3_FPM_EMP 42004: KMZ: P V | Firemne_planovanie FPL Grznar_Miroslav 1/1 197 ;370
+~ 67 1
+$1 B1_03 1 3 0 Grznar_Miroslav
+&1 A5_08 3 3 1 0 
+&1 A6_07 3 3 2 0 
+&1 A5_16 3 4 3 0 
+&1 A5_08 3 4 4 0 
+&1 A5_14 2 1 5 0 
+&1 A6_17 2 5 6 0 
+&1 A6_05 1 4 7 0 
+&1 A6_06 1 4 8 0 
+&1 A6_07 3 5 9 0 
+&1 A5_14 3 5 10 0 
+&1 A5_16 1 5 11 0 
+&1 A6_15 1 5 12 0 
+
+3_FPM_EMP 43002: KPF: P V | Financno_ekonomicka_analyza FEA Zalai_Karol 1/1 197 ;371
+~ 69 1
+$1 B1_03 2 2 0 Zalai_Karol
+&1 A5_17 1 2 1 0 
+&1 A5_13 1 2 2 0 
+&1 A5_13 1 1 3 0 
+&1 A5_17 1 1 4 0 
+&1 A5_05 2 4 5 0 
+&1 A6_14 2 4 6 0 
+&1 A5_13 2 5 7 0 
+&1 A6_14 2 5 8 0 
+&1 A6_05 3 4 9 0 
+&1 A9_07 3 4 10 0 
+&1 A9_17 3 5 11 0 
+&1 A6_14 3 5 12 0 
+
+3_FPM_EMP 41015: KPH: P V | Podnikanie_v_mal_a_stred_podn PMSP Subertova_Elena 1/1 197 ;372
+~ 54 1
+$1 B1_03 4 2 0 Subertova_Elena
+&1 A6_05 1 1 1 0 
+&1 A6_06 1 1 2 0 
+&1 A6_07 1 2 3 0 
+&1 A6_14 1 2 4 0 
+&1 A5_14 2 3 5 0 
+&1 A5_13 2 3 6 0 
+&1 A5_13 2 4 7 0 
+&1 A5_06 2 4 8 0 
+&1 B1_06 3 3 9 0 
+&1 A4_08 3 3 10 0 
+&1 A9_17 3 4 11 0 
+&1 A6_08 3 4 12 0 
+
+3_FPM_EMP 43055: KPF: V 1 V | Analyza_financ_trhov AFT Hrvolova_Bozena 1/1 15 ;373
+~ 69 1
+$1 A5_15 1 5 0 Hrvolova_Bozena
+&1 A5_15 1 6 1 0 
+
+3_FPM_EMP 43017: KPF: V 8 V | Danove_systemy DS Lenartova_Gizela 1/1 132 ;374
+~ 69 1
+$1 B1_03 4 3 0 Lenartova_Gizela
+&1 A6_17 1 5 1 0 
+&1 A5_05 1 6 2 0 
+&1 A5_05 1 7 3 0 
+&1 A5_05 2 6 4 0 
+&1 A5_05 2 7 5 0 
+&1 A5_08 3 5 6 0 
+&1 A5_08 3 6 7 0 
+&1 A5_08 3 7 8 0 
+
+3_FPM_EMP 43016: KPF: V 1 V | Dlhove_financovanie DFIN Hyranek_Eduard 1/1 8 ;375
+~ 69 1
+$1 B1_06 3 2 0 Hyranek_Eduard
+&1 B1_10 4 5 1 0 
+
+
+3_FPM_FM 43002: KPF: P V | Financno_ekonomicka_analyza FEA Zalai_Karol 1/1 58 ;376
+~ 69 1
+$1 B1_03 2 2 0 Zalai_Karol
+&1 A5_13 3 3 1 0 
+&1 A6_05 3 3 2 0 
+&1 A5_16 2 3 3 0 
+&1 A5_15 2 3 4 0 
+
+3_FPM_FM 43017: KPF: P V | Danove_systemy DS Lenartova_Gizela 1/1 58 ;377
+~ 69 1
+$1 B1_03 4 3 0 Lenartova_Gizela
+&1 A6_14 3 4 1 0 
+&1 A5_06 2 5 2 0 
+&1 A5_15 4 5 3 0 
+&1 A5_14 4 4 4 0 
+
+3_FPM_FM 43016: KPF: P V | Dlhove_financovanie DFIN Hyranek_Eduard 1/1 58 ;378
+~ 69 1
+$1 B1_06 3 2 0 Hyranek_Eduard
+&1 A9_08 3 5 1 0 
+&1 A9_08 3 4 2 0 
+&1 A5_17 4 4 3 0 
+&1 B1_10 4 5 4 0 
+
+3_FPM_FM 18153: KPO: V 0 V | Podnikove_poistenie PPOI Drugdova_Barbora 1/0 2 ;379
+~ 709 0
+$1 D112 2 6 0 Drugdova_Barbora
+
+3_FPM_FM 41015: KPH: V 3 V | Podnikanie_v_mal_a_stred_podn PMSP Subertova_Elena 1/1 44 ;380
+~ 54 1
+$1 B1_03 4 2 0 Subertova_Elena
+&1 A5_07 2 4 1 0 
+&1 A6_08 4 5 2 0 
+&1 A6_08 4 6 3 0 
+
+
+3_FHI 35095: KUA: V 0 V | Prenos_Uctov_podnik_subj_1 P_UPS1 AAA_ucitel 1/0 15 ;381
+~ 727 1
+$1 B1_06 5 4 0
+
+
+3_FHI_HI 31941: KAI: V 2 V | Prenos_Programov_2 P_PRG2 Jurik_ 0/1 40 ;382
+~ 720 1
+&1 A8_04 3 2 1 0 Jurik_ 
+&1 A8_04 4 5 2 0 Jurik_ 
+
+3_FHI_HI 31170/9: KAI: V 1 V | Ochrana_a_bezp_inf_syst OBIS AAA_ucitel 0/1 34 ;383
+~ 720 1
+&1 A8_12 5 1 1 0 
+
+3_FHI_HI 31077: KAI: V 2 V | Internetove_aplikacie IAP Krsjak_ 0/1 34 ;384
+~ 720 1
+&1 A8_13 3 6 1 0 Krsjak_ 
+&1 A8_13 3 7 2 0 Krsjak_ 
+
+3_FHI_HI 31056/7: KAI: P V | Umela_intelig_II UI2 Rakovska_Eva 1/1 64 ;385
+~ 720 1
+$1 A7_13 3 4 0 Rakovska_Eva
+&1 A8_05 4 4 1 0 Rakovska_Eva
+&1 A8_05 4 3 2 0 Rakovska_Eva
+&1 A8_05 3 3 3 0 Rakovska_Eva
+
+3_FHI_HI 31027: KAI: P V | Operacne_systemy OS Krsjak_ 1/1 64 ;386
+~ 720 1
+$1 A7_15 1 6 0 Krsjak_
+&1 A8_12 1 7 1 0 Krsjak_
+&1 A8_12 4 1 2 0 Blahusiak_Martin
+&1 A8_04 4 3 3 0 Blahusiak_Martin
+
+3_FHI_HI 33088/9: KOVE: P V | Ekonometria1 EKO1 Lukacik_Martin 1/1 64 ;387
+~ 644 1
+$1 B1_06 4 2 0 Lukacik_Martin
+&1 A8_07 4 3 1 0 
+&1 A8_07 2 5 2 0 
+&1 A8_07 2 4 3 0 
+
+
+3_FHI_MRIT 31041/8: KAI: V 1 V | Programovanie_II PRO2 Turna_Lubomir 1/1 26 ;388
+~ 720 1
+$1 A7_13 1 5 0 Turna_Lubomir
+&1 A8_07 1 6 1 0 Turna_Lubomir 
+
+3_FHI_MRIT 31822: KAI: V 2 V | Teoria_syst_a_kybern TSKYB Bednar_Peter 1/1 32 ;389
+~ 720 1
+$1 A7_15 3 5 0 Bednar_Peter
+&1 A8_12 3 6 1 0 Bednar_Peter 
+&1 A8_12 3 7 2 0 Bednar_Peter 
+
+3_FHI_MRIT 31051/9: KAI: P V | Pocit_siete_a_distr_sprac_dat_1 PSDSD1 Zavodny_Peter 1/1 56 ;390
+~ 720 1
+$1 B1_08 1 1 0 Zavodny_Peter
+&1 A8_12 2 2 1 0 Schmidt_
+&1 A8_12 3 3 2 0 Schmidt_
+&1 A8_12 3 2 3 0 Schmidt_
+
+3_FHI_MRIT 31064: KAI: P V | Databaz_syst_1 DSYS1 Kultan_Jaroslav 1/1 56 ;391
+~ 720 1
+$1 B1_08 1 3 0 Kultan_Jaroslav
+&1 A8_15 1 4 1 0 Kultan_Jaroslav
+&1 A8_15 3 2 2 0 Kultan_Jaroslav
+&1 A8_15 3 3 3 0 Kultan_Jaroslav
+
+3_FHI_MRIT 32009: KM: P V | Finan_matemat1 FMAT1 Sakalova_Katarina 1/1 56 ;392
+~ 725 0
+$1 B1_06 2 1 0 Sakalova_Katarina
+&1 B1_06 1 2 1 0 
+&1 B1_06 1 2 2 0 
+&1 A7_15 1 2 3 0 
+
+
+3_FHI_UC 33030/6: KOVE: V 1 V | Mikroek_analyza MIKA Goga_Marian 1/1 26 ;393
+~ 644 1
+$1 A7_05 4 4 0 Goga_Marian
+&1 A7_05 4 5 1 0 
+
+3_FHI_UC 35310: KUA: V 0 V | Zaklady_uctovn_AJ ZU/AJ Mokosova_Dasa 1/0 21 ;394
+~ 727 1
+$1 C1_06 3 4 0 Mokosova_Dasa
+
+3_FHI_UC 31153: KAI: V 0 V | Hospod_inforamt_II HI2 AAA_ucitel 1/0 34 ;395
+~ 720 1
+$1 A7_15 3 6 0
+
+3_FHI_UC 42031: KMZ: V 2 V | Komunikacia_v_manaz KM Szarkova_Miroslava 1/1 51 ;396
+~ 67 1
+$1 C1_09 2 1 0 Szarkova_Miroslava
+&1 A5_06 1 5 1 0 
+&1 A5_06 1 6 2 0 
+
+3_FHI_UC 35028: KUA: P V | Analyza_uctovnej_zavierky AUZ Slosarova_Anna 1/1 142 ;397
+~ 727 1
+$1 B1_05 2 2 0 Slosarova_Anna
+&1 A7_04 3 2 1 0 
+&1 A7_04 3 5 2 0 
+&1 A7_04 2 4 3 0 
+&1 A7_04 3 1 4 0 
+&1 A7_04 2 3 5 0 
+&1 A7_04 2 5 6 0 
+
+3_FHI_UC 35032: KUA: P V | Bankove_operacie BO Bouskova_Dagmar 1/1 142 ;398
+~ 727 1
+$1 B1_05 1 4 0 Bouskova_Dagmar
+&1 A7_13 2 4 1 0 
+&1 A7_05 1 5 2 0 
+&1 A7_05 1 6 3 0 
+&1 A5_07 2 3 4 0 
+&1 A7_05 2 5 5 0 
+&1 A7_05 2 6 6 0 
+
+3_FHI_UC 34021: KS: P V | Hospod_statistika HS Sodomova_Eva 1/1 142 ;399
+~ 565 1
+$1 B1_05 3 3 0 Sodomova_Eva
+&1 A7_07 2 5 1 0 
+&1 B1_09 2 4 2 0 
+&1 A7_07 2 3 3 0 
+&1 A7_17 3 2 4 0 
+&1 A7_17 2 4 5 0 
+&1 A7_13 3 1 6 0 
+
+
+3_UMP_UMP 22038: KMO: V 1 V | Internat_Marketing MMARAJ Skorvagova_Simona 1/1 30 ;400
+~ 359 0
+$1 C1_08 3 4 0 Skorvagova_Simona
+&1 C1_08 3 5 1 0 Skorvagova_Simona 
+
+3_UMP_UMP 35310: KUA: V 1 V | Basic_Accounting ZU/AJ Mokosova_Dasa 1/0 22 ;401
+~ 727 1
+$1 C1_06 3 4 0 Mokosova_Dasa
+
+3_UMP_UMP 13112: KVSRR: V 1 V | Region_Econom_and_Policy_I REP/AJ Rehak_Stefan 1/1 14 ;402
+~ 674 0
+$1 3B57 3 4 0 Rehak_Stefan
+&1 3B57 3 5 1 0 Rehak_Stefan 
+
+3_UMP_UMP 14420/9: KSRP: V 1 V | Select_issues_of_EU_SP VPSPAJ Privara_Andrej 0/1 11 ;403
+~ 679 0
+&1 B212 4 5 1 0 Privara_Andrej 
+
+
+3_FAJ_CJIK 81570: KJaT: P V | Jazyk_tlace_v_NJ JTNJ AAA_ucitel 0/1 45 ;404
+~ 50 0
+&1 E1_10 2 1 1 0 Procikova_Julia
+&1 E1_10 2 2 2 0 Procikova_Julia
+&1 E1_10 2 3 3 0 Procikova_Julia
+
+3_FAJ_CJIK 81539: KJaT: V 4 V | Treti_cudzi_Jazyk 3CJ AAA_ucitel 0/1 45 ;405
+~ 50 0
+&1 A4_14 2 4 1 0 Rizekova_Iveta 
+&1 A4_15 2 4 2 0 Valera_Cano 
+&1 D105 2 4 3 0 Smolenova_Elena 
+&1 D202 2 4 4 0 Rechtorikova_Gabriela 
+
+3_FAJ_CJIK 81078: KJaT: P V | Preklad_seminar_v_AJ PSAJ AAA_ucitel 0/1 45 ;406
+~ 50 0
+&1 E2_12 3 3 1 0 Pauleova_Milada
+&1 E2_12 3 1 2 0 Pauleova_Milada
+&1 E2_12 3 2 3 0 Pauleova_Milada
+
+3_FAJ_CJIK 81079: KJaT: P V | Preklad_seminar_v_NJ PSNJ AAA_ucitel 0/1 45 ;407
+~ 50 0
+&1 E1_12 2 3 1 0 Seresova_Katarina
+&1 E1_12 2 1 2 0 Seresova_Katarina
+&1 E1_12 2 2 3 0 Seresova_Katarina
+
+3_FAJ_CJIK 72003/9: KMVHD: P V | Uvod_do_europ_studii UEST Lipkova_Beata 1/1 45 ;408
+~ 704 1
+$1 C1_09 1 3 0 Lipkova_Beata
+&1 A6_14 1 4 1 0 
+&1 A6_05 1 5 2 0 
+&1 A4_08 1 2 3 0 
+
+3_FAJ_CJIK 81541: KJaT: P V | Interkult_komunik_v_AJ IKAJ AAA_ucitel 0/1 45 ;409
+~ 50 0
+&1 E2_10 3 2 1 0 Hrivikova_Tatiana
+&1 E2_10 3 3 2 0 Hrivikova_Tatiana
+&1 E2_10 3 1 3 0 Hrivikova_Tatiana
+
+3_FAJ_CJIK 81551: KJaT: P V | Interkult_komunik_v_NJ IKNJ AAA_ucitel 0/1 45 ;410
+~ 50 0
+&1 E1_08 2 2 1 0 Peczeova_Eleonora
+&1 E1_08 2 3 2 0 Peczeova_Eleonora
+&1 E1_08 2 5 3 0 Peczeova_Eleonora
+
+
+4_NHF 11090: KET: S V | Makroekonomia MAK Muchova_Eva 1/0 94 ;411
+# 1 2 3 4 5 6 
+~ 675 9
+$1 D111 2 4 0 Muchova_Eva
+
+4_NHF 11090/1: KET: S V | Makroekonomia MAK Dujava_ 1/0 94 ;412
+# 7 8 9 10 11 12 
+~ 675 9
+$1 D113 2 4 0 Dujava_
+
+4_NHF 11090/2: KET: S V | Makroekonomia MAK AAA_ucitel 1/0 104 ;413
+# 13 14 15 16 17 18 19 
+~ 675 9
+$1 D114 2 4 0
+
+
+4_NHF_BANK 11090/3: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 69 ;414
+~ 675 9
+&1 D103 3 1 1 0 
+&1 D202 3 4 2 0 
+&1 D103 4 2 3 0 
+&1 B105 4 2 4 0 
+
+4_NHF_BANK 11091: KET: V 1 V | Makroek_AJ MAKAJ Novak_Marcel 1/1 6 ;415
+~ 675 9
+$1 C1_08 3 6 0 Novak_Marcel
+&1 C1_08 3 7 1 0 
+
+4_NHF_BANK 16181: KBMF: P V | Menova_anal_a_progn MAP Kotlebova_Jana 1/1 75 ;416
+~ 620 0
+$1 D114 3 2 0 Kotlebova_Jana
+&1 B106 4 2 1 0 
+&1 B208 2 5 2 0 
+&1 D102 4 3 3 0 
+&1 B105 4 1 4 0 
+
+4_NHF_BANK 16280: KBMF: P V | Uctovnictvo_bank UB Tkacova_Dana 1/1 75 ;417
+~ 620 0
+$1 D113 3 3 0 Tkacova_Dana
+&1 D109 4 1 1 0 Schwarzova_Maria
+&1 D109 4 2 2 0 Schwarzova_Maria
+&1 B203 2 3 3 0 Schwarzova_Maria
+&1 D109 1 2 4 0 Schwarzova_Maria
+
+4_NHF_BANK 16150: KBMF: P V | Kolektiv_invest KI Chovancova_Bozena 1/1 75 ;418
+~ 620 0
+$1 D113 1 4 0 Chovancova_Bozena
+&1 B104 2 5 1 0 
+&1 B104 2 6 2 0 
+&1 D202 2 5 3 0 
+&1 D202 2 6 4 0 
+
+4_NHF_BANK 16300: KBMF: P V | PVP_Anal_na_kapit_trhoch AKT AAA_ucitel 0/1 75 ;419
+~ 620 0
+&1 B201 3 4 1 0 
+&1 B203 1 2 2 0 
+&1 B102 4 4 3 0 
+&1 D205 4 3 4 0 
+
+4_NHF_BANK 16778: KBMF: P V | PVP_FOREX FRX Kotlebova_Jana 0/1 21 ;420
+~ 620 0
+&1 3B01 2 2 1 0 Kotlebova_Jana
+&1 3B01 2 2 2 0 Kotlebova_Jana
+&1 3B01 2 2 3 0 Kotlebova_Jana
+&1 3B01 2 2 4 0 Kotlebova_Jana
+
+4_NHF_BANK 15151: KF: V 1 V | VP_Finan_kontrola FKON Ciernik_Anton 1/1 7 ;421
+~ 692 0
+$1 B108 1 5 0 Ciernik_Anton
+&1 5B01 1 7 1 0 Ciernik_Anton 
+
+4_NHF_BANK 14032: KSRP: V 1 V | VP_Kvalita_ziv KZIV Antalova_Maria 1/1 2 ;422
+~ 679 0
+$1 B212 2 1 0 Antalova_Maria
+&1 B212 2 2 1 0 
+
+4_NHF_BANK 14031: KSRP: V 2 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 44 ;423
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B210 2 6 1 0 Klimko_ 
+&1 B210 2 7 2 0 Klimko_ 
+
+4_NHF_BANK 12921: KHP: V 1 V | VP_Hospod_polit_2 HP2 Kocisova_ 0/1 18 ;424
+~ 662 9
+&1 B211 1 6 1 0 Kocisova_ 
+
+
+4_NHF_FIN 11090/4: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 38 ;425
+~ 675 9
+&1 B202 4 3 1 0 
+&1 B203 4 3 2 0 
+
+4_NHF_FIN 11091: KET: V 1 V | Makroek_AJ MAKAJ Novak_Marcel 1/1 3 ;426
+~ 675 9
+$1 C1_08 3 6 0 Novak_Marcel
+&1 C1_08 3 7 1 0 
+
+4_NHF_FIN 15180: KF: P V | Kapitalova_struktura_podn_subjektov KSPS Mikocziova_Jana 1/1 41 ;427
+~ 692 0
+$1 B108 2 3 0 Mikocziova_Jana :F
+&1 3B01 4 1 1 0 
+&1 2B01 1 5 2 0 
+
+4_NHF_FIN 15182: KF: V 1 V | VP_Kapital_strukt_podn_subj_NJ KSPSNJ Jancovicova_Bognarova 0/1 1 ;428
+~ 692 0
+&1 B106 2 6 1 0 Jancovicova_Bognarova 
+
+4_NHF_FIN 15141: KF: P V | Financie_zivot_prostredia FZP AAA_ucitel 1/0 41 ;429
+~ 692 0
+$1 D111 1 2 0
+
+4_NHF_FIN 15127: KF: P V | Financie_uzemn_sprav_celkov FUSC Neubauerova_Erika 1/1 41 ;430
+~ 692 0
+$1 D112 4 2 0 Neubauerova_Erika
+&1 B211 2 2 1 0 Neupauerova_Zuzana
+&1 B211 2 1 2 0 Neupauerova_Zuzana
+
+4_NHF_FIN 15201: KF: P V | Manazment_verej_financii MVFIN Peliova_Jana 1/0 41 ;431
+~ 692 0
+$1 D113 2 5 0 Peliova_Jana
+
+4_NHF_FIN 15276: KF: P V | Uctovne_analyzy UAN Sabikova_Ingrid 0/1 41 ;432
+~ 692 0
+&1 B208 4 5 1 0 Sabikova_Ingrid
+&1 B208 4 6 2 0 Sabikova_Ingrid
+
+4_NHF_FIN 15400: KF: P V | PVP_Experim_ekonom EXEK Peliova_Jana 0/1 41 ;433
+~ 692 0
+&1 5B01 1 5 1 0 Peliova_Jana
+&1 3B01 1 6 2 0 Peliova_Jana
+
+4_NHF_FIN 33017: KOVE: P V | PVP_Uvod_do_ekonomet UEKO Surmanova_Kvetoslava 1/1 41 ;434
+~ 644 1
+$1 B1_06 4 4 0 Surmanova_Kvetoslava
+&1 5B01 2 1 1 0 
+&1 5B01 2 2 2 0 
+
+4_NHF_FIN 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 44 ;435
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B211 1 2 1 0 Klimko_ 
+
+4_NHF_FIN 13551: KVSRR: V 0 V | VP_Ekon_siet_odvetv_v_AJ ESO/AJ Pastor_Rudolf 1/0 3 ;436
+~ 674 0
+$1 D103 1 6 0 Pastor_Rudolf
+
+
+4_NHF_DDP 15127: KF: P V | PVP_Finan_uzemn_sprav_celk FUSC Neubauerova_Erika 1/1 68 ;437
+~ 692 0
+$1 D112 4 2 0 Neubauerova_Erika
+&1 D116 1 3 1 0 Neupauerova_Zuzana
+&1 D103 1 5 2 0 Neupauerova_Zuzana
+&1 B208 3 1 3 0 Neupauerova_Zuzana
+&1 B204 1 2 4 0 Neupauerova_Zuzana
+
+4_NHF_DDP 11090/5: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 49 ;438
+~ 675 9
+&1 B203 4 1 1 0 
+&1 D104 3 2 2 0 
+&1 B207 3 2 3 0 
+&1 B204 3 1 4 0 
+
+4_NHF_DDP 11091: KET: V 1 V | Makroek_AJ MAKAJ Novak_Marcel 1/1 19 ;439
+~ 675 9
+$1 C1_08 3 6 0 Novak_Marcel
+&1 C1_08 3 7 1 0 
+
+4_NHF_DDP 15180: KF: P V | Kapitalova_struktura_podn_subjektov KSPS Mikocziova_Jana 1/1 68 ;440
+~ 692 0
+$1 B108 2 3 0 Mikocziova_Jana :F
+&1 5B01 3 2 1 0 
+&1 5B01 3 1 2 0 
+&1 2B01 4 1 3 0 
+&1 5B01 1 3 4 0 
+
+4_NHF_DDP 15184: KF: V 1 V | Capital_Struktur_of_Companies KSPSAJ Mikocziova_Jana 1/1 2 ;441
+~ 692 0
+$1 D116 1 2 0 Mikocziova_Jana
+&1 2B01 1 3 1 0 Mikocziova_Jana 
+
+4_NHF_DDP 15230: KF: P V | Priame_dane PD Rabatinova_Marcela 1/1 68 ;442
+~ 692 0
+$1 D113 2 1 0 Rabatinova_Marcela
+&1 B202 3 1 1 0 Rabatinova_Marcela
+&1 B106 4 1 2 0 Rabatinova_Marcela
+&1 B208 2 2 3 0 Rabatinova_Marcela
+&1 B212 3 2 4 0 
+
+4_NHF_DDP 14071/6: KSRP: P V | Socialne_zabezpecenie SZ AAA_ucitel 1/1 68 ;443
+~ 679 0
+$1 D114 4 3 0
+&1 B205 1 5 1 0 
+&1 B104 1 6 2 0 
+&1 4B57 2 5 3 0 
+&1 4B57 4 1 4 0 
+
+4_NHF_DDP 15211: KF: P V | Medzinarodne_zdanov MEZDA Kubicova_Jana 1/0 68 ;444
+~ 692 0
+$1 D112 3 3 0 Kubicova_Jana
+
+4_NHF_DDP 33017: KOVE: P V | PVP_Uvod_do_ekonomet UEKO Surmanova_Kvetoslava 1/1 68 ;445
+~ 644 1
+$1 B1_06 4 4 0 Surmanova_Kvetoslava
+&1 5B01 1 2 1 0 
+&1 2B01 2 2 2 0 
+&1 3B01 1 3 3 0 
+&1 2B01 2 6 4 0 
+
+4_NHF_DDP 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 14 ;446
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B211 1 1 1 0 Klimko_ 
+
+
+4_NHF_POI 11090/6: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 12 ;447
+~ 675 9
+&1 B106 2 1 1 0 
+
+4_NHF_POI 11091: KET: V 1 V | Makroek_AJ MAKAJ Novak_Marcel 1/1 1 ;448
+~ 675 9
+$1 C1_08 3 6 0 Novak_Marcel
+&1 C1_08 3 7 1 0 
+
+4_NHF_POI 18018: KPO: P V | Stat_a_progn_metody_v_poist SPMvP Marko_Peter 1/1 13 ;449
+~ 709 0
+$1 B103 4 4 0 Marko_Peter
+&1 5B01 4 5 1 0 Marko_Peter
+
+4_NHF_POI 18044: KPO: P V | Uctovnictvo_v_poist UCTP Majtanova_Anna 1/1 13 ;450
+~ 709 0
+$1 B206 3 2 0 Majtanova_Anna
+&1 B206 3 1 1 0 Dlabikova_
+
+4_NHF_POI 14071/6: KSRP: P V | Socialne_zabezpecenie SZ AAA_ucitel 1/1 13 ;451
+~ 679 0
+$1 D114 4 3 0
+&1 B212 3 3 1 0 
+
+4_NHF_POI 18041: KPO: P V | PVP_Neziv_poist NPOI Drugdova_Barbora 1/1 13 ;452
+~ 709 0
+$1 B202 2 2 0 Drugdova_Barbora
+&1 B202 2 3 1 0 Drugdova_Barbora
+
+4_NHF_POI 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 13 ;453
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B211 1 2 1 0 Klimko_ 
+
+4_NHF_POI 14062: KSRP: V 1 V | VP_Social_praca SP AAA_ucitel 1/1 6 ;454
+~ 679 0
+$1 D115 1 4 0
+&1 4B57 1 3 1 0 Husakova_Maria 
+
+4_NHF_POI 13102: KVSRR: V 1 V | VP_Region_geograf_SR RGSR AAA_ucitel 0/1 6 ;455
+~ 674 0
+&1 B101 3 4 1 0 
+
+
+4_NHF_HP 11090/7: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 43 ;456
+~ 675 9
+&1 D202 1 3 1 0 
+&1 D206 1 3 2 0 
+
+4_NHF_HP 11101: KET: P V | Medzinarod_ekonom MEK Muchova_Eva 1/1 43 ;457
+~ 675 9
+$1 D113 1 1 0 Muchova_Eva
+&1 B209 4 3 1 0 
+&1 B209 4 2 2 0 
+
+4_NHF_HP 12011: KHP: P V | Investic_a_inovacie_v_ekonom IIvE Vidova_Jarmila 1/1 43 ;458
+~ 662 9
+$1 D115 4 4 0 Vidova_Jarmila
+&1 D102 4 5 1 0 
+&1 B106 4 5 2 0 
+
+4_NHF_HP 33008/7: KOVE: P V | Ekonometria EKO Surmanova_Kvetoslava 1/1 43 ;459
+~ 644 1
+$1 B1_09 2 5 0 Surmanova_Kvetoslava
+&1 3B01 1 5 1 0 
+&1 3B01 1 4 2 0 
+
+4_NHF_HP 12141: KHP: P V | Strategia_struktur_rozvoja SSR Fifekova_Elena 1/1 43 ;460
+~ 662 9
+$1 D110 1 2 0 Fifekova_Elena
+&1 B202 1 4 1 0 Fifekova_Elena
+&1 B208 1 5 2 0 Fifekova_Elena
+
+4_NHF_HP 12921: KHP: P V | PVP_Hospod_polit_2 HP2 Kocisova_ 0/1 43 ;461
+~ 662 9
+&1 B104 4 2 1 0 Kocisova_
+&1 B104 4 3 2 0 Kocisova_
+
+4_NHF_HP 14031: KSRP: V 2 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 34 ;462
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B102 4 1 1 0 Klimko_ 
+&1 4B57 2 3 2 0 Klimko_ 
+
+4_NHF_HP 13102: KVSRR: V 1 V | VP_Region_geograf_SR RGSR AAA_ucitel 0/1 2 ;463
+~ 674 0
+&1 B101 3 5 1 0 
+
+
+4_NHF_SRSP 11090/8: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 24 ;464
+~ 675 9
+&1 D202 1 2 1 0 
+&1 D206 1 2 2 0 
+
+4_NHF_SRSP 11091: KET: V 1 V | Makroek_AJ MAKAJ Novak_Marcel 1/1 3 ;465
+~ 675 9
+$1 C1_08 3 6 0 Novak_Marcel
+&1 C1_08 3 7 1 0 
+
+4_NHF_SRSP 11101: KET: P V | Medzinarod_ekonom MEK Muchova_Eva 1/1 27 ;466
+~ 675 9
+$1 D113 1 1 0 Muchova_Eva
+&1 B205 2 3 1 0 
+&1 B205 2 2 2 0 
+
+4_NHF_SRSP 12011: KHP: P V | Investic_a_inovacie_v_ekonomii IIvE Vidova_Jarmila 1/1 27 ;467
+~ 662 9
+$1 D115 4 4 0 Vidova_Jarmila
+&1 D110 1 3 1 0 
+&1 B102 4 3 2 0 
+
+4_NHF_SRSP 14062: KSRP: P V | Socialna_praca SP AAA_ucitel 1/1 27 ;468
+~ 679 0
+$1 D115 1 4 0
+&1 D205 1 5 1 0 Husakova_Maria
+&1 B103 2 3 2 0 Husakova_Maria
+
+4_NHF_SRSP 14121: KSRP: P V | PVP_Zdrav_politika ZPOL Pechova_Michaela 1/1 27 ;469
+~ 679 0
+$1 B211 4 2 0 Pechova_Michaela
+&1 B211 4 3 1 0 Pechova_Michaela
+&1 B106 1 3 2 0 Pechova_Michaela
+
+4_NHF_SRSP 13102: KVSRR: V 2 V | VP_Region_geograf_SR RGSR AAA_ucitel 0/1 27 ;470
+~ 674 0
+&1 B101 3 4 1 0 
+&1 B101 3 5 2 0 
+
+
+4_NHF_VSRR 11099: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 35 ;471
+~ 675 9
+&1 B207 3 3 1 0 
+&1 B206 3 3 2 0 
+
+4_NHF_VSRR 13021: KVSRR: P V | Ekonomika_uzemn_rozvoja EUROZ Hanus_ 1/1 35 ;472
+~ 674 0
+$1 D110 2 2 0 Hanus_
+&1 B103 4 1 1 0 Hanus_
+&1 B101 4 2 2 0 Hanus_
+
+4_NHF_VSRR 13023: KVSRR: P V | Regional_geografia_SR RGSR AAA_ucitel 1/1 35 ;473
+~ 674 0
+$1 D110 2 3 0
+&1 D101 3 2 1 0 
+&1 D115 3 1 2 0 
+
+4_NHF_VSRR 13038: KVSRR: P V | Workshop_z_RE WRE Rehak_Stefan 0/1 35 ;474
+~ 674 0
+&1 B203 4 2 1 0 Rehak_Stefan
+&1 3B57 4 3 2 0 Rehak_Stefan
+
+4_NHF_VSRR 13531: KVSRR: P V | PVP_Reg_polit_EU REPEU Ivanickova_Alzbeta 1/0 35 ;475
+~ 674 0
+$1 D110 3 4 0 Ivanickova_Alzbeta
+
+4_NHF_VSRR 13580: KVSRR: P V | PVP_Bonita_obce BOB Zarska_Elena 1/1 35 ;476
+~ 674 0
+$1 D115 1 2 0 Zarska_Elena
+&1 B209 3 1 1 0 Fercikova_
+&1 B209 3 2 2 0 Zarska_Elena
+
+4_NHF_VSRR 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 6 ;477
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B211 1 1 1 0 Klimko_ 
+
+4_NHF_VSRR 14062: KSRP: V 2 V | VP_Social_praca SP AAA_ucitel 1/1 29 ;478
+~ 679 0
+$1 D115 1 4 0
+&1 B101 2 1 1 0 Husakova_Maria 
+&1 4B57 1 3 2 0 Husakova_Maria 
+
+
+4_NHF_ETZ 11090/9: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 11 ;479
+~ 675 9
+&1 B201 2 1 1 0 
+
+4_NHF_ETZ 11091: KET: V 1 V | Makroek_AJ MAKAJ Novak_Marcel 1/1 2 ;480
+~ 675 9
+$1 C1_08 3 6 0 Novak_Marcel
+&1 C1_08 3 7 1 0 
+
+4_NHF_ETZ 11101: KET: P V | Medzinarod_ekonom MEK Muchova_Eva 1/1 13 ;481
+~ 675 9
+$1 D113 1 1 0 Muchova_Eva
+&1 5B44 1 3 1 0 
+
+4_NHF_ETZ 12011: KHP: P V | Investic_a_inovacie_v_ekonom IIvE Vidova_Jarmila 1/1 13 ;482
+~ 662 9
+$1 D115 4 4 0 Vidova_Jarmila
+&1 B102 1 4 1 0 
+
+4_NHF_ETZ 12051: KET: P V | Ekon_zurn_a_etika_v_zurn EZEU Dvorak_ 1/1 13 ;483
+~ 675 9
+$1 5B44 1 6 0 Dvorak_
+&1 5B44 1 7 1 0 Dvorak_
+
+4_NHF_ETZ 12110: KET: P V | Metod_vedeck_prace MVP Gonda_Vladimir 1/1 13 ;484
+~ 675 9
+$1 5B44 3 1 0 Gonda_Vladimir
+&1 5B44 3 2 1 0 Gonda_Vladimir
+
+4_NHF_ETZ 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 2 ;485
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B211 1 1 1 0 Klimko_ 
+
+4_NHF_ETZ 14121: KSRP: V 1 V | VP_Zdrav_politika ZPOL Pechova_Michaela 1/1 4 ;486
+~ 679 0
+$1 B211 4 2 0 Pechova_Michaela
+&1 B211 4 3 1 0 Pechova_Michaela 
+
+4_NHF_ETZ 33008/7: KOVE: V 1 V | VP_Ekonomet EKO Surmanova_Kvetoslava 1/1 6 ;487
+~ 644 1
+$1 B1_09 2 5 0 Surmanova_Kvetoslava
+&1 3B01 1 5 1 0 Surmanova_Kvetoslava 
+
+
+4_NHF_MF 11099: KET: P V | Makroekonomia MAK AAA_ucitel 0/1 10 ;488
+~ 675 9
+&1 D104 2 2 1 0 
+
+4_NHF_MF 11091: KET: V 1 V | Makroek_AJ MAKAJ Novak_Marcel 1/1 3 ;489
+~ 675 9
+$1 C1_08 3 6 0 Novak_Marcel
+&1 C1_08 3 7 1 0 
+
+4_NHF_MF 15151: KF: P V | Finan_kontrola FKON Ciernik_Anton 1/1 13 ;490
+~ 692 0
+$1 B108 1 5 0 Ciernik_Anton
+&1 5B01 4 3 1 0 Ciernik_Anton
+
+4_NHF_MF 15180: KF: P V | Kapitalova_struktura_podn_subjektov KSPS Mikocziova_Jana 1/1 13 ;491
+~ 692 0
+$1 B108 2 3 0 Mikocziova_Jana :F
+&1 5B01 3 3 1 0 
+
+4_NHF_MF 15184: KF: V 1 V | Capital_Struktur_of_Companies KSPSAJ Mikocziova_Jana 1/1 1 ;492
+~ 692 0
+$1 D116 1 2 0 Mikocziova_Jana
+&1 2B01 1 3 1 0 Mikocziova_Jana 
+
+4_NHF_MF 15201: KF: P V | Manaz_verej_financii MVFIN Peliova_Jana 1/0 13 ;493
+~ 692 0
+$1 D113 2 5 0 Peliova_Jana
+
+4_NHF_MF 16181: KBMF: P V | Menova_anal_a_progn MAP Kotlebova_Jana 1/1 13 ;494
+~ 620 0
+$1 D114 3 2 0 Kotlebova_Jana
+&1 B202 4 2 1 0 
+
+4_NHF_MF 16004: KBMF: P V | PVP_Ekonom_mod_v_MF_v_AJ EMMFAJ Tiruneh_Workie 1/1 13 ;495
+~ 620 0
+$1 C1_08 4 4 0 Tiruneh_Workie
+&1 C1_08 4 5 1 0 Tucnik_Miroslav
+
+
+4_NHF_DPS 17013: KPED: V 2 V | Didakticka_technika DTECH Pasiar_Ladislav 0/1 32 ;496
+~ 719 0
+&1 4C02 4 2 1 0 Pasiar_Ladislav 
+&1 4C02 4 3 2 0 Pasiar_Ladislav 
+
+4_NHF_DPS 17015: KPED: P V | Didaktika_uctovnictva DUCT Novak_Jaromir 1/0 32 ;497
+~ 719 0
+$1 4C02 3 1 0 Novak_Jaromir
+
+4_NHF_DPS 17039: KPED: P V | Didaktika_podnik_ekonomiky DPEK Orbanova_Darina 1/0 32 ;498
+~ 719 0
+$1 4C02 4 4 0 Orbanova_Darina
+
+4_NHF_DPS 17064: KPED: V 3 V | Cvicna_firma_pre_ucitel CFUC AAA_ucitel 0/1 32 ;499
+~ 719 0
+&1 4C14 2 1 1 0 Pasiar_Ladislav 
+&1 4C14 2 2 2 0 Pasiar_Ladislav 
+&1 4C14 2 3 3 0 Pasiar_Ladislav 
+
+
+4_OF_MO 22071: KMO: P V | Zahranicnoobch_politika_EU ZPEU AAA_ucitel 1/1 49 ;500
+~ 359 0
+$1 D112 1 3 0
+&1 B102 1 6 1 0 
+&1 B102 1 5 2 0 
+&1 B207 2 5 3 0 
+
+4_OF_MO 72075: KMVHD: P V | Medzinar_hospodarske_vztahy MHV Lipkova_Ludmila 1/1 49 ;501
+~ 704 1
+$1 B1_04 1 4 0 Lipkova_Ludmila :F
+&1 A5_14 1 5 1 0 
+&1 A5_08 1 6 2 0 
+&1 A4_06 3 4 3 0 
+
+4_OF_MO 22061: KMO: P V | Financne_oper_v_medzin_obchode FOMO Fifek_Edmund 1/1 49 ;502
+~ 359 0
+$1 D116 3 2 0 Fifek_Edmund
+&1 B103 2 5 1 0 Fifek_Edmund
+&1 B104 2 4 2 0 Fifek_Edmund
+&1 B102 3 3 3 0 Fifek_Edmund
+
+4_OF_MO 22030: KMO: P V | Technika_zahranicn_obchodu TZO Svobodova_Valeria 1/1 49 ;503
+~ 359 0
+$1 D111 2 3 0 Svobodova_Valeria
+&1 B211 2 4 1 0 Svobodova_Valeria
+&1 B211 2 5 2 0 Svobodova_Valeria
+&1 B1_10 2 2 3 0 Svobodova_Valeria
+
+
+4_OF_OMz 21010: KMR: P V | Distribucny_manazment DM Dano_Ferdinand 1/1 68 ;504
+~ 206 0
+$1 D111 2 2 0 Dano_Ferdinand
+&1 5D02 1 4 1 0  : F
+&1 5D02 2 3 2 0  : F
+&1 5D02 2 4 3 0  : F
+&1 5D02 1 3 4 0  : F
+
+4_OF_OMz 21007: KMR: P V | Spotrebitelske_spravanie SPS AAA_ucitel 1/1 68 ;505
+~ 206 0
+$1 D111 3 3 0
+&1 D103 4 3 1 0 Klepochova_Dagmar
+&1 D103 1 3 2 0 Klepochova_Dagmar
+&1 B106 4 4 3 0 Klepochova_Dagmar
+&1 D103 1 4 4 0 Klepochova_Dagmar
+
+4_OF_OMz 21018: KMR: P V | Informacne_systemy_market ISM Miklosik_ 1/1 68 ;506
+~ 206 0
+$1 D112 4 1 0 Miklosik_
+&1 5D02 1 2 1 0 Borgula_
+&1 5D02 4 4 2 0 
+&1 5D02 3 4 3 0 
+&1 5D02 4 3 4 0 
+
+4_OF_OMz 21033: KIOF: P V | E-coomerce ECOM Hasan_Jamal 0/1 68 ;507
+~ 548 0
+&1 D208 1 3 1 0 Hasan_Jamal
+&1 D214 2 4 2 0 Hasan_Jamal
+&1 D208 2 3 3 0 Hasan_Jamal
+&1 D208 1 2 4 0 Hasan_Jamal
+
+4_OF_OMz 21032: KMR: P V | Manazment_ludsk_zdrojov MLZ AAA_ucitel 1/1 68 ;508
+~ 206 0
+$1 D115 3 2 0
+&1 B202 4 4 1 0 Hvizdova_
+&1 D103 4 5 2 0 Hvizdova_
+&1 D101 2 5 3 0 Matusovicova_Monika
+&1 B105 2 4 4 0 Matusovicova_Monika
+
+4_OF_OMz 21081: KMR: P V | Market_aplikacie MAPL AAA_ucitel 1/1 68 ;509
+~ 206 0
+$1 D111 4 2 0
+&1 B207 1 5 1 0 
+&1 D101 1 2 2 0 
+&1 D101 4 3 3 0 
+&1 B208 4 4 4 0 
+
+
+4_OF_MMz 21010: KMR: P V | Distribucny_manazment DM Dano_Ferdinand 1/1 81 ;510
+~ 206 0
+$1 D111 2 2 0 Dano_Ferdinand
+&1 5D02 2 5 1 0  : F
+&1 5D02 1 5 2 0  : F
+&1 5D02 1 6 3 0  : F
+&1 5D02 2 6 4 0  : F
+
+4_OF_MMz 21007: KMR: P V | Spotrebitelske_spravanie SPS AAA_ucitel 1/1 81 ;511
+~ 206 0
+$1 D111 3 3 0
+&1 B210 2 3 1 0 Kopanicova_
+&1 B103 3 4 2 0 Kopanicova_
+&1 B212 3 5 3 0 Kopanicova_
+&1 B207 2 4 4 0 Kopanicova_
+
+4_OF_MMz 21018: KMR: P V | Informacne_systemy_market ISM Miklosik_ 1/1 81 ;512
+~ 206 0
+$1 D112 4 1 0 Miklosik_
+&1 5D02 4 5 1 0 Miklosik_
+&1 5D02 3 5 2 0 Miklosik_
+&1 5D02 3 6 3 0 Miklosik_
+&1 5D02 4 6 4 0 Miklosik_
+
+4_OF_MMz 21081: KMR: P V | Market_aplikacie MAPL AAA_ucitel 1/1 81 ;513
+~ 206 0
+$1 D111 4 2 0
+&1 B206 2 4 1 0 
+&1 B208 1 3 2 0 
+&1 B208 1 4 3 0 
+&1 B206 2 5 4 0 
+
+4_OF_MMz 25020/1: KOP: P V | Pracovne_pravo PRPRA Kropaj_ 1/1 81 ;514
+~ 557 0
+$1 D111 3 2 0 Kropaj_
+&1 B209 4 4 1 0 Kropaj_
+&1 B210 1 4 2 0 Kropaj_
+&1 B202 1 5 3 0 Kropaj_
+&1 B209 4 5 4 0 Kropaj_
+
+
+4_OF_MCR 23042: KSCR: P V | Region_cet_ruch RCR Michalkova_Anna 1/1 46 ;515
+~ 61 0
+$1 D115 4 3 0 Michalkova_Anna
+&1 D102 3 2 1 0 Michalkova_Anna
+&1 D104 3 4 2 0 Michalkova_Anna
+&1 D109 3 3 3 0 Michalkova_Anna
+
+4_OF_MCR 23025: KSCR: P V | Kontrol_v_podnikoch_CR KPCR Pachingerova_Maria 1/1 46 ;516
+~ 61 0
+$1 D114 4 2 0 Pachingerova_Maria
+&1 B211 2 3 1 0 
+&1 D104 3 3 2 0 
+&1 B103 3 2 3 0 
+
+4_OF_MCR 23026: KSCR: P V | Makromarketing_cestovneho_ruchu MACR Litomericky_Juraj 1/1 46 ;517
+~ 61 0
+$1 D115 1 5 0 Litomericky_Juraj
+&1 D101 1 6 1 0 
+&1 B210 4 5 2 0 
+&1 B210 4 6 3 0 
+
+4_OF_MCR 23027: KSCR: P V | Infrastruktura_sluzieb INS Michalova_Valeria 1/0 46 ;518
+~ 61 0
+$1 D116 2 2 0 Michalova_Valeria
+
+4_OF_MCR 23085: KSCR: P V | Verejne_sluzby VSL Suterova_Viola 1/1 46 ;519
+~ 61 0
+$1 B1_07 2 4 0 Suterova_Viola
+&1 D110 1 4 1 0 
+&1 B102 2 5 2 0 
+&1 B205 1 3 3 0 
+
+
+4_FMV_HD 71033: KMEP: P V | Medzin_pravo_verejne_II MPVII Mraz_Stanislav 1/1 76 ;520
+~ 706 1
+$1 C1_07 3 6 0 Mraz_Stanislav
+&1 A4_08 1 5 1 0 
+&1 A4_07 1 4 2 0 
+&1 A4_05 4 5 3 0 
+&1 A4_05 4 4 4 0 
+
+4_FMV_HD 71078: KMEP: P V | Pravo_Europ_unie PEU AAA_ucitel 1/1 76 ;521
+~ 706 1
+$1 B1_07 4 1 0
+&1 A4_07 4 5 1 0 
+&1 A4_08 3 5 2 0 
+&1 A4_08 3 4 3 0 
+&1 A4_06 4 6 4 0 
+
+4_FMV_HD 72015: KMVHD: P V | Medzinar_hospodarske_vztahy_II MHVII Lipkova_Ludmila 1/1 76 ;522
+~ 704 1
+$1 B1_10 1 2 0 Lipkova_Ludmila
+&1 A5_13 1 4 1 0 
+&1 A4_07 1 5 2 0 
+&1 A4_08 4 4 3 0 
+&1 A4_06 4 5 4 0 
+
+4_FMV_HD 75054: KMPV: P V | Medzinarod_vztahy_politicke_I MVPI Lidak_Jan 1/1 76 ;523
+~ 624 1
+$1 B1_08 2 3 0 Lidak_Jan
+&1 A4_06 3 5 1 0 
+&1 A4_07 4 4 2 0 
+&1 A6_16 4 3 3 0 
+&1 A4_05 3 7 4 0 
+
+4_FMV_HD 22036: KMO: P V | Operacie_v_zahran_obchode OZO AAA_ucitel 1/1 76 ;524
+~ 359 0
+$1 D111 1 3 0
+&1 B205 4 4 1 0 
+&1 B206 4 3 2 0 
+&1 B104 3 5 3 0 
+&1 B102 3 4 4 0 
+
+4_FMV_HD 71073: KMEP: P V | Pravo_v_medzin_ekon_vztah PMEV AAA_ucitel 1/1 76 ;525
+~ 706 1
+$1 B1_10 4 2 0
+&1 A4_08 4 3 1 0 
+&1 A5_17 2 5 2 0 
+&1 A6_06 2 4 3 0 
+&1 A4_05 2 6 4 0 
+
+4_FMV_HD 75051: KMPV: V 1 V | Blizky_vychod_v_medzin_polit BVMP Sorby_Karol 0/1 20 ;526
+~ 624 1
+&1 A4_07 2 6 1 0 Sorby_Karol 
+
+4_FMV_HD 75033: KMPV: V 1 V | Miesto_a_uloha_Franc_v_FJ MUFRFJ Cech_Lubomir 0/1 10 ;527
+~ 624 1
+&1 A4_07 3 7 1 0 Cech_Lubomir 
+
+4_FMV_HD 72082: KMVHD: V 1 V | Vyskumn_semin_z_MHV_v_AJ VSzMHV Grancay_Martin 0/1 20 ;528
+~ 704 1
+&1 A4_06 2 7 1 0 Grancay_Martin 
+
+4_FMV_HD 75035: KMVHD: V 1 V | Medzin_financn_inst_v_AJ MFIAJ Jancikova_Eva 0/1 18 ;529
+~ 704 1
+&1 C1_07 2 2 1 0 Jancikova_Eva 
+
+4_FMV_HD 72014: KMVHD: V 1 V | Priame_zahran_invest_v_AJ PZIAJ Dudas_Tomas 1/0 20 ;530
+~ 704 1
+$1 C1_06 2 4 0 Dudas_Tomas
+
+4_FMV_HD 72097: KMVHD: V 1 V | Male_staty_vo_svet_polit_v_NJ MSSVNJ Mattos_Boris 0/1 10 ;531
+~ 704 1
+&1 A4_05 1 6 1 0 Mattos_Boris 
+
+4_FMV_HD 72048: KMPV: V 1 V | Geopolitka_v_AJ GEOPAJ Kucharcik_Rudolf 0/1 10 ;532
+~ 624 1
+&1 A4_06 2 1 1 0 Kucharcik_Rudolf 
+
+
+4_FPM 43992: KPF: V 1 V | Prenos_Financ_ekon_anal P_FEA Zalai_Karol 0/1 25 ;533
+~ 69 1
+&1 A5_06 4 1 1 0 
+
+
+4_FPM_EMP_VMZ 42032: KMZ: P V | Organizacne_spravanie ORGS Joniakova_Zuzana 1/1 43 ;534
+~ 67 1
+$1 B1_04 1 5 0 Joniakova_Zuzana
+&1 A5_05 4 4 1 0 
+&1 A6_14 4 3 2 0 
+
+4_FPM_EMP_VMZ 41008/1: KPH: P V | Odbytova_strategia OS Majtan_Stefan 1/1 43 ;535
+~ 54 1
+$1 B1_08 4 2 0 Majtan_Stefan
+&1 A5_05 4 3 1 0 
+&1 A5_07 4 4 2 0 
+
+4_FPM_EMP_VMZ 44009: KMVAL: P V | Logistika LOG Stern_Juraj 1/1 43 ;536
+~ 78 1
+$1 B1_05 1 2 0 Stern_Juraj :F
+&1 A6_16 1 3 1 0 
+&1 A5_06 1 4 2 0 
+
+4_FPM_EMP_VMZ 42010: KMZ: P V | Manazerske_hry MANH Vogl_ 0/1 43 ;537
+~ 67 1
+&1 A5_04 1 4 1 0 Vogl_
+&1 A5_04 1 3 2 0 Vogl_
+
+4_FPM_EMP_VMZ 41066: KPH: V 0 V | Podnikat_prostredie_v_EU PPEU Subertova_Elena 2/0 43 ;538
+~ 54 1
+$2 C1_09 3 5 0 Subertova_Elena
+
+
+4_FPM_EMP_MVL 44009: KMVAL: P V | Logistika LOG Stern_Juraj 1/1 27 ;539
+~ 78 1
+$1 B1_05 1 2 0 Stern_Juraj :F
+&1 A5_15 2 4 1 0 
+
+4_FPM_EMP_MVL 44007: KMVAL: P V | Manazment_inovacii_podn MIP Molnar_Pavol 1/1 24 ;540
+~ 78 1
+$1 B1_07 3 3 0 Molnar_Pavol
+&1 A5_07 3 4 1 0 
+
+4_FPM_EMP_MVL 41008/1: KPH: P V | Odbytova_strategia OS Majtan_Stefan 1/1 24 ;541
+~ 54 1
+$1 B1_08 4 2 0 Majtan_Stefan
+&1 A5_06 3 2 1 0 
+
+4_FPM_EMP_MVL 42037: KMZ: P V | Projektovy_manazment PMAN Majtan_Miroslav 1/1 24 ;542
+~ 67 1
+$1 B1_07 2 2 0 Majtan_Miroslav
+&1 A5_05 2 3 1 0 
+
+4_FPM_EMP_MVL 42032: KMZ: V 1 V | Organizacne_spravanie ORGS Joniakova_Zuzana 1/1 1 ;543
+~ 67 1
+$1 B1_04 1 5 0 Joniakova_Zuzana
+&1 A5_13 2 1 1 0 
+
+4_FPM_EMP_MVL 41066/9: KPH: V 0 V | Podnikat_prostredie_v_EU PPEU Subertova_Elena 2/0 23 ;544
+~ 54 1
+$2 B1_04 2 5 0 Subertova_Elena
+
+
+4_FPM_EMP_PMZ 42032: KMZ: P V | Organizacne_spravanie ORGS Joniakova_Zuzana 1/1 36 ;545
+~ 67 1
+$1 B1_04 1 5 0 Joniakova_Zuzana
+&1 A6_15 3 1 1 0 
+&1 A5_07 2 5 2 0 
+
+4_FPM_EMP_PMZ 42049: KMZ: P V | Organizacia_prace ORGP Nachtmannova_Olga 1/1 36 ;546
+~ 67 1
+$1 C1_07 1 4 0 Nachtmannova_Olga
+&1 A4_07 3 3 1 0 
+&1 A5_15 3 4 2 0 
+
+4_FPM_EMP_PMZ 42030: KMZ: P V | Odmenovanie_a_stimulovanie ODST Joniakova_Zuzana 1/1 36 ;547
+~ 67 1
+$1 B1_07 3 2 0 Joniakova_Zuzana
+&1 B201 3 5 1 0 
+&1 A5_06 3 3 2 0 
+
+4_FPM_EMP_PMZ 25020: KOP: P V | Pracovne_pravo PRPRA Kropaj_ 1/0 36 ;548
+~ 557 0
+$1 D115 2 4 0 Kropaj_
+
+4_FPM_EMP_PMZ 42037: KMZ: V 1 V | Projektovy_manazment PMAN Majtan_Miroslav 1/1 9 ;549
+~ 67 1
+$1 B1_07 2 2 0 Majtan_Miroslav
+&1 A4_16 3 5 1 0 
+
+4_FPM_EMP_PMZ 42044: KMZ: V 1 V | Balanced_Scorecard BSCOR Tariskova_Natalia 1/1 20 ;550
+~ 67 1
+$1 A5_14 4 2 0 Tariskova_Natalia
+&1 A5_14 4 3 1 0 
+
+4_FPM_EMP_PMZ 44058: KMVAL: V 1 V | Manazment_kvality MANK Dzubakova_ 1/1 10 ;551
+~ 78 1
+$1 A5_07 2 6 0 Dzubakova_
+&1 A5_04 2 7 1 0 
+
+
+4_FPM_EMP_EP 41026: KPH: P V | Riadenie_hodnoty_podniku RHP Kardos_Peter 1/1 75 ;552
+~ 54 1
+$1 C1_07 2 1 0 Kardos_Peter :F
+&1 A6_16 2 5 1 0 
+&1 A6_14 1 3 2 0 
+&1 A4_17 2 4 3 0 
+&1 A6_17 1 4 4 0 
+
+4_FPM_EMP_EP 41024: KPH: P V | Podnikovy_controling POC Foltinova_Alzbeta 1/1 75 ;553
+~ 54 1
+$1 B1_07 2 3 0 Foltinova_Alzbeta
+&1 A6_16 2 4 1 0 
+&1 B1_10 1 4 2 0 
+&1 A4_05 2 2 3 0 
+&1 A4_17 2 5 4 0 
+
+4_FPM_EMP_EP 41028: KPH: P V | Znalectvo ZNAL Kubica_Milan 1/1 75 ;554
+~ 54 1
+$1 B1_09 1 1 0 Kubica_Milan
+&1 A5_14 1 4 1 0 
+&1 A4_08 2 2 2 0 
+&1 A5_08 1 5 3 0 
+&1 A5_06 1 3 4 0 
+
+4_FPM_EMP_EP 44009: KMVAL: P V | Logistika LOG Stern_Juraj 1/1 75 ;555
+~ 78 1
+$1 B1_05 1 2 0 Stern_Juraj :F
+&1 A5_13 1 3 1 0 
+&1 A5_17 2 4 2 0 
+&1 A9_08 1 4 3 0 
+&1 A5_15 2 2 4 0 
+
+4_FPM_EMP_EP 44058: KMVAL: V 1 V | Manazment_kvality MANK Dzubakova_ 1/1 2 ;556
+~ 78 1
+$1 A5_07 2 6 0 Dzubakova_
+&1 A5_04 2 7 1 0 
+
+4_FPM_EMP_EP 44007: KMVAL: V 1 V | Manazment_inovacii_pod MIP Molnar_Pavol 1/1 5 ;557
+~ 78 1
+$1 B1_07 3 3 0 Molnar_Pavol
+&1 A5_07 3 4 1 0 
+
+4_FPM_EMP_EP 41066: KPH: V 0 V | Podnikat_prostredie_v_EU PPEU Subertova_Elena 2/0 68 ;558
+~ 54 1
+$2 C1_09 3 5 0 Subertova_Elena
+
+4_FPM_EMP_EP 42010: KMZ: V 4 V | Manazerske_hry MANH AAA_ucitel 0/1 75 ;559
+~ 67 1
+&1 A5_04 3 3 1 0 
+&1 A5_04 3 2 2 0 
+&1 A5_04 4 2 3 0 
+&1 A5_04 4 3 4 0 
+
+
+4_FPM_FM_PF 43003: KPF: P V | Financne_investicie FI Mikova_Olga 1/1 61 ;560
+~ 69 1
+$1 B1_10 4 3 0 Mikova_Olga
+&1 A5_06 3 5 1 0 
+&1 A5_14 3 4 2 0 
+&1 A5_14 3 3 3 0 
+
+4_FPM_FM_PF 42036: KMZ: P V | Medzin_manazm_a_medzin_podn MMMP Prochazkova_ 1/1 61 ;561
+~ 67 1
+$1 B1_09 4 2 0 Prochazkova_
+&1 A5_13 3 4 1 0 
+&1 A6_15 3 3 2 0 
+&1 A6_16 3 2 3 0 
+
+4_FPM_FM_PF 35020: KUA: P V | Financne_uctovn FU Mateasova_Martina 1/1 61 ;562
+~ 727 1
+$1 B1_08 2 2 0 Mateasova_Martina
+&1 A5_17 3 3 1 0 
+&1 A6_06 3 2 2 0 
+&1 A6_17 3 1 3 0 
+
+4_FPM_FM_PF 43039: KPF: P V | Financie_mal_a_stredn_podnik FMSP Fetisovova_Elena 1/0 61 ;563
+~ 69 1
+$1 B1_09 2 3 0 Fetisovova_Elena
+
+4_FPM_FM_PF 44009: KMVAL: V 1 V | Logistika LOG Stern_Juraj 1/1 2 ;564
+~ 78 1
+$1 B1_05 1 2 0 Stern_Juraj :F
+&1 A5_13 1 3 1 0 
+
+4_FPM_FM_PF 41066/9: KPH: V 0 V | Podnikat_prostredie_v_EU PPEU Subertova_Elena 2/0 57 ;565
+~ 54 1
+$2 B1_04 2 5 0 Subertova_Elena
+
+4_FPM_FM_PF 25020: KOP: V 0 V | Pracovne_pravo PRPRA Kropaj_ 1/0 5 ;566
+~ 557 0
+$1 D115 2 4 0 Kropaj_
+
+
+4_FPM_FM_MEZ 41026: KPH: P V | Riadenie_hodnoty_podniku RHP Kardos_Peter 1/1 16 ;567
+~ 54 1
+$1 C1_07 2 1 0 Kardos_Peter :F
+&1 A6_17 1 2 1 0 
+
+4_FPM_FM_MEZ 43077: KPF: P V | Uctovny_a_danov_reporting UDREP Harumova_Anna 1/1 16 ;568
+~ 69 1
+$1 A9_17 1 4 0 Harumova_Anna
+&1 A9_17 1 5 1 0 Harumova_Anna
+
+4_FPM_FM_MEZ 41028: KPH: P V | Znalectvo ZNAL Kubica_Milan 1/1 16 ;569
+~ 54 1
+$1 B1_09 1 1 0 Kubica_Milan
+&1 A6_16 2 3 1 0 
+
+4_FPM_FM_MEZ 35020: KUA: P V | Financne_uctovnictvo FU Mateasova_Martina 1/1 16 ;570
+~ 727 1
+$1 B1_08 2 2 0 Mateasova_Martina
+&1 A5_16 3 1 1 0 
+
+4_FPM_FM_MEZ 25088: KOP: P V | Pravo_cenn_papier_a_burz_pravo PCPBP Holub_Dusan 1/0 16 ;571
+~ 557 0
+$1 B204 1 3 0 Holub_Dusan
+
+
+4_FHI_MRIT 33330: KOVE: V 1 V | Model_ekon_proces_II MEP2 AAA_ucitel 1/1 6 ;572
+~ 644 1
+$1 A7_15 4 4 0
+&1 A7_15 4 5 1 0 
+
+4_FHI_MRIT 33250: KOVE: V 1 V | Kvant_metod_v_logistike KML Cickova_Zuzana 1/1 8 ;573
+~ 644 1
+$1 A9_17 1 2 0 Cickova_Zuzana
+&1 A9_07 4 3 1 0 
+
+4_FHI_MRIT 31005: KAI: V 2 V | Tvorba_internet_aplik TIA Kostal_ 1/1 32 ;574
+~ 720 1
+$1 B1_06 1 5 0 Kostal_
+&1 A8_04 1 6 1 0 Kostal_ 
+&1 A8_05 1 4 2 0 Kostal_ 
+
+4_FHI_MRIT 31004: KAI: V 2 V | Pokroc_vyuzivanie_databaz PVD Skurla_Peter 1/1 32 ;575
+~ 720 1
+$1 B1_06 4 5 0 Skurla_Peter
+&1 A8_04 4 6 1 0 Skurla_Peter 
+&1 A8_04 4 7 2 0 Skurla_Peter 
+
+4_FHI_MRIT 33008/5: KOVE: P V | Ekonometria2 EKO2 Lukacikova_Adriana 1/1 63 ;576
+~ 644 1
+$1 C1_07 1 3 0 Lukacikova_Adriana
+&1 A8_12 2 4 1 0 
+&1 A8_12 4 2 2 0 
+&1 A8_12 2 5 3 0 
+
+4_FHI_MRIT 33007: KOVE: P V | Viackriterialne_rozhodov VKR Pekar_Juraj 1/1 63 ;577
+~ 644 1
+$1 C1_07 3 3 0 Pekar_Juraj
+&1 A7_15 1 4 1 0 Furkova_Andrea
+&1 A7_07 3 4 2 0 Furkova_Andrea
+&1 A7_07 2 4 3 0 Furkova_Andrea
+
+4_FHI_MRIT 31008: KAI: P V | Softverove_inzinierstvo_2 SIN2 Banduric_Igor 1/1 63 ;578
+~ 720 1
+$1 A7_13 3 2 0 Banduric_Igor
+&1 A8_12 3 1 1 0 Banduric_Igor
+&1 A8_04 4 1 2 0 Banduric_Igor
+&1 A8_04 4 2 3 0 Banduric_Igor
+
+4_FHI_MRIT 31032: KAI: P V | Multimedialne_systemy MSYS Turna_Lubomir 1/1 63 ;579
+~ 720 1
+$1 A7_13 2 2 0 Turna_Lubomir
+&1 A8_12 2 3 1 0 Turna_Lubomir
+&1 A8_12 3 5 2 0 Turna_Lubomir
+&1 A8_12 3 4 3 0 Turna_Lubomir
+
+
+4_FHI_AKT 32088: KM: P V | Teoria_rizika_v_poist_1 TRPOI1 Horakova_Galina 1/1 18 ;580
+~ 725 0
+$1 B1_08 2 1 0 Horakova_Galina
+&1 A8_14 2 2 1 0 Horakova_Galina
+
+4_FHI_AKT 32085: KM: P V | Nezivotne_poistenie NPOI Fecenko_Jozef 1/1 18 ;581
+~ 725 0
+$1 A8_07 3 2 0 Fecenko_Jozef
+&1 A8_07 3 3 1 0 
+
+4_FHI_AKT 32034: KM: P V | Investicie_a_ich_poisten IIP Pinda_Ludovit 1/1 18 ;582
+~ 725 0
+$1 B1_09 1 2 0 Pinda_Ludovit
+&1 A7_15 2 3 1 0 
+
+4_FHI_AKT 32021: KM: P V | Matemat_pre_zivot_poist_2 MZP2 Bilikova_Maria 1/1 18 ;583
+~ 725 0
+$1 A7_15 1 3 0 Bilikova_Maria
+&1 A7_17 1 4 1 0 
+
+4_FHI_AKT 32057: KM: P V | Program_techniky_pre_aktuar PTAKT AAA_ucitel 0/1 18 ;584
+~ 725 0
+&1 A8_07 3 4 1 0 
+
+
+4_FHI_OVE 33079: KOVE: V 1 V | Soft_podpora_rozhod SPR Pekar_Juraj 1/1 8 ;585
+~ 644 1
+$1 A8_17 2 2 0 Pekar_Juraj
+&1 A8_17 2 4 1 0 
+
+4_FHI_OVE 33250: KOVE: V 1 V | Kvant_metod_v_logistike KML Cickova_Zuzana 1/1 9 ;586
+~ 644 1
+$1 A9_17 1 2 0 Cickova_Zuzana
+&1 A9_07 4 3 1 0 
+
+4_FHI_OVE 33330: KOVE: V 1 V | Model_ekon_proces_II MEP2 AAA_ucitel 1/1 6 ;587
+~ 644 1
+$1 A7_15 4 4 0
+&1 A7_15 4 5 1 0 
+
+4_FHI_OVE 33110: KOVE: V 1 V | Makroekon_analyza_2 MAKRA2 AAA_ucitel 1/1 15 ;588
+~ 644 1
+$1 A9_07 3 5 0
+&1 A7_05 3 4 1 0 
+
+4_FHI_OVE 33008/4: KOVE: P V | Ekonometria3 EKO3 Lukacik_Martin 1/1 20 ;589
+~ 644 1
+$1 A8_17 3 2 0 Lukacik_Martin
+&1 A8_17 3 3 1 0 
+
+4_FHI_OVE 33170: KOVE: P V | Stochasticke_modely STOM Reiff_Marian 1/1 20 ;590
+~ 644 1
+$1 A7_15 4 1 0 Reiff_Marian
+&1 A7_15 4 2 1 0 Reiff_Marian
+
+4_FHI_OVE 33007/1: KOVE: P V | Viackriterialne_rozhodov VKR Pekar_Juraj 1/1 20 ;591
+~ 644 1
+$1 A7_13 2 3 0 Pekar_Juraj
+&1 A7_13 4 3 1 0 Furkova_Andrea
+
+
+4_FHI_SME 34721: KS: V 2 V | Aplikovana_poistna_statistika APS Kotlebova_Eva 1/1 50 ;592
+~ 565 1
+$1 A7_05 1 1 0 Kotlebova_Eva
+&1 A8_06 4 3 1 0 Kotlebova_Eva 
+&1 A8_06 4 2 2 0 Kotlebova_Eva 
+
+4_FHI_SME 34202: KS: P V | Analyza_casov_radov_2 ACR2 Rublikova_Eva 1/1 30 ;593
+~ 565 1
+$1 A7_05 1 4 0 Rublikova_Eva
+&1 A8_06 1 5 1 0 Rublikova_Eva
+&1 A8_06 2 1 2 0 
+
+4_FHI_SME 34028: KS: P V | Demograficka_statistika DEMS Sivasova_Daniela 1/0 30 ;594
+~ 565 1
+$1 A7_05 1 3 0 Sivasova_Daniela
+
+4_FHI_SME 34067: KS: P V | System_narodnych_uctov SNU Hurbankova_Lubica 1/0 30 ;595
+~ 565 1
+$1 A7_05 2 3 0 Hurbankova_Lubica
+
+4_FHI_SME 34021/1: KS: P V | Podnikovohospod_statistika PHS Sodomova_Eva 1/1 30 ;596
+~ 565 1
+$1 A7_05 1 2 0 Sodomova_Eva
+&1 A7_17 4 2 1 0 Sodomova_Eva
+&1 A7_17 4 3 2 0 
+
+4_FHI_SME 34701: KS: P V | Viacrozmerne_statist_metody VSTM Vojtkova_Maria 1/1 30 ;597
+~ 565 1
+$1 A7_05 2 4 0 Vojtkova_Maria
+&1 A8_04 2 5 1 0 Vojtkova_Maria
+&1 A8_06 2 2 2 0 
+
+
+4_FHI_UA 35331: KUA: V 0 V | Ekolog_uctovn EUCT AAA_ucitel 1/0 55 ;598
+~ 727 1
+$1 B1_07 4 5 0
+
+4_FHI_UA 35341: KUA: V 0 V | Uctov_nezisk_uctov_jednot UNUJ Kordosova_Alena 1/0 48 ;599
+~ 727 1
+$1 C1_07 4 4 0 Kordosova_Alena
+
+4_FHI_UA 35339: KUA: V 0 V | Vedenie_financ_zazn_AJ VFZ/AJ AAA_ucitel 1/0 20 ;600
+~ 727 1
+$1 A7_15 4 6 0
+
+4_FHI_UA 35010: KUA: P V | Uctovn_a_dane_pravn_osob UDPO Bastincova_Anna 1/1 118 ;601
+~ 727 1
+$1 B1_02 2 3 0 Bastincova_Anna
+&1 A7_04 3 3 1 0 
+&1 A7_04 2 6 2 0 
+&1 A7_04 3 6 3 0 
+&1 A7_17 2 5 4 0 
+&1 A7_04 2 7 5 0 
+&1 A7_04 3 7 6 0 
+
+4_FHI_UA 35009: KUA: P V | Manazerske_uctovnictvo MANU Antalova_Renata 1/1 118 ;602
+~ 727 1
+$1 C1_07 3 2 0 Antalova_Renata
+&1 A7_04 1 2 1 0 
+&1 A7_04 1 1 2 0 
+&1 A7_04 2 2 3 0 
+&1 A7_04 2 1 4 0 
+&1 A7_04 1 4 5 0 
+&1 A7_04 1 3 6 0 
+
+4_FHI_UA 35008: KUA: P V | Uctovnictvo_bank UB Kadlecikova_Olga 1/1 118 ;603
+~ 727 1
+$1 B1_04 4 2 0 Kadlecikova_Olga
+&1 A5_16 1 3 1 0 
+&1 A7_07 1 2 2 0 
+&1 A7_07 2 1 3 0 
+&1 A7_05 2 2 4 0 
+&1 A7_13 3 5 5 0 
+&1 B1_07 3 4 6 0 
+
+4_FHI_UA 35013/8: KUA: P V | Auditorstvo1 AUD1 Kares_Ladislav 1/1 118 ;604
+~ 727 1
+$1 B1_04 4 3 0 Kares_Ladislav
+&1 A7_05 2 1 1 0 
+&1 A7_05 2 1 2 0 
+&1 A7_05 3 5 3 0 
+&1 A7_05 3 5 4 0 
+&1 A7_07 3 3 5 0 
+&1 A7_07 3 3 6 0 
+
+4_FHI_UA 35041: KUA: P V | Teoria_uctovnictva TUC Paksiova_ 1/1 118 ;605
+~ 727 1
+$1 B1_04 2 4 0 Paksiova_
+&1 A7_17 3 4 1 0 
+&1 A7_05 3 3 2 0 
+&1 A7_15 3 3 3 0 
+&1 A8_08 3 4 4 0 
+&1 A8_08 2 6 5 0 
+&1 A8_08 2 5 6 0 
+
+
+4_UMP_UMP 11091: KET: V 1 V | Macroeconomics MAK/AJ Novak_Marcel 1/1 10 ;606
+~ 675 9
+$1 C1_08 3 6 0 Novak_Marcel
+&1 C1_08 3 7 1 0 
+
+4_UMP_UMP 72014: KMVHD: V 1 V | Foreign_Direct_Investments PZIAJ Dudas_Tomas 1/0 8 ;607
+~ 704 1
+$1 C1_06 2 4 0 Dudas_Tomas
+
+4_UMP_UMP 23010/5: KSCR: V 1 V | Internat_Tourism MCR/AJ Novacka_Ludmila 1/1 15 ;608
+~ 61 0
+$1 C1_06 1 2 0 Novacka_Ludmila
+&1 C1_06 1 3 1 0 Stano_Roman 
+
+4_UMP_UMP 15184: KF: V 1 V | Capital_Struktur_of_Companies KSPSAJ Mikocziova_Jana 1/1 16 ;609
+~ 692 0
+$1 D116 1 2 0 Mikocziova_Jana
+&1 2B01 1 3 1 0 Mikocziova_Jana 
+
+4_UMP_UMP 42076: KMZ: V 1 V | Project_Managment PMANAJ Marsina_Stefan 1/1 25 ;610
+~ 67 1
+$1 C1_06 1 6 0 Marsina_Stefan :F
+&1 C1_06 1 7 1 0 Marsina_Stefan 
+
+4_UMP_UMP 44010: KMVAL: V 1 V | Innovation_Management MI/AJ Molnar_Pavol 1/1 20 ;611
+~ 78 1
+$1 C1_06 3 5 0 Molnar_Pavol
+&1 C1_06 3 6 1 0 Molnar_Pavol 
+
+4_UMP_UMP 71009: KMEP: V 0 V | Law_of_the_EU PEUAJ Hurna_Lucia 1/0 13 ;612
+~ 706 1
+$1 B1_06 4 3 0 Hurna_Lucia
+
+4_UMP_UMP 16001: KBMF: V 0 V | Monetary_Policy_in_Euroz MPEUAJ Kotlebova_Jana 1/0 18 ;613
+~ 620 0
+$1 C1_06 2 3 0 Kotlebova_Jana
+
+4_UMP_UMP 33119: KOVE: V 1 V | Macroeconomic_Analysis MA/AJ Szomolanyi_Karol 1/1 9 ;614
+~ 644 1
+$1 C1_06 4 5 0 Szomolanyi_Karol
+&1 A8_17 4 6 1 0 Szomolanyi_Karol 
+
+4_UMP_UMP 75935: KMVHD: V 0 V | Internat_Trade_Financ MOF/AJ Jancikova_Eva 1/0 12 ;615
+~ 704 1
+$1 C1_06 2 5 0 Jancikova_Eva
+
+4_UMP_UMP 22068: KMO: V 1 V | Europ_union_enlarg REU/AJ Ciderova_ 0/1 16 ;616
+~ 359 0
+&1 C1_06 4 6 1 0 Ciderova_ 
+
+4_UMP_UMP 16004: KBMF: V 1 V | Econ_Models_in_IF EMIF Tiruneh_Workie 1/1 8 ;617
+~ 620 0
+$1 C1_08 4 4 0 Tiruneh_Workie
+&1 C1_08 4 5 1 0 Tucnik_Miroslav 
+
+4_UMP_UMP 16789: KBMF: V 1 V | Intern_Financ_Market MFT/AJ Tiruneh_Workie 1/1 19 ;618
+~ 620 0
+$1 C1_08 4 2 0 Tiruneh_Workie
+&1 C1_08 4 3 1 0 Tiruneh_Workie 
+
+4_UMP_UMP 24059: KTKT: V 1 V | Product_Management PRMNAJ Strhan_Rastislav 1/1 30 ;619
+~ 467 0
+$1 C1_06 3 2 0 Strhan_Rastislav
+&1 C1_06 3 3 1 0 Knoskova_ 
+
+
+4_FAJ_CJIK 81001: KJaT: P V | Lexikologia_AJ LAJ Brevenikova_Daniela 1/1 20 ;620
+~ 50 0
+$1 E2_12 5 2 0 Brevenikova_Daniela
+&1 E2_12 5 3 1 0 Brevenikova_Daniela
+&1 E2_12 5 3 2 0 Brevenikova_Daniela
+
+4_FAJ_CJIK 81002: KJaT: P V | Lexikologia_NJ LNJ Durco_ 1/1 20 ;621
+~ 50 0
+$1 E1_12 4 2 0 Durco_
+&1 E1_12 4 3 1 0 Durco_
+&1 E1_12 4 3 2 0 Durco_
+
+4_FAJ_CJIK 81003: KJaT: P V | Preklad_a_tlmoc_v_odb_AJ PTOAJ Sovinec_ 0/1 20 ;622
+~ 50 0
+&1 E2_12 5 4 1 0 Sovinec_
+&1 E2_12 5 5 2 0 
+
+4_FAJ_CJIK 81004: KJaT: P V | Preklad_a_tlmoc_v_odb_NJ PTONJ Sovinec_ 0/1 20 ;623
+~ 50 0
+&1 E2_10 4 1 1 0 Sovinec_
+&1 E2_10 4 5 2 0 Sovinec_
+
+4_FAJ_CJIK 75005: KMPV: P V | Uvod_do_kulturologie UKULT Zagorsekova_ 1/0 20 ;624
+~ 624 1
+$1 A4_09 3 6 0 Zagorsekova_
+
+4_FAJ_CJIK 81005: KJaT: P V | Interkult_komunik_v_nemeck_prostr IKNEM Helmova_Milena 0/1 20 ;625
+~ 50 0
+&1 E2_08 3 4 1 0 Helmova_Milena
+&1 E2_08 3 4 2 0 Helmova_Milena
+
+4_FAJ_CJIK 72008/9: KMVHD: P V | Svetova_ekonomika SE AAA_ucitel 1/0 20 ;626
+~ 704 1
+$1 B1_07 4 7 0
+
+4_FAJ_CJIK 25020/4: KOP: P V | Pravo PRA AAA_ucitel 0/1 20 ;627
+~ 557 0
+&1 D101 2 6 1 0 
+&1 D101 2 6 2 0 
+
+
+5_NHF_BANK 16181: KBMF: V 1 V | Prenos_Men_anal_a_progn P_MAP Kotlebova_Jana 1/1 19 ;628
+~ 620 0
+$1 D114 3 2 0 Kotlebova_Jana
+&1 B208 2 6 1 0 
+
+5_NHF_BANK 16130: KBMF: P V | Investicne_bankov IB Longauerova_ 0/1 88 ;629
+~ 620 0
+&1 B211 4 5 1 0 Longauerova_
+&1 B209 4 6 2 0 Longauerova_
+&1 D102 2 5 3 0 Longauerova_
+&1 D109 2 6 4 0 Longauerova_
+
+5_NHF_BANK 16080: KBMF: P V | Dejiny_penaznictva DPEN Tkacova_Dana 1/0 88 ;630
+~ 620 0
+$1 D113 4 4 0 Tkacova_Dana
+
+5_NHF_BANK 16103: KBMF: P V | Financne_programovanie FPR Nemec_Marian 0/1 88 ;631
+~ 620 0
+&1 B210 1 3 1 0 Nemec_Marian
+&1 B207 1 4 2 0 Nemec_Marian
+&1 B101 4 3 3 0 Nemec_Marian
+&1 B206 4 2 4 0 Nemec_Marian
+
+5_NHF_BANK 16277: KBMF: P V | PVP_Spec_sem_z_bank_a_FT SSBFT Klimikova_Maria 0/1 57 ;632
+~ 620 0
+&1 3B19 1 2 1 0 Klimikova_Maria
+&1 D109 2 2 2 0 Klimikova_Maria
+&1 B105 1 4 3 0 Klimikova_Maria
+&1 B105 1 4 4 0 Klimikova_Maria
+
+5_NHF_BANK 16976: KBMF: P V | PVP_Spec_sem_z_MT_a_MF SMTMF Nemec_Marian 0/1 11 ;633
+~ 620 0
+&1 D204 2 4 1 0 Nemec_Marian
+&1 D204 2 4 2 0 Nemec_Marian
+&1 D204 2 4 3 0 Nemec_Marian
+&1 D204 2 4 4 0 Nemec_Marian
+
+5_NHF_BANK 16103/9: KBMF: V 1 V | Financ_Programming FPR/AJ Nemec_Marian 0/1 14 ;634
+~ 620 0
+&1 D110 4 5 1 0 
+
+5_NHF_BANK 15180: KF: P V | Kapitalova_struktura_podn_subjektov KSPS Mikocziova_Jana 1/1 67 ;635
+~ 692 0
+$1 B108 2 3 0 Mikocziova_Jana :F
+&1 3B01 4 2 1 0 
+&1 3B01 4 3 2 0 
+&1 2B01 4 2 3 0 
+&1 2B01 4 3 4 0 
+
+5_NHF_BANK 15182: KF: V 1 V | Kapital_strukt_podn_subj_NJ KSPSNJ Jancovicova_Bognarova 0/1 15 ;636
+~ 692 0
+&1 B106 2 6 1 0 Jancovicova_Bognarova 
+
+5_NHF_BANK 15184: KF: V 1 V | Capital_Struktur_of_Companies KSPSAJ Mikocziova_Jana 1/1 5 ;637
+~ 692 0
+$1 D116 1 2 0 Mikocziova_Jana
+&1 2B01 1 3 1 0 Mikocziova_Jana 
+
+5_NHF_BANK 15151: KF: V 1 V | VP_Finan_kontrola FKON Ciernik_Anton 1/1 5 ;638
+~ 692 0
+$1 B108 1 5 0 Ciernik_Anton
+&1 5B01 1 7 1 0 Ciernik_Anton 
+
+5_NHF_BANK 13551: KVSRR: V 0 V | VP_Ekon_siet_odvetv_v_AJ ESO/AJ Pastor_Rudolf 1/0 3 ;639
+~ 674 0
+$1 D103 1 6 0 Pastor_Rudolf
+
+5_NHF_BANK 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 2 ;640
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 D110 3 6 1 0 Klimko_ 
+
+
+5_NHF_FIN 15980: KF: V 1 V | Prenos_Kapit_struktura_podn_subj PKSPS Mikocziova_Jana 0/1 18 ;641
+~ 692 0
+&1 2B01 1 4 1 0 Mikocziova_Jana 
+
+5_NHF_FIN 15151: KF: P V | Financna_kontrola FKON Ciernik_Anton 1/1 73 ;642
+~ 692 0
+$1 B108 1 5 0 Ciernik_Anton
+&1 5B01 1 6 1 0 Ciernik_Anton
+&1 5B01 2 7 2 0 
+&1 5B01 2 6 3 0 
+
+5_NHF_FIN 15092: KF: P V | Financie_tretieho_sektora FTS Belickova_Kornelia 1/0 71 ;643
+~ 692 0
+$1 D112 2 4 0 Belickova_Kornelia
+
+5_NHF_FIN 15182: KF: V 1 V | VP_Kapital_strukt_podn_subj_NJ KSPSNJ Jancovicova_Bognarova 0/1 11 ;644
+~ 692 0
+&1 5B01 2 5 1 0 Jancovicova_Bognarova 
+
+5_NHF_FIN 15184: KF: V 1 V | VP_Capital_Struktur_of_Companies KSPSAJ Mikocziova_Jana 1/1 1 ;645
+~ 692 0
+$1 D116 1 2 0 Mikocziova_Jana
+&1 2B01 1 3 1 0 Mikocziova_Jana 
+
+5_NHF_FIN 14012: KSRP: V 2 V | VP_Ekonom_vzdel EKVZ AAA_ucitel 1/1 43 ;646
+~ 679 0
+$1 D112 2 3 0
+&1 D109 2 5 1 0 
+&1 D104 2 6 2 0 
+
+5_NHF_FIN 14032: KSRP: V 1 V | VP_Kvalita_ziv KZIV Antalova_Maria 1/1 8 ;647
+~ 679 0
+$1 B212 2 1 0 Antalova_Maria
+&1 B206 1 6 1 0 
+
+5_NHF_FIN 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 12 ;648
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B101 1 4 1 0 Klimko_ 
+
+5_NHF_FIN 14071: KSRP: V 1 V | VP_Social_zabezpec SZ AAA_ucitel 1/1 19 ;649
+~ 679 0
+$1 D113 1 3 0
+&1 B212 3 6 1 0 
+
+
+5_NHF_DDP 15980: KF: V 1 V | Prenos_Kapit_struktura_podn_subj PKSPS Mikocziova_Jana 0/1 10 ;650
+~ 692 0
+&1 3B01 2 5 1 0 Mikocziova_Jana 
+
+5_NHF_DDP 15030: KF: P V | Danovy_manazm DMAN Gesko_Martin 1/1 65 ;651
+~ 692 0
+$1 D113 3 6 0 Gesko_Martin
+&1 B211 3 3 1 0 Gesko_Martin
+&1 D204 4 2 2 0 Gesko_Martin
+&1 D204 4 3 3 0 Gesko_Martin
+
+5_NHF_DDP 15079: KF: P V | Danove_analyzy DAN Kusnirova_Jana 1/1 65 ;652
+~ 692 0
+$1 D113 3 4 0 Kusnirova_Jana
+&1 D203 4 2 1 0 Kusnirova_Jana
+&1 D203 4 3 2 0 Kusnirova_Jana
+&1 D101 4 4 3 0 Kusnirova_Jana
+
+5_NHF_DDP 15151: KF: P V | PVP_Finan_kontrola FKON Ciernik_Anton 1/1 65 ;653
+~ 692 0
+$1 B108 1 5 0 Ciernik_Anton
+&1 5B01 4 1 1 0 Ciernik_Anton
+&1 5B01 3 7 2 0 Ciernik_Anton
+&1 5B01 4 6 3 0 Ciernik_Anton
+
+5_NHF_DDP 15184: KF: V 1 V | VP_Capital_Struktur_of_Companies KSPSAJ Mikocziova_Jana 1/1 1 ;654
+~ 692 0
+$1 D116 1 2 0 Mikocziova_Jana
+&1 2B01 1 3 1 0 Mikocziova_Jana 
+
+5_NHF_DDP 14012: KSRP: V 1 V | VP_Ekonom_vzdel EKVZ AAA_ucitel 1/1 15 ;655
+~ 679 0
+$1 D112 2 3 0
+&1 B102 2 2 1 0 
+
+5_NHF_DDP 14032: KSRP: V 1 V | VP_Kvalita_ziv KZIV Antalova_Maria 1/1 6 ;656
+~ 679 0
+$1 B212 2 1 0 Antalova_Maria
+&1 B206 1 6 1 0 
+
+5_NHF_DDP 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 15 ;657
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B101 3 7 1 0 Klimko_ 
+
+
+5_NHF_POI 18074: KPO: P V | Manazment_rizika_poist MRPOI Marko_Peter 1/1 13 ;658
+~ 709 0
+$1 D104 2 4 0 Marko_Peter
+&1 D104 2 5 1 0 Marko_Peter
+
+5_NHF_POI 32034: KM: P V | Investicie INV Pinda_Ludovit 1/1 13 ;659
+~ 725 0
+$1 B1_09 1 2 0 Pinda_Ludovit
+&1 A7_15 2 3 1 0 
+
+5_NHF_POI 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 6 ;660
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B101 1 4 1 0 Klimko_ 
+
+
+5_NHF_HP 12143: KHP: P V | Makroek_analyza_a_progno MAPRO Morvay_Karol 1/1 42 ;661
+~ 662 9
+$1 D110 4 3 0 Morvay_Karol
+&1 B212 1 2 1 0 Stikarova_
+&1 B212 1 1 2 0 Stikarova_
+
+5_NHF_HP 12007: KHP: P V | Ekonom_rast_a_rovnov ERR Labaj_Martin 1/1 42 ;662
+~ 662 9
+$1 D114 1 3 0 Labaj_Martin
+&1 D116 2 6 1 0 
+&1 B105 2 5 2 0 
+
+5_NHF_HP 12180: KHP: P V | Vonkajsie_ekonom_vztahy VEV Tokarova_Maria 1/1 42 ;663
+~ 662 9
+$1 D111 3 4 0 Tokarova_Maria
+&1 D116 2 5 1 0 Tokarova_Maria
+&1 B105 2 6 2 0 Tokarova_Maria
+
+5_NHF_HP 12021: KHP: P V | PVP_Mikroek_polit_II MIKP2 Silanic_ 0/1 14 ;664
+~ 662 9
+&1 D106 4 1 1 0 
+&1 D106 4 1 2 0 
+
+5_NHF_HP 12921: KHP: P V | PVP_Makroek_polit_II MAKP2 AAA_ucitel 0/1 28 ;665
+~ 662 9
+&1 D116 2 7 1 0 
+&1 D116 2 7 2 0 
+
+5_NHF_HP 12097: KHP: V 1 V | VP_Ekon_rast_a_rov_AJ ERR/AJ Labaj_Martin 1/1 11 ;666
+~ 662 9
+$1 C1_08 1 4 0 Labaj_Martin
+&1 C1_08 1 5 1 0 Vondrova_ 
+
+5_NHF_HP 14032: KSRP: V 1 V | VP_Kvalita_ziv KZIV Antalova_Maria 1/1 2 ;667
+~ 679 0
+$1 B212 2 1 0 Antalova_Maria
+&1 B206 1 6 1 0 
+
+5_NHF_HP 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 13 ;668
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B102 4 2 1 0 Klimko_ 
+
+
+5_NHF_SRSP 14620: KSRP: P V | Europske_socialne_systemy ESS Konecny_ 1/1 25 ;669
+~ 679 0
+$1 B211 1 4 0 Konecny_
+&1 B211 1 5 1 0 
+
+5_NHF_SRSP 14032: KSRP: P V | Kvalita_zivota KZIV Antalova_Maria 1/1 13 ;670
+~ 679 0
+$1 B212 2 1 0 Antalova_Maria
+&1 B212 2 2 1 0 
+
+5_NHF_SRSP 14031: KSRP: P V | Kvalita_zivota_AJ KVZ/AJ Antalova_Maria 1/1 12 ;671
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 D110 3 6 1 0 Klimko_
+
+5_NHF_SRSP 25020/2: KOP: P V | Pracovne_pravo PRPRA Kropaj_ 1/0 25 ;672
+~ 557 0
+$1 B1_06 3 4 0 Kropaj_
+
+5_NHF_SRSP 14091: KSRP: P V | PVP_Spec_semin_zo_soc_polit SSSP AAA_ucitel 0/1 25 ;673
+~ 679 0
+&1 4B57 1 2 1 0 
+
+5_NHF_SRSP 14012: KSRP: V 1 V | VP_Ekonom_vzdel EKVZ AAA_ucitel 1/1 2 ;674
+~ 679 0
+$1 D112 2 3 0
+&1 B1_08 2 4 1 0 
+
+
+5_NHF_VSRR 14070: KSRP: P V | Socialne_zabezpecenie SZ Sipikalova_Silvia 0/1 38 ;675
+~ 679 0
+&1 B203 2 6 1 0 Sipikalova_Silvia
+&1 B203 2 5 2 0 Sipikalova_Silvia
+
+5_NHF_VSRR 13037: KVSRR: P V | Workshop_z_VS WVS Jacko_ 0/1 38 ;676
+~ 674 0
+&1 D101 4 5 1 0 Jacko_
+&1 D102 4 4 2 0 Jacko_
+
+5_NHF_VSRR 13059: KVSRR: P V | Region_a_mestsky_market RMM Busik_Jozef 1/1 38 ;677
+~ 674 0
+$1 D110 4 2 0 Busik_Jozef
+&1 D203 2 5 1 0 
+&1 D203 2 6 2 0 
+
+5_NHF_VSRR 13999: KVSRR: P V | PVP_Region_podnik_prostr RPP Sipikal_Miroslav 1/1 38 ;678
+~ 674 0
+$1 B1_10 2 4 0 Sipikal_Miroslav
+&1 D103 4 4 1 0 Sipikal_Miroslav
+&1 D206 4 3 2 0 Sipikal_Miroslav
+
+5_NHF_VSRR 14031: KSRP: V 1 V | VP_Kvalita_ziv_AJ KVZ/AJ Antalova_Maria 1/1 17 ;679
+~ 679 0
+$1 B107 3 5 0 Antalova_Maria
+&1 B101 1 5 1 0 Klimko_ 
+
+
+5_NHF_DPS 17006: KPED: P V | Didaktika_aplik_informatiky DINF Pasiar_Ladislav 1/1 20 ;680
+~ 719 0
+$1 4B01 2 4 0 Pasiar_Ladislav
+&1 4B01 2 5 1 0 Pasiar_Ladislav
+
+5_NHF_DPS 17007: KPED: P V | Didakt_uvodu_do_makroek DUMAK Orbanova_Darina 1/1 15 ;681
+~ 719 0
+$1 4C02 4 5 0 Orbanova_Darina
+&1 4C02 4 6 1 0 Orbanova_Darina
+
+5_NHF_DPS 17008: KPED: P V | Didaktika_personalist DPERS Novak_Jaromir 0/1 15 ;682
+~ 719 0
+&1 4C02 3 3 1 0 Novak_Jaromir
+
+5_NHF_DPS 17009: KPED: P V | Didaktika_manazmentu DMAN Novak_Jaromir 0/1 15 ;683
+~ 719 0
+&1 4C02 3 2 1 0 Novak_Jaromir
+
+5_NHF_DPS 17010: KPED: P V | Didaktika_danovnictva DDAN Velichova_Ludmila 0/1 15 ;684
+~ 719 0
+&1 4B01 2 3 1 0 Velichova_Ludmila
+
+5_NHF_DPS 17011: KPED: P V | Didaktika_cvic_firmy DCF Velichova_Ludmila 1/1 15 ;685
+~ 719 0
+$1 4B01 2 1 0 Velichova_Ludmila
+&1 4B01 2 2 1 0 Velichova_Ludmila
+
+
+5_OF 22068: KMO: V 1 V | Europ_union_enlarg REU/AJ Ciderova_ 0/1 25 ;686
+~ 359 0
+&1 C1_06 4 6 1 0 Ciderova_ 
+
+5_OF 22971: KMO: V 1 V | Kultur_suvisl_v_podnik_v_AJ KSPAJ Ciderova_ 0/1 11 ;687
+~ 359 0
+&1 B208 2 7 1 0 
+
+
+5_OF_MO 22071: KMO: V 1 V | Prenos_Zahranobch_polit_EU P_ZPEU AAA_ucitel 1/1 20 ;688
+~ 359 0
+$1 D112 1 3 0
+&1 B207 2 6 1 0 
+
+5_OF_MO 26007: KIOF: V 1 V | Marketplace POD/AJ Potiskova_Ingrid 0/1 4 ;689
+~ 548 0
+&1 D214 3 7 1 0 Potiskova_Ingrid 
+
+5_OF_MO 22058: KMO: V 1 V | Trval_udrzat_rozv_a_obnov_zdroje TUROZ Rosenberg_Miloslav 0/1 15 ;690
+~ 359 0
+&1 B210 2 1 1 0 Rosenberg_Miloslav 
+
+5_OF_MO 72011: KMVHD: V 1 V | Diplomat_protokol DPROT Mattos_Boris 0/1 16 ;691
+~ 704 1
+&1 A5_08 1 2 1 0 Mattos_Boris 
+
+5_OF_MO 55077: KMO: V 1 V | Postav_LA_vo_svet_hospod PLASH Svobodova_Valeria 0/1 20 ;692
+~ 359 0
+&1 B211 2 6 1 0 Svobodova_Valeria 
+
+5_OF_MO 55078: KMO: V 2 V | Zamedz_a_boj_proti_praniu_sp_penaz ZaBOJ Jamborova_ 0/1 36 ;693
+~ 359 0
+&1 D206 4 1 1 0 Jamborova_ 
+&1 D206 4 2 2 0 Jamborova_ 
+
+5_OF_MO 24034: KTKT: V 1 V | Envirom_trh_a_marketing ETMAR Strhan_Rastislav 0/1 1 ;694
+~ 467 0
+&1 D113 3 5 1 0 Strhan_Rastislav 
+
+5_OF_MO 24033: KTKT: V 1 V | Dizajn_produktu DPROD Mlakay_Jozef 0/1 6 ;695
+~ 467 0
+&1 D202 3 6 1 0 Mlakay_Jozef 
+
+5_OF_MO 25044: KOP: P V | Pravo_v_medzin_obchode PRMO Borodovcak_ 1/1 112 ;696
+~ 557 0
+$1 D111 2 5 0 Borodovcak_
+&1 B206 4 5 1 0 Borodovcak_
+&1 B206 4 6 2 0 Borodovcak_
+&1 B204 1 4 3 0 Misura_
+&1 B203 1 5 4 0 Misura_
+&1 B105 3 4 5 0 Misura_
+&1 B105 3 5 6 0 Misura_
+
+5_OF_MO 26078: KIOF: P V | Inform_systemy_a_elektr_obchod ISEO Hasan_Jamal 1/1 112 ;697
+~ 548 0
+$1 D115 2 2 0 Hasan_Jamal
+&1 D208 4 4 1 0 Hasan_Jamal
+&1 D208 4 5 2 0 Hasan_Jamal
+&1 D208 1 5 3 0 Hasan_Jamal
+&1 D208 1 6 4 0 Hasan_Jamal
+&1 D208 3 5 5 0 Hasan_Jamal
+&1 D208 3 4 6 0 
+
+
+5_OF_OMz 21031: KMR: V 1 V | Manazm_znalost_v_praxi_obch_podn MZPOP AAA_ucitel 0/1 9 ;698
+~ 206 0
+&1 5D02 3 1 1 0 
+
+5_OF_OMz 24025: KTKT: V 1 V | Balenie_tovaru BLT Jarossova_ 0/1 15 ;699
+~ 467 0
+&1 B208 1 6 1 0 Jarossova_ 
+
+5_OF_OMz 24033: KTKT: V 1 V | Dizajn_produktu DPROD Mlakay_Jozef 0/1 18 ;700
+~ 467 0
+&1 D202 3 5 1 0 Mlakay_Jozef 
+
+5_OF_OMz 24037: KTKT: V 1 V | Komparat_test_produkt KTP AAA_ucitel 0/1 18 ;701
+~ 467 0
+&1 B208 3 6 1 0 
+
+5_OF_OMz 26007: KIOF: V 5 V | Marketplace POD/AJ Potiskova_Ingrid 0/1 25 ;702
+~ 548 0
+&1 D210 2 6 1 0 Potiskova_Ingrid 
+&1 D214 2 7 2 0 Potiskova_Ingrid 
+&1 D214 3 5 3 0 Potiskova_Ingrid 
+&1 D214 3 6 4 0 Potiskova_Ingrid 
+&1 D211 3 3 5 0 Potiskova_Ingrid 
+
+5_OF_OMz 23012: KSCR: V 1 V | Sluzby_realit_kancel SRK Benesova_Dana 0/1 4 ;703
+~ 61 0
+&1 D115 2 6 1 0 Benesova_Dana 
+
+5_OF_OMz 23011: KSCR: V 3 V | Pripad_studie_v_podnikani PSPOD Fodranova_ 0/1 31 ;704
+~ 61 0
+&1 B204 2 3 1 0 Fodranova_ 
+&1 B104 4 1 2 0 Fodranova_ 
+&1 B103 4 2 3 0 Fodranova_ 
+
+5_OF_OMz 24034: KTKT: V 1 V | Envirom_trh_a_marketing ETMAR Strhan_Rastislav 0/1 7 ;705
+~ 467 0
+&1 D113 3 5 1 0 Strhan_Rastislav 
+
+5_OF_OMz 21047: KMR: P V | Spotrebit_teorie_a_realie STR AAA_ucitel 1/1 78 ;706
+~ 206 0
+$1 D112 3 2 0
+&1 B207 4 4 1 0 
+&1 B203 3 5 2 0 
+&1 A5_14 1 3 3 0 
+&1 B211 3 4 4 0 
+
+5_OF_OMz 21048: KMR: P V | Financna_analyza_obch_firmy FAOF Oresky_Milan 0/1 78 ;707
+~ 206 0
+&1 D102 3 3 1 0 Oresky_Milan
+&1 B209 3 4 2 0 Oresky_Milan
+&1 B201 1 4 3 0 Oresky_Milan
+&1 B204 1 5 4 0 Oresky_Milan
+
+5_OF_OMz 22069: KMO: P V | Obchodne_rokovanie OROK Knapik_Peter 0/1 78 ;708
+~ 359 0
+&1 B205 4 5 1 0 Knapik_Peter
+&1 D116 4 4 2 0 Knapik_Peter
+&1 B206 1 5 3 0 Knapik_Peter
+&1 D116 1 4 4 0 Knapik_Peter
+
+
+5_OF_MMz 21063: KMR: V 1 V | Segmentacia_trhu SEGT Vokounova_Dana 0/1 7 ;709
+~ 206 0
+&1 D106 3 1 1 0 Vokounova_Dana 
+
+5_OF_MMz 21066: KMR: V 2 V | Metod_realiz_market_vysk MRMV Kopanicova_ 0/1 25 ;710
+~ 206 0
+&1 5D02 4 1 1 0 Kopanicova_ 
+&1 5D02 4 2 2 0 Klepochova_Dagmar 
+
+5_OF_MMz 26007: KIOF: V 6 V | Marketplace POD/AJ Potiskova_Ingrid 0/1 30 ;711
+~ 548 0
+&1 D210 1 4 1 0 Potiskova_Ingrid 
+&1 D214 1 5 2 0 Potiskova_Ingrid 
+&1 D214 1 6 3 0 Potiskova_Ingrid 
+&1 D214 1 7 4 0 Potiskova_Ingrid 
+&1 D208 2 4 5 0 Potiskova_Ingrid 
+&1 D210 2 5 6 0 Potiskova_Ingrid 
+
+5_OF_MMz 21031: KMR: V 1 V | Manazm_znalost_v_praxi_obch_podn MZPOP AAA_ucitel 0/1 9 ;712
+~ 206 0
+&1 5D02 3 1 1 0 
+
+5_OF_MMz 23011: KSCR: V 1 V | Pripad_studie_v_podnikani PSPOD Fodranova_ 0/1 14 ;713
+~ 61 0
+&1 B104 4 1 1 0 Fodranova_ 
+
+5_OF_MMz 24033: KTKT: V 1 V | Dizajn_produktu DPROD Mlakay_Jozef 0/1 19 ;714
+~ 467 0
+&1 D202 3 6 1 0 Mlakay_Jozef 
+
+5_OF_MMz 24034: KTKT: V 1 V | Envirom_trh_a_marketing ETMAR Strhan_Rastislav 0/1 18 ;715
+~ 467 0
+&1 D113 3 5 1 0 Strhan_Rastislav 
+
+5_OF_MMz 21047: KMR: P V | Spotrebit_teorie_a_realie STR AAA_ucitel 1/1 75 ;716
+~ 206 0
+$1 D112 3 2 0
+&1 B105 2 3 1 0 
+&1 B208 3 3 2 0 
+&1 D101 2 4 3 0 
+&1 B203 2 2 4 0 
+
+5_OF_MMz 21050: KMR: P V | Reklama REK AAA_ucitel 0/1 75 ;717
+~ 206 0
+&1 B201 2 2 1 0 Loydlova_
+&1 B208 3 4 2 0 Loydlova_
+&1 D103 3 3 3 0 Loydlova_
+&1 B201 2 3 4 0 Loydlova_
+
+5_OF_MMz 21026: KMR: P V | Priamy_marketing PM Labska_Helena 0/1 75 ;718
+~ 206 0
+&1 B212 2 4 1 0 Labska_Helena
+&1 B208 2 3 2 0 Labska_Helena
+&1 D102 3 4 3 0 Labska_Helena
+&1 B202 3 3 4 0 Labska_Helena
+
+
+5_OF_MCR 23019: KSCR: V 3 V | Inov_v_sluzb_a_CR ISCR Kubickova_Viera 0/1 69 ;719
+~ 61 0
+&1 B202 2 1 1 0 Kubickova_Viera 
+&1 B209 2 2 2 0 Kubickova_Viera 
+&1 D108 3 1 3 0 Kubickova_Viera 
+
+5_OF_MCR 23044: KSCR: V 1 V | Reput_manazm_v_dest_CR RMvCR AAA_ucitel 0/1 14 ;720
+~ 61 0
+&1 D204 2 6 1 0 
+
+5_OF_MCR 23012: KSCR: V 2 V | Sluzby_realit_kancel SRK Benesova_Dana 0/1 32 ;721
+~ 61 0
+&1 D115 2 6 1 0 Benesova_Dana 
+&1 D115 2 6 2 0 Benesova_Dana 
+
+5_OF_MCR 23011: KSCR: V 1 V | Pripad_studie_v_podnikani PSPOD Fodranova_ 0/1 15 ;722
+~ 61 0
+&1 B204 2 3 1 0 Fodranova_ 
+
+5_OF_MCR 24034: KTKT: V 1 V | Envirom_trh_a_marketing ETMAR Strhan_Rastislav 0/1 4 ;723
+~ 467 0
+&1 D113 3 5 1 0 Strhan_Rastislav 
+
+5_OF_MCR 24033: KTKT: V 1 V | Dizajn_produktu DPROD Mlakay_Jozef 0/1 1 ;724
+~ 467 0
+&1 D202 3 6 1 0 Mlakay_Jozef 
+
+5_OF_MCR 23055: KSCR: P V | Operacie_v_podnikoch_CR OPCR Novacka_Ludmila 0/1 78 ;725
+~ 61 0
+&1 D210 3 2 1 0 Novacka_Ludmila
+&1 D210 3 3 2 0 Novacka_Ludmila
+&1 D210 4 2 3 0 Novacka_Ludmila
+&1 D210 3 4 4 0 Novacka_Ludmila
+&1 D210 4 4 5 0 Novacka_Ludmila
+
+5_OF_MCR 22059: KMO: P V | Komparacia_specif_integr_vztah_v_CR KSIVCR Ciderova_ 0/1 78 ;726
+~ 359 0
+&1 D116 3 4 1 0 Ciderova_
+&1 D102 3 5 2 0 Ciderova_
+&1 D116 3 3 3 0 Ciderova_
+&1 D109 4 3 4 0 Ciderova_
+&1 D103 3 2 5 0 Ciderova_
+
+5_OF_MCR 23013: KSCR: P V | Projekt_manazment_v_CR PMCR AAA_ucitel 0/1 78 ;727
+~ 61 0
+&1 D115 3 3 1 0 
+&1 D109 3 4 2 0 
+&1 B204 4 1 3 0 
+&1 B204 4 2 4 0 
+&1 B204 4 3 5 0 
+
+
+5_FMV_HD 72040: KMVHD: P V | WTO_pripad_studie WTO AAA_ucitel 0/1 85 ;728
+~ 704 1
+&1 A5_15 4 3 1 0 
+&1 A5_15 4 4 2 0 
+&1 A5_15 1 4 3 0 
+&1 A4_05 1 5 4 0 
+
+5_FMV_HD 72003: KMVHD: P V | Aktual_otaz_Europ_unie AOEU Lipkova_Beata 1/1 85 ;729
+~ 704 1
+$1 C1_09 2 3 0 Lipkova_Beata
+&1 A4_05 2 4 1 0 Lipkova_Beata
+&1 A5_14 2 5 2 0 Lipkova_Beata
+&1 A4_06 4 4 3 0 Lipkova_Beata
+&1 B1_07 4 3 4 0 Lipkova_Beata
+
+5_FMV_HD 72077: KMVHD: P V | Spol_zahr_a_bez_pol_EU SZBPEU AAA_ucitel 1/0 85 ;730
+~ 704 1
+$1 C1_09 4 2 0
+
+5_FMV_HD 72007/1: KMVHD: P V | Svetova_ekonomika_II SE/II AAA_ucitel 1/1 85 ;731
+~ 704 1
+$1 C1_06 2 2 0
+&1 A5_08 4 4 1 0 
+&1 A4_07 4 3 2 0 
+&1 A6_06 1 3 3 0 
+&1 A4_08 1 4 4 0 
+
+5_FMV_HD 72086: KMVHD: P V | Metodika_tvorby_pis_prac_II MTPP2 AAA_ucitel 0/1 85 ;732
+~ 704 1
+&1 A5_15 2 5 1 0 
+&1 A4_07 2 4 2 0 
+&1 A5_08 4 3 3 0 
+&1 A5_06 4 4 4 0 
+
+5_FMV_HD 72070: KMVHD: P V | Negoc_v_dipl_praxi_II NDPR2 AAA_ucitel 0/1 85 ;733
+~ 704 1
+&1 C1_07 4 5 1 0 
+&1 C1_07 4 5 2 0 
+&1 C1_07 4 6 3 0 
+&1 C1_07 4 6 4 0 
+
+5_FMV_HD 75033: KMPV: V 1 V | Miesto_a_uloha_Franc_v_FJ MUFRFJ Cech_Lubomir 0/1 10 ;734
+~ 624 1
+&1 A4_07 3 7 1 0 Cech_Lubomir 
+
+5_FMV_HD 72048: KMPV: V 1 V | Geopolitka_v_AJ GEOPAJ Kucharcik_Rudolf 0/1 10 ;735
+~ 624 1
+&1 A4_06 2 6 1 0 Kucharcik_Rudolf 
+
+5_FMV_HD 72081: KMVHD: V 1 V | Zdroje_vo_svet_ekonom_v_AJ ZSEAJ Gress_Martin 0/1 25 ;736
+~ 704 1
+&1 A4_05 4 6 1 0 Gress_Martin 
+
+5_FMV_HD 72097: KMVHD: V 1 V | Male_staty_vo_svet_polit_v_NJ MSSVNJ Mattos_Boris 0/1 10 ;737
+~ 704 1
+&1 A4_05 1 6 1 0 Mattos_Boris 
+
+
+5_FPM_EMP_VMZ 41065: KPH: V 0 V | Protimonopol_politika PROTP Hlavacikova_Jana 1/0 10 ;738
+~ 54 1
+$1 C1_09 3 1 0 Hlavacikova_Jana
+
+5_FPM_EMP_VMZ 42081: KMZ: V 0 V | Sprava_podniku SPOD Zalezakova_Eliska 1/0 36 ;739
+~ 67 1
+$1 B1_07 4 4 0 Zalezakova_Eliska
+
+5_FPM_EMP_VMZ 42033: KMZ: V 0 V | Podnikova_kultura PK Nachtmannova_Olga 1/0 66 ;740
+~ 67 1
+$1 B1_10 3 4 0 Nachtmannova_Olga
+
+5_FPM_EMP_VMZ 42068: KMZ: V 0 V | Manazment_zmien MZM Slavik_Stefan 1/0 34 ;741
+~ 67 1
+$1 B1_08 1 4 0 Slavik_Stefan :F
+
+5_FPM_EMP_VMZ 42051: KMZ: V 4 V | Rozvoj_manaz_zrucnosti RMZ AAA_ucitel 1/1 73 ;742
+~ 67 1
+$1 B1_10 1 5 0
+&1 A5_15 2 6 1 0 
+&1 A5_15 2 7 2 0 
+&1 A5_14 3 6 3 0 
+&1 A5_14 3 7 4 0 
+
+5_FPM_EMP_VMZ 75054/9: KMPV: V 4 V | Medzinarod_politicke_vztahy MPV AAA_ucitel 0/1 73 ;743
+~ 624 1
+&1 A6_06 1 6 1 0 
+&1 A6_06 2 6 2 0 
+&1 A4_15 3 5 3 0 
+&1 A6_06 1 7 4 0 
+
+
+5_FPM_EMP_MVL 43003: KPF: V 1 V | Financne_investicie FI Mikova_Olga 1/1 7 ;744
+~ 69 1
+$1 B1_10 4 3 0 Mikova_Olga
+&1 A5_06 3 5 1 0 
+
+5_FPM_EMP_MVL 43039: KPF: V 0 V | Financie_mal_a_stredn_podnik FMSP Fetisovova_Elena 1/0 4 ;745
+~ 69 1
+$1 B1_09 2 3 0 Fetisovova_Elena
+
+5_FPM_EMP_MVL 42033: KMZ: V 0 V | Podnikova_kultura PK Nachtmannova_Olga 1/0 12 ;746
+~ 67 1
+$1 B1_10 3 4 0 Nachtmannova_Olga
+
+5_FPM_EMP_MVL 44084: KMVAL: V 1 V | Procesny_manazment PROCM Molnar_Pavol 1/1 15 ;747
+~ 78 1
+$1 A5_07 2 1 0 Molnar_Pavol
+&1 A5_07 2 2 1 0 
+
+5_FPM_EMP_MVL 44085: KMVAL: V 1 V | Znalostny_manazment ZMAN AAA_ucitel 0/1 11 ;748
+~ 78 1
+&1 A5_13 3 1 1 0 
+
+5_FPM_EMP_MVL 41038: KPH: V 1 V | Podnikova_diagnostika PDIA Neumannova_Anna 1/1 22 ;749
+~ 54 1
+$1 B1_03 1 2 0 Neumannova_Anna
+&1 A4_08 3 2 1 0 
+
+
+5_FPM_EMP_PMZ 42081: KMZ: V 0 V | Sprava_podniku SPOD Zalezakova_Eliska 1/0 28 ;750
+~ 67 1
+$1 B1_07 4 4 0 Zalezakova_Eliska
+
+5_FPM_EMP_PMZ 42068: KMZ: V 0 V | Manazment_zmien MZM Slavik_Stefan 1/0 24 ;751
+~ 67 1
+$1 B1_08 1 4 0 Slavik_Stefan :F
+
+5_FPM_EMP_PMZ 42051: KMZ: V 2 V | Rozvoj_manaz_zrucnosti RMZ AAA_ucitel 1/1 40 ;752
+~ 67 1
+$1 B1_10 1 5 0
+&1 A5_13 1 6 1 0 
+&1 A5_13 1 7 2 0 
+
+5_FPM_EMP_PMZ 41038: KPH: V 1 V | Podnikova_diagnostika PDIA Neumannova_Anna 1/1 16 ;753
+~ 54 1
+$1 B1_03 1 2 0 Neumannova_Anna
+&1 A4_08 3 1 1 0 
+
+5_FPM_EMP_PMZ 42010: KMZ: V 3 V | Manazerske_hry MANH AAA_ucitel 0/1 56 ;754
+~ 67 1
+&1 A5_04 2 2 1 0 
+&1 A5_04 2 3 2 0 
+&1 A5_04 2 4 3 0 
+
+5_FPM_EMP_PMZ 75054/9: KMPV: V 3 V | Medzinarod_politicke_vztahy MPV AAA_ucitel 0/1 56 ;755
+~ 624 1
+&1 A5_06 3 6 1 0 
+&1 A5_06 3 7 2 0 
+&1 A4_07 3 5 3 0 
+
+
+5_FPM_EMP_EP 41038: KPH: P V | Podnikova_diagnostika PDIA Neumannova_Anna 1/1 91 ;756
+~ 54 1
+$1 B1_03 1 2 0 Neumannova_Anna
+&1 A5_06 2 3 1 0 
+&1 A5_14 2 2 2 0 
+&1 A5_17 2 1 3 0 
+&1 A6_15 2 4 4 0 
+&1 A5_07 1 4 5 0 
+
+5_FPM_EMP_EP 42032: KMZ: P V | Organizacne_spravanie ORGS Joniakova_Zuzana 1/1 91 ;757
+~ 67 1
+$1 B1_04 1 5 0 Joniakova_Zuzana
+&1 A6_17 2 4 1 0 
+&1 A5_13 2 1 2 0 
+&1 A5_13 2 2 3 0 
+&1 A6_15 2 3 4 0 
+&1 A6_05 1 3 5 0 
+
+5_FPM_EMP_EP 41065: KPH: V 0 V | Protimonopol_politika PROTP Hlavacikova_Jana 1/0 10 ;758
+~ 54 1
+$1 C1_09 3 1 0 Hlavacikova_Jana
+
+
+5_FPM_FM_PF 43024: KPF: P V | Medzinarodne_zdanenie MZD Lenartova_Gizela 1/1 64 ;759
+~ 69 1
+$1 B1_06 2 4 0 Lenartova_Gizela
+&1 A5_08 2 5 1 0 
+&1 A5_16 3 3 2 0 
+&1 A5_05 3 2 3 0 
+
+5_FPM_FM_PF 43085: KPF: V 2 V | Plat_styk_a_plat_schop_podniku PSPSP AAA_ucitel 0/1 44 ;760
+~ 69 1
+&1 A6_14 1 5 1 0 
+&1 A6_14 1 6 2 0 
+
+5_FPM_FM_PF 43011: KPF: V 1 V | Financne_riad_v_kriz_podm FRKP AAA_ucitel 0/1 25 ;761
+~ 69 1
+&1 A6_14 2 6 1 0 
+
+5_FPM_FM_PF 42033: KMZ: V 0 V | Podnikova_kultura PK Nachtmannova_Olga 1/0 32 ;762
+~ 67 1
+$1 B1_10 3 4 0 Nachtmannova_Olga
+
+5_FPM_FM_PF 44085: KMVAL: V 1 V | Znalostny_manazment ZMAN AAA_ucitel 0/1 3 ;763
+~ 78 1
+&1 A5_13 3 1 1 0 
+
+5_FPM_FM_PF 42068: KMZ: V 0 V | Manazment_zmien MZM Slavik_Stefan 1/0 5 ;764
+~ 67 1
+$1 B1_08 1 4 0 Slavik_Stefan :F
+
+5_FPM_FM_PF 35088: KUA: V 1 V | Medzinarod_uctovn MUCT Surovy_Vladimir 1/1 6 ;765
+~ 727 1
+$1 A5_05 1 4 0 Surovy_Vladimir
+&1 A5_05 1 5 1 0 Surovy_Vladimir 
+
+5_FPM_FM_PF 75054/9: KMPV: V 3 V | Medzinarod_politicke_vztahy MPV AAA_ucitel 0/1 64 ;766
+~ 624 1
+&1 A4_14 4 1 1 0 
+&1 A5_06 4 2 2 0 
+&1 A5_06 4 3 3 0 
+
+
+5_FPM_FM_MEZ 41038: KPH: P V | Podnikova_diagnostika PDIA Neumannova_Anna 1/1 57 ;767
+~ 54 1
+$1 B1_03 1 2 0 Neumannova_Anna
+&1 A5_07 1 3 1 0 
+&1 A6_16 3 4 2 0 
+&1 A6_16 3 5 3 0 
+
+5_FPM_FM_MEZ 43085: KPF: V 2 V | Plat_styk_a_plat_schop_podniku PSPSP AAA_ucitel 0/1 40 ;768
+~ 69 1
+&1 A5_05 3 6 1 0 
+&1 A5_05 3 7 2 0 
+
+5_FPM_FM_MEZ 43024: KPF: V 1 V | Medzinarodne_zdanenie MZD Lenartova_Gizela 1/1 5 ;769
+~ 69 1
+$1 B1_06 2 4 0 Lenartova_Gizela
+&1 A5_05 3 2 1 0 
+
+5_FPM_FM_MEZ 43011: KPF: V 1 V | Financne_riad_v_kriz_podm FRKP AAA_ucitel 0/1 20 ;770
+~ 69 1
+&1 A6_05 1 6 1 0 
+
+5_FPM_FM_MEZ 41066/9: KPH: V 0 V | Podnikat_prostredie_v_EU PPEU Subertova_Elena 2/0 38 ;771
+~ 54 1
+$2 B1_04 2 5 0 Subertova_Elena
+
+5_FPM_FM_MEZ 35088: KUA: V 1 V | Medzinarod_uctovn MUCT Surovy_Vladimir 1/1 12 ;772
+~ 727 1
+$1 A5_05 1 4 0 Surovy_Vladimir
+&1 A5_05 1 5 1 0 Surovy_Vladimir 
+
+
+5_FHI_MRIT 33441: KOVE: V 1 V | Ekonometr_model EMOD Lukacikova_Adriana 1/1 10 ;773
+~ 644 1
+$1 A8_17 3 4 0 Lukacikova_Adriana
+&1 A8_17 3 5 1 0 Lukacikova_Adriana 
+
+5_FHI_MRIT 33330: KOVE: V 1 V | Model_ekon_proces_II MEP2 AAA_ucitel 1/1 6 ;774
+~ 644 1
+$1 A7_15 4 4 0
+&1 A7_15 4 5 1 0 
+
+5_FHI_MRIT 33250: KOVE: V 1 V | Kvant_metod_v_logistike KML Cickova_Zuzana 1/1 8 ;775
+~ 644 1
+$1 A9_17 1 2 0 Cickova_Zuzana
+&1 A9_07 4 4 1 0 
+
+5_FHI_MRIT 31321: KAI: V 1 V | Pripadove_studie PS Blahusiak_Martin 1/1 16 ;776
+~ 720 1
+$1 A8_15 1 5 0 Blahusiak_Martin
+&1 A8_15 1 6 1 0 
+
+5_FHI_MRIT 31354: KAI: V 1 V | Paralelne_program PPR Krauspe_Kamil 1/1 17 ;777
+~ 720 1
+$1 A8_07 5 1 0 Krauspe_Kamil
+&1 A8_07 5 2 1 0 Krauspe_Kamil 
+
+5_FHI_MRIT 31170: KAI: V 1 V | Ochrana_a_bezp_inf_syst OBIS AAA_ucitel 0/1 30 ;778
+~ 720 1
+&1 A8_12 2 6 1 0 
+
+5_FHI_MRIT 31090: KAI: V 0 V | Elektron_podnikanie EPOD Carachova_Magdalena 1/0 6 ;779
+~ 720 1
+$1 A7_13 2 6 0 Carachova_Magdalena
+
+5_FHI_MRIT 33069: KAI: P V | Manaz_riad_a_inform_technol_2 MRIT2 Carachova_Magdalena 1/1 89 ;780
+~ 720 1
+$1 B1_06 2 3 0 Carachova_Magdalena
+&1 A8_15 2 4 1 0 Carachova_Magdalena
+&1 A8_15 2 5 2 0 Carachova_Magdalena
+&1 A8_15 4 3 3 0 Carachova_Magdalena
+&1 A8_15 4 1 4 0 Carachova_Magdalena
+&1 A8_15 4 2 5 0 Carachova_Magdalena
+
+
+5_FHI_AKT 34102: KS: V 1 V | Demograf_metody DEMET Sivasova_Daniela 1/1 20 ;781
+~ 565 1
+$1 C1_07 2 4 0 Sivasova_Daniela
+&1 A8_13 3 5 1 0 
+
+5_FHI_AKT 31090: KAI: V 0 V | Elektron_podnikanie EPOD Carachova_Magdalena 1/0 6 ;782
+~ 720 1
+$1 A7_13 2 6 0 Carachova_Magdalena
+
+5_FHI_AKT 32011: KM: P V | Derivaty_cennych_papierov DCP Pinda_Ludovit 1/0 28 ;783
+~ 725 0
+$1 A9_08 2 3 0 Pinda_Ludovit
+
+5_FHI_AKT 35071: KUA: P V | Uctovn_a_financn_vykazn_poist UFVP AAA_ucitel 1/1 28 ;784
+~ 727 1
+$1 A7_15 2 2 0
+&1 A7_15 2 4 1 0 
+
+5_FHI_AKT 34921: KS: P V | Aplikovana_poistna_statistika APS Kotlebova_Eva 1/1 20 ;785
+~ 565 1
+$1 A7_05 3 2 0 Kotlebova_Eva :F
+&1 A8_06 3 3 1 0 Kotlebova_Eva
+
+
+5_FHI_OVE 33441: KOVE: V 1 V | Ekonometr_model EMOD Lukacikova_Adriana 1/1 10 ;786
+~ 644 1
+$1 A8_17 3 4 0 Lukacikova_Adriana
+&1 A8_17 3 5 1 0 Lukacikova_Adriana 
+
+5_FHI_OVE 33079: KOVE: V 1 V | Soft_podpora_rozhod SPR Pekar_Juraj 1/1 8 ;787
+~ 644 1
+$1 A8_17 2 2 0 Pekar_Juraj
+&1 A8_17 2 4 1 0 
+
+5_FHI_OVE 33330: KOVE: V 1 V | Model_ekon_proces_II MEP2 AAA_ucitel 1/1 6 ;788
+~ 644 1
+$1 A7_15 4 4 0
+&1 A7_15 4 5 1 0 
+
+5_FHI_OVE 33250: KOVE: V 1 V | Kvant_metod_v_logistike KML Cickova_Zuzana 1/1 8 ;789
+~ 644 1
+$1 A9_17 1 2 0 Cickova_Zuzana
+&1 A9_07 4 4 1 0 
+
+5_FHI_OVE 31090: KAI: V 0 V | Elektron_podnikanie EPOD Carachova_Magdalena 1/0 6 ;790
+~ 720 1
+$1 A7_13 2 6 0 Carachova_Magdalena
+
+5_FHI_OVE 33031: KOVE: P V | Simulacne_modely SM Domonkos_Tomas 1/1 36 ;791
+~ 644 1
+$1 B1_07 1 3 0 Domonkos_Tomas
+&1 A8_04 1 4 1 0 Domonkos_Tomas
+&1 A8_04 1 5 2 0 Domonkos_Tomas
+
+
+5_FHI_SME 31090: KAI: V 0 V | Elektron_podnikanie EPOD Carachova_Magdalena 1/0 6 ;792
+~ 720 1
+$1 A7_13 2 6 0 Carachova_Magdalena
+
+5_FHI_SME 34102: KS: P V | Demograf_metody DEMET Sivasova_Daniela 1/1 25 ;793
+~ 565 1
+$1 C1_07 2 4 0 Sivasova_Daniela
+&1 A8_06 2 5 1 0 
+
+5_FHI_SME 34078: KS: P V | Analyza_kategor_udajov AKU Labudova_Viera 1/1 25 ;794
+~ 565 1
+$1 A8_04 2 1 0 Labudova_Viera
+&1 A8_04 2 2 1 0 
+
+5_FHI_SME 34072: KS: P V | Analyza_rozhod AROZ Terek_Milan 1/0 25 ;795
+~ 565 1
+$1 A7_05 4 3 0 Terek_Milan
+
+5_FHI_SME 34070: KS: P V | Socialna_statistika SOCST Sodomova_Eva 1/0 25 ;796
+~ 565 1
+$1 C1_09 3 4 0 Sodomova_Eva
+
+
+5_FHI_UA 35910: KUA: V 1 V | Prenos_Uctovn_a_dane_pravn_osob P_UDPO AAA_ucitel 0/1 25 ;797
+~ 727 1
+&1 A7_04 4 1 1 0 
+
+5_FHI_UA 34067: KS: V 0 V | System_narodnych_uctov SNU Hurbankova_Lubica 1/0 22 ;798
+~ 565 1
+$1 A7_05 2 3 0 Hurbankova_Lubica
+
+5_FHI_UA 33041: KOVE: V 1 V | Makroekon_analyza MAKRA AAA_ucitel 1/1 18 ;799
+~ 644 1
+$1 A8_17 1 3 0
+&1 A8_17 1 4 1 0 
+
+5_FHI_UA 35350: KUA: V 2 V | Forenzne_uctovn FOUCT Tumpach_Milos 1/1 40 ;800
+~ 727 1
+$1 A7_04 5 2 0 Tumpach_Milos
+&1 A7_04 5 3 1 0 
+&1 A7_04 5 3 2 0 
+
+5_FHI_UA 35160: KUA: V 0 V | Uctovn_obci UCTOB AAA_ucitel 1/0 44 ;801
+~ 727 1
+$1 A7_05 5 2 0
+
+5_FHI_UA 35212: KUA: V 0 V | Zabezp_kontroly_kvality_auditu ZKKA AAA_ucitel 1/0 20 ;802
+~ 727 1
+$1 A7_07 4 1 0
+
+5_FHI_UA 35013: KUA: P V | Auditorstvo3 AUD3 Madera_Frantisek 1/1 191 ;803
+~ 727 1
+$1 B1_02 2 4 0 Madera_Frantisek
+&1 A7_04 4 3 1 0 
+&1 A7_04 1 5 2 0 
+&1 A7_04 1 6 3 0 
+&1 A7_04 4 5 4 0 
+&1 A7_04 3 4 5 0 
+&1 A7_04 4 6 6 0 
+&1 A7_04 4 4 7 0 
+
+5_FHI_UA 35056: KUA: P V | Regul_uct_a_audit_v_praxi RAPUA Uzik_ 2/0 191 ;804
+~ 727 1
+$2 B1_05 3 5 0 Uzik_ :F
+
+5_FHI_UA 35072: KUA: P V | Etika_uctov_a_audit EUAUD Hvozdarova_Janka 1/1 191 ;805
+~ 727 1
+$1 B1_05 4 2 0 Hvozdarova_Janka
+&1 A7_15 2 5 1 0 
+&1 A7_17 1 6 2 0 
+&1 A7_17 1 5 3 0 
+&1 A7_17 4 4 4 0 
+&1 A7_15 2 6 5 0 
+&1 A7_13 4 5 6 0 
+&1 A7_07 4 3 7 0 
+
+
+5_FAJ_CJIK 81003: KJaT: P V | Preklad_a_tlmoc_v_odb_AJ PTOAJ Sovinec_ 0/1 13 ;806
+~ 50 0
+&1 E1_10 4 2 1 0 Sovinec_
+
+5_FAJ_CJIK 81004: KJaT: P V | Preklad_a_tlmoc_v_odb_NJ PTONJ Sovinec_ 0/1 13 ;807
+~ 50 0
+&1 E1_10 4 4 1 0 Sovinec_
+
+5_FAJ_CJIK 81071: KJaT: P V | Uvod_do_dejin__a_kult_anglof_krajin UDKAK Blahova_Maria 0/1 13 ;808
+~ 50 0
+&1 E1_10 4 3 1 0 Blahova_Maria
+
+5_FAJ_CJIK 81051: KJaT: P V | Uvod_do_dejin__a_kult_nemeck_krajin UDKNK Ahlrep_ 0/1 13 ;809
+~ 50 0
+&1 E1_10 4 5 1 0 Ahlrep_
+
+5_FAJ_CJIK 81546: KJaT: P V | Europska_unia EU Csanyi_ 1/0 13 ;810
+~ 50 0
+$1 E1_08 4 1 0 Csanyi_
+
+5_FAJ_CJIK 21510: KMR: P V | Marketingova_komunikacia MKOM AAA_ucitel 1/0 13 ;811
+~ 206 0
+$1 B205 3 3 0
+
+5_FAJ_CJIK 41085: KPH: P V | Etika_podnikania EPOD AAA_ucitel 1/1 13 ;812
+~ 54 1
+$1 D109 3 1 0
+&1 D109 3 2 1 0 
+
+5_FAJ_CJIK 81229: KJaT: V 1 V | PVP PVP Ahlrep_ 0/1 13 ;813
+~ 50 0
+&1 E1_10 4 6 1 0 Ahlrep_ 
+
+
+5_UMP_UMP 14931: KSRP: V 1 V | Quality_of_Life KVZ/AJ Antalova_Maria 1/1 25 ;814
+~ 679 0
+$1 C1_06 4 3 0 Antalova_Maria
+&1 C1_06 4 4 1 0 Antalova_Maria 
+
+5_UMP_UMP 12097: KHP: V 1 V | Economic_Growth_and_Develop ERRAJ Labaj_Martin 1/1 19 ;815
+~ 662 9
+$1 C1_08 1 4 0 Labaj_Martin
+&1 C1_08 1 5 1 0 Vondrova_ 
+
+5_UMP_UMP 26007/9: KIOF: V 3 V | Marketplace POD/AJ Potiskova_Ingrid 0/1 17 ;816
+~ 548 0
+&1 D214 1 2 1 0 Potiskova_Ingrid 
+&1 D214 1 3 2 0 Potiskova_Ingrid 
+&1 D214 2 2 3 0 Potiskova_Ingrid 
+
+5_UMP_UMP 16103/9: KBMF: V 1 V | Financ_Programming FPR/AJ Nemec_Marian 0/1 8 ;817
+~ 620 0
+&1 D110 4 5 1 0 
+.KONIEC
