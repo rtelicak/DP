@@ -24,6 +24,14 @@
 		A41B1E4818E021A800DF8981 /* EROWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4718E021A800DF8981 /* EROWebService.m */; };
 		A41B1E4B18E0229600DF8981 /* EROUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4A18E0229600DF8981 /* EROUtility.m */; };
 		A41B1E4F18E024FB00DF8981 /* EROFaculty.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4E18E024FB00DF8981 /* EROFaculty.m */; };
+		A41B1E5A18E0464900DF8981 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B1E5918E0464900DF8981 /* libsqlite3.dylib */; };
+		A41B1E5C18E0493F00DF8981 /* Rozvrh.db in Resources */ = {isa = PBXBuildFile; fileRef = A41B1E5B18E0493F00DF8981 /* Rozvrh.db */; };
+		A41B1E6918E04F7500DF8981 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E5F18E04F7500DF8981 /* FMDatabase.m */; };
+		A41B1E6A18E04F7500DF8981 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6118E04F7500DF8981 /* FMDatabaseAdditions.m */; };
+		A41B1E6B18E04F7500DF8981 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6318E04F7500DF8981 /* FMDatabasePool.m */; };
+		A41B1E6C18E04F7500DF8981 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6518E04F7500DF8981 /* FMDatabaseQueue.m */; };
+		A41B1E6D18E04F7500DF8981 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6818E04F7500DF8981 /* FMResultSet.m */; };
+		A41B1E7018E05EF800DF8981 /* ERODatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6F18E05EF800DF8981 /* ERODatabaseAccess.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,22 @@
 		A41B1E4A18E0229600DF8981 /* EROUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROUtility.m; sourceTree = "<group>"; };
 		A41B1E4D18E024FB00DF8981 /* EROFaculty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROFaculty.h; sourceTree = "<group>"; };
 		A41B1E4E18E024FB00DF8981 /* EROFaculty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROFaculty.m; sourceTree = "<group>"; };
+		A41B1E5718E0463300DF8981 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A41B1E5918E0464900DF8981 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A41B1E5B18E0493F00DF8981 /* Rozvrh.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rozvrh.db; sourceTree = "<group>"; };
+		A41B1E5E18E04F7500DF8981 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		A41B1E5F18E04F7500DF8981 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		A41B1E6018E04F7500DF8981 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		A41B1E6118E04F7500DF8981 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		A41B1E6218E04F7500DF8981 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		A41B1E6318E04F7500DF8981 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		A41B1E6418E04F7500DF8981 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A41B1E6518E04F7500DF8981 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		A41B1E6618E04F7500DF8981 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		A41B1E6718E04F7500DF8981 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		A41B1E6818E04F7500DF8981 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		A41B1E6E18E05EF800DF8981 /* ERODatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERODatabaseAccess.h; sourceTree = "<group>"; };
+		A41B1E6F18E05EF800DF8981 /* ERODatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERODatabaseAccess.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B1E5A18E0464900DF8981 /* libsqlite3.dylib in Frameworks */,
 				A41B1E0C18E01CE800DF8981 /* CoreGraphics.framework in Frameworks */,
 				A41B1E0E18E01CE800DF8981 /* UIKit.framework in Frameworks */,
 				A41B1E0A18E01CE800DF8981 /* Foundation.framework in Frameworks */,
@@ -110,6 +135,8 @@
 		A41B1E0818E01CE800DF8981 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A41B1E5918E0464900DF8981 /* libsqlite3.dylib */,
+				A41B1E5718E0463300DF8981 /* libsqlite3.0.dylib */,
 				A41B1E0918E01CE800DF8981 /* Foundation.framework */,
 				A41B1E0B18E01CE800DF8981 /* CoreGraphics.framework */,
 				A41B1E0D18E01CE800DF8981 /* UIKit.framework */,
@@ -121,6 +148,7 @@
 		A41B1E0F18E01CE800DF8981 /* Rozvrh */ = {
 			isa = PBXGroup;
 			children = (
+				A41B1E5D18E04F5400DF8981 /* FMDB */,
 				A41B1E4C18E024EA00DF8981 /* model */,
 				A41B1E3F18E01CFB00DF8981 /* view */,
 				A41B1E3E18E01CF200DF8981 /* service */,
@@ -138,6 +166,7 @@
 		A41B1E1018E01CE800DF8981 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A41B1E5B18E0493F00DF8981 /* Rozvrh.db */,
 				A41B1E1118E01CE800DF8981 /* Rozvrh-Info.plist */,
 				A41B1E1218E01CE800DF8981 /* InfoPlist.strings */,
 				A41B1E1518E01CE800DF8981 /* main.m */,
@@ -169,6 +198,8 @@
 			children = (
 				A41B1E4618E021A800DF8981 /* EROWebService.h */,
 				A41B1E4718E021A800DF8981 /* EROWebService.m */,
+				A41B1E6E18E05EF800DF8981 /* ERODatabaseAccess.h */,
+				A41B1E6F18E05EF800DF8981 /* ERODatabaseAccess.m */,
 			);
 			name = service;
 			sourceTree = "<group>";
@@ -189,6 +220,24 @@
 				A41B1E4E18E024FB00DF8981 /* EROFaculty.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		A41B1E5D18E04F5400DF8981 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				A41B1E5E18E04F7500DF8981 /* FMDatabase.h */,
+				A41B1E5F18E04F7500DF8981 /* FMDatabase.m */,
+				A41B1E6018E04F7500DF8981 /* FMDatabaseAdditions.h */,
+				A41B1E6118E04F7500DF8981 /* FMDatabaseAdditions.m */,
+				A41B1E6218E04F7500DF8981 /* FMDatabasePool.h */,
+				A41B1E6318E04F7500DF8981 /* FMDatabasePool.m */,
+				A41B1E6418E04F7500DF8981 /* FMDatabaseQueue.h */,
+				A41B1E6518E04F7500DF8981 /* FMDatabaseQueue.m */,
+				A41B1E6618E04F7500DF8981 /* FMDB.h */,
+				A41B1E6718E04F7500DF8981 /* FMResultSet.h */,
+				A41B1E6818E04F7500DF8981 /* FMResultSet.m */,
+			);
+			name = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B1E5C18E0493F00DF8981 /* Rozvrh.db in Resources */,
 				A41B1E2218E01CE800DF8981 /* Images.xcassets in Resources */,
 				A41B1E1418E01CE800DF8981 /* InfoPlist.strings in Resources */,
 				A41B1E1D18E01CE800DF8981 /* Main.storyboard in Resources */,
@@ -292,9 +342,15 @@
 				A41B1E1618E01CE800DF8981 /* main.m in Sources */,
 				A41B1E1A18E01CE800DF8981 /* EROAppDelegate.m in Sources */,
 				A41B1E4218E01D2100DF8981 /* EROTableViewController.m in Sources */,
+				A41B1E6918E04F7500DF8981 /* FMDatabase.m in Sources */,
+				A41B1E6B18E04F7500DF8981 /* FMDatabasePool.m in Sources */,
+				A41B1E6C18E04F7500DF8981 /* FMDatabaseQueue.m in Sources */,
 				A41B1E4F18E024FB00DF8981 /* EROFaculty.m in Sources */,
+				A41B1E7018E05EF800DF8981 /* ERODatabaseAccess.m in Sources */,
 				A41B1E4B18E0229600DF8981 /* EROUtility.m in Sources */,
+				A41B1E6D18E04F7500DF8981 /* FMResultSet.m in Sources */,
 				A41B1E4818E021A800DF8981 /* EROWebService.m in Sources */,
+				A41B1E6A18E04F7500DF8981 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,18 @@
 
 @implementation EROUtility
 
-+(NSURL *) getWebServicePath {
++(NSURL*)getWebServicePath {
     
     NSURL *webServicePath = [(EROAppDelegate *)[[UIApplication sharedApplication] delegate] webServiceBasePath];
     
     return webServicePath;
+}
+
++(NSString*)getDatabasePath {
+    
+    NSString *databasePath = [(EROAppDelegate *)[[UIApplication sharedApplication] delegate] databasePath];
+    
+    return databasePath;
 }
 
 @end

@@ -12,5 +12,6 @@
 @interface EROUtility : NSObject
 
 +(NSURL *) getWebServicePath;
++(NSString *) getDatabasePath;
 
 @end

@@ -13,8 +13,13 @@
 @interface EROTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSMutableArray *facultiesArray;
-
+@property (nonatomic, strong) NSMutableArray *lessonsArray;
+@property (nonatomic, strong) NSMutableArray *instituteArray;
+@property (nonatomic, strong) NSMutableArray *groupArray;
 
 -(void) populateFaculties;
+-(void) populateLessons;
+-(void) populateInstitutes;
+-(void) populateGroups;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "EROTableViewController.h"
+#import "EROWebService.h"
+#import "ERODatabaseAccess.h"
 
 @interface EROTableViewController ()
 
@@ -34,84 +36,74 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self populateFaculties];
+    [self populateLessons];
+    [self populateInstitutes];
+    [self populateGroups];
 }
 
+// FACULTIES
 -(void) populateFaculties {
-    NSURL *myURL = [EROUtility getWebServicePath];
-    
-    NSURL *facultyULR = [myURL URLByAppendingPathComponent:@"getFaculty"];
-    
-    NSURLRequest *facultyRequest = [NSURLRequest requestWithURL:facultyULR];
-    
-    [NSURLConnection connectionWithRequest:facultyRequest delegate:self];
+    [[EROWebService sharedInstance] getFacultiesWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        self.facultiesArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertFacultiesFromArray:self.facultiesArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating faculties: %@", error);
+    }];
 }
 
-// Delegated methods
-
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-    
-    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
-    
-    int errorCode = httpResponse.statusCode;
-    
-    NSString *fileMIMEType = [[httpResponse MIMEType] lowercaseString];
-    
-    NSLog(@"response is %d, %@", errorCode, fileMIMEType);
-    
+// LESSONS
+-(void) populateLessons {
+    [[EROWebService sharedInstance] getLessonsWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        self.lessonsArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertLessonsFromArray:self.lessonsArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating lessons: %@", error);
+    }];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    
-    NSLog(@"data is %@", data);
-    
-    NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"result is %@", result);
-    
-    NSError *e = nil;
-    
-    self.facultiesArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: &e];
-    NSLog(@"faculties array is %@", self.facultiesArray);
-    NSLog(@"first item's name is %@", [[self.facultiesArray objectAtIndex:0] objectForKey:@"nazov"]);
-    
+// INSTITUTES
+-(void) populateInstitutes {
+
+    [[EROWebService sharedInstance] getInstitutesWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        self.instituteArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertInstitutesFromArray:self.instituteArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating institutes: %@", error);
+    }];
+
 }
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    // inform the user
-    
-    NSLog(@"Connection failed! Error - %@ %@",
-          
-          [error localizedDescription],
-          
-          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+// GROUPS
+-(void) populateGroups {
+
+    [[EROWebService sharedInstance] getGroupsWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        self.groupArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertGroupsFromArray:self.groupArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating groups: %@", error);
+    }];
     
 }
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    
-    // do something with the data
-    
-    // receivedData is declared as a method instance elsewhere
-    
-    NSLog(@"Succeeded!");
-    [self.tableView reloadData];
-}
-
-
-
-// End of delegated methods
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning
