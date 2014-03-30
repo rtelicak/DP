@@ -30,12 +30,16 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     databaseAlreadyExits = [fileManager fileExistsAtPath:self.databasePath];
     
+//    [EROUtility fillDatabase];
+    
     if (databaseAlreadyExits) {
-        return;
+//        return;
     }
     
     NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:self.databaseName];
     [fileManager copyItemAtPath:databasePathFromApp toPath:self.databasePath error:nil];
+    
+
     
     NSLog(@"Database copied from bundle path");
 }

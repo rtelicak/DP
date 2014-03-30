@@ -99,4 +99,105 @@
     }];
 }
 
+- (void)getRoomsWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure {
+    NSURL *baseURL = [EROUtility getWebServicePath];
+    NSURL *roomURL = [baseURL URLByAppendingPathComponent:@"getRoom"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:roomURL];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        if (response) {
+            NSError *e;
+            id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
+            if (success) {
+                success (result);
+            }
+        } else {
+            if (failure) {
+                failure (error);
+            }
+        }
+    }];
+}
+
+- (void)getDepartmentsWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure {
+    NSURL *baseURL = [EROUtility getWebServicePath];
+    NSURL *departmentURL = [baseURL URLByAppendingPathComponent:@"getDepartment"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:departmentURL];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        if (response) {
+            NSError *e;
+            id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
+            if (success) {
+                success (result);
+            }
+        } else {
+            if (failure) {
+                failure (error);
+            }
+        }
+    }];
+}
+
+- (void)getSubjectsWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure {
+    NSURL *baseURL = [EROUtility getWebServicePath];
+    NSURL *subjectURL = [baseURL URLByAppendingPathComponent:@"getSubject"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:subjectURL];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        if (response) {
+            NSError *e;
+            id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
+            if (success) {
+                success (result);
+            }
+        } else {
+            if (failure) {
+                failure (error);
+            }
+        }
+    }];
+}
+
+- (void)getTeachersWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure {
+    NSURL *baseURL = [EROUtility getWebServicePath];
+    NSURL *teachertURL = [baseURL URLByAppendingPathComponent:@"getTeacher"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:teachertURL];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        if (response) {
+            NSError *e;
+            id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
+            if (success) {
+                success (result);
+            }
+        } else {
+            if (failure) {
+                failure (error);
+            }
+        }
+    }];
+}
+
+- (void)getLecturesWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure {
+    NSURL *baseURL = [EROUtility getWebServicePath];
+    NSURL *lectureURL = [baseURL URLByAppendingPathComponent:@"getLecture"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:lectureURL];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        if (response) {
+            NSError *e;
+            id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
+            if (success) {
+                success (result);
+            }
+        } else {
+            if (failure) {
+                failure (error);
+            }
+        }
+    }];
+}
+
+
 @end

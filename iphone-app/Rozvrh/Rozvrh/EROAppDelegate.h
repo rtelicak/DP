@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EROUtility.h"
 
 @interface EROAppDelegate : UIResponder <UIApplicationDelegate>
 

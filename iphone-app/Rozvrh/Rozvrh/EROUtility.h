@@ -14,4 +14,6 @@
 +(NSURL *) getWebServicePath;
 +(NSString *) getDatabasePath;
 
++(void) fillDatabase;
+
 @end

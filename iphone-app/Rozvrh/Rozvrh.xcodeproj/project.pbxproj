@@ -20,7 +20,6 @@
 		A41B1E2B18E01CE800DF8981 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B1E0D18E01CE800DF8981 /* UIKit.framework */; };
 		A41B1E3318E01CE800DF8981 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A41B1E3118E01CE800DF8981 /* InfoPlist.strings */; };
 		A41B1E3518E01CE900DF8981 /* RozvrhTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E3418E01CE900DF8981 /* RozvrhTests.m */; };
-		A41B1E4218E01D2100DF8981 /* EROTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4118E01D2100DF8981 /* EROTableViewController.m */; };
 		A41B1E4818E021A800DF8981 /* EROWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4718E021A800DF8981 /* EROWebService.m */; };
 		A41B1E4B18E0229600DF8981 /* EROUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4A18E0229600DF8981 /* EROUtility.m */; };
 		A41B1E4F18E024FB00DF8981 /* EROFaculty.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4E18E024FB00DF8981 /* EROFaculty.m */; };
@@ -32,6 +31,8 @@
 		A41B1E6C18E04F7500DF8981 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6518E04F7500DF8981 /* FMDatabaseQueue.m */; };
 		A41B1E6D18E04F7500DF8981 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6818E04F7500DF8981 /* FMResultSet.m */; };
 		A41B1E7018E05EF800DF8981 /* ERODatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6F18E05EF800DF8981 /* ERODatabaseAccess.m */; };
+		A4A43A9318E328FD0063F02F /* EROPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A43A9218E328FD0063F02F /* EROPickerViewController.m */; };
+		A4A43A9618E4C2880063F02F /* ERODepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A43A9518E4C2880063F02F /* ERODepartment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +63,6 @@
 		A41B1E3018E01CE800DF8981 /* RozvrhTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RozvrhTests-Info.plist"; sourceTree = "<group>"; };
 		A41B1E3218E01CE800DF8981 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A41B1E3418E01CE900DF8981 /* RozvrhTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RozvrhTests.m; sourceTree = "<group>"; };
-		A41B1E4018E01D2100DF8981 /* EROTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROTableViewController.h; sourceTree = "<group>"; };
-		A41B1E4118E01D2100DF8981 /* EROTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROTableViewController.m; sourceTree = "<group>"; };
 		A41B1E4618E021A800DF8981 /* EROWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROWebService.h; sourceTree = "<group>"; };
 		A41B1E4718E021A800DF8981 /* EROWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROWebService.m; sourceTree = "<group>"; };
 		A41B1E4918E0229600DF8981 /* EROUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROUtility.h; sourceTree = "<group>"; };
@@ -86,6 +85,10 @@
 		A41B1E6818E04F7500DF8981 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		A41B1E6E18E05EF800DF8981 /* ERODatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERODatabaseAccess.h; sourceTree = "<group>"; };
 		A41B1E6F18E05EF800DF8981 /* ERODatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERODatabaseAccess.m; sourceTree = "<group>"; };
+		A4A43A9118E328FD0063F02F /* EROPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROPickerViewController.h; sourceTree = "<group>"; };
+		A4A43A9218E328FD0063F02F /* EROPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROPickerViewController.m; sourceTree = "<group>"; };
+		A4A43A9418E4C2880063F02F /* ERODepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERODepartment.h; sourceTree = "<group>"; };
+		A4A43A9518E4C2880063F02F /* ERODepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERODepartment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,8 +210,8 @@
 		A41B1E3F18E01CFB00DF8981 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				A41B1E4018E01D2100DF8981 /* EROTableViewController.h */,
-				A41B1E4118E01D2100DF8981 /* EROTableViewController.m */,
+				A4A43A9118E328FD0063F02F /* EROPickerViewController.h */,
+				A4A43A9218E328FD0063F02F /* EROPickerViewController.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -216,6 +219,8 @@
 		A41B1E4C18E024EA00DF8981 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A4A43A9418E4C2880063F02F /* ERODepartment.h */,
+				A4A43A9518E4C2880063F02F /* ERODepartment.m */,
 				A41B1E4D18E024FB00DF8981 /* EROFaculty.h */,
 				A41B1E4E18E024FB00DF8981 /* EROFaculty.m */,
 			);
@@ -341,14 +346,15 @@
 			files = (
 				A41B1E1618E01CE800DF8981 /* main.m in Sources */,
 				A41B1E1A18E01CE800DF8981 /* EROAppDelegate.m in Sources */,
-				A41B1E4218E01D2100DF8981 /* EROTableViewController.m in Sources */,
 				A41B1E6918E04F7500DF8981 /* FMDatabase.m in Sources */,
 				A41B1E6B18E04F7500DF8981 /* FMDatabasePool.m in Sources */,
 				A41B1E6C18E04F7500DF8981 /* FMDatabaseQueue.m in Sources */,
 				A41B1E4F18E024FB00DF8981 /* EROFaculty.m in Sources */,
 				A41B1E7018E05EF800DF8981 /* ERODatabaseAccess.m in Sources */,
+				A4A43A9318E328FD0063F02F /* EROPickerViewController.m in Sources */,
 				A41B1E4B18E0229600DF8981 /* EROUtility.m in Sources */,
 				A41B1E6D18E04F7500DF8981 /* FMResultSet.m in Sources */,
+				A4A43A9618E4C2880063F02F /* ERODepartment.m in Sources */,
 				A41B1E4818E021A800DF8981 /* EROWebService.m in Sources */,
 				A41B1E6A18E04F7500DF8981 /* FMDatabaseAdditions.m in Sources */,
 			);
@@ -555,6 +561,7 @@
 				A41B1E3A18E01CE900DF8981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A41B1E3B18E01CE900DF8981 /* Build configuration list for PBXNativeTarget "RozvrhTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +570,7 @@
 				A41B1E3D18E01CE900DF8981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

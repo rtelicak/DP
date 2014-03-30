@@ -9,14 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Rozvrh/EROUtility.h"
-            timestampString = "417360039.174377"
+            filePath = "Rozvrh/ERODatabaseAccess.m"
+            timestampString = "417811949.411577"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "@interface EROUtility"
-            landmarkType = "2">
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "+getGroupNumbersWithFacultyCode:year:andDepartmentCode:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Rozvrh/ERODatabaseAccess.m"
-            timestampString = "417389368.227209"
+            filePath = "Rozvrh/EROPickerViewController.m"
+            timestampString = "417879444.649618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "+insertGroupsFromArray:"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "-pickerView:didSelectRow:inComponent:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

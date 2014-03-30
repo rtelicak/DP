@@ -20,5 +20,10 @@ typedef void (^EROWebServiceFailure)(NSError *error);
 - (void)getLessonsWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
 - (void)getInstitutesWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
 - (void)getGroupsWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
+- (void)getRoomsWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
+- (void)getDepartmentsWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
+- (void)getSubjectsWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
+- (void)getTeachersWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
+- (void)getLecturesWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
 
 @end

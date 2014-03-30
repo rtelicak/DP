@@ -7,6 +7,9 @@
 //
 
 #import "EROUtility.h"
+#import "EROWebService.h"
+#import "ERODatabaseAccess.h"
+
 
 @implementation EROUtility
 
@@ -23,5 +26,185 @@
     
     return databasePath;
 }
+
++(void) fillDatabase {
+    NSLog(@"importing initialized ...");
+    [self populateFaculties];
+    [self populateLessons];
+    [self populateInstitutes];
+    [self populateGroups];
+    [self populateRooms];
+    [self populateDepartments];
+    [self populateSubjects];
+    [self populateTeachers];
+    [self populateLectures];
+}
+
+
+
+// FACULTIES
++(void) populateFaculties {
+    [[EROWebService sharedInstance] getFacultiesWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *facultiesArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertFacultiesFromArray:facultiesArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating faculties: %@", error);
+    }];
+}
+
+// LESSONS
++(void) populateLessons {
+    [[EROWebService sharedInstance] getLessonsWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *lessonsArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertLessonsFromArray:lessonsArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating lessons: %@", error);
+    }];
+}
+
+// INSTITUTES
++(void) populateInstitutes {
+    
+    [[EROWebService sharedInstance] getInstitutesWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *instituteArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertInstitutesFromArray:instituteArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating institutes: %@", error);
+    }];
+    
+}
+
+// GROUPS
++(void) populateGroups {
+    
+    [[EROWebService sharedInstance] getGroupsWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *groupArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertGroupsFromArray:groupArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating groups: %@", error);
+    }];
+    
+}
+
+// ROOMS
++(void) populateRooms {
+    
+    [[EROWebService sharedInstance] getRoomsWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *roomArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertRoomsFromArray:roomArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating rooms: %@", error);
+    }];
+    
+}
+
+
+// DEPARMTNETS
++(void) populateDepartments {
+    
+    [[EROWebService sharedInstance] getDepartmentsWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *departmentArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertDepartmentsFromArray:departmentArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating departments: %@", error);
+    }];
+    
+}
+
+// SUBJECTS
++(void) populateSubjects {
+    
+    [[EROWebService sharedInstance] getSubjectsWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *subjectArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertSubjectsFromArray:subjectArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating subjects: %@", error);
+    }];
+    
+}
+
+// TEACHERS
++(void) populateTeachers {
+    
+    [[EROWebService sharedInstance] getTeachersWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *teacherArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertTeachersFromArray:teacherArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating teachers: %@", error);
+    }];
+    
+}
+
+// LECTURES
++(void) populateLectures {
+    [[EROWebService sharedInstance] getLecturesWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *lectureArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertLecturesFromArray:lectureArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating lectures: %@", error);
+    }];
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
