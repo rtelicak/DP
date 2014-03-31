@@ -11,9 +11,10 @@
 
 @interface EROUtility : NSObject
 
-+(NSURL *) getWebServicePath;
-+(NSString *) getDatabasePath;
++ (NSURL *) getWebServicePath;
++ (NSString *) getDatabasePath;
++ (NSString *) getPropertyListPath;
 
-+(void) fillDatabase;
++ (void) fillDatabase;
 
 @end

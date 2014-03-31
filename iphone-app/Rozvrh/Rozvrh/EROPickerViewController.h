@@ -12,6 +12,8 @@
 @interface EROPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (weak, nonatomic) IBOutlet UIButton *submitPickerButton;
+
 
 @property (strong, nonatomic) NSMutableArray *faculties;
 @property (strong, nonatomic) NSArray *years;

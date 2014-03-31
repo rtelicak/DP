@@ -27,6 +27,13 @@
     return databasePath;
 }
 
++ (NSString *) getPropertyListPath {
+    NSString *propertyListPath = [(EROAppDelegate *)[[UIApplication sharedApplication] delegate] propertyListPath];
+    
+    return propertyListPath;
+    
+}
+
 +(void) fillDatabase {
     NSLog(@"importing initialized ...");
     [self populateFaculties];
@@ -38,6 +45,7 @@
     [self populateSubjects];
     [self populateTeachers];
     [self populateLectures];
+    [self populateDays];
 }
 
 
@@ -54,6 +62,21 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating faculties: %@", error);
+    }];
+}
+
+// DAYS
++(void) populateDays {
+    [[EROWebService sharedInstance] getDaysWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *daysArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertDaysFromArray:daysArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating days: %@", error);
     }];
 }
 
@@ -122,7 +145,6 @@
     }];
     
 }
-
 
 // DEPARMTNETS
 +(void) populateDepartments {

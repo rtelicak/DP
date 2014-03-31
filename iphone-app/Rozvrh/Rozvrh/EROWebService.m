@@ -199,5 +199,25 @@
     }];
 }
 
+-(void)getDaysWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure {
+    NSURL *baseURL = [EROUtility getWebServicePath];
+    NSURL *dayURL = [baseURL URLByAppendingPathComponent:@"getDay"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:dayURL];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        if (response) {
+            NSError *e;
+            id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
+            if (success) {
+                success (result);
+            }
+        } else {
+            if (failure) {
+                failure (error);
+            }
+        }
+    }];
+}
+
 
 @end

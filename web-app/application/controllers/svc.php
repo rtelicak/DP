@@ -127,6 +127,18 @@ class Svc extends CI_Controller {
 		echo json_encode($result);
 	}
 
+	// VYUKA
+	function getDay() {
+		$result = [];
+		$query = $this->db->get('den');
+
+		foreach ($query->result() as $row){
+			array_push($result, $row);
+		}
+
+		echo json_encode($result);
+	}
+
 
 
 

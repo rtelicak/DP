@@ -14,12 +14,15 @@
 {
     self.webServiceBasePath = [NSURL URLWithString:@"http://localhost:8888/DP/web-app/svc/"];
     self.databaseName = @"Rozvrh.db";
+    self.propertyListName = @"favouritesList.plist";
     
     NSArray *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDir = documentsPath[0];
     self.databasePath = [documentsDir stringByAppendingPathComponent:self.databaseName];
+    self.propertyListPath = [documentsDir stringByAppendingPathComponent:self.propertyListName];
     
     [self createAndCheckDatabase];
+    [self createAndCheckPropertyList];
 
     return YES;
 }
@@ -39,11 +42,21 @@
     NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:self.databaseName];
     [fileManager copyItemAtPath:databasePathFromApp toPath:self.databasePath error:nil];
     
-
-    
     NSLog(@"Database copied from bundle path");
 }
-							
+
+- (void) createAndCheckPropertyList {
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if (![fileManager fileExistsAtPath: self.propertyListPath])
+    {
+        NSString *propertyListPathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:self.propertyListName];
+        
+        [fileManager copyItemAtPath:propertyListPathFromApp toPath:self.propertyListPath error:nil];
+    }
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

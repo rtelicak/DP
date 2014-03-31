@@ -165,6 +165,20 @@
     NSLog(@"importing to db done.");
 }
 
++(void)insertDaysFromArray:(NSMutableArray *)daysArray {
+    FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
+    
+    [db open];
+    
+    [db executeUpdate:@"DELETE FROM den"];
+    
+    for (id day in daysArray) {
+        [db executeUpdate:@"INSERT INTO den (id_den, den) VALUES (?,?);", [day objectForKey:@"id_den"], [day objectForKey:@"den"]];
+    }
+    
+    [db close];
+    NSLog(@"days done");
+}
 
 ///////////////////////////
 // GET THINGS FROM DATABASE
@@ -241,6 +255,47 @@
 
     
     return groupNumbers;
+}
+
++(NSMutableArray *)getLessonsWithFacultyCode:(NSString *)facultyCode year:(NSString *)year departmentCode:(NSString *)departmentCode groupNumber:(NSString *)groupNumber {
+    
+    NSMutableArray *lectures = [[NSMutableArray alloc] init];
+    
+    FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
+    
+    [db open];
+    
+    FMResultSet *result = [db executeQuery:@"select id_vyuka, predmet.prednaska, predmet.nazov, predmet.vymera, predmet.povinny, ucitel.meno, ucitel.priezvisko, ucitel.titul, miestnost.nazov as miestnost, den.den, hodina.cas_od, hodina.cas_do from vyuka left join den on vyuka.id_den = den.id_den left join hodina on vyuka.id_hodina = hodina.id_hodina left join ucitel on vyuka.id_ucitel = ucitel.id_ucitel left join miestnost on vyuka.id_miestnost = miestnost.id_miestnost left join predmet on vyuka.id_predmet = predmet.id_predmet left join kruzok on vyuka.id_kruzok = kruzok.id_kruzok left join odbor on kruzok.id_odbor = odbor.id_odbor left join fakulta on odbor.id_fakulta = fakulta.id_fakulta  where kruzok.cislo = (?) AND odbor.kod = (?) AND odbor.rocnik = (?) AND fakulta.kod = (?)", groupNumber, departmentCode, year, facultyCode];
+    
+    NSLog(@"select id_vyuka, predmet.prednaska, predmet.nazov, predmet.vymera, predmet.povinny, ucitel.meno, ucitel.priezvisko, ucitel.titul, miestnost.nazov as miestnost, den.den, hodina.cas_od, hodina.cas_do from vyuka left join den on vyuka.id_den = den.id_den left join hodina on vyuka.id_hodina = hodina.id_hodina left join ucitel on vyuka.id_ucitel = ucitel.id_ucitel left join miestnost on vyuka.id_miestnost = miestnost.id_miestnost left join predmet on vyuka.id_predmet = predmet.id_predmet left join kruzok on vyuka.id_kruzok = kruzok.id_kruzok left join odbor on kruzok.id_odbor = odbor.id_odbor left join fakulta on odbor.id_fakulta = fakulta.id_fakulta where kruzok.cislo = %@ AND odbor.kod = %@ AND odbor.rocnik = %@ AND fakulta.kod = %@", groupNumber, departmentCode, year, facultyCode);
+    
+    
+    while ([result next]) {
+        
+
+        NSDictionary *lecture = @{
+                         @"id_vyuka": [NSString stringWithFormat:@"%d", [result intForColumn:@"id_vyuka"]],
+                         @"subjectName": [result stringForColumn:@"nazov"],
+                         @"subjectArea": [result stringForColumn:@"vymera"],
+                         @"subjectRequired":[NSNumber numberWithInt:[result intForColumn:@"povinny"]],
+                         @"subjectIsLecture":[NSNumber numberWithInt:[result intForColumn:@"prednaska"]],
+                         @"teacherName": [result stringForColumn:@"meno"],
+                         @"teacherLastname": [result stringForColumn:@"priezvisko"],
+                         @"teacherDegree": [NSString stringWithFormat:@"%@", [result stringForColumn:@"titul"]],
+                         @"room": [result stringForColumn:@"miestnost"],
+                         @"day": [result stringForColumn:@"den"],
+                         @"timeFrom": [result stringForColumn:@"cas_od"],
+                         @"timeTo": [result stringForColumn:@"cas_do"]
+                         };
+        
+        [lectures addObject:lecture];
+        
+    }
+    
+    [db close];
+
+    
+    return lectures;
 }
 
 @end
