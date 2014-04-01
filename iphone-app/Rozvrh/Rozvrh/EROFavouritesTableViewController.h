@@ -11,4 +11,6 @@
 
 @interface EROFavouritesTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *searchCriterionArray;
+
 @end

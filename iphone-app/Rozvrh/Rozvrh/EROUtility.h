@@ -14,6 +14,7 @@
 + (NSURL *) getWebServicePath;
 + (NSString *) getDatabasePath;
 + (NSString *) getPropertyListPath;
++ (NSMutableArray *)getFavouritesSelections;
 
 + (void) fillDatabase;
 

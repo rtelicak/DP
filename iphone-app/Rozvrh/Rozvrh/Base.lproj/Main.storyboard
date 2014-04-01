@@ -25,8 +25,8 @@
                                     <outlet property="delegate" destination="zuB-Er-QBs" id="ChZ-ff-im0"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWa-S1-81d">
-                                <rect key="frame" x="20" y="346" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWa-S1-81d">
+                                <rect key="frame" x="20" y="474" width="280" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="mam vybrate :D"/>
                                 <connections>
@@ -35,6 +35,9 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PtZ-HQ-1Bw" firstAttribute="top" secondItem="RWa-S1-81d" secondAttribute="bottom" constant="10" id="ASl-kA-R0h"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Vyber rozvrh" id="hiw-Xk-DnC"/>
                     <connections>
@@ -72,7 +75,16 @@
                             <outlet property="delegate" destination="ekA-6Y-1ld" id="Wi0-dr-kvM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="UjA-cw-OSJ"/>
+                    <navigationItem key="navigationItem" id="UjA-cw-OSJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zrP-xb-W03">
+                            <connections>
+                                <action selector="addFavouriteButtonPressed:" destination="ekA-6Y-1ld" id="sBc-3X-BnQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addFavouriteButton" destination="zrP-xb-W03" id="1Ay-aL-xwF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dh6-sr-djk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +196,9 @@
         <scene sceneID="D6G-Wk-N6x">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hg4-lF-8hG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="5nx-zY-P2n"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="search" id="5nx-zY-P2n">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uxo-r0-2vO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -273,6 +287,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qhM-X3-W0L"/>
+        <segue reference="uik-cP-iru"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,6 +10,7 @@
 #import "EROUtility.h"
 #import "EROFaculty.h"
 #import "EROScheduleTableViewController.h"
+#import "EROScheduleSearchCriterion.h"
 
 @interface EROPickerViewController ()
 @property EROFaculty *selectedFaculty;
@@ -196,12 +197,15 @@
     }
     
     EROScheduleTableViewController *targetController = [segue destinationViewController];
-    targetController.scheduleArguments = @{
-                                           @"selectedFacultyCode": [NSString stringWithFormat:@"%@",self.selectedFaculty.kod],
-                                           @"selectedYear": self.selectedYear,
-                                           @"selectedDepartmentCode": self.selectedDepartment,
-                                           @"selectedGroupNumber": self.selectedGroupNumber
-                                           };
+    EROScheduleSearchCriterion *scheduleSearchCriterion = [[EROScheduleSearchCriterion alloc] init];
+    
+    scheduleSearchCriterion.facultyCode = self.selectedFaculty.kod;
+    scheduleSearchCriterion.year = self.selectedYear;
+    scheduleSearchCriterion.departmentCode = self.selectedDepartment;
+    scheduleSearchCriterion.groupNumber = self.selectedGroupNumber;
+    
+    targetController.scheduleArguments = scheduleSearchCriterion;
+    
     targetController.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:self.selectedFaculty.kod year:self.selectedYear departmentCode:self.selectedDepartment groupNumber:self.selectedGroupNumber];
     
     // Get the new view controller using [segue destinationViewController].

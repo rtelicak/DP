@@ -14,4 +14,8 @@
 @property (nonatomic, strong) NSString *year;
 @property (nonatomic, strong) NSString *groupNumber;
 
++ (BOOL) isScheduleCriterionAlreadyInFavourites: (EROScheduleSearchCriterion *) criterion;
+- (NSDictionary*) transformToDictionary;
++ (void) transformToDictionaryAndUpdateUserDefaultsWithCriteriaArray: (NSMutableArray *) scheduleCriteria;
+
 @end

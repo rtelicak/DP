@@ -9,18 +9,18 @@
 #import "EROUtility.h"
 #import "EROWebService.h"
 #import "ERODatabaseAccess.h"
-
+#import "EROScheduleSearchCriterion.h"
 
 @implementation EROUtility
 
-+(NSURL*)getWebServicePath {
++ (NSURL*)getWebServicePath {
     
     NSURL *webServicePath = [(EROAppDelegate *)[[UIApplication sharedApplication] delegate] webServiceBasePath];
     
     return webServicePath;
 }
 
-+(NSString*)getDatabasePath {
++ (NSString*)getDatabasePath {
     
     NSString *databasePath = [(EROAppDelegate *)[[UIApplication sharedApplication] delegate] databasePath];
     
@@ -34,7 +34,7 @@
     
 }
 
-+(void) fillDatabase {
++ (void) fillDatabase {
     NSLog(@"importing initialized ...");
     [self populateFaculties];
     [self populateLessons];
@@ -46,6 +46,27 @@
     [self populateTeachers];
     [self populateLectures];
     [self populateDays];
+}
+
++ (NSMutableArray *)getFavouritesSelections {
+    
+    NSMutableArray *searchCriterionArray = [[NSMutableArray alloc] init];
+    NSMutableArray *favouriteSearchCriteria = [[NSUserDefaults standardUserDefaults] objectForKey:@"EROFavourites"];
+    
+    NSLog(@"%@", favouriteSearchCriteria);
+    
+    for (int i = 0; i < [favouriteSearchCriteria count]; i++) {
+        EROScheduleSearchCriterion *s = [[EROScheduleSearchCriterion alloc] init];
+        
+        s.facultyCode = [[favouriteSearchCriteria objectAtIndex:i] objectForKey:@"facultyCode"];
+        s.departmentCode = [[favouriteSearchCriteria objectAtIndex:i] objectForKey:@"departmentCode"];
+        s.year = [[favouriteSearchCriteria objectAtIndex:i] objectForKey:@"year"];
+        s.groupNumber = [[favouriteSearchCriteria objectAtIndex:i] objectForKey:@"groupNumber"];
+        
+        [searchCriterionArray addObject:s];
+    }
+    
+    return  searchCriterionArray;
 }
 
 

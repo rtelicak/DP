@@ -9,6 +9,8 @@
 #import "EROScheduleTableViewController.h"
 #import "ERODatabaseAccess.h"
 #import "EROLectureDetailViewController.h"
+#import "EROUtility.h"
+#import "EROScheduleSearchCriterion.h"
 
 @interface EROScheduleTableViewController ()
 
@@ -29,6 +31,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([EROScheduleSearchCriterion isScheduleCriterionAlreadyInFavourites:self.scheduleArguments]) {
+        self.addFavouriteButton.enabled = NO;
+    }
+
 
     NSLog(@"%@", self.scheduleArguments);
     
@@ -127,4 +134,20 @@
 }
 
 
+- (IBAction)addFavouriteButtonPressed:(id)sender {
+    NSMutableArray *favouritesFromUserDefaults = [EROUtility getFavouritesSelections];
+    [favouritesFromUserDefaults addObject:self.scheduleArguments];
+    
+    NSMutableArray *transformedFavourites = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < favouritesFromUserDefaults.count; i++) {
+        EROScheduleSearchCriterion *s = [favouritesFromUserDefaults objectAtIndex:i];
+        [transformedFavourites addObject: [s transformToDictionary]];
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:transformedFavourites forKey:@"EROFavourites"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    self.addFavouriteButton.enabled = NO;
+}
 @end
