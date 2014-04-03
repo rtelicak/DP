@@ -16,7 +16,7 @@
 
 
 @property (strong, nonatomic) NSMutableArray *faculties;
-@property (strong, nonatomic) NSArray *years;
+@property (strong, nonatomic) NSMutableArray *years;
 @property (strong, nonatomic) NSMutableArray *departments;
 @property (strong, nonatomic) NSMutableArray *groups;
 

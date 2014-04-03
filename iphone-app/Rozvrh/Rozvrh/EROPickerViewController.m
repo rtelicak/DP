@@ -12,7 +12,10 @@
 #import "EROScheduleTableViewController.h"
 #import "EROScheduleSearchCriterion.h"
 
+#define duplicateConstant 30
+
 @interface EROPickerViewController ()
+
 @property EROFaculty *selectedFaculty;
 @property NSString *selectedYear;
 @property NSString *selectedDepartment;
@@ -41,21 +44,27 @@
 }
 
 -(void)initializeView {
-
-//    self.faculties = [[NSMutableArray alloc] initWithObjects:f, nil];
     
     self.faculties = [ERODatabaseAccess getFacultiesFromDatabase];
     
-    EROFaculty *f = [[EROFaculty alloc] init];
-    f.kod = @"fakulta";
-    [self.faculties insertObject:f atIndex:0];
+    // duplicate faculties to simulate circular picker
+    self.faculties = [self duplicateFaculties:self.faculties];
+    [self.pickerView selectRow:[self.faculties count] / 2 inComponent:0 animated:YES];
 
     
-    self.years = [[NSArray alloc] init];
+    self.years = [[NSMutableArray alloc] init];
     self.departments = [[NSMutableArray alloc] init];
+}
+
+- (NSMutableArray *) duplicateFaculties: (NSMutableArray *) faculties {
     
+    faculties = [self duplicateCompontneSourceArray:faculties];
     
-//    NSArray *newArray=[firstArray arrayByAddingObjectsFromArray:secondArray];
+    EROFaculty *f = [[EROFaculty alloc] init];
+    f.kod = @"fakulta";
+    [faculties insertObject:f atIndex:[faculties count] / 2];
+    
+    return faculties;
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
@@ -97,6 +106,42 @@
     return 0;
 }
 
+- (NSMutableArray *) duplicateCompontneSourceArray: (NSMutableArray *) sourceArray {
+    
+    NSMutableArray *tmp = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < duplicateConstant; i++) {
+        [tmp addObjectsFromArray:sourceArray];
+    }
+
+    
+    return tmp;
+}
+
+- (void) refreshDepartmentComponent {
+    self.departments = [ERODatabaseAccess getDepartmentsFromDatabaseByFacultyId: self.selectedFaculty.id_fakulta andYear:self.selectedYear];
+    self.departments = [self duplicateCompontneSourceArray:self.departments];
+    [self.pickerView reloadComponent:2];
+    [self.pickerView selectRow:[self.departments count] / 2  inComponent:2 animated:YES];
+    self.selectedDepartment = [self.departments objectAtIndex:[self.departments count] / 2];
+}
+
+- (void) refreshYearComponent {
+    self.years = [NSMutableArray arrayWithObjects: @"1", @"2", @"3", @"4", @"5", nil];
+    self.years = [self duplicateCompontneSourceArray:self.years];
+    [self.pickerView reloadComponent:1];
+    [self.pickerView selectRow:[self.years count] / 2  inComponent:1 animated:YES];
+    self.selectedYear = [self.years objectAtIndex:[self.years count] / 2];
+}
+
+- (void) refreshGroupComponent {
+    self.groups = [ERODatabaseAccess getGroupNumbersWithFacultyCode: [NSString stringWithFormat:@"%@", self.selectedFaculty.kod] year:self.selectedYear andDepartmentCode:self.selectedDepartment];
+    self.groups = [self duplicateCompontneSourceArray:self.groups];
+    [self.pickerView reloadComponent:3];
+    [self.pickerView selectRow:[self.groups count] / 2 inComponent:3 animated:YES];
+    self.selectedGroupNumber = [self.groups objectAtIndex:[self.groups count] / 2];
+}
+
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     switch (component) {
         
@@ -107,45 +152,10 @@
                 return;
             }
             
-            self.years = @[@"1", @"2", @"3", @"4", @"5"];
-            [self.pickerView reloadComponent:1];
-            [self.pickerView selectRow:0 inComponent:1 animated:YES];
-            self.selectedYear = [self.years objectAtIndex:0];
+            [self refreshYearComponent];
+            [self refreshDepartmentComponent];
+            [self refreshGroupComponent];
             
-            //
-            
-            self.departments = [ERODatabaseAccess getDepartmentsFromDatabaseByFacultyId: self.selectedFaculty.id_fakulta andYear:self.selectedYear];
-            [self.pickerView reloadComponent:2];
-            [self.pickerView selectRow:0 inComponent:2 animated:YES];
-            self.selectedDepartment = [self.departments objectAtIndex:0];
-            
-            self.groups = [ERODatabaseAccess getGroupNumbersWithFacultyCode: [NSString stringWithFormat:@"%@", self.selectedFaculty.kod] year:self.selectedYear andDepartmentCode:self.selectedDepartment];
-            [self.pickerView reloadComponent:3];
-            [self.pickerView selectRow:0 inComponent:3 animated:YES];
-            self.selectedGroupNumber = [self.groups objectAtIndex:0];
-
-            
-            //
-            
-//            if (self.selectedDepartment) {
-//                self.departments = [ERODatabaseAccess getDepartmentsFromDatabaseByFacultyId: self.selectedFaculty.id_fakulta andYear:self.selectedYear];
-//                [self.pickerView reloadComponent:2];
-//                
-//                [self.pickerView selectRow:0 inComponent:2 animated:YES];
-//                self.selectedDepartment = [self.departments objectAtIndex:0];
-//                    
-//                if (self.selectedYear) {
-//                    self.selectedDepartment = [self.departments objectAtIndex:[self.pickerView selectedRowInComponent: 2]] ;
-//                    self.groups = [ERODatabaseAccess getGroupNumbersWithFacultyCode: [NSString stringWithFormat:@"%@", self.selectedFaculty.kod] year:self.selectedYear andDepartmentCode:self.selectedDepartment];
-//                    [self.pickerView reloadComponent:3];
-//                }
-//            }
-            
-
-//                 self.departments = [[NSMutableArray alloc] init];
-//                [self.pickerView reloadComponent:2];
-
-
             break;
         }
         
@@ -153,11 +163,9 @@
         case 1: {
             // populate 3rd component with data
             self.selectedYear = [self.years objectAtIndex:row];
-            self.departments = [ERODatabaseAccess getDepartmentsFromDatabaseByFacultyId: self.selectedFaculty.id_fakulta andYear:self.selectedYear];
-            [self.pickerView reloadComponent:2];
             
-            // reset components to the right, but year
-            self.groups = [[NSMutableArray alloc] init];
+            [self refreshDepartmentComponent];
+            [self refreshGroupComponent];
 
             break;
         }
@@ -165,10 +173,8 @@
         // department component
         case 2: {
             self.selectedDepartment = [self.departments objectAtIndex:row];
-            self.groups = [ERODatabaseAccess getGroupNumbersWithFacultyCode: [NSString stringWithFormat:@"%@", self.selectedFaculty.kod] year:self.selectedYear andDepartmentCode:self.selectedDepartment];
-            NSLog(@"%@", self.groups);
             
-            [self.pickerView reloadComponent:3];
+            [self refreshGroupComponent];
             
             break;
         }
