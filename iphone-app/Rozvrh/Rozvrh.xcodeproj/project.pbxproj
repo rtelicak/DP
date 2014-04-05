@@ -42,6 +42,7 @@
 		A4A8896218EC5B4500D5956C /* po-icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A8896118EC5B4500D5956C /* po-icon2.png */; };
 		A4D06AC618ECACB000F23C0E /* po-tr-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D06AC518ECACB000F23C0E /* po-tr-icon.png */; };
 		A4D06ACA18ECB4E300F23C0E /* day-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D06AC918ECB4E300F23C0E /* day-bg.png */; };
+		A4D06ACC18EF887100F23C0E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D06ACB18EF887100F23C0E /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		A4A8896118EC5B4500D5956C /* po-icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "po-icon2.png"; sourceTree = "<group>"; };
 		A4D06AC518ECACB000F23C0E /* po-tr-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "po-tr-icon.png"; sourceTree = "<group>"; };
 		A4D06AC918ECB4E300F23C0E /* day-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "day-bg.png"; sourceTree = "<group>"; };
+		A4D06ACB18EF887100F23C0E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		A41B1E1018E01CE800DF8981 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4D06ACB18EF887100F23C0E /* test.png */,
 				A4D06AC918ECB4E300F23C0E /* day-bg.png */,
 				A4D06AC518ECACB000F23C0E /* po-tr-icon.png */,
 				A4A8896118EC5B4500D5956C /* po-icon2.png */,
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D06ACA18ECB4E300F23C0E /* day-bg.png in Resources */,
+				A4D06ACC18EF887100F23C0E /* test.png in Resources */,
 				A41B1E5C18E0493F00DF8981 /* Rozvrh.db in Resources */,
 				A4D06AC618ECACB000F23C0E /* po-tr-icon.png in Resources */,
 				A4A8896018EC553A00D5956C /* po-icon.png in Resources */,
@@ -467,6 +471,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -505,6 +510,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

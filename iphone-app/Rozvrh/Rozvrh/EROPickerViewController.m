@@ -34,11 +34,20 @@
     return self;
 }
 
+//-(CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+//    CGFloat n = 20.0f;
+//    
+//    return n;
+//}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self initializeView];
+    [[self.submitPickerButton layer] setBorderWidth:1.0f];
+    [[self.submitPickerButton layer] setBorderColor:[UIColor greenColor].CGColor];
     // Do any additional setup after loading the view.
+//    [self.pickerView setBackgroundColor:[UIColor redColor]];
     
 //    NSLog(@"%@", self.pickerView);
 }

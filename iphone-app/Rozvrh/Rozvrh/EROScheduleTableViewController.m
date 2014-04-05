@@ -36,8 +36,11 @@
     
     // http://uicolor.org/
 //    self.tableView.separatorColor = [UIColor colorWithRed:229/255.0f green:229/255.0f blue:229/255.0f alpha:1.0f];
-    self.tableView.separatorColor = [UIColor clearColor];
+//    UIColor * colorCCC = [UIColor colorWithRed:0/255.0f green:12/255.0f blue:204/255.0f alpha:0.3f];
+    UIColor * colord4d4d4 = [UIColor colorWithRed:213/255.0f green:213/255.0f blue:213/255.0f alpha:0.3f];
+    self.tableView.separatorColor = colord4d4d4;
     
+    // disabled add button if list already exits in favourites
     if ([EROScheduleSearchCriterion isScheduleCriterionAlreadyInFavourites:self.scheduleArguments]) {
         self.addFavouriteButton.enabled = NO;
     }
@@ -70,7 +73,6 @@
     return self.lecturesArray.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lectureCell" forIndexPath:indexPath];
@@ -95,7 +97,7 @@
     
     subjectNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(60.0, 8.0, 230.0, 15.0)];
     subjectNameLabel.tag = MAINLABEL_TAG;
-    subjectNameLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:14.0];
+    subjectNameLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14.0];
     subjectNameLabel.textAlignment = NSTextAlignmentLeft;
     subjectNameLabel.textColor = [UIColor whiteColor];
     subjectNameLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
@@ -104,7 +106,7 @@
     
     dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0, 5.0, 45.0, 60.0)];
     dayLabel.tag = SECONDLABEL_TAG;
-    dayLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:36.0];
+    dayLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:36.0];
     dayLabel.textAlignment = NSTextAlignmentLeft;
     dayLabel.textColor = [UIColor whiteColor];
     dayLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
@@ -127,7 +129,7 @@
     [cell.contentView addSubview:teacherLabel];
     
     
-    timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(220.0, 34.0, 75.0, 25.0)];
+    timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(220.0, 20.0, 75.0, 25.0)];
     timeLabel.tag = SECONDLABEL_TAG;
 //    timeLabel.font = [UIFont systemFontOfSize:28.0];
     timeLabel.textAlignment = NSTextAlignmentRight;
@@ -139,18 +141,21 @@
 
 
     
-    photo = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 55.0, 70.0)];
+    photo = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 55.0, 71.0)];
     photo.tag = PHOTO_TAG;
 //    photo.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight;
     [cell.contentView addSubview:photo];
     
-    
+    // subject name
     subjectNameLabel.text = [[sub objectForKey:@"subjectName"]stringByReplacingOccurrencesOfString:@"_" withString:@" "];
     
+    // day
     dayLabel.text = [[sub objectForKey:@"day"] substringToIndex:2];
-
+    
+    // room
     roomLabel.text = [[sub objectForKey:@"room"]stringByReplacingOccurrencesOfString:@"_" withString:@" "];
     
+    // teacher
     // avoid 'null' displaying, when teacher has no degree
     NSString *teacherTitle = [sub objectForKey:@"teacherDegree"];
     
@@ -158,15 +163,7 @@
     [NSString stringWithFormat:@"%@ %@", [sub objectForKey:@"teacherName"], [sub objectForKey:@"teacherLastname"]]:
     [NSString stringWithFormat:@"%@. %@ %@", [sub objectForKey:@"teacherDegree"], [sub objectForKey:@"teacherName"], [sub objectForKey:@"teacherLastname"]];
 
-
-//    if (teacherTitle) {
-//            teacherLabel.text
-//    }
-//     = !!teacherTitle ?
-//    [NSString stringWithFormat:@"%@. %@ %@", [sub objectForKey:@"teacherDegree"], [sub objectForKey:@"teacherName"], [sub objectForKey:@"teacherLastname"]] :
-//    [NSString stringWithFormat:@"%@ %@", [sub objectForKey:@"teacherName"], [sub objectForKey:@"teacherLastname"]];
-
-    
+    // time
     NSString *timeFrom = [sub objectForKey:@"timeFrom"];
     timeFrom = [timeFrom substringToIndex:[timeFrom length] - 3];
 
@@ -174,29 +171,64 @@
         timeFrom = [timeFrom substringFromIndex:1];
     }
     
-
     NSString *timeTo = [sub objectForKey:@"timeTo"];
     timeTo = [timeTo substringToIndex:[timeTo length] - 3];
-
     
-//    [str substringToIndex:[str length]-1];
-    
-//    timeLabel.text = [NSString stringWithFormat:@"%@ - %@", timeFrom, timeTo];
     timeLabel.text = timeFrom;
     
+    // image
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"day-bg" ofType:@"png"];
     UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
     photo.image = theImage;
     
-//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
+    // colors
     UIColor *seminarColor = [UIColor colorWithRed:50/255.0f green:149/255.0f blue:213/255.0f alpha:1.0f];
     UIColor *lessonColor = [UIColor colorWithRed:230/255.0f green:81/255.0f blue:67/255.0f alpha:1.0f];
 
-    cell.backgroundColor = [[sub objectForKey:@"subjectIsLecture"]  isEqual: [NSNumber numberWithInt:1]] ? lessonColor : seminarColor;
-    
+//    cell.backgroundColor = [[sub objectForKey:@"subjectIsLecture"]  isEqual: [NSNumber numberWithInt:1]] ? lessonColor : seminarColor;
+//    cell.backgroundColor = [UIColor whiteColor];
 //    NSString *lectureOrSeminar = [[self.selectedLecture objectForKey:@"subjectIsLecture"]  isEqual: [NSNumber numberWithInt:1]] ? @"prednaska" : @"cvicenie";
     
+    // set cell's background depending on day
+    UIColor *grayColor = [UIColor colorWithRed:52/255.0f green:72/255.0f blue:92/255.0f alpha:1.0f];
+    UIColor *darkOrange = [UIColor colorWithRed:192/255.0f green:57/255.0f blue:43/255.0f alpha:1.0f];
+    UIColor *lightOrange = [UIColor colorWithRed:230/255.0f green:86/255.0f blue:73/255.0f alpha:1.0f];;
+    UIColor *purple = [UIColor colorWithRed:153/255.0f green:91/255.0f blue:180/255.0f alpha:1.0f];
+    UIColor *darkBlue = [UIColor colorWithRed:41/255.0f green:128/255.0f blue:185/255.0f alpha:1.0f];
+    UIColor *lightBlue = [UIColor colorWithRed:50/255.0f green:149/255.0f blue:212/255.0f alpha:1.0f];
+    UIColor * color = [UIColor colorWithRed:50/255.0f green:256/255.0f blue:0/255.0f alpha:1.0f];
+    UIColor *pumpkin = [UIColor colorWithRed:211/255.0f green:84/255.0f blue:0/255.0f alpha:1.0f];
+    UIColor *concrete = [UIColor colorWithRed:149/255.0f green:165/255.0f blue:166/255.0f alpha:1.0f];
+    
+    
+    
+    int id_day = [[sub objectForKey:@"id_day"] intValue];
+    
+    switch (id_day)  {
+            
+        case 1: {
+            cell.backgroundColor = grayColor;
+            break;
+        }
+        case 2: {
+            cell.backgroundColor = darkOrange;
+            break;
+        }
+
+        case 3: {
+            cell.backgroundColor = lightOrange;
+            break;
+        }
+
+        case 4: {
+            cell.backgroundColor = darkBlue;
+            break;
+        }
+        case 5: {
+            cell.backgroundColor = lightBlue;
+            break;
+        }
+    }
     
     return cell;
 }
@@ -282,5 +314,33 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     self.addFavouriteButton.enabled = NO;
+}
+
+
+
+- (IBAction)segmentedButtonPressed:(id)sender {
+    
+    switch (self.segmentedUiPicker.selectedSegmentIndex) {
+        case 0:{
+            // display all lessons
+            self.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
+            break;
+        }
+            
+        case 1:{
+            // display lectures only
+            self.lecturesArray = [ERODatabaseAccess getLecturesOnlyWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
+            break;
+            
+        }
+            
+        case 2: {
+            //display seminars only
+            self.lecturesArray = [ERODatabaseAccess getSeminarsOnlyWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
+            break;
+        }
+    }
+    
+    [self.tableView reloadData];
 }
 @end

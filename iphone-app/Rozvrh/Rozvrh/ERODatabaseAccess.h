@@ -29,5 +29,8 @@
 + (NSMutableArray *) getDepartmentsFromDatabaseByFacultyId: (int)facultyId andYear:(NSString *) year;
 + (NSMutableArray *) getGroupNumbersWithFacultyCode:(NSString*) facultyCode year:(NSString *) year andDepartmentCode:(NSString *) departmentCode;
 + (NSMutableArray *) getLessonsWithFacultyCode:(NSString *) facultyCode year:(NSString *) year departmentCode: (NSString *) departmentCode groupNumber:(NSString *) groupNumber;
++ (NSMutableArray *) getLecturesOnlyWithFacultyCode:(NSString *) facultyCode year:(NSString *) year departmentCode: (NSString *) departmentCode groupNumber:(NSString *) groupNumber;
++ (NSMutableArray *)getSeminarsOnlyWithFacultyCode:(NSString *)facultyCode year:(NSString *)year departmentCode:(NSString *)departmentCode groupNumber:(NSString *)groupNumber;
+
 
 @end
