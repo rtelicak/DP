@@ -127,29 +127,13 @@
         }
     }
     
-    UIImageView *photo;
-    photo = [[UIImageView alloc] initWithFrame:CGRectMake(15.0, 80.0, 270.0, 300.0)];
-    photo.tag = 3;
-    //    photo.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight;
-//    [photo color]
+    UIView *grayBackground = [[UIView alloc] initWithFrame:CGRectMake(15.0, 80.0, 270.0, 300.0)];
+//    grayBackground.backgroundColor = [UIColor colorWithRed:149/255.0f green:165/255.0f blue:166/255.0f alpha:0.3f];
+//   grayBackground.backgroundColor = [UIColor colorWithRed:153/255.0f green:91/255.0f blue:180/255.0f alpha:0.3f];
 
-
-
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"png"];
-    UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
+//    [grayBackground setOpaque:NO];
     
-//    photo.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight;
-
-//    photo.image = theImage;
-
-    photo.backgroundColor = [UIColor colorWithPatternImage:theImage];
-
-//    [self.view addSubview:photo];
-    
-    [photo setOpaque:NO];
-    [[photo layer] setOpaque:NO];
-
-
+    [self.view addSubview:grayBackground];
 }
 
 - (void)didReceiveMemoryWarning

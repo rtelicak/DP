@@ -283,15 +283,15 @@
     return lectures;
 }
 
-+(NSMutableArray *)getLecturesOnlyWithFacultyCode:(NSString *)facultyCode year:(NSString *)year departmentCode:(NSString *)departmentCode groupNumber:(NSString *)groupNumber {
-    
++(NSMutableArray *)getCompulsoryOnlyWithFacultyCode:(NSString *)facultyCode year:(NSString *)year departmentCode:(NSString *)departmentCode groupNumber:(NSString *)groupNumber {
+
     NSMutableArray *lectures = [[NSMutableArray alloc] init];
     
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
     [db open];
     
-    FMResultSet *result = [db executeQuery:@"select id_vyuka, vyuka.prednaska, predmet.nazov, predmet.vymera, predmet.povinny, ucitel.meno, ucitel.priezvisko, ucitel.titul, miestnost.nazov as miestnost, den.den, den.id_den, hodina.cas_od, hodina.cas_do from vyuka left join den on vyuka.id_den = den.id_den left join hodina on vyuka.id_hodina = hodina.id_hodina left join ucitel on vyuka.id_ucitel = ucitel.id_ucitel left join miestnost on vyuka.id_miestnost = miestnost.id_miestnost left join predmet on vyuka.id_predmet = predmet.id_predmet left join kruzok on vyuka.id_kruzok = kruzok.id_kruzok left join odbor on kruzok.id_odbor = odbor.id_odbor left join fakulta on odbor.id_fakulta = fakulta.id_fakulta  where kruzok.cislo = (?) AND odbor.kod = (?) AND odbor.rocnik = (?) AND fakulta.kod = (?) AND vyuka.prednaska = 1 order by den.id_den, hodina.id_hodina", groupNumber, departmentCode, year, facultyCode];
+    FMResultSet *result = [db executeQuery:@"select id_vyuka, vyuka.prednaska, predmet.nazov, predmet.vymera, predmet.povinny, ucitel.meno, ucitel.priezvisko, ucitel.titul, miestnost.nazov as miestnost, den.den, den.id_den, hodina.cas_od, hodina.cas_do from vyuka left join den on vyuka.id_den = den.id_den left join hodina on vyuka.id_hodina = hodina.id_hodina left join ucitel on vyuka.id_ucitel = ucitel.id_ucitel left join miestnost on vyuka.id_miestnost = miestnost.id_miestnost left join predmet on vyuka.id_predmet = predmet.id_predmet left join kruzok on vyuka.id_kruzok = kruzok.id_kruzok left join odbor on kruzok.id_odbor = odbor.id_odbor left join fakulta on odbor.id_fakulta = fakulta.id_fakulta  where kruzok.cislo = (?) AND odbor.kod = (?) AND odbor.rocnik = (?) AND fakulta.kod = (?) AND predmet.povinny = 1 order by den.id_den, hodina.id_hodina", groupNumber, departmentCode, year, facultyCode];
 
 
     while ([result next]) {
@@ -308,7 +308,7 @@
 
 }
 
-+(NSMutableArray *)getSeminarsOnlyWithFacultyCode:(NSString *)facultyCode year:(NSString *)year departmentCode:(NSString *)departmentCode groupNumber:(NSString *)groupNumber {
++(NSMutableArray *)getOptionalOnlyWithFacultyCode:(NSString *)facultyCode year:(NSString *)year departmentCode:(NSString *)departmentCode groupNumber:(NSString *)groupNumber {
     
     NSMutableArray *lectures = [[NSMutableArray alloc] init];
     
@@ -316,7 +316,7 @@
     
     [db open];
     
-    FMResultSet *result = [db executeQuery:@"select id_vyuka, vyuka.prednaska, predmet.nazov, predmet.vymera, predmet.povinny, ucitel.meno, ucitel.priezvisko, ucitel.titul, miestnost.nazov as miestnost, den.den, den.id_den, hodina.cas_od, hodina.cas_do from vyuka left join den on vyuka.id_den = den.id_den left join hodina on vyuka.id_hodina = hodina.id_hodina left join ucitel on vyuka.id_ucitel = ucitel.id_ucitel left join miestnost on vyuka.id_miestnost = miestnost.id_miestnost left join predmet on vyuka.id_predmet = predmet.id_predmet left join kruzok on vyuka.id_kruzok = kruzok.id_kruzok left join odbor on kruzok.id_odbor = odbor.id_odbor left join fakulta on odbor.id_fakulta = fakulta.id_fakulta  where kruzok.cislo = (?) AND odbor.kod = (?) AND odbor.rocnik = (?) AND fakulta.kod = (?) AND vyuka.prednaska = 0 order by den.id_den, hodina.id_hodina", groupNumber, departmentCode, year, facultyCode];
+    FMResultSet *result = [db executeQuery:@"select id_vyuka, vyuka.prednaska, predmet.nazov, predmet.vymera, predmet.povinny, ucitel.meno, ucitel.priezvisko, ucitel.titul, miestnost.nazov as miestnost, den.den, den.id_den, hodina.cas_od, hodina.cas_do from vyuka left join den on vyuka.id_den = den.id_den left join hodina on vyuka.id_hodina = hodina.id_hodina left join ucitel on vyuka.id_ucitel = ucitel.id_ucitel left join miestnost on vyuka.id_miestnost = miestnost.id_miestnost left join predmet on vyuka.id_predmet = predmet.id_predmet left join kruzok on vyuka.id_kruzok = kruzok.id_kruzok left join odbor on kruzok.id_odbor = odbor.id_odbor left join fakulta on odbor.id_fakulta = fakulta.id_fakulta  where kruzok.cislo = (?) AND odbor.kod = (?) AND odbor.rocnik = (?) AND fakulta.kod = (?) AND predmet.povinny = 0 order by den.id_den, hodina.id_hodina", groupNumber, departmentCode, year, facultyCode];
     
     
     while ([result next]) {

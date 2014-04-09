@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="2022" y="17"/>
         </scene>
-        <!--Schedule Table View Controller-->
+        <!--Schedule Table View Controller - Title sem-->
         <scene sceneID="0e8-ug-8Pp">
             <objects>
                 <tableViewController id="ekA-6Y-1ld" customClass="EROScheduleTableViewController" sceneMemberID="viewController">
@@ -84,20 +84,7 @@
                             <outlet property="delegate" destination="ekA-6Y-1ld" id="Wi0-dr-kvM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="UjA-cw-OSJ">
-                        <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="tkR-ba-TIg">
-                            <rect key="frame" x="8" y="6" width="262" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="All"/>
-                                <segment title="Lectures"/>
-                                <segment title="Seminars"/>
-                            </segments>
-                            <connections>
-                                <action selector="segmentedButtonPressed:" destination="ekA-6Y-1ld" eventType="valueChanged" id="ZB0-F5-u7Q"/>
-                            </connections>
-                        </segmentedControl>
+                    <navigationItem key="navigationItem" title="Title sem" id="UjA-cw-OSJ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zrP-xb-W03">
                             <connections>
                                 <action selector="addFavouriteButtonPressed:" destination="ekA-6Y-1ld" id="sBc-3X-BnQ"/>
@@ -106,7 +93,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addFavouriteButton" destination="zrP-xb-W03" id="1Ay-aL-xwF"/>
-                        <outlet property="segmentedUiPicker" destination="tkR-ba-TIg" id="t8M-Jm-qfc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dh6-sr-djk" userLabel="First Responder" sceneMemberID="firstResponder"/>

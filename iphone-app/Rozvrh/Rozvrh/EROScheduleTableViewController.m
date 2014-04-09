@@ -14,6 +14,8 @@
 
 @interface EROScheduleTableViewController ()
 
+@property (nonatomic, strong) UISegmentedControl *segmentedControl;
+@property (nonatomic, strong) UIView *wrapper;
 
 @end
 
@@ -32,9 +34,10 @@
 {
     [super viewDidLoad];
     
+    // remove padding from table view
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
-    // http://uicolor.org/
+
 //    self.tableView.separatorColor = [UIColor colorWithRed:229/255.0f green:229/255.0f blue:229/255.0f alpha:1.0f];
 //    UIColor * colorCCC = [UIColor colorWithRed:0/255.0f green:12/255.0f blue:204/255.0f alpha:0.3f];
     UIColor * colord4d4d4 = [UIColor colorWithRed:213/255.0f green:213/255.0f blue:213/255.0f alpha:0.3f];
@@ -45,14 +48,75 @@
         self.addFavouriteButton.enabled = NO;
     }
     
+    // add title to navigtion bar
+    NSString *title = [[NSString alloc] initWithFormat:@"%@ %@. ročník %@ %@. krúžok ", self.scheduleArguments.facultyCode, self.scheduleArguments.year, self.scheduleArguments.departmentCode, self.scheduleArguments.groupNumber];
+    self.navigationItem.title = title;
+    
+    //
     
     NSLog(@"%@", self.scheduleArguments);
+    
+    [self createSegmetedUiControl];
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // top offset
+//    [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
+    // creating uisegmentedcontrol programatically
+    
+}
+
+-(void) createSegmetedUiControl {
+    self.wrapper = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+    
+    self.wrapper.backgroundColor = [UIColor whiteColor];
+    
+    self.segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"All", @"Compulsory", @"Optional", nil]];
+    self.segmentedControl.frame = CGRectMake(35, 10, 250, 30);
+    self.segmentedControl.selectedSegmentIndex = 0;
+    [self.segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents: UIControlEventValueChanged];
+    
+    [self.wrapper addSubview:self.segmentedControl];
+}
+
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    return self.wrapper;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 50.0f;
+}
+
+- (void)valueChanged:(UISegmentedControl *)segment {
+        
+    switch (self.segmentedControl.selectedSegmentIndex) {
+        case 0:{
+            // display all lessons
+            self.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
+            break;
+        }
+            
+        case 1:{
+            // display compulsory only
+            self.lecturesArray = [ERODatabaseAccess getCompulsoryOnlyWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
+            break;
+        }
+            
+        case 2: {
+            //display optional only
+            self.lecturesArray = [ERODatabaseAccess getOptionalOnlyWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
+            break;
+        }
+    }
+
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -316,31 +380,4 @@
     self.addFavouriteButton.enabled = NO;
 }
 
-
-
-- (IBAction)segmentedButtonPressed:(id)sender {
-    
-    switch (self.segmentedUiPicker.selectedSegmentIndex) {
-        case 0:{
-            // display all lessons
-            self.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
-            break;
-        }
-            
-        case 1:{
-            // display lectures only
-            self.lecturesArray = [ERODatabaseAccess getLecturesOnlyWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
-            break;
-            
-        }
-            
-        case 2: {
-            //display seminars only
-            self.lecturesArray = [ERODatabaseAccess getSeminarsOnlyWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
-            break;
-        }
-    }
-    
-    [self.tableView reloadData];
-}
 @end

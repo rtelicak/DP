@@ -19,7 +19,4 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addFavouriteButton;
 - (IBAction)addFavouriteButtonPressed:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedUiPicker;
-- (IBAction)segmentedButtonPressed:(id)sender;
-
 @end
