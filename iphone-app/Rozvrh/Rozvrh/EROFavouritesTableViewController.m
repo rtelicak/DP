@@ -30,6 +30,8 @@
 {
     [super viewDidLoad];
     self.searchCriterionArray = [EROUtility getFavouritesSelections];
+//    self.title = @"Obľúbené rozvrhy";
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -66,7 +68,7 @@
     
     // Configure the cell...
     EROScheduleSearchCriterion *c = [self.searchCriterionArray objectAtIndex:indexPath.row];
-    cell.textLabel.text =  [NSString stringWithFormat:@"%@ > %@ > %@ > %@", c.facultyCode, c.year, c.departmentCode, c.groupNumber];
+    cell.textLabel.text =  [NSString stringWithFormat:@"%@  %@. ročník %@ %@. krúžok", c.facultyCode, c.year, c.departmentCode, c.groupNumber];
     
     return cell;
 }
@@ -98,6 +100,11 @@
     }   
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
+}
+
+
 
 /*
 // Override to support rearranging the table view.
@@ -115,6 +122,10 @@
 }
 */
 
+-(void)viewWillAppear:(BOOL)animated {
+    self.title = @"Obľúbené rozvrhy";
+}
+
 
 #pragma mark - Navigation
 
@@ -123,6 +134,11 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    // remove default "back" title
+    self.title = @"";
+
+    
     EROScheduleTableViewController *targetController = [segue destinationViewController];
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:sender];
     EROScheduleSearchCriterion *tappedSelectedCriterion = [self.searchCriterionArray objectAtIndex:selectedIndexPath.row];

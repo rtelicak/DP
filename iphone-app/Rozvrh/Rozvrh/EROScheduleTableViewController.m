@@ -49,8 +49,30 @@
     }
     
     // add title to navigtion bar
-    NSString *title = [[NSString alloc] initWithFormat:@"%@ %@. ročník %@ %@. krúžok ", self.scheduleArguments.facultyCode, self.scheduleArguments.year, self.scheduleArguments.departmentCode, self.scheduleArguments.groupNumber];
-    self.navigationItem.title = title;
+//    NSString *title = [[NSString alloc] initWithFormat:@"%@ %@. ročník %@ %@. krúžok ", self.scheduleArguments.facultyCode, self.scheduleArguments.year, self.scheduleArguments.departmentCode, self.scheduleArguments.groupNumber];
+//    self.navigationItem.title = title;
+    
+   
+
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor colorWithRed:44/255.0f green:62/255.0f blue:80/255.0f alpha:1.0f]; //2C3E50
+    label.text = [[NSString alloc] initWithFormat:@"%@ %@. ročník %@ %@. krúžok ", self.scheduleArguments.facultyCode, self.scheduleArguments.year, self.scheduleArguments.departmentCode, self.scheduleArguments.groupNumber];
+    
+//    label.text = @"aaaa bbb ccc dddd eeeeee ffff ggggg";
+
+    [label sizeToFit];
+    
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.navigationItem.titleView.bounds.size.width, 50)];
+    
+    [titleView addSubview:label];
+    [label setCenter:titleView.center];
+    
+
+    self.navigationItem.titleView = titleView;
+    
     
     //
     
@@ -74,11 +96,13 @@
 -(void) createSegmetedUiControl {
     self.wrapper = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
     
-    self.wrapper.backgroundColor = [UIColor whiteColor];
+    self.wrapper.backgroundColor = [UIColor colorWithRed:248/255.0f green:248/255.0f blue:248/255.0f alpha:0.97f];
+//    UIColor * color = [UIColor colorWithRed:241/255.0f green:245/255.0f blue:251/255.0f alpha:1.0f];
     
     self.segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"All", @"Compulsory", @"Optional", nil]];
     self.segmentedControl.frame = CGRectMake(35, 10, 250, 30);
     self.segmentedControl.selectedSegmentIndex = 0;
+    self.segmentedControl.tintColor = [UIColor colorWithRed:44/255.0f green:62/255.0f blue:80/255.0f alpha:1.0f]; //2C3E50
     [self.segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents: UIControlEventValueChanged];
     
     [self.wrapper addSubview:self.segmentedControl];
@@ -360,6 +384,8 @@
 
     NSLog(@"%ld", (long)selectedIndexPath.row);
     detailController.selectedLecture = [self.lecturesArray objectAtIndex:selectedIndexPath.row];
+    
+    self.title = @"";
 }
 
 

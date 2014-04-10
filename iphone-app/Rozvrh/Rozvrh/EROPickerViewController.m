@@ -45,7 +45,9 @@
     [super viewDidLoad];
     [self initializeView];
     [[self.submitPickerButton layer] setBorderWidth:1.0f];
-    [[self.submitPickerButton layer] setBorderColor:[UIColor greenColor].CGColor];
+//    [[self.submitPickerButton layer] setBorderColor:[UIColor greenColor].CGColor];
+    
+    
     // Do any additional setup after loading the view.
 //    [self.pickerView setBackgroundColor:[UIColor redColor]];
     
@@ -70,7 +72,7 @@
     faculties = [self duplicateCompontneSourceArray:faculties];
     
     EROFaculty *f = [[EROFaculty alloc] init];
-    f.kod = @"fakulta";
+    f.kod = @"...";
     [faculties insertObject:f atIndex:[faculties count] / 2];
     
     return faculties;
@@ -157,7 +159,7 @@
         // faculty component
         case 0: {
             self.selectedFaculty = [self.faculties objectAtIndex:row];
-            if ([self.selectedFaculty.kod isEqual:@"fakulta"]) {
+            if ([self.selectedFaculty.kod isEqual:@"..."]) {
                 return;
             }
             
@@ -210,6 +212,10 @@
     if (sender != self.submitPickerButton) {
         return;
     }
+    
+    self.title = @"";
+
+
     
     EROScheduleTableViewController *targetController = [segue destinationViewController];
     EROScheduleSearchCriterion *scheduleSearchCriterion = [[EROScheduleSearchCriterion alloc] init];
