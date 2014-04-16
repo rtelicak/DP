@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ieS-iJ-Zes">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ieS-iJ-Zes">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -52,7 +52,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ekA-6Y-1ld" kind="push" id="uik-cP-iru"/>
+                                    <segue destination="U8u-LO-Rbk" kind="push" id="b38-7R-bKJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fakulta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8P-sq-cxH">
@@ -86,47 +86,69 @@
             </objects>
             <point key="canvasLocation" x="2022" y="17"/>
         </scene>
-        <!--Schedule Table View Controller - Title sem-->
-        <scene sceneID="0e8-ug-8Pp">
+        <!--Subjects List-->
+        <scene sceneID="6dN-3V-z0t">
             <objects>
-                <tableViewController id="ekA-6Y-1ld" customClass="EROScheduleTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rzw-hJ-gFw">
+                <viewController id="U8u-LO-Rbk" customClass="EROSubjectsList" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rTD-PZ-COg"/>
+                        <viewControllerLayoutGuide type="bottom" id="xFh-qD-fTV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1HG-bl-mgK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="lectureCell" id="sb4-br-3nE">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sb4-br-3nE" id="bhp-iu-IQf">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <rect key="contentStretch" x="0.0" y="0.49999999999999994" width="1" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Er6-cK-evo">
+                                <rect key="frame" x="20" y="73" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Všetky"/>
+                                    <segment title="Povinné"/>
+                                    <segment title="Nepovinné"/>
+                                </segments>
                                 <connections>
-                                    <segue destination="cIe-Db-acG" kind="push" identifier="detailSegue" id="XXL-o0-lUr"/>
+                                    <action selector="segmentedControlValueChanged:" destination="U8u-LO-Rbk" eventType="valueChanged" id="yz3-pp-0eR"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ekA-6Y-1ld" id="m9G-cY-m9D"/>
-                            <outlet property="delegate" destination="ekA-6Y-1ld" id="Wi0-dr-kvM"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Title sem" id="UjA-cw-OSJ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zrP-xb-W03">
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Z29-qy-R3Y">
+                                <rect key="frame" x="0.0" y="109" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="DnE-qo-5R1">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DnE-qo-5R1" id="L6W-MW-ULc">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="U8u-LO-Rbk" id="iV4-L8-QS2"/>
+                                    <outlet property="delegate" destination="U8u-LO-Rbk" id="vgn-e5-ooN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ucz-7R-niH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bn7-U0-m5Z">
                             <connections>
-                                <action selector="addFavouriteButtonPressed:" destination="ekA-6Y-1ld" id="sBc-3X-BnQ"/>
+                                <action selector="addFavouriteButtonPressed:" destination="U8u-LO-Rbk" id="jl9-Ok-sua"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addFavouriteButton" destination="zrP-xb-W03" id="1Ay-aL-xwF"/>
+                        <outlet property="addFavouriteButton" destination="Bn7-U0-m5Z" id="gLo-Xr-W4D"/>
+                        <outlet property="segmentedControl" destination="Er6-cK-evo" id="B3m-pO-aLH"/>
+                        <outlet property="tableView" destination="Z29-qy-R3Y" id="DTe-5Y-Kcn"/>
+                        <segue destination="cIe-Db-acG" kind="push" identifier="detailSegue" id="AK3-yl-6RF"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dh6-sr-djk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5K3-ZB-LVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2493" y="17"/>
+            <point key="canvasLocation" x="3083" y="17"/>
         </scene>
         <!--Lecture Detail View Controller-->
         <scene sceneID="gEd-zN-CCW">
@@ -255,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zc2-Fk-VDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3107" y="17"/>
+            <point key="canvasLocation" x="4159" y="17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D6G-Wk-N6x">
@@ -295,7 +317,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ekA-6Y-1ld" kind="push" id="qhM-X3-W0L"/>
+                                    <segue destination="U8u-LO-Rbk" kind="push" id="w8C-Ba-ltU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -352,6 +374,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="uik-cP-iru"/>
+        <segue reference="b38-7R-bKJ"/>
     </inferredMetricsTieBreakers>
 </document>

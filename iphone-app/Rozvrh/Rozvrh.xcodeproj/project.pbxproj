@@ -31,9 +31,9 @@
 		A41B1E6C18E04F7500DF8981 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6518E04F7500DF8981 /* FMDatabaseQueue.m */; };
 		A41B1E6D18E04F7500DF8981 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6818E04F7500DF8981 /* FMResultSet.m */; };
 		A41B1E7018E05EF800DF8981 /* ERODatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6F18E05EF800DF8981 /* ERODatabaseAccess.m */; };
+		A4A24E9318FDEFA400282B54 /* EROSubjectsList.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A24E9218FDEFA400282B54 /* EROSubjectsList.m */; };
 		A4A43A9318E328FD0063F02F /* EROPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A43A9218E328FD0063F02F /* EROPickerViewController.m */; };
 		A4A43A9618E4C2880063F02F /* ERODepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A43A9518E4C2880063F02F /* ERODepartment.m */; };
-		A4A8895318E88EFE00D5956C /* EROScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A8895218E88EFE00D5956C /* EROScheduleTableViewController.m */; };
 		A4A8895618E9762A00D5956C /* EROLectureDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A8895518E9762A00D5956C /* EROLectureDetailViewController.m */; };
 		A4A8895818E9BD6F00D5956C /* favouritesList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4A8895718E9BD6F00D5956C /* favouritesList.plist */; };
 		A4A8895B18E9BE3D00D5956C /* EROFavouritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A8895A18E9BE3D00D5956C /* EROFavouritesTableViewController.m */; };
@@ -95,12 +95,12 @@
 		A41B1E6818E04F7500DF8981 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		A41B1E6E18E05EF800DF8981 /* ERODatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERODatabaseAccess.h; sourceTree = "<group>"; };
 		A41B1E6F18E05EF800DF8981 /* ERODatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERODatabaseAccess.m; sourceTree = "<group>"; };
+		A4A24E9118FDEFA400282B54 /* EROSubjectsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROSubjectsList.h; sourceTree = "<group>"; };
+		A4A24E9218FDEFA400282B54 /* EROSubjectsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROSubjectsList.m; sourceTree = "<group>"; };
 		A4A43A9118E328FD0063F02F /* EROPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROPickerViewController.h; sourceTree = "<group>"; };
 		A4A43A9218E328FD0063F02F /* EROPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROPickerViewController.m; sourceTree = "<group>"; };
 		A4A43A9418E4C2880063F02F /* ERODepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERODepartment.h; sourceTree = "<group>"; };
 		A4A43A9518E4C2880063F02F /* ERODepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERODepartment.m; sourceTree = "<group>"; };
-		A4A8895118E88EFE00D5956C /* EROScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROScheduleTableViewController.h; sourceTree = "<group>"; };
-		A4A8895218E88EFE00D5956C /* EROScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROScheduleTableViewController.m; sourceTree = "<group>"; };
 		A4A8895418E9762A00D5956C /* EROLectureDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROLectureDetailViewController.h; sourceTree = "<group>"; };
 		A4A8895518E9762A00D5956C /* EROLectureDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROLectureDetailViewController.m; sourceTree = "<group>"; };
 		A4A8895718E9BD6F00D5956C /* favouritesList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = favouritesList.plist; sourceTree = "<group>"; };
@@ -240,10 +240,10 @@
 		A41B1E3F18E01CFB00DF8981 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A4A24E9118FDEFA400282B54 /* EROSubjectsList.h */,
+				A4A24E9218FDEFA400282B54 /* EROSubjectsList.m */,
 				A4A8895418E9762A00D5956C /* EROLectureDetailViewController.h */,
 				A4A8895518E9762A00D5956C /* EROLectureDetailViewController.m */,
-				A4A8895118E88EFE00D5956C /* EROScheduleTableViewController.h */,
-				A4A8895218E88EFE00D5956C /* EROScheduleTableViewController.m */,
 				A4A43A9118E328FD0063F02F /* EROPickerViewController.h */,
 				A4A43A9218E328FD0063F02F /* EROPickerViewController.m */,
 				A4A8895918E9BE3D00D5956C /* EROFavouritesTableViewController.h */,
@@ -397,9 +397,9 @@
 				A41B1E4F18E024FB00DF8981 /* EROFaculty.m in Sources */,
 				A41B1E7018E05EF800DF8981 /* ERODatabaseAccess.m in Sources */,
 				A4A43A9318E328FD0063F02F /* EROPickerViewController.m in Sources */,
-				A4A8895318E88EFE00D5956C /* EROScheduleTableViewController.m in Sources */,
 				A4A8895B18E9BE3D00D5956C /* EROFavouritesTableViewController.m in Sources */,
 				A41B1E4B18E0229600DF8981 /* EROUtility.m in Sources */,
+				A4A24E9318FDEFA400282B54 /* EROSubjectsList.m in Sources */,
 				A41B1E6D18E04F7500DF8981 /* FMResultSet.m in Sources */,
 				A4A43A9618E4C2880063F02F /* ERODepartment.m in Sources */,
 				A41B1E4818E021A800DF8981 /* EROWebService.m in Sources */,

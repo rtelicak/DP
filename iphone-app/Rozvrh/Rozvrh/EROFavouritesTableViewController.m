@@ -8,7 +8,7 @@
 
 #import "EROFavouritesTableViewController.h"
 #import "EROScheduleSearchCriterion.h"
-#import "EROScheduleTableViewController.h"
+#import "EROSubjectsList.h"
 #import "ERODatabaseAccess.h"
 
 @interface EROFavouritesTableViewController ()
@@ -139,7 +139,7 @@
     self.title = @"";
 
     
-    EROScheduleTableViewController *targetController = [segue destinationViewController];
+    EROSubjectsList *targetController = [segue destinationViewController];
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:sender];
     EROScheduleSearchCriterion *tappedSelectedCriterion = [self.searchCriterionArray objectAtIndex:selectedIndexPath.row];
     targetController.scheduleArguments = tappedSelectedCriterion;

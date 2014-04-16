@@ -9,7 +9,7 @@
 #import "EROPickerViewController.h"
 #import "EROUtility.h"
 #import "EROFaculty.h"
-#import "EROScheduleTableViewController.h"
+#import "EROSubjectsList.h"
 #import "EROScheduleSearchCriterion.h"
 
 #define duplicateConstant 30
@@ -217,7 +217,7 @@
 
 
     
-    EROScheduleTableViewController *targetController = [segue destinationViewController];
+    EROSubjectsList *targetController = [segue destinationViewController];
     EROScheduleSearchCriterion *scheduleSearchCriterion = [[EROScheduleSearchCriterion alloc] init];
     
     scheduleSearchCriterion.facultyCode = self.selectedFaculty.kod;
