@@ -33,7 +33,6 @@
 		A41B1E7018E05EF800DF8981 /* ERODatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6F18E05EF800DF8981 /* ERODatabaseAccess.m */; };
 		A4A24E9318FDEFA400282B54 /* EROSubjectsList.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A24E9218FDEFA400282B54 /* EROSubjectsList.m */; };
 		A4A43A9318E328FD0063F02F /* EROPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A43A9218E328FD0063F02F /* EROPickerViewController.m */; };
-		A4A43A9618E4C2880063F02F /* ERODepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A43A9518E4C2880063F02F /* ERODepartment.m */; };
 		A4A8895618E9762A00D5956C /* EROLectureDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A8895518E9762A00D5956C /* EROLectureDetailViewController.m */; };
 		A4A8895818E9BD6F00D5956C /* favouritesList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4A8895718E9BD6F00D5956C /* favouritesList.plist */; };
 		A4A8895B18E9BE3D00D5956C /* EROFavouritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A8895A18E9BE3D00D5956C /* EROFavouritesTableViewController.m */; };
@@ -99,8 +98,6 @@
 		A4A24E9218FDEFA400282B54 /* EROSubjectsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROSubjectsList.m; sourceTree = "<group>"; };
 		A4A43A9118E328FD0063F02F /* EROPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROPickerViewController.h; sourceTree = "<group>"; };
 		A4A43A9218E328FD0063F02F /* EROPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROPickerViewController.m; sourceTree = "<group>"; };
-		A4A43A9418E4C2880063F02F /* ERODepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERODepartment.h; sourceTree = "<group>"; };
-		A4A43A9518E4C2880063F02F /* ERODepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERODepartment.m; sourceTree = "<group>"; };
 		A4A8895418E9762A00D5956C /* EROLectureDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROLectureDetailViewController.h; sourceTree = "<group>"; };
 		A4A8895518E9762A00D5956C /* EROLectureDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROLectureDetailViewController.m; sourceTree = "<group>"; };
 		A4A8895718E9BD6F00D5956C /* favouritesList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = favouritesList.plist; sourceTree = "<group>"; };
@@ -255,8 +252,6 @@
 		A41B1E4C18E024EA00DF8981 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A4A43A9418E4C2880063F02F /* ERODepartment.h */,
-				A4A43A9518E4C2880063F02F /* ERODepartment.m */,
 				A41B1E4D18E024FB00DF8981 /* EROFaculty.h */,
 				A41B1E4E18E024FB00DF8981 /* EROFaculty.m */,
 				A4A8895C18E9F92A00D5956C /* EROScheduleSearchCriterion.h */,
@@ -401,7 +396,6 @@
 				A41B1E4B18E0229600DF8981 /* EROUtility.m in Sources */,
 				A4A24E9318FDEFA400282B54 /* EROSubjectsList.m in Sources */,
 				A41B1E6D18E04F7500DF8981 /* FMResultSet.m in Sources */,
-				A4A43A9618E4C2880063F02F /* ERODepartment.m in Sources */,
 				A41B1E4818E021A800DF8981 /* EROWebService.m in Sources */,
 				A4A8895E18E9F92A00D5956C /* EROScheduleSearchCriterion.m in Sources */,
 				A41B1E6A18E04F7500DF8981 /* FMDatabaseAdditions.m in Sources */,

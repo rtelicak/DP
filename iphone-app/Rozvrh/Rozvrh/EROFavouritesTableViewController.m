@@ -40,6 +40,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    self.searchCriterionArray = [EROUtility getFavouritesSelections];
+    [self.tableView reloadData];
+}
 
 - (void)didReceiveMemoryWarning
 {

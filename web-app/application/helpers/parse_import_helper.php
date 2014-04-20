@@ -4,7 +4,8 @@
 * Base parser class reads input file via get_file_content().
 * If no file is provided file stored in /miscellaneous/rozvrh.par is parsed.
 * 
-* 
+* time spent ~40 hours
+* i dare you to refactor it
 * 
 * Parsing process logs are stored in /application/logs/log-YYYY-MM-DD
 */
@@ -212,6 +213,7 @@ class Parser {
 		$ci =& get_instance();
 
 		log_message('debug', 'Emptying tables ...');
+		$ci->db->empty_table('users');
 		$ci->db->empty_table('den');
 		$ci->db->empty_table('hodina');
 		$ci->db->empty_table('miestnost');
@@ -225,6 +227,7 @@ class Parser {
 		log_message('debug', 'Done.');
 
 		// reset AUTO_INCREMENT
+		$q = $ci->db->query("ALTER TABLE users AUTO_INCREMENT = 1");
 		$q = $ci->db->query("ALTER TABLE den AUTO_INCREMENT = 1");
 		$q = $ci->db->query("ALTER TABLE hodina AUTO_INCREMENT = 1");
 		$q = $ci->db->query("ALTER TABLE miestnost AUTO_INCREMENT = 1");
@@ -243,13 +246,14 @@ class Parser {
 		$dummy_teacher = array(
 			"id_katedra" => 1,
 			"kod" => 'dummy_teacher',
-			"priezvisko" => 'lorem',
-			"meno" => 'ipsum',
+			"priezvisko" => 'Ucitel',
+			"meno" => 'Neznamy',
 			"titul" => null,
 			"titul_za" => null
 			);
 
 		self::insert_teacher($dummy_teacher);
+		self::insert_default_users();
 
 		for ($i=0; $i < count($teachers); $i++) {
 			if (preg_match("/([a-zA-Z]+)_([a-zA-Z]*)\s([a-zA-Z]+)\s([a-zA-Z]+)\s:\s([A-Z])/", $teachers[$i], $teachers_matches)) {
@@ -260,16 +264,31 @@ class Parser {
 				// [4] => Mgr
 				// [5] => U
 
+
 				// GET katedra_id
 				$ci =& get_instance();
 				$institute_code = $teachers_matches[3];
 
 				$q = $ci->db->query("SELECT id_katedra from katedra WHERE kod = '$institute_code'");
-				$result = $q->row();
+				$institute = $q->row();
+
+				$user = array(
+					"meno" => $teachers_matches[2],
+					"priezvisko" => $teachers_matches[1],
+					"username" => $teachers_matches[1]."_".$teachers_matches[2],
+					"password" => "e10adc3949ba59abbe56e057f20f883e", //123456
+					"id_katedra" => $institute->id_katedra,
+					"role_user" => 1,
+					"role_admin" => 0,
+					"role_manager" => 0,
+					"blocked" => 0
+					);
+
+				self::insert_user($user);
 
 				// teacher table structure: id, id_katedra, kod, priezvisko, meno, titul, titul_za
 				$teacher = array(
-					"id_katedra" => $result->id_katedra,
+					"id_katedra" => $institute->id_katedra,
 					"kod" => $teachers_matches[1]."_".$teachers_matches[2],
 					"priezvisko" => $teachers_matches[1],
 					"meno" => $teachers_matches[2],
@@ -477,7 +496,7 @@ class Parser {
 	private function insert_days() {
 		log_message('debug', 'Parsing DAYS ...');
 		$ci =& get_instance();
-		$days = array("Pondelok", "Utorok", "Streda", "Stvrtok", "Piatok");
+		$days = array("Pondelok", "Utorok", "Streda", "Štvrtok", "Piatok");
 
 		for ($i=0; $i < 5; $i++) {
 			$day = array(
@@ -494,6 +513,7 @@ class Parser {
 		// d($subjects); exit;
 		// brace yourself magic incoming
 		for ($i=0; $i < count($subjects); $i++) {
+			// d("--------------------------------");
 			// d($subjects[$i]);
 
 			if (preg_match("/([1-5])_([A-Z]+)_?([A-Za-z0-9]*)_?[A-Z]*\s([0-9\/]+):\s([a-zA-Z]+):\s([A-Z]?)\s[0-9]*\s?([A-Z])\s\|\s([a-zA-Z_\/0-9\-]+)\s([a-zA-Z0-9\/_]+)\s([a-zA-Z_]+)\s([0-9\/]+)\s([0-9]+)\s;([0-9]+)/", $subjects[$i], $subjects_matches)){
@@ -527,6 +547,10 @@ class Parser {
 				}
 				// ([1-5])_([A-Z]+)_?([A-Za-z0-9]*)_?([A-Z]*)\s([0-9\/]+):\s([a-zA-Z]+):\s([A-Z]?)\s[0-9]*\s?([A-Z])\s\|\s([a-zA-Z_\/0-9\-]+)\s([a-zA-Z0-9\/_]+)\s([a-zA-Z_]+)\s([0-9\/]+)\s([0-9]+)\s;([0-9]+)
 
+				// check if insert lectures for non mandatory subjects or insert separately
+				preg_match("/([1-5])_([A-Z]+)_?([A-Za-z0-9]*)_?[A-Z]*\s([0-9\/]+):\s([a-zA-Z]+):\s([A-Z]?)\s([0-9]*)\s?([A-Z])\s\|\s([a-zA-Z_\/0-9\-]+)\s([a-zA-Z0-9\/_]+)\s([a-zA-Z_]+)\s([0-9\/]+)\s([0-9]+)\s;([0-9]+)/", $subjects[$i], $notMandatoryNumberCheck);
+				// $notMandatoryNumberCheck = strlen($notMandatoryNumberCheck[7]) ? 1: 0;
+
 				$prednaska = $prednaska_matches[1] > 0 ? 1 : 0;
 
 				// Predmet table structure: id, kod, nazov, vymera, prednaska, semester
@@ -536,13 +560,15 @@ class Parser {
 					"vymera" => $subjects_matches[11],
 					"prednaska" => $prednaska,
 					"skratka" => $subjects_matches[9],
-					"povinny" => $subjects_matches[6] == 'P' ? 1 : 0,
+					"povinny" => $subjects_matches[6] == 'V' ? 0 : 1,
 						// TODO: what to put here ?
 					"semester" => 0
 					);
 
 
 				$subject_id = self::insert_subject($subject);
+
+				// echo "subject_id: "; echo $subject_id;
 
 				$i++;
 				$lecture_regex = "/([\$|\&][1|2])\s([a-zA-z0-9_]+)\s(\d)\s(\d)\s([\d]+)\s?([a-zA-Z_0]*)\s?([a-zA-Z_0]*)/";
@@ -554,6 +580,8 @@ class Parser {
 					$i++;
 					$lec_pos = $i+1;
 					$lectures_inserted = 1;
+
+					// d($group_matches);
 
 					preg_match($lecture_regex, $subjects[$lec_pos], $lec_matches);
 					$lec = self::build_lecture($subjects_matches, $lec_matches, $subject_id);
@@ -589,6 +617,7 @@ class Parser {
 
 				}
 
+
 				$i++; // ignore second row (e.g.: ~ 654 0)
 
 				while (count($subjects) > $i && preg_match($lecture_regex, $subjects[$i], $lecture_matches)) {
@@ -604,65 +633,124 @@ class Parser {
 					$lecture = self::build_lecture($subjects_matches, $lecture_matches, $subject_id);
 
 					// if its a lecture add lecture for every group and wasn't previously inserted
-					if (!$lectures_inserted && preg_match("/[$]/", $lecture_matches[1])) {
+					if (!$lectures_inserted && preg_match("/[$](\d)/", $lecture_matches[1], $lecture_count)) {
 						$lecture['prednaska'] = 1;
 
-						// if no department provided
-						if (!strlen($subjects_matches[3])) {
-							// get all departments in such faculty/year
-							$ci =& get_instance();
-							$q = $ci->db->query("SELECT odbor.kod FROM odbor
-								LEFT JOIN fakulta ON odbor.id_fakulta = fakulta.id_fakulta
-								WHERE fakulta.kod = '$subjects_matches[2]' AND odbor.rocnik = '$subjects_matches[1]'");
+						$lecture_count = $lecture_count[1];
+						// it there is more than 1 lecture to insert e.g. $2 D111 1 5 0 Holub_Dusan
+						for ($c=0; $c < $lecture_count; $c++) { 
+							$lecture['id_hodina'] += $c;
+							// d($lecture);
 
-							foreach ($q->result() as $row) {
-								self::insert_lecture_for_each_group($subjects_matches[1], $row->kod, $lecture);
+							if (!strlen($subjects_matches[3])) {
+							// get all departments in such faculty/year
+								$ci =& get_instance();
+								$q = $ci->db->query("SELECT odbor.kod FROM odbor
+									LEFT JOIN fakulta ON odbor.id_fakulta = fakulta.id_fakulta
+									WHERE fakulta.kod = '$subjects_matches[2]' AND odbor.rocnik = '$subjects_matches[1]'");
+
+								foreach ($q->result() as $row) {
+									self::insert_lecture_for_each_group($subjects_matches[1], $row->kod, $lecture);
+								}
+
+							} else {
+							// @params: rocnik, department_code, lecture
+								self::insert_lecture_for_each_group($subjects_matches[1], $subjects_matches[3], $lecture);
+							}
+
+						}
+
+						// d($lecture_count);
+
+						//TODO: add multiple lectures
+
+						// if no department provided
+
+					} else if (preg_match("/\&/", $lecture_matches[1])){
+						 // it's an excersise
+						$lecture['prednaska'] = 0;
+
+						// $lecture_matches[7] is cviciaci
+						if (preg_match("/[a-zA-z_]+/", $lecture_matches[7])) {
+							$ci =& get_instance();
+							$q = $ci->db->query("SELECT id_ucitel from ucitel WHERE kod = '$lecture_matches[7]'");
+							// echo "SELECT id_ucitel from ucitel WHERE kod = '$lecture_matches[7]'";
+							$result = $q->row();
+							$lecture['id_ucitel'] = $result->id_ucitel;
+						}
+
+						// if its not required subject insert excercise for each group in each department
+						if ($subjects_matches[6] == 'V') {
+							// echo "som tu";
+							$ci =& get_instance();
+							$faculty_id =  self::get_faculty_id_by_code($subjects_matches[2]);
+
+							// if department exits
+							if (strlen($subjects_matches[3])) {
+								$q = $ci->db->query("SELECT id_kruzok FROM kruzok
+									LEFT JOIN odbor on kruzok.id_odbor = odbor.id_odbor
+									LEFT JOIN fakulta on odbor.id_fakulta = fakulta.id_fakulta
+									WHERE fakulta.id_fakulta = '$faculty_id' AND odbor.kod = '$subjects_matches[3]' AND odbor.rocnik = '$subjects_matches[1]'
+									");
+
+								// d($subjects[$i]);
+
+								$group_ids_array = [];
+								foreach ($q->result() as $row) {
+									$group_ids_array[] = $row->id_kruzok;
+								}
+
+								foreach ($group_ids_array as $g) {
+									$lecture['id_kruzok'] = $g;
+									self::insert_lecture($lecture);
+								}
+							} else {
+								$q = $ci->db->query("SELECT id_kruzok FROM kruzok
+									LEFT JOIN odbor on kruzok.id_odbor = odbor.id_odbor
+									LEFT JOIN fakulta on odbor.id_fakulta = fakulta.id_fakulta
+									WHERE fakulta.id_fakulta = '$faculty_id' AND odbor.rocnik = '$subjects_matches[1]'
+									");
+								// echo "som tu";
+
+								$group_ids_array = [];
+								foreach ($q->result() as $row) {
+									$group_ids_array[] = $row->id_kruzok;
+								}
+
+								foreach ($group_ids_array as $g) {
+									$lecture['id_kruzok'] = $g;
+									self::insert_lecture($lecture);
+								}
 							}
 							
+						} else if (!strlen($subjects_matches[3])){
+							// we dont have department and subject is required (compulsory)
+							$ci =& get_instance();
+							$faculty_id =  self::get_faculty_id_by_code($subjects_matches[2]);
+
+							$q = $ci->db->query("SELECT id_kruzok FROM kruzok
+								LEFT JOIN odbor on kruzok.id_odbor = odbor.id_odbor
+								LEFT JOIN fakulta on odbor.id_fakulta = fakulta.id_fakulta
+								WHERE fakulta.id_fakulta = '$faculty_id' AND odbor.rocnik = '$subjects_matches[1]'
+								");
+								// echo "som tu";
+
+							$group_ids_array = [];
+							foreach ($q->result() as $row) {
+								$group_ids_array[] = $row->id_kruzok;
+							}
+
+							// insert lecture for current group number
+							$lecture['id_kruzok'] = $group_ids_array[$lecture_matches[5] - 1];
+							self::insert_lecture($lecture);
+
+
 						} else {
-							// @params: rocnik, department_code, lecture
-							self::insert_lecture_for_each_group($subjects_matches[1], $subjects_matches[3], $lecture);
+							self::insert_lecture($lecture);
 						}
-
-					} else if (preg_match("/\&/", $lecture_matches[1])){ // it's an excersise
-					$lecture['prednaska'] = 0;
-
-					// $lecture_matches[7] is cviciaci
-					if (preg_match("/[a-zA-z_]+/", $lecture_matches[7])) {
-						$ci =& get_instance();
-						$q = $ci->db->query("SELECT id_ucitel from ucitel WHERE kod = '$lecture_matches[7]'");
-							// echo "SELECT id_ucitel from ucitel WHERE kod = '$lecture_matches[7]'";
-						$result = $q->row();
-						$lecture['id_ucitel'] = $result->id_ucitel;
 					}
 
-					// if its not required subject insert excercise for each group in each department
-					if ($subject['povinny'] == null) {
-						$ci =& get_instance();
-						$faculty_id =  self::get_faculty_id_by_code($subjects_matches[2]);
-
-						$q = $ci->db->query("SELECT id_kruzok FROM kruzok
-							LEFT JOIN odbor on kruzok.id_odbor = odbor.id_odbor
-							LEFT JOIN fakulta on odbor.id_fakulta = fakulta.id_fakulta
-							WHERE fakulta.id_fakulta = '$faculty_id' AND odbor.kod = '$subjects_matches[3]' AND odbor.rocnik = '$subjects_matches[1]'
-							");
-
-						///////////////
-						$group_ids_array = [];
-						foreach ($q->result() as $row) {
-							$group_ids_array[] = $row->id_kruzok;
-						}
-
-						foreach ($group_ids_array as $g) {
-							$lec['id_kruzok'] = $g;
-							self::insert_lecture($lec);
-						}
-					} else {
-						self::insert_lecture($lecture);
-					}
-				}
-
-				$i++;
+					$i++;
 				} // end of inserting rows to VYUKA table
 				$i--;
 			} // end of inserting rows to PREDMET table
@@ -674,8 +762,10 @@ class Parser {
 	/////////////////////////////
 
 	private function insert_lecture($lecture) {
+		// d($lecture);
 		$ci =& get_instance();
 		$ci->db->insert('vyuka', $lecture);
+		// d($ci->db->insert_id());
 	}
 
 	private function insert_subject($subject) {
@@ -687,6 +777,24 @@ class Parser {
 	private function insert_teacher($teacher) {
 		$ci =& get_instance();
 		$ci->db->insert('ucitel', $teacher);
+	}
+
+	private function insert_user($user) {
+		$ci =& get_instance();
+		$ci->db->insert('users', $user);
+	}
+
+	private function insert_default_users() {
+		$admin = array(
+			"username" => "admin",
+			"password" => "21232f297a57a5a743894a0e4a801fc3",
+			"role_user" => 1,
+			"role_manager" => 1,
+			"role_admin" => 1,
+			"blocked" => 0
+			);
+
+		self::insert_user($admin);
 	}
 
 	////////////////////
@@ -781,6 +889,8 @@ class Parser {
 		// d($groups_to_insert);
 		// exit;
 		// d("---------------");
+
+		// d($groups_to_insert);
 
 		foreach ($groups_to_insert as $g) {
 			$lec['id_kruzok'] = $g;

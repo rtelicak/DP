@@ -34,12 +34,6 @@
     return self;
 }
 
-//-(CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
-//    CGFloat n = 20.0f;
-//    
-//    return n;
-//}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -82,7 +76,7 @@
     
     switch (component) {
         case 0:
-            return self.faculties.count;
+            return [self.faculties count];
         case 1:
             return self.years.count;
         case 2:
@@ -125,7 +119,6 @@
         [tmp addObjectsFromArray:sourceArray];
     }
 
-    
     return tmp;
 }
 
@@ -214,8 +207,6 @@
     }
     
     self.title = @"";
-
-
     
     EROSubjectsList *targetController = [segue destinationViewController];
     EROScheduleSearchCriterion *scheduleSearchCriterion = [[EROScheduleSearchCriterion alloc] init];

@@ -16,7 +16,5 @@
 @property (strong, nonatomic) NSString *databaseName;
 @property (strong, nonatomic) NSString *databasePath;
 @property (strong, nonatomic) NSURL *webServiceBasePath;
-@property (strong, nonatomic) NSString *propertyListName;
-@property (strong, nonatomic) NSString *propertyListPath;
 
 @end

@@ -27,13 +27,6 @@
     return databasePath;
 }
 
-+ (NSString *) getPropertyListPath {
-    NSString *propertyListPath = [(EROAppDelegate *)[[UIApplication sharedApplication] delegate] propertyListPath];
-    
-    return propertyListPath;
-    
-}
-
 + (void) fillDatabase {
     NSLog(@"importing initialized ...");
     [self populateFaculties];
@@ -233,21 +226,6 @@
     }];
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @end
