@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40A5DE0190790E600817E54 /* EROInitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A40A5DDF190790E600817E54 /* EROInitVC.m */; };
 		A41B1E0A18E01CE800DF8981 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B1E0918E01CE800DF8981 /* Foundation.framework */; };
 		A41B1E0C18E01CE800DF8981 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B1E0B18E01CE800DF8981 /* CoreGraphics.framework */; };
 		A41B1E0E18E01CE800DF8981 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B1E0D18E01CE800DF8981 /* UIKit.framework */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A40A5DDE190790E600817E54 /* EROInitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROInitVC.h; sourceTree = "<group>"; };
+		A40A5DDF190790E600817E54 /* EROInitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROInitVC.m; sourceTree = "<group>"; };
 		A41B1E0618E01CE800DF8981 /* Rozvrh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rozvrh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41B1E0918E01CE800DF8981 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A41B1E0B18E01CE800DF8981 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -245,6 +248,8 @@
 				A4A43A9218E328FD0063F02F /* EROPickerViewController.m */,
 				A4A8895918E9BE3D00D5956C /* EROFavouritesTableViewController.h */,
 				A4A8895A18E9BE3D00D5956C /* EROFavouritesTableViewController.m */,
+				A40A5DDE190790E600817E54 /* EROInitVC.h */,
+				A40A5DDF190790E600817E54 /* EROInitVC.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 				A41B1E1A18E01CE800DF8981 /* EROAppDelegate.m in Sources */,
 				A41B1E6918E04F7500DF8981 /* FMDatabase.m in Sources */,
 				A41B1E6B18E04F7500DF8981 /* FMDatabasePool.m in Sources */,
+				A40A5DE0190790E600817E54 /* EROInitVC.m in Sources */,
 				A41B1E6C18E04F7500DF8981 /* FMDatabaseQueue.m in Sources */,
 				A41B1E4F18E024FB00DF8981 /* EROFaculty.m in Sources */,
 				A41B1E7018E05EF800DF8981 /* ERODatabaseAccess.m in Sources */,

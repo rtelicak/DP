@@ -8,6 +8,7 @@
 
 #import "ERODatabaseAccess.h"
 #import "EROFaculty.h"
+#import "EROUtility.h"
 
 @implementation ERODatabaseAccess
 
@@ -26,6 +27,7 @@
     
     [db close];
     NSLog(@"faculties done");
+    [EROUtility updateLoadingMessageWithString:@"faculties done"];
 }
 
 // LESSON
@@ -43,6 +45,7 @@
     
     [db close];
     NSLog(@"lessons done");
+    [EROUtility updateLoadingMessageWithString:@"lessons done"];
 }
 
 // INSTITUTE
@@ -128,6 +131,7 @@
     
     [db close];
     NSLog(@"subjects done");
+    [EROUtility updateLoadingMessageWithString:@"subjects done"];
 }
 
 // TEACHERS
@@ -161,8 +165,13 @@
     }
     
     [db close];
+    
+    [EROUtility updateLoadingMessageWithString:@"lectures done"];
+    [EROUtility updateLoadingMessageWithString:@"importing to db done"];
+    [EROUtility finishLoadingView];
     NSLog(@"lectures done");
     NSLog(@"importing to db done.");
+    
 }
 
 +(void)insertDaysFromArray:(NSMutableArray *)daysArray {
@@ -181,7 +190,7 @@
 }
 
 ///////////////////////////
-// GET THINGS FROM DATABASE
+// GET DATA FROM DATABASE
 ///////////////////////////
 
 + (NSMutableArray *)getFacultiesFromDatabase {

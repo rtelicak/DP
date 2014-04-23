@@ -10,6 +10,7 @@
 #import "EROWebService.h"
 #import "ERODatabaseAccess.h"
 #import "EROScheduleSearchCriterion.h"
+#import "EROInitVC.h"
 
 @implementation EROUtility
 
@@ -27,18 +28,44 @@
     return databasePath;
 }
 
++ (NSString*)getDatabaseName {
+    
+    NSString *databasePath = [(EROAppDelegate *)[[UIApplication sharedApplication] delegate] databaseName];
+    
+    return databasePath;
+}
+
++ (void) updateLoadingMessageWithString: (NSString *) loadingMessage {
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    EROInitVC *initController = [mystoryboard instantiateViewControllerWithIdentifier:@"storyboardInitController"];
+    
+    UILabel *lab = [initController getMessageLabel];
+    lab.text = loadingMessage;
+}
+
++ (void) finishLoadingView {
+    UIStoryboard *mystoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    EROInitVC *initController = [mystoryboard instantiateViewControllerWithIdentifier:@"storyboardInitController"];
+    
+    [initController finishLoadingView];
+}
+
 + (void) fillDatabase {
     NSLog(@"importing initialized ...");
-    [self populateFaculties];
+    [self updateLoadingMessageWithString:@"importing initialized ..."];
+    
+    // perform segue on init controller
+    [self finishLoadingView];
+//    [self populateFaculties];
     [self populateLessons];
-    [self populateInstitutes];
-    [self populateGroups];
-    [self populateRooms];
-    [self populateDepartments];
-    [self populateSubjects];
-    [self populateTeachers];
-    [self populateLectures];
-    [self populateDays];
+//    [self populateInstitutes];
+//    [self populateGroups];
+//    [self populateRooms];
+//    [self populateDepartments];
+//    [self populateSubjects];
+//    [self populateTeachers];
+//    [self populateLectures];
+//    [self populateDays];
 }
 
 + (NSMutableArray *)getFavouritesSelections {

@@ -35,28 +35,8 @@
     NSArray *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDir = documentsPath[0];
     self.databasePath = [documentsDir stringByAppendingPathComponent:self.databaseName];
-    
-    [self createAndCheckDatabase];
 
     return YES;
-}
-
--(void) createAndCheckDatabase {
-    BOOL databaseAlreadyExits;
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    databaseAlreadyExits = [fileManager fileExistsAtPath:self.databasePath];
-    
-    if (databaseAlreadyExits) {
-        return;
-    }
-    
-    NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:self.databaseName];
-    [fileManager copyItemAtPath:databasePathFromApp toPath:self.databasePath error:nil];
-    
-    [EROUtility fillDatabase];
-    
-    NSLog(@"Database copied from bundle path");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
