@@ -37,6 +37,8 @@
         self.addFavouriteButton.enabled = NO;
     }
     
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
     // remove padding from table view
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
@@ -71,7 +73,6 @@
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor colorWithRed:44/255.0f green:62/255.0f blue:80/255.0f alpha:1.0f]; //2C3E50
     label.text = [[NSString alloc] initWithFormat:@"%@ %@. ročník %@ %@. krúžok ", self.scheduleArguments.facultyCode, self.scheduleArguments.year, self.scheduleArguments.departmentCode, self.scheduleArguments.groupNumber];
-    
     
     [label sizeToFit];
     

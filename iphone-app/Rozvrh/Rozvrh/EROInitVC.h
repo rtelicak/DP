@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface EROInitVC : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *loadingMessageLabel;
 
-- (void) finishLoadingView;
-- (UILabel *) getMessageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *loadingMessageLabel;
 
 @end

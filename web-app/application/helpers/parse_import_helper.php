@@ -10,7 +10,6 @@
 * Parsing process logs are stored in /application/logs/log-YYYY-MM-DD
 */
 class Parser {
-
 	// only this method should be called from outside
 	public static function parse($input_file = ''){
 		log_message('debug', '--------------------------------------');
@@ -46,6 +45,13 @@ class Parser {
 		// d($file_content); exit;
 		for ($i=0; $i < count($file_content); $i++) {
 			switch ($file_content[$i]) {
+
+				// read OBDOBIE
+				case strpos($file_content[$i], ".OBDOBIE") :
+				log_message('debug', 'Parsing OBDOBIE ...');
+				$i = self::handle_version($file_content, $i);
+				log_message('debug', 'Done.');
+				break;
 
 				// read HODINY
 				case strpos($file_content[$i], ".HODINY") :
@@ -101,6 +107,22 @@ class Parser {
 
 
 	// private section
+
+	// version
+	private function handle_version($file, $row) {
+		$row ++;
+
+		$version = array(
+			'verzia' => $file[$row]
+			);
+
+		// d($version);
+
+		$ci =& get_instance();
+		$ci->db->insert('verzia', $version);
+		// exit;
+		return $row;
+	}
 
 	// HODINY
 	private function handle_hours($file, $row) {
@@ -161,8 +183,8 @@ class Parser {
 
 		$result = self::populate_items_from_file($file, $row);
 		$parallel = $result['items'];
+		// d($parallel); exit;
 
-		// self::insert_faculties($parallel);
 		self::insert_parallels($parallel);
 
 		return $result['row'];
@@ -213,6 +235,7 @@ class Parser {
 		$ci =& get_instance();
 
 		log_message('debug', 'Emptying tables ...');
+		$ci->db->empty_table('verzia');
 		$ci->db->empty_table('users');
 		$ci->db->empty_table('den');
 		$ci->db->empty_table('hodina');
@@ -227,6 +250,7 @@ class Parser {
 		log_message('debug', 'Done.');
 
 		// reset AUTO_INCREMENT
+		$q = $ci->db->query("ALTER TABLE verzia AUTO_INCREMENT = 1");
 		$q = $ci->db->query("ALTER TABLE users AUTO_INCREMENT = 1");
 		$q = $ci->db->query("ALTER TABLE den AUTO_INCREMENT = 1");
 		$q = $ci->db->query("ALTER TABLE hodina AUTO_INCREMENT = 1");
@@ -398,15 +422,17 @@ class Parser {
 
 					// insert faculty to db
 					$faculty_id = self::insert_faculty($faculty_matches[1], $faculty_matches[2]);
-
-					while (count($parallels) > $i && preg_match("/[$]{2,3}\s([a-zA-Z_0-9\x{c0}-\x{ff}]+)\s([A-Za-z0-9]*)\s([0-9]*)\/?([0-9]*)-?([0-9]*)/", $parallels[$i], $department_matches)) {
+					// echo "som tu";
+					// d($parallels[$i]);exit;
+					while (count($parallels) > $i && preg_match("/[$]{2,3}\s([a-zA-Z_0-9\x{c0}-\x{ff}\P{Latin}]+)\s([A-Za-z0-9]*)\s([0-9]*)\/?([0-9]*)-?([0-9]*)/", $parallels[$i], $department_matches)) {
 						// [0] => $$ Financie_bankovnictvo_a_investovanie FBI 300/1-12
 						// [1] => Financie_bankovnictvo_a_investovanie - name
 						// [2] => FBI - code
 						// [3] => 300 - number of students
 						// [4] => 1 - number of first group
 						// [5] => 12 - number of last group
-
+						
+						// d($department_matches); exit;
 						// insert odbor to db
 						$departnemnt_id = self::insert_department($department_matches[1], $department_matches[2], $department_matches[3],$faculty_id, $year);
 
@@ -518,6 +544,7 @@ class Parser {
 
 			if (preg_match("/([1-5])_([A-Z]+)_?([A-Za-z0-9]*)_?[A-Z]*\s([0-9\/]+):\s([a-zA-Z]+):\s([A-Z]?)\s[0-9]*\s?([A-Z])\s\|\s([a-zA-Z_\/0-9\-]+)\s([a-zA-Z0-9\/_]+)\s([a-zA-Z_]+)\s([0-9\/]+)\s([0-9]+)\s;([0-9]+)/", $subjects[$i], $subjects_matches)){
 				// d($subjects[$i]);
+				
 				// [0] => 1_FMV_MEV 31001/2: KAI: P V | InformatikaA INF Carachova_Magdalena 1/1 150 ;57
 				// [1] => 1 - rocnik
 				// [2] => FMV - fakulta
@@ -824,6 +851,7 @@ class Parser {
 
 		// if such group doesn't exit, create it (workaround for buggy source file)
 		if (empty($result)) {
+			// echo "som tu";
 
 			// department name == group name
 			$group_name = self::get_department_name_by_code($department_code);

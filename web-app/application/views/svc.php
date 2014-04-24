@@ -1,5 +1,8 @@
 	<ul>Zoznam get servisov:
 		<li>	FAKULTA
+			<a target="_blank" href="./svc/getVersion">function getVersion()</a>
+		</li>
+		<li>	FAKULTA
 			<a target="_blank" href="./svc/getFaculty">function getFaculty()</a>
 		</li>
 		<li>HODINA

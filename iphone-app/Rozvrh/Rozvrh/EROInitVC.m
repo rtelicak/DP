@@ -14,7 +14,6 @@
 
 @end
 
-static NSTimer *timer;
 
 @implementation EROInitVC
 
@@ -30,21 +29,18 @@ static NSTimer *timer;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.loadingMessageLabel.text = @"asfg1";
-
+    
+    // data preparing done notification
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishedLoading:) name:@"finishedLoading" object:nil];
+    
+    // update loading data message label
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLoadingMessage:) name:@"updateLoadingMessage" object:nil];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
+    // TODO: fix me
+    // have to call this from this method, to prevent modal segue error
     [self createAndCheckDatabase];
-}
-
-- (void) finishLoadingView {
-    [self performSegueWithIdentifier:@"initSegue" sender:nil];
-}
-
-- (UILabel *) getMessageLabel {
-    self.loadingMessageLabel.text = @"asfg";
-    return self.loadingMessageLabel;
 }
 
 -(void) createAndCheckDatabase {
@@ -56,9 +52,10 @@ static NSTimer *timer;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     databaseAlreadyExits = [fileManager fileExistsAtPath:databasePath];
     
-    if (databaseAlreadyExits) {
+//    if (databaseAlreadyExits) {
+//        [self hideLoadingView];
 //        return;
-    }
+//    }
     
     NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:databaseName];
     [fileManager copyItemAtPath:databasePathFromApp toPath:databasePath error:nil];
@@ -68,10 +65,29 @@ static NSTimer *timer;
     NSLog(@"Database copied from bundle path");
 }
 
+// notification methods
+- (void) updateLoadingMessage: (NSNotification *) notification {
+    // update loading message info
+    self.loadingMessageLabel.text = [notification.userInfo objectForKey:@"message"];
+}
+
+- (void)finishedLoading:(NSNotification *)notification {
+    [self hideLoadingView];
+}
+
+- (void) hideLoadingView {
+    [self performSegueWithIdentifier:@"initSegue" sender:nil];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

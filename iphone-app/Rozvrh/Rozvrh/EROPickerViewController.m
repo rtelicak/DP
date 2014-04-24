@@ -206,8 +206,6 @@
         return;
     }
     
-    self.title = @"";
-    
     EROSubjectsList *targetController = [segue destinationViewController];
     EROScheduleSearchCriterion *scheduleSearchCriterion = [[EROScheduleSearchCriterion alloc] init];
     
@@ -223,6 +221,43 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
+
+
+- (IBAction)refreshButton:(id)sender {
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Aktualizácia"
+                                                    message:@"Chceš aktualizovať rozvrh? Na vykonanie tejto akcie je potrebné internetové pripojenie."
+                                                   delegate:self
+                                          cancelButtonTitle:@"Nie"
+                                          otherButtonTitles:@"Aktualizovať", nil];
+    [alert show];
+}
+
+
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 0) {
+        return;
+    }
+    
+    // check for latest version
+    NSLog(@"auktualizovat");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end

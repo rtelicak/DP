@@ -2,10 +2,10 @@
 .FAKULTA
 
 .FAKULTA
-Ekonomick·†univerzita, Dolnozemsk· 1b, 851 04 Bratislava
+Ekonomick√°¬†univerzita, Dolnozemsk√° 1b, 851 04 Bratislava
 
 .OBDOBIE
-Letn˝ semester 2013/2014
+Letn√Ω semester 2013/2014
 
 .ZADAVATEL
 Marta Bohunicka
@@ -995,7 +995,7 @@ Zubalova_Lubica KMO Ing : U
       $$$ Manazment_a_ekonom_znalectvo MEZ 16/1
   $ Fakulta_hospodarskej_informatiky FHI 
     $$ Manaz_rozhod_a_inf_technol MRIT 63/1-3
-    $$ Aktu·rstvo AKT 18/1
+    $$ Aktu√°rstvo AKT 18/1
     $$ Operacny_vykum_a_ekonometria OVE 20/1
     $$ Statisticke_metody_v_ekon SME 30/1-2
     $$ Uctovnictvo_a_auditorstvo UA 118/1-6
@@ -1034,7 +1034,7 @@ Zubalova_Lubica KMO Ing : U
       $$$ Manazment_a_ekonom_znalectvo MEZ 57/1-3
   $ Fakulta_hospodarskej_informatiky FHI 
     $$ Manaz_rozhod_a_inf_technol MRIT 89/1-5
-    $$ Aktu·rstvo AKT 28/1
+    $$ Aktu√°rstvo AKT 28/1
     $$ Operacny_vykum_a_ekonometria OVE 36/1-2
     $$ Statisticke_metody_v_ekon SME 25/1
     $$ Uctovnictvo_a_auditorstvo UA 191/1-7
@@ -1066,7 +1066,7 @@ M C1_10 E nemeckof studium 4/1-7
 M C1_10 E nemeckof studium 5/1-7
 M C1_10 E nemeckof studium 1/7
 M C1_10 E nemeckof studium 2/7
-M A4_05 E FMV cel˝_LS 3/1-3
+M A4_05 E FMV cel√Ω_LS 3/1-3
 M D101 E PhD_OF LS 5/1-5
 M D211 E KMR_Filo ls1314 1/4-7
 M D211 E KMR_Filo ls1314 2/4-7
@@ -1094,7 +1094,7 @@ M LAB4 E TOVP zop3 3/5
 M LAB4 E TOVP zop5 1/4
 M LAB4 E TOVP pocr7 4/4
 M LAB2 E TOV poc10 4/4
-M B1_05 E DaÚo 0104 2/5-7
+M B1_05 E Da√≤o 0104 2/5-7
 M A9_17 E FMV_AJ LS1314 2/4
 M A4_05 E FMV_AJ LS1314 5/4
 M 4C02 E KPED LS1314 1/2-5
@@ -1107,15 +1107,15 @@ M 5B01 E skalak ls1314 1/4
 M B209 E UTV_Elia ls1314 5/3
 M B208 E PhD_FMV ls1314 5/2-3
 M A7_15 E Stareck_ 1902 3/1
-M A7_15 E Hor·kov· ls1314 3/2
-M A6_05 E »iJ_1MEV ls1314 2/5
-M A4_07 E »iJ_1MEV ls1314 4/1
-M A4_06 E »iJ_2MEV ls1314 3/1
-M A4_06 E »iJ_2MEV ls1314 4/3
+M A7_15 E Hor√°kov√° ls1314 3/2
+M A6_05 E √àiJ_1MEV ls1314 2/5
+M A4_07 E √àiJ_1MEV ls1314 4/1
+M A4_06 E √àiJ_2MEV ls1314 3/1
+M A4_06 E √àiJ_2MEV ls1314 4/3
 M D116 E KSPS/NJ ls1314 2/3
 M B1_04 E 283a1104 KMA_Bili 5/4
 M B1_03 E 0904 KMA_Star 3/1
-M B1_04 E 0404 KMA_äolt 5/2
+M B1_04 E 0404 KMA_≈†olt 5/2
 M B1_07 E Prenos_2 ls1314 2/6
 M A4_06 E 2/1_FMV ls1314 5/1-5
 M A5_06 E 2/2_FMV ls1314 5/1-5
@@ -3193,7 +3193,7 @@ $1 D116 4 3 0 Fifekova_Elena
 &1 B103 1 6 2 0 
 &1 B104 1 5 3 0 
 
-3_NHF_FBI 18191: KPO: V 1 V | VP_éivotne_poist ZPOI Drugdova_Barbora 1/1 5 ;324
+3_NHF_FBI 18191: KPO: V 1 V | VP_≈Ωivotne_poist ZPOI Drugdova_Barbora 1/1 5 ;324
 ~ 709 0
 $1 D115 1 3 0 Drugdova_Barbora
 &1 B212 1 5 1 0 Ondruska_ 
@@ -3213,7 +3213,7 @@ $1 D116 4 6 0 Vongrej_Marian
 $1 B108 2 2 0 Malacka_Viera :F
 &1 D114 2 5 1 0 
 
-3_NHF_POI 18191: KPO: P V | PVP_éivotne_poist ZPOI Drugdova_Barbora 1/1 23 ;328
+3_NHF_POI 18191: KPO: P V | PVP_≈Ωivotne_poist ZPOI Drugdova_Barbora 1/1 23 ;328
 ~ 709 0
 $1 D115 1 3 0 Drugdova_Barbora
 &1 B212 1 4 1 0 Ondruska_
@@ -3276,7 +3276,7 @@ $1 D112 2 3 0
 &1 B1_08 2 4 1 0 
 &1 B1_08 2 5 2 0 
 
-3_NHF_LZSM 18191: KPO: V 1 V | VP_éivotne_poist ZPOI Drugdova_Barbora 1/1 7 ;339
+3_NHF_LZSM 18191: KPO: V 1 V | VP_≈Ωivotne_poist ZPOI Drugdova_Barbora 1/1 7 ;339
 ~ 709 0
 $1 D115 1 3 0 Drugdova_Barbora
 &1 B212 1 5 1 0 Ondruska_ 

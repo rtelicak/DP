@@ -15,6 +15,7 @@ class Svc extends CI_Controller {
 		
 		// LOAD VIEW TO USER
 		$this->load->view('svc');
+		header("Content-Type: text/html; charset=UTF-8", true); 
 	}
 
 	// FAKULTA
@@ -131,6 +132,19 @@ class Svc extends CI_Controller {
 	function getDay() {
 		$result = [];
 		$query = $this->db->get('den');
+
+		foreach ($query->result() as $row){
+			array_push($result, $row);
+		}
+
+		echo json_encode($result);
+	}
+
+	// VYUKA
+	function getVersion() {
+		header("Content-Type: text/html; charset=UTF-8", true); 
+		$result = [];
+		$query = $this->db->get('verzia');
 
 		foreach ($query->result() as $row){
 			array_push($result, $row);

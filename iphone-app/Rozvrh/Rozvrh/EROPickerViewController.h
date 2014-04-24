@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ERODatabaseAccess.h"
 
-@interface EROPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface EROPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet UIButton *submitPickerButton;
+- (IBAction)refreshButton:(id)sender;
 
 
 @property (strong, nonatomic) NSMutableArray *faculties;

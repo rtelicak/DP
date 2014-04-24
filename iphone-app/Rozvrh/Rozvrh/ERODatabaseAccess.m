@@ -15,6 +15,8 @@
 // FACULTY
 +(void)insertFacultiesFromArray:(NSMutableArray*)facultiesArray {
     
+    [self updateUploadingProgressMessage:@"Ukladám fakulty ..."];
+    
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
     [db open];
@@ -26,12 +28,14 @@
     }
     
     [db close];
+    
     NSLog(@"faculties done");
-    [EROUtility updateLoadingMessageWithString:@"faculties done"];
 }
 
 // LESSON
 +(void) insertLessonsFromArray:(NSMutableArray *)lessonsArray {
+    
+    [self updateUploadingProgressMessage:@"Ukladám čas vyučovania ..."];
     
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
@@ -45,11 +49,12 @@
     
     [db close];
     NSLog(@"lessons done");
-    [EROUtility updateLoadingMessageWithString:@"lessons done"];
 }
 
 // INSTITUTE
 +(void) insertInstitutesFromArray:(NSMutableArray *)institutesArray {
+    
+    [self updateUploadingProgressMessage:@"Ukladám katedry ..."];
     
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
@@ -68,6 +73,9 @@
 // GROUPS
 +(void)insertGroupsFromArray:(NSMutableArray*)groupsArray {
     
+
+    [self updateUploadingProgressMessage:@"Ukladám krúžky ..."];
+    
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
     [db open];
@@ -84,6 +92,8 @@
 
 // ROOMS
 +(void)insertRoomsFromArray:(NSMutableArray*)roomsArray {
+    
+    [self updateUploadingProgressMessage:@"Ukladám miestnosti ..."];
     
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
@@ -102,6 +112,9 @@
 // DEPARTMENT
 +(void)insertDepartmentsFromArray:(NSMutableArray*)departmentsArray {
     
+    [self updateUploadingProgressMessage:@"Ukladám odbory ..."];
+
+    
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
     [db open];
@@ -118,7 +131,9 @@
 
 // SUBJECTS
 +(void)insertSubjectsFromArray:(NSMutableArray*)subjectsArray {
- 
+    
+    [self updateUploadingProgressMessage:@"Ukladám predmety ..."];
+    
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
     [db open];
@@ -131,12 +146,13 @@
     
     [db close];
     NSLog(@"subjects done");
-    [EROUtility updateLoadingMessageWithString:@"subjects done"];
 }
 
 // TEACHERS
 +(void)insertTeachersFromArray:(NSMutableArray*)teachersArray {
     
+    [self updateUploadingProgressMessage:@"Ukladám učiteľov ..."];
+
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
     [db open];
@@ -153,7 +169,11 @@
 
 // LECTURES
 +(void)insertLecturesFromArray:(NSMutableArray *)lecturesArray {
-    NSLog(@"importing lectures ...");
+
+    [self updateUploadingProgressMessage:@"Ukladám výuku ..."];
+    
+    NSLog(@"zacinam ukladat lecutres");
+    
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
     [db open];
@@ -166,15 +186,17 @@
     
     [db close];
     
-    [EROUtility updateLoadingMessageWithString:@"lectures done"];
-    [EROUtility updateLoadingMessageWithString:@"importing to db done"];
-    [EROUtility finishLoadingView];
     NSLog(@"lectures done");
     NSLog(@"importing to db done.");
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"finishedLoading" object:self userInfo:nil];
     
 }
 
 +(void)insertDaysFromArray:(NSMutableArray *)daysArray {
+    
+    [self updateUploadingProgressMessage:@"Ukladám dni výučby ..."];
+    
     FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
     
     [db open];
@@ -280,7 +302,7 @@
     
     
     while ([result next]) {
-        [self buildLectureWithResult: result];
+//        [self buildLectureWithResult: result];
 
         NSDictionary *lecture = [self buildLectureWithResult:result];
         
@@ -361,6 +383,12 @@
                               @"timeTo": [result stringForColumn:@"cas_do"]
                               };
     return lecture;
+}
+
++ (void) updateUploadingProgressMessage:(NSString*) message {
+    NSDictionary *d = @{@"message": message};
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"updateLoadingMessage" object:self userInfo:d];
+
 }
 
 @end

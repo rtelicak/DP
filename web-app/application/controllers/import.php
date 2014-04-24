@@ -6,13 +6,16 @@ class Import extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('parse_import');
 		$this->load->helper(array('form', 'url'));
+		$this->load->helper('html');
 	}
 
 	function index(){
+
 		$this->load->view('import');
 	}
 
 	function upload(){
+		header("Content-Type: text/html; charset=UTF-8", true); 
 		if (!count($_FILES)) {
 			return;
 		}

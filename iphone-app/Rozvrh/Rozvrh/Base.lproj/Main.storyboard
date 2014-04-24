@@ -76,7 +76,13 @@
                             <constraint firstItem="PtZ-HQ-1Bw" firstAttribute="top" secondItem="RWa-S1-81d" secondAttribute="bottom" constant="20" id="ASl-kA-R0h"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Vyber rozvrh" id="hiw-Xk-DnC"/>
+                    <navigationItem key="navigationItem" title="Vyber rozvrh" id="hiw-Xk-DnC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="z8p-RO-fen">
+                            <connections>
+                                <action selector="refreshButton:" destination="zuB-Er-QBs" id="AbL-7z-Hoq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pickerView" destination="UqI-a9-BRp" id="4W8-pH-L0p"/>
                         <outlet property="submitPickerButton" destination="RWa-S1-81d" id="wMN-bk-Sxd"/>
@@ -148,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5K3-ZB-LVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3083" y="17"/>
+            <point key="canvasLocation" x="2587" y="389"/>
         </scene>
         <!--Lecture Detail View Controller-->
         <scene sceneID="gEd-zN-CCW">
@@ -277,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zc2-Fk-VDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4159" y="17"/>
+            <point key="canvasLocation" x="3043" y="389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D6G-Wk-N6x">
@@ -298,7 +304,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p11-6o-KL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="335"/>
+            <point key="canvasLocation" x="1562" y="17"/>
         </scene>
         <!--Favourites Table View Controller - Root View Controller-->
         <scene sceneID="v9d-25-g6F">
@@ -346,7 +352,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fN-oP-G24" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1488" y="738"/>
+            <point key="canvasLocation" x="1562" y="738"/>
         </scene>
         <!--InitVC-->
         <scene sceneID="wx5-rP-Or1">
@@ -367,7 +373,14 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXU-Up-Exa">
                                         <rect key="frame" x="50" y="273" width="221" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Načítavam dáta, potrvá to asi minútku..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFk-2H-Tqx">
+                                        <rect key="frame" x="20" y="244" width="292" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -378,12 +391,12 @@
                     </view>
                     <connections>
                         <outlet property="loadingMessageLabel" destination="sXU-Up-Exa" id="nCL-G3-NM0"/>
-                        <segue destination="zuB-Er-QBs" kind="modal" identifier="initSegue" modalTransitionStyle="crossDissolve" id="ODf-6a-ZIN"/>
+                        <segue destination="ieS-iJ-Zes" kind="modal" identifier="initSegue" id="z0q-o7-ySF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7L2-9Q-oWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="403" y="17"/>
+            <point key="canvasLocation" x="523" y="340"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DTc-FL-zyN">
@@ -403,7 +416,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnX-sx-OM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="738"/>
+            <point key="canvasLocation" x="972" y="340"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -412,7 +425,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ODf-6a-ZIN"/>
         <segue reference="b38-7R-bKJ"/>
     </inferredMetricsTieBreakers>
 </document>

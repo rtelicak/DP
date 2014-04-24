@@ -16,8 +16,6 @@
 + (NSString *) getDatabaseName;
 + (NSMutableArray *)getFavouritesSelections;
 
-+ (void) updateLoadingMessageWithString: (NSString *) loadingMessage;
 + (void) fillDatabase;
-+ (void) finishLoadingView;
 
 @end
