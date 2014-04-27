@@ -47,6 +47,7 @@
     [self populateSubjects];
     [self populateTeachers];
     [self populateDays];
+    [self populateVersion];
 }
 
 + (NSMutableArray *)getFavouritesSelections {
@@ -70,7 +71,16 @@
     return  searchCriterionArray;
 }
 
++ (BOOL) getDatabaseUpdateStatus {
+    BOOL updateDB = [[NSUserDefaults standardUserDefaults] boolForKey:@"isDatabaseUpdateNeeded"];
+    
+    return updateDB;
+}
 
++ (void) setDatabaseUpdateStatus: (BOOL) status {
+    [[NSUserDefaults standardUserDefaults] setBool:status forKey:@"isDatabaseUpdateNeeded"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
 // FACULTIES
 +(void) populateFaculties {
@@ -99,6 +109,21 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating days: %@", error);
+    }];
+}
+
+// DAYS
++(void) populateVersion {
+    [[EROWebService sharedInstance] getVersionWithSuccess:^(id responseObject) {
+        NSArray *array = (NSArray *)responseObject;
+        NSMutableArray *versionArray = [NSMutableArray arrayWithArray:array];
+        [ERODatabaseAccess insertVersionFromArray:versionArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //            [self.tableView reloadData];
+        });
+    } failure:^(NSError *error) {
+        NSLog(@"Error ocured while populating version: %@", error);
     }];
 }
 

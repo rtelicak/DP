@@ -8,7 +8,6 @@
 
 #import "EROInitVC.h"
 #import "EROUtility.h"
-#import "EROPickerViewController.h"
 
 @interface EROInitVC ()
 
@@ -35,6 +34,8 @@
     
     // update loading data message label
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLoadingMessage:) name:@"updateLoadingMessage" object:nil];
+    
+    [EROUtility setDatabaseUpdateStatus:NO];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -52,10 +53,10 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     databaseAlreadyExits = [fileManager fileExistsAtPath:databasePath];
     
-//    if (databaseAlreadyExits) {
-//        [self hideLoadingView];
-//        return;
-//    }
+    if (databaseAlreadyExits && ![EROUtility getDatabaseUpdateStatus]) {
+        [self hideLoadingView];
+        return;
+    }
     
     NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:databaseName];
     [fileManager copyItemAtPath:databasePathFromApp toPath:databasePath error:nil];
@@ -79,16 +80,22 @@
     [self performSegueWithIdentifier:@"initSegue" sender:nil];
 }
 
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    EROPickerViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"pickerVC"];
+    
+//    EROPickerViewController *targetController = [segue destinationViewController];
+//    targetController.delegate = self;
+//}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillDisappear:(BOOL)animated
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
+//-(void)viewWillDisappear:(BOOL)animated
+//{
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//}
 
 @end

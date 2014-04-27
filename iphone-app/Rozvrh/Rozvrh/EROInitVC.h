@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EROPickerViewController.h"
 
 @interface EROInitVC : UIViewController
 

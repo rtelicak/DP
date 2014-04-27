@@ -219,5 +219,25 @@
     }];
 }
 
+- (void)getVersionWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure {
+    NSURL *baseURL = [EROUtility getWebServicePath];
+    NSURL *versionURL = [baseURL URLByAppendingPathComponent:@"getVersion"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:versionURL];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        if (response) {
+            NSError *e;
+            id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
+            if (success) {
+                success (result);
+            }
+        } else {
+            if (failure) {
+                failure (error);
+            }
+        }
+    }];
+}
+
 
 @end

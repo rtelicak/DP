@@ -193,6 +193,7 @@
     
 }
 
+// DAYS
 +(void)insertDaysFromArray:(NSMutableArray *)daysArray {
     
     [self updateUploadingProgressMessage:@"Ukladám dni výučby ..."];
@@ -211,9 +212,48 @@
     NSLog(@"days done");
 }
 
+// Version
++ (void)insertVersionFromArray:(NSMutableArray*)daysArray {
+    
+    [self updateUploadingProgressMessage:@"Ukladám verziu ..."];
+    
+    FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
+    
+    [db open];
+    
+    [db executeUpdate:@"DELETE FROM verzia"];
+    
+    for (id day in daysArray) {
+        [db executeUpdate:@"INSERT INTO verzia (verzia) VALUES (?);", [day objectForKey:@"verzia"]];
+    }
+    
+    [db close];
+    NSLog(@"version done");
+}
+
 ///////////////////////////
 // GET DATA FROM DATABASE
 ///////////////////////////
+
++(NSString *)getVersionFromDatabase {
+    
+    NSString *version = [[NSString alloc] init];
+    
+    FMDatabase *db = [FMDatabase databaseWithPath:[EROUtility getDatabasePath]];
+    
+    [db open];
+    
+    FMResultSet *result = [db executeQuery:@"SELECT * FROM verzia"];
+    
+    
+    while ([result next]) {
+        version = [result stringForColumn:@"verzia"];
+    }
+    
+    [db close];
+    
+    return version;
+}
 
 + (NSMutableArray *)getFacultiesFromDatabase {
     NSMutableArray *faculties = [[NSMutableArray alloc] init];

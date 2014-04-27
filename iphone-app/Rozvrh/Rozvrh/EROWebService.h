@@ -26,5 +26,6 @@ typedef void (^EROWebServiceFailure)(NSError *error);
 - (void)getTeachersWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
 - (void)getLecturesWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
 - (void)getDaysWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
+- (void)getVersionWithSuccess:(EROWebServiceSuccess)success failure:(EROWebServiceFailure)failure;
 
 @end

@@ -15,6 +15,8 @@
 + (NSString *) getDatabasePath;
 + (NSString *) getDatabaseName;
 + (NSMutableArray *)getFavouritesSelections;
++ (BOOL) getDatabaseUpdateStatus;
++ (void) setDatabaseUpdateStatus:(BOOL) status;
 
 + (void) fillDatabase;
 

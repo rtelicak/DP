@@ -11,8 +11,13 @@
 #import "EROFaculty.h"
 #import "EROSubjectsList.h"
 #import "EROScheduleSearchCriterion.h"
+#import "ERODatabaseAccess.h"
+#import "EROWebService.h"
+#import "EROUtility.h"
 
 #define duplicateConstant 30
+
+
 
 @interface EROPickerViewController ()
 
@@ -24,6 +29,7 @@
 @end
 
 @implementation EROPickerViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +45,8 @@
     [super viewDidLoad];
     [self initializeView];
     [[self.submitPickerButton layer] setBorderWidth:1.0f];
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 //    [[self.submitPickerButton layer] setBorderColor:[UIColor greenColor].CGColor];
     
     
@@ -226,7 +234,7 @@
 - (IBAction)refreshButton:(id)sender {
 
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Aktualizácia"
-                                                    message:@"Chceš aktualizovať rozvrh? Na vykonanie tejto akcie je potrebné internetové pripojenie."
+                                                    message:@"Na vykonanie tejto akcie je potrebné internetové pripojenie."
                                                    delegate:self
                                           cancelButtonTitle:@"Nie"
                                           otherButtonTitles:@"Aktualizovať", nil];
@@ -241,15 +249,44 @@
         return;
     }
     
+    NSString *currentVersion = [ERODatabaseAccess getVersionFromDatabase];
+    NSLog(@"%@",  currentVersion);
+    
+    [self checkLatestVersion:currentVersion];
     // check for latest version
-    NSLog(@"auktualizovat");
 }
 
 
-
-
-
-
+- (void) checkLatestVersion: (NSString *) currentVersion {
+    [[EROWebService sharedInstance] getVersionWithSuccess:^(id responseObject) {
+        
+        NSArray *versionArray = (NSArray *) responseObject;
+        NSString *latestVersion = [[versionArray objectAtIndex:0] objectForKey:@"verzia"];
+        
+        if ([currentVersion isEqualToString:latestVersion]) {
+            // data is up to date
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data su aktualne."
+                                                            message:[NSString stringWithFormat:@"Momentalne novsi rozvrh ako %@ nie je dostupny.", currentVersion]
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Chapem"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        } else {
+            // update database
+            [EROUtility setDatabaseUpdateStatus:YES];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+        
+        
+    } failure:^(NSError *error) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Chyba."
+                                                        message:@"Pripojenie do internetu zlyhalo, server je nedostupny."
+                                                       delegate:self
+                                              cancelButtonTitle:@"Chapem"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }];
+}
 
 
 
