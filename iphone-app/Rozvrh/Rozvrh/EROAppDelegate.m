@@ -28,7 +28,8 @@
 //    self.navigationController.navigationBar.titleTextAttributes = @{UITextAttributeTextColor : [UIColor whiteColor]};
 
 
-    self.webServiceBasePath = [NSURL URLWithString:@"http://chalupaujajana.sk/rozvrh/web-app/home/"];
+//    self.webServiceBasePath = [NSURL URLWithString:@"http://chalupaujajana.sk/rozvrh/web-app/home/"];
+    self.webServiceBasePath = [NSURL URLWithString:@"http://localhost:8888/DP/web-app/svc/"];
     self.databaseName = @"Rozvrh.db";
 
     

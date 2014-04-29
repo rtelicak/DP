@@ -46,8 +46,10 @@
     [self initializeView];
     [[self.submitPickerButton layer] setBorderWidth:1.0f];
     
+    // bac button text moved
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-//    [[self.submitPickerButton layer] setBorderColor:[UIColor greenColor].CGColor];
+    
+    //    [[self.submitPickerButton layer] setBorderColor:[UIColor greenColor].CGColor];
     
     
     // Do any additional setup after loading the view.
@@ -55,6 +57,7 @@
     
 //    NSLog(@"%@", self.pickerView);
 }
+
 
 -(void)initializeView {
     
@@ -258,6 +261,7 @@
 
 
 - (void) checkLatestVersion: (NSString *) currentVersion {
+    
     [[EROWebService sharedInstance] getVersionWithSuccess:^(id responseObject) {
         
         NSArray *versionArray = (NSArray *) responseObject;
@@ -265,24 +269,24 @@
         
         if ([currentVersion isEqualToString:latestVersion]) {
             // data is up to date
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data su aktualne."
-                                                            message:[NSString stringWithFormat:@"Momentalne novsi rozvrh ako %@ nie je dostupny.", currentVersion]
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Dáta su aktuálne."
+                                                            message:[NSString stringWithFormat:@"Momentálne novší rozvrh ako %@ nie je dostupný.", currentVersion]
                                                            delegate:self
-                                                  cancelButtonTitle:@"Chapem"
+                                                  cancelButtonTitle:@"Chápem"
                                                   otherButtonTitles:nil];
             [alert show];
         } else {
             // update database
-            [EROUtility setDatabaseUpdateStatus:YES];
+            [EROUtility setDatabaseUpdateStatus:YES reason:@"update"];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         
         
     } failure:^(NSError *error) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Chyba."
-                                                        message:@"Pripojenie do internetu zlyhalo, server je nedostupny."
+                                                        message:@"Pripojenie do internetu zlyhalo, server je nedostupný."
                                                        delegate:self
-                                              cancelButtonTitle:@"Chapem"
+                                              cancelButtonTitle:@"Chápem"
                                               otherButtonTitles:nil];
         [alert show];
     }];

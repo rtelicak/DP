@@ -72,13 +72,29 @@
 }
 
 + (BOOL) getDatabaseUpdateStatus {
-    BOOL updateDB = [[NSUserDefaults standardUserDefaults] boolForKey:@"isDatabaseUpdateNeeded"];
+
+    NSDictionary *statusDictionary = [[NSUserDefaults standardUserDefaults] objectForKey:@"isDatabaseUpdateNeeded"];
+        
+    BOOL updateDB = [[statusDictionary objectForKey:@"status"] boolValue];
     
     return updateDB;
 }
 
-+ (void) setDatabaseUpdateStatus: (BOOL) status {
-    [[NSUserDefaults standardUserDefaults] setBool:status forKey:@"isDatabaseUpdateNeeded"];
++ (void) setDatabaseUpdateStatus: (BOOL) status reason:(NSString *)reason{
+    
+    // popup alertview
+    if ([reason isEqualToString:@"error"]) {
+         [[NSNotificationCenter defaultCenter] postNotificationName:@"errorOccuredWhileInsertingData" object:self userInfo:nil];
+    }
+    
+    NSNumber *boolStatusNumber = [NSNumber numberWithBool:status];
+    
+    NSDictionary *d = @{
+                        @"status": boolStatusNumber,
+                        @"reason": reason
+                        };
+    
+    [[NSUserDefaults standardUserDefaults] setObject:d forKey:@"isDatabaseUpdateNeeded"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
@@ -94,6 +110,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating faculties: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
 }
 
@@ -109,6 +126,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating days: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
 }
 
@@ -124,6 +142,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating version: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
 }
 
@@ -139,6 +158,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating lessons: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
 }
 
@@ -155,6 +175,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating institutes: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
     
 }
@@ -172,6 +193,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating groups: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
     
 }
@@ -189,6 +211,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating rooms: %@", error);
+       [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
     
 }
@@ -206,6 +229,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating departments: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
     
 }
@@ -223,6 +247,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating subjects: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
     
 }
@@ -240,6 +265,7 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating teachers: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
     
 }
@@ -256,9 +282,95 @@
         });
     } failure:^(NSError *error) {
         NSLog(@"Error ocured while populating lectures: %@", error);
+        [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
     }];
     
 }
+
++ (void)createAndFillDatabase {
+    sqlite3 *rozvrhDB;
+    NSString *databasePath = [self getDatabasePath];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:databasePath]) {
+        [fileManager removeItemAtPath:databasePath error:NULL];
+    }
+    
+    if (sqlite3_open([databasePath UTF8String], &rozvrhDB) == SQLITE_OK)
+    {
+        NSMutableArray *queryArray = [[NSMutableArray alloc] initWithObjects:
+                             @"CREATE TABLE den (id_den INTEGER PRIMARY KEY  AUTOINCREMENT NOT NULL, den varchar(10) NOT NULL)",
+                             @"CREATE TABLE fakulta (id_fakulta integer primary key, kod varchar(10), nazov varchar(250))",
+                             @"CREATE TABLE hodina (id_hodina integer primary key, cislo integer, cas_od varchar(20), cas_do varchar(20))",
+                             @"CREATE TABLE katedra (id_katedra INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , id_fakulta INTEGER, kod VARCHAR, nazov VARCHAR)",
+                             @"CREATE TABLE kruzok (id_kruzok INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , kod VARCHAR, cislo INTEGER, nazov VARCHAR, id_odbor INTEGER)",
+                             @"CREATE TABLE miestnost (id_miestnost INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , kod VARCHAR, nazov VARCHAR, kapacita VARCHAR)",
+                             @"CREATE TABLE odbor (id_odbor INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , kod VARCHAR, nazov VARCHAR, pocet_studentov INTEGER, id_fakulta INTEGER, rocnik INTEGER)",
+                             @"CREATE TABLE predmet (id_predmet INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE,kod VARCHAR,nazov Varchar,skratka VARCHAR,vymera VARCHAR,prednaska INTEGER,povinny INTEGER,semester INTEGER)",
+                             @"CREATE TABLE ucitel (id_ucitel INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , id_katedra INTEGER, kod VARCHAR, priezvisko VARCHAR, meno VARCHAR, titul VARCHAR, titul_za VARCHAR)",
+                             @"CREATE TABLE verzia (id_verzia integer primary key, verzia varchar(50))",
+                             @"CREATE TABLE vyuka (id_vyuka INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE,id_kruzok INTEGER,id_den INTEGER,id_hodina INTEGER,id_predmet INTEGER,prednaska INTEGER,id_miestnost INTEGER,id_ucitel INTEGER,polrok VARCHAR,id_rozvrh INTEGER);",
+                            nil];
+        
+        char *errMsg;
+        
+        for (int i = 0; i < [queryArray count]; i++) {
+            
+            NSString *query = [NSString stringWithFormat:@"%@", [queryArray objectAtIndex:i]];
+            const char *sql_stmt = [query cStringUsingEncoding:NSASCIIStringEncoding];
+            
+            if (sqlite3_exec(rozvrhDB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            {
+                NSLog(@"Failed to create table");
+                [EROUtility setDatabaseUpdateStatus:YES reason:@"error"];
+            }
+        }
+        
+        sqlite3_close(rozvrhDB);
+        
+        [EROUtility fillDatabase];
+        
+    } else {
+        NSLog(@"Failed to open/create database");
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @end

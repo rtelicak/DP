@@ -25,7 +25,6 @@
 		A41B1E4B18E0229600DF8981 /* EROUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4A18E0229600DF8981 /* EROUtility.m */; };
 		A41B1E4F18E024FB00DF8981 /* EROFaculty.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E4E18E024FB00DF8981 /* EROFaculty.m */; };
 		A41B1E5A18E0464900DF8981 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B1E5918E0464900DF8981 /* libsqlite3.dylib */; };
-		A41B1E5C18E0493F00DF8981 /* Rozvrh.db in Resources */ = {isa = PBXBuildFile; fileRef = A41B1E5B18E0493F00DF8981 /* Rozvrh.db */; };
 		A41B1E6918E04F7500DF8981 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E5F18E04F7500DF8981 /* FMDatabase.m */; };
 		A41B1E6A18E04F7500DF8981 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6118E04F7500DF8981 /* FMDatabaseAdditions.m */; };
 		A41B1E6B18E04F7500DF8981 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B1E6318E04F7500DF8981 /* FMDatabasePool.m */; };
@@ -43,6 +42,7 @@
 		A4D06AC618ECACB000F23C0E /* po-tr-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D06AC518ECACB000F23C0E /* po-tr-icon.png */; };
 		A4D06ACA18ECB4E300F23C0E /* day-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D06AC918ECB4E300F23C0E /* day-bg.png */; };
 		A4D06ACC18EF887100F23C0E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D06ACB18EF887100F23C0E /* test.png */; };
+		A4D58BD1190EF4C4005178CD /* welcome-screen-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D58BD0190EF4C4005178CD /* welcome-screen-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 		A41B1E4E18E024FB00DF8981 /* EROFaculty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROFaculty.m; sourceTree = "<group>"; };
 		A41B1E5718E0463300DF8981 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		A41B1E5918E0464900DF8981 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		A41B1E5B18E0493F00DF8981 /* Rozvrh.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rozvrh.db; sourceTree = "<group>"; };
 		A41B1E5E18E04F7500DF8981 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		A41B1E5F18E04F7500DF8981 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		A41B1E6018E04F7500DF8981 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		A4D06AC518ECACB000F23C0E /* po-tr-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "po-tr-icon.png"; sourceTree = "<group>"; };
 		A4D06AC918ECB4E300F23C0E /* day-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "day-bg.png"; sourceTree = "<group>"; };
 		A4D06ACB18EF887100F23C0E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		A4D58BD0190EF4C4005178CD /* welcome-screen-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-screen-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,12 +193,12 @@
 		A41B1E1018E01CE800DF8981 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4D58BD0190EF4C4005178CD /* welcome-screen-logo.png */,
 				A4D06ACB18EF887100F23C0E /* test.png */,
 				A4D06AC918ECB4E300F23C0E /* day-bg.png */,
 				A4D06AC518ECACB000F23C0E /* po-tr-icon.png */,
 				A4A8896118EC5B4500D5956C /* po-icon2.png */,
 				A4A8895F18EC553A00D5956C /* po-icon.png */,
-				A41B1E5B18E0493F00DF8981 /* Rozvrh.db */,
 				A41B1E1118E01CE800DF8981 /* Rozvrh-Info.plist */,
 				A4A8895718E9BD6F00D5956C /* favouritesList.plist */,
 				A41B1E1218E01CE800DF8981 /* InfoPlist.strings */,
@@ -362,8 +362,8 @@
 			files = (
 				A4D06ACA18ECB4E300F23C0E /* day-bg.png in Resources */,
 				A4D06ACC18EF887100F23C0E /* test.png in Resources */,
-				A41B1E5C18E0493F00DF8981 /* Rozvrh.db in Resources */,
 				A4D06AC618ECACB000F23C0E /* po-tr-icon.png in Resources */,
+				A4D58BD1190EF4C4005178CD /* welcome-screen-logo.png in Resources */,
 				A4A8896018EC553A00D5956C /* po-icon.png in Resources */,
 				A4A8895818E9BD6F00D5956C /* favouritesList.plist in Resources */,
 				A41B1E2218E01CE800DF8981 /* Images.xcassets in Resources */,

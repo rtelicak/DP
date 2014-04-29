@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "EROAppDelegate.h"
+#import "sqlite3.h"
 
 @interface EROUtility : NSObject
 
@@ -16,8 +17,10 @@
 + (NSString *) getDatabaseName;
 + (NSMutableArray *)getFavouritesSelections;
 + (BOOL) getDatabaseUpdateStatus;
-+ (void) setDatabaseUpdateStatus:(BOOL) status;
++ (void) setDatabaseUpdateStatus:(BOOL) status reason:(NSString*) reason;
 
 + (void) fillDatabase;
++ (void) createAndFillDatabase;
+
 
 @end

@@ -12,5 +12,8 @@
 @interface EROInitVC : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *loadingMessageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mainLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *semesterLabel;
 
 @end
