@@ -12,6 +12,7 @@
 
 + (UIColor *) mainColor;
 + (UIColor *) mainLabelColor;
++ (UIColor *) buttonColor;
 
 + (UIColor *) mondayColor;
 + (UIColor *) tuesdayColor;

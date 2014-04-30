@@ -33,7 +33,7 @@
 {
     [super viewDidLoad];
     [self styleView];
-
+    
     NSLog(@"%@", self.scheduleArguments);
 }
 
@@ -41,19 +41,6 @@
 - (void) viewWillAppear:(BOOL)animated {
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:animated];
     [super viewWillAppear:animated];
-}
-
--(UILabel *) createNavigationTitleLabel {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
-    label.backgroundColor = [UIColor clearColor];
-    label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = [EROColors mainLabelColor];
-    label.text = [[NSString alloc] initWithFormat:@"%@ %@. ročník %@ %@. krúžok ", self.scheduleArguments.facultyCode, self.scheduleArguments.year, self.scheduleArguments.departmentCode, self.scheduleArguments.groupNumber];
-    
-    [label sizeToFit];
-    
-    return label;
 }
 
 - (void)didReceiveMemoryWarning
@@ -279,18 +266,20 @@
 }
 
 -(void) styleView {
+    
     // disabled add button if list already exits in favourites
     if ([EROScheduleSearchCriterion isScheduleCriterionAlreadyInFavourites:self.scheduleArguments]) {
         self.addFavouriteButton.enabled = NO;
     }
-    
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-    
+
     // remove padding from table view
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
     UIColor * colord4d4d4 = [UIColor colorWithRed:213/255.0f green:213/255.0f blue:213/255.0f alpha:0.3f];
     self.tableView.separatorColor = colord4d4d4;
+    
+    // navigation bar
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     
     // create navigation view
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.navigationItem.titleView.bounds.size.width, 150)];
@@ -301,6 +290,51 @@
     [navigationTitleLabel setCenter:titleView.center];
     
     self.navigationItem.titleView = titleView;
+    
+    // segmented control
+    self.segmentedControl.tintColor = [EROColors mainColor];
+    
+    
+    // back button
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-icon.png"]
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(backAction)];
+    backButton.tintColor = [EROColors mainColor];
+    self.navigationItem.leftBarButtonItem = backButton;
+    self.navigationItem.rightBarButtonItem.tintColor = [EROColors mainColor];
 }
+-(void) backAction {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(UILabel *) createNavigationTitleLabel {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [EROColors mainLabelColor];
+    label.text = [[NSString alloc] initWithFormat:@"%@ %@. ročník %@ %@. krúžok ", self.scheduleArguments.facultyCode, self.scheduleArguments.year, self.scheduleArguments.departmentCode, self.scheduleArguments.groupNumber];
+    
+    [label sizeToFit];
+    
+    return label;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

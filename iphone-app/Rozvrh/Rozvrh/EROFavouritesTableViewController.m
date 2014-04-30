@@ -10,6 +10,7 @@
 #import "EROScheduleSearchCriterion.h"
 #import "EROSubjectsList.h"
 #import "ERODatabaseAccess.h"
+#import "EROColors.h"
 
 @interface EROFavouritesTableViewController ()
 
@@ -29,11 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self styleView];
+    
     self.searchCriterionArray = [EROUtility getFavouritesSelections];
-//    self.title = @"Obľúbené rozvrhy";
-    
-    [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -64,19 +63,28 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.searchCriterionArray.count;
+    return self.searchCriterionArray.count > 0 ? self.searchCriterionArray.count : 1;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"searchCriterionCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    EROScheduleSearchCriterion *c = [self.searchCriterionArray objectAtIndex:indexPath.row];
-    cell.textLabel.text =  [NSString stringWithFormat:@"%@  %@. ročník %@ %@. krúžok", c.facultyCode, c.year, c.departmentCode, c.groupNumber];
+    if (self.searchCriterionArray.count > 0 ) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"searchCriterionCell" forIndexPath:indexPath];
+        
+        EROScheduleSearchCriterion *c = [self.searchCriterionArray objectAtIndex:indexPath.row];
+        cell.textLabel.text =  [NSString stringWithFormat:@"%@  %@. ročník %@ %@. krúžok", c.facultyCode, c.year, c.departmentCode, c.groupNumber];
+        
+        return cell;
+    } else {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"emptyDataCell" forIndexPath:indexPath];
+        
+        return cell;
+    }
     
-    return cell;
+
+
 }
 
 // Override to support conditional editing of the table view.
@@ -103,12 +111,14 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
-}
+    if ([self.searchCriterionArray count] > 0) {
+        
+        return 60;
+    } else {
+        
+        return self.tableView.frame.size.height;
+    }
 
-
--(void)viewWillAppear:(BOOL)animated {
-    self.title = @"Obľúbené rozvrhy";
 }
 
 #pragma mark - Navigation
@@ -120,7 +130,7 @@
     // Pass the selected object to the new view controller.
     
     // remove default "back" title
-    self.title = @"";
+//    self.title = @"";
 
     
     EROSubjectsList *targetController = [segue destinationViewController];
@@ -131,5 +141,49 @@
     targetController.lecturesArray = [ERODatabaseAccess getCompulsoryOnlyWithFacultyCode:tappedSelectedCriterion.facultyCode year:tappedSelectedCriterion.year departmentCode:tappedSelectedCriterion.departmentCode groupNumber:tappedSelectedCriterion.groupNumber];
 
 }
+
+- (void) styleView {
+    
+    // remove empty cells at the bottom
+    [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
+    
+    // remove padding from table view
+    self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.textColor = [EROColors mainLabelColor];
+    titleLabel.text = @"Obľúbené rozvrhy";
+    
+    [titleLabel sizeToFit];
+    self.navigationItem.titleView = titleLabel;
+
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+//    self.title = @"Obľúbené rozvrhy";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

@@ -14,6 +14,14 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet UIButton *submitPickerButton;
 - (IBAction)refreshButton:(id)sender;
+- (IBAction)searchButtonPressed:(id)sender;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *facultyViewLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yearViewLabel;
+@property (weak, nonatomic) IBOutlet UILabel *departmentViewLabel;
+@property (weak, nonatomic) IBOutlet UILabel *groupViewLabel;
+
 
 
 @property (strong, nonatomic) NSMutableArray *faculties;

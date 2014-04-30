@@ -27,6 +27,9 @@
 @property NSString *selectedDepartment;
 @property NSString *selectedGroupNumber;
 
+@property UILabel *titleLabel;
+@property NSString *version;
+
 @end
 
 @implementation EROPickerViewController
@@ -46,10 +49,6 @@
     [super viewDidLoad];
     [self initializeView];
     [self styleView];
-    [[self.submitPickerButton layer] setBorderWidth:1.0f];
-    
-    // remove text from navigation back button
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 
@@ -167,6 +166,8 @@
             [self refreshDepartmentComponent];
             [self refreshGroupComponent];
             
+            [self fadeLabelsIn];
+            
             break;
         }
         
@@ -208,10 +209,6 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if (sender != self.submitPickerButton) {
-        return;
-    }
-    
     EROSubjectsList *targetController = [segue destinationViewController];
     EROScheduleSearchCriterion *scheduleSearchCriterion = [[EROScheduleSearchCriterion alloc] init];
     
@@ -225,6 +222,15 @@
     targetController.lecturesArray = [ERODatabaseAccess getCompulsoryOnlyWithFacultyCode:self.selectedFaculty.kod year:self.selectedYear departmentCode:self.selectedDepartment groupNumber:self.selectedGroupNumber];
 }
 
+- (void) popErrorAlert {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Nevyplnené vyhľadávacie kritériá."
+                                                    message:@"Je potrebné vyplniť všetky položky pre nájdenie rozvrhu :)"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Chápem"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
 
 - (IBAction)refreshButton:(id)sender {
 
@@ -236,7 +242,16 @@
     [alert show];
 }
 
-
+- (IBAction)searchButtonPressed:(id)sender {
+    if (self.selectedFaculty != nil && self.selectedYear != nil && self.selectedDepartment != nil && self.selectedGroupNumber != nil) {
+        
+        [self performSegueWithIdentifier:@"pickerToListSegue" sender:nil];
+        
+    } else {
+        [self popErrorAlert];
+        return;
+    }
+}
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
@@ -247,8 +262,8 @@
     NSString *currentVersion = [ERODatabaseAccess getVersionFromDatabase];
     NSLog(@"%@",  currentVersion);
     
-    [self checkLatestVersion:currentVersion];
     // check for latest version
+    [self checkLatestVersion:currentVersion];
 }
 
 
@@ -289,32 +304,94 @@
     [self.departments removeAllObjects];
     [self.groups removeAllObjects];
     
+    self.selectedFaculty = nil;
+    self.selectedYear = nil;
+    self.selectedDepartment = nil;
+    self.selectedGroupNumber = nil;
+    
     [self.pickerView reloadComponent:1];
     [self.pickerView reloadComponent:2];
     [self.pickerView reloadComponent:3];
 }
 
 -(void) styleView {
+    
+    // ui picker
+//    self.pickerView.backgroundColor = [UIColor redColor];
+    
+    // submit button
+//    [[self.submitPickerButton layer] setBorderWidth:1.0f];
+    self.submitPickerButton.backgroundColor = [EROColors buttonColor];
+    
     // navigation bar color
     self.navigationController.navigationBar.barTintColor = [EROColors mainColor];
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
     
+    // navigation bar item
+    self.titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.titleLabel.backgroundColor = [UIColor clearColor];
+    self.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
+    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    self.titleLabel.textColor = [UIColor whiteColor];
+    self.version = [ERODatabaseAccess getVersionFromDatabase];
+    self.titleLabel.text = self.version;
     
-    // navigationbar item
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
-    label.backgroundColor = [UIColor clearColor];
-    label.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = [UIColor whiteColor];
-    label.text = [ERODatabaseAccess getVersionFromDatabase];
+    [self.titleLabel sizeToFit];
+    self.navigationItem.titleView = self.titleLabel;
     
-    [label sizeToFit];
-    self.navigationItem.titleView = label;
+    // view labels
+    self.facultyViewLabel.textColor = [EROColors mainLabelColor];
+    self.yearViewLabel.textColor = [EROColors mainLabelColor];
+    self.departmentViewLabel.textColor = [EROColors mainLabelColor];
+    self.groupViewLabel.textColor = [EROColors mainLabelColor];
+    
+    [self.facultyViewLabel setAlpha:0.0];
+    [self.yearViewLabel setAlpha:0.0];
+    [self.departmentViewLabel setAlpha:0.0];
+    [self.groupViewLabel setAlpha:0.0];
 
 }
 
 
+- (void) fadeLabelsIn {
+    [UIView animateWithDuration:0.10
+                          delay:0
+                        options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
+                     animations:^(void){
+                         [self.facultyViewLabel setAlpha:1.0];
+                     }
+                     completion:^(BOOL finished){
+                         if(finished)
+                         {
+                             [UIView animateWithDuration:0.10
+                                                   delay:0.10
+                                                 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
+                                              animations:^(void){
+                                  [self.yearViewLabel setAlpha:1.0];
+                                              }
+                                              completion:^(BOOL finished){
+                                                  if(finished)
+                                                      [UIView animateWithDuration:0.10 delay:0.2 options:UIViewAnimationOptionCurveLinear animations:
+                                                       ^(void) {
+                                                           [self.departmentViewLabel setAlpha:1.0];
+                                                       } completion:^(BOOL finished){
+                                                           if (finished) {
+                                                               [UIView animateWithDuration:0.10 delay:0.3 options:UIViewAnimationOptionCurveLinear animations:^(void){
+                                                                   [self.groupViewLabel setAlpha:1.0];
+                                                               } completion:^(BOOL finished){
+                                                                   // some callback available
+                                                               }];
+                                                           }
+                                                       }];
+                                              }];
+                         }
+                     }];
+}
 
+
+//
+//- (UIStatusBarStyle) preferredStatusBarStyle {
+//    return UIStatusBarStyleLightContent;
+//}
 
 
 

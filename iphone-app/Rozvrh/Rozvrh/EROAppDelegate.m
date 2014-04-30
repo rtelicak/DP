@@ -7,6 +7,7 @@
 //
 
 #import "EROAppDelegate.h"
+#import "EROColors.h"
 
 @implementation EROAppDelegate
 
@@ -20,7 +21,9 @@
     NSArray *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDir = documentsPath[0];
     self.databasePath = [documentsDir stringByAppendingPathComponent:self.databaseName];
-
+    
+    [[UITabBar appearance] setTintColor:[EROColors mainColor]];
+    
     return YES;
 }
 
