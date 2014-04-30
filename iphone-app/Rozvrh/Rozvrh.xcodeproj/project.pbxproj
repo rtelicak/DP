@@ -42,6 +42,8 @@
 		A4D58BD1190EF4C4005178CD /* welcome-screen-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D58BD0190EF4C4005178CD /* welcome-screen-logo.png */; };
 		A4D58BD6191106E0005178CD /* refresh-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D58BD4191106E0005178CD /* refresh-icon.png */; };
 		A4D58BD7191106E0005178CD /* refresh-icon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D58BD5191106E0005178CD /* refresh-icon2x.png */; };
+		A4D58BE4191124C3005178CD /* EROColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D58BE3191124C3005178CD /* EROColors.m */; };
+		A4D58BE619113506005178CD /* no-favourites.png in Resources */ = {isa = PBXBuildFile; fileRef = A4D58BE519113506005178CD /* no-favourites.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,9 @@
 		A4D58BD0190EF4C4005178CD /* welcome-screen-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-screen-logo.png"; sourceTree = "<group>"; };
 		A4D58BD4191106E0005178CD /* refresh-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh-icon.png"; sourceTree = "<group>"; };
 		A4D58BD5191106E0005178CD /* refresh-icon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh-icon2x.png"; sourceTree = "<group>"; };
+		A4D58BE2191124C3005178CD /* EROColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EROColors.h; sourceTree = "<group>"; };
+		A4D58BE3191124C3005178CD /* EROColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EROColors.m; sourceTree = "<group>"; };
+		A4D58BE519113506005178CD /* no-favourites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-favourites.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +178,7 @@
 		A41B1E0F18E01CE800DF8981 /* Rozvrh */ = {
 			isa = PBXGroup;
 			children = (
+				A4D58BE11911245F005178CD /* misc */,
 				A41B1E5D18E04F5400DF8981 /* FMDB */,
 				A41B1E4C18E024EA00DF8981 /* model */,
 				A41B1E3F18E01CFB00DF8981 /* view */,
@@ -182,8 +188,6 @@
 				A41B1E1B18E01CE800DF8981 /* Main.storyboard */,
 				A41B1E2118E01CE800DF8981 /* Images.xcassets */,
 				A41B1E1018E01CE800DF8981 /* Supporting Files */,
-				A41B1E4918E0229600DF8981 /* EROUtility.h */,
-				A41B1E4A18E0229600DF8981 /* EROUtility.m */,
 			);
 			path = Rozvrh;
 			sourceTree = "<group>";
@@ -191,6 +195,7 @@
 		A41B1E1018E01CE800DF8981 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4D58BE519113506005178CD /* no-favourites.png */,
 				A4D58BD4191106E0005178CD /* refresh-icon.png */,
 				A4D58BD5191106E0005178CD /* refresh-icon2x.png */,
 				A4D58BD0190EF4C4005178CD /* welcome-screen-logo.png */,
@@ -280,6 +285,17 @@
 			name = FMDB;
 			sourceTree = "<group>";
 		};
+		A4D58BE11911245F005178CD /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				A41B1E4918E0229600DF8981 /* EROUtility.h */,
+				A41B1E4A18E0229600DF8981 /* EROUtility.m */,
+				A4D58BE2191124C3005178CD /* EROColors.h */,
+				A4D58BE3191124C3005178CD /* EROColors.m */,
+			);
+			name = misc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,6 +381,7 @@
 				A41B1E2218E01CE800DF8981 /* Images.xcassets in Resources */,
 				A4D58BD7191106E0005178CD /* refresh-icon2x.png in Resources */,
 				A41B1E1418E01CE800DF8981 /* InfoPlist.strings in Resources */,
+				A4D58BE619113506005178CD /* no-favourites.png in Resources */,
 				A41B1E1D18E01CE800DF8981 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +417,7 @@
 				A41B1E6D18E04F7500DF8981 /* FMResultSet.m in Sources */,
 				A41B1E4818E021A800DF8981 /* EROWebService.m in Sources */,
 				A4A8895E18E9F92A00D5956C /* EROScheduleSearchCriterion.m in Sources */,
+				A4D58BE4191124C3005178CD /* EROColors.m in Sources */,
 				A41B1E6A18E04F7500DF8981 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

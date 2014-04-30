@@ -12,22 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    [self.window setTintColor:[UIColor colorWithRed:44/255.0f green:62/255.0f blue:80/255.0f alpha:1.0f]];
-    
-    // navigation bar background color
-//    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:241/255.0f green:245/255.0f blue:251/255.0f alpha:1.0f]];
-    
-    // navigation bar color
-//    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:44/255.0f green:62/255.0f blue:80/255.0f alpha:1.0f]}];
-    
-    // navigation bar font
-//    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0]}];
-    
-    
-//    [[UINavigationBar appearance] setb];
-//    self.navigationController.navigationBar.titleTextAttributes = @{UITextAttributeTextColor : [UIColor whiteColor]};
-
-
 //    self.webServiceBasePath = [NSURL URLWithString:@"http://chalupaujajana.sk/rozvrh/web-app/home/"];
     self.webServiceBasePath = [NSURL URLWithString:@"http://localhost:8888/DP/web-app/svc/"];
     self.databaseName = @"Rozvrh.db";

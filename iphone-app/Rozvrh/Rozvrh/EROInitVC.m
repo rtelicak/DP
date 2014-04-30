@@ -9,6 +9,7 @@
 #import "EROInitVC.h"
 #import "EROUtility.h"
 #import "EROWebService.h"
+#import "EROColors.h"
 
 @interface EROInitVC ()
 
@@ -90,7 +91,7 @@
 
 - (void)finishedLoading:(NSNotification *)notification {
     
-    self.loadingMessageLabel.textColor = [UIColor colorWithRed:75/255.0f green:193/255.0f blue:210/255.0f alpha:1.0f];
+    self.loadingMessageLabel.textColor = [EROColors mainColor];
     self.loadingMessageLabel.text = @"Success!";
     
     [self performSelector:@selector(hideLoadingView) withObject:nil afterDelay:1.5];
@@ -170,7 +171,7 @@
 }
 
 -(void) styleView {
-    self.view.backgroundColor = [UIColor colorWithRed:75/255.0f green:193/255.0f blue:210/255.0f alpha:1.0f];
+    self.view.backgroundColor = [EROColors mainColor];
     
     [self.imageView setImage:[UIImage imageNamed:@"welcome-screen-logo.png"]];
     [self.imageView setContentMode:UIViewContentModeScaleAspectFit];
@@ -180,15 +181,15 @@
     self.semesterLabel.textColor = [UIColor whiteColor];
     
     self.loadingMessageLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14.0];
-    self.loadingMessageLabel.textColor = [UIColor colorWithRed:120/255.0f green:120/255.0f blue:120/255.0f alpha:1.0f];
+    self.loadingMessageLabel.textColor = [EROColors mainLabelColor];
     
     self.mainLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:16.0];
-    self.mainLabel.textColor = [UIColor colorWithRed:120/255.0f green:120/255.0f blue:120/255.0f alpha:1.0f];
+    self.mainLabel.textColor = [EROColors mainLabelColor];
     
     // todo: temporary, delete
     self.mainLabel.text = @"Načítavam dáta, potrvá to asi minútku :)";
     self.loadingMessageLabel.text = @"Ukladám predmety ...";
-    self.semesterLabel.text = @"Nejaký semester";
+    self.semesterLabel.text = @"Letný semester 2013/2014";
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle

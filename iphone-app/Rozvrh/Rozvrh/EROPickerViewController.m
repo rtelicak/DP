@@ -14,6 +14,7 @@
 #import "ERODatabaseAccess.h"
 #import "EROWebService.h"
 #import "EROUtility.h"
+#import "EROColors.h"
 
 #define duplicateConstant 30
 
@@ -295,7 +296,7 @@
 
 -(void) styleView {
     // navigation bar color
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:75/255.0f green:193/255.0f blue:210/255.0f alpha:1.0f];
+    self.navigationController.navigationBar.barTintColor = [EROColors mainColor];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
     
     
@@ -311,9 +312,6 @@
     self.navigationItem.titleView = label;
 
 }
-
-
-
 
 
 

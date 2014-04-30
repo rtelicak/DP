@@ -32,6 +32,8 @@
     self.searchCriterionArray = [EROUtility getFavouritesSelections];
 //    self.title = @"Obľúbené rozvrhy";
     
+    [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

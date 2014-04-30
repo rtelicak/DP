@@ -11,6 +11,7 @@
 #import "EROLectureDetailViewController.h"
 #import "EROUtility.h"
 #import "EROScheduleSearchCriterion.h"
+#import "EROColors.h"
 
 
 @interface EROSubjectsList ()
@@ -47,7 +48,7 @@
     label.backgroundColor = [UIColor clearColor];
     label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0];
     label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = [UIColor colorWithRed:44/255.0f green:62/255.0f blue:80/255.0f alpha:1.0f]; //2C3E50
+    label.textColor = [EROColors mainLabelColor];
     label.text = [[NSString alloc] initWithFormat:@"%@ %@. ročník %@ %@. krúžok ", self.scheduleArguments.facultyCode, self.scheduleArguments.year, self.scheduleArguments.departmentCode, self.scheduleArguments.groupNumber];
     
     [label sizeToFit];
@@ -99,7 +100,6 @@
     subjectNameLabel.textAlignment = NSTextAlignmentLeft;
     subjectNameLabel.textColor = [UIColor whiteColor];
     subjectNameLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
-    //    subjectNameLabel.backgroundColor = [UIColor redColor];
     [cell.contentView addSubview:subjectNameLabel];
     
     dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0, 5.0, 45.0, 60.0)];
@@ -109,7 +109,6 @@
     dayLabel.textColor = [UIColor whiteColor];
     dayLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
     [cell.contentView addSubview:dayLabel];
-    //    dayLabel.backgroundColor = [UIColor redColor];
     
     roomLabel = [[UILabel alloc] initWithFrame:CGRectMake(60.0, 23.0, 220.0, 25.0)];
     roomLabel.tag = SECONDLABEL_TAG;
@@ -129,12 +128,9 @@
     
     timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(220.0, 20.0, 75.0, 25.0)];
     timeLabel.tag = SECONDLABEL_TAG;
-    //    timeLabel.font = [UIFont systemFontOfSize:28.0];
     timeLabel.textAlignment = NSTextAlignmentRight;
     timeLabel.textColor = [UIColor whiteColor];
-    //    timeLabel.backgroundColor = [UIColor blackColor];
     [cell.contentView addSubview:timeLabel];
-    //    [UIFont fontWithName:@"GillSans-Bold" size:18]
     timeLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:28];
     
     
@@ -179,51 +175,30 @@
     UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
     photo.image = theImage;
     
-    // colors
-    UIColor *seminarColor = [UIColor colorWithRed:50/255.0f green:149/255.0f blue:213/255.0f alpha:1.0f];
-    UIColor *lessonColor = [UIColor colorWithRed:230/255.0f green:81/255.0f blue:67/255.0f alpha:1.0f];
-    
-    //    cell.backgroundColor = [[sub objectForKey:@"subjectIsLecture"]  isEqual: [NSNumber numberWithInt:1]] ? lessonColor : seminarColor;
-    //    cell.backgroundColor = [UIColor whiteColor];
-    //    NSString *lectureOrSeminar = [[self.selectedLecture objectForKey:@"subjectIsLecture"]  isEqual: [NSNumber numberWithInt:1]] ? @"prednaska" : @"cvicenie";
-    
-    // set cell's background depending on day
-    UIColor *grayColor = [UIColor colorWithRed:52/255.0f green:72/255.0f blue:92/255.0f alpha:1.0f];
-    UIColor *darkOrange = [UIColor colorWithRed:192/255.0f green:57/255.0f blue:43/255.0f alpha:1.0f];
-    UIColor *lightOrange = [UIColor colorWithRed:230/255.0f green:86/255.0f blue:73/255.0f alpha:1.0f];;
-    UIColor *purple = [UIColor colorWithRed:153/255.0f green:91/255.0f blue:180/255.0f alpha:1.0f];
-    UIColor *darkBlue = [UIColor colorWithRed:41/255.0f green:128/255.0f blue:185/255.0f alpha:1.0f];
-    UIColor *lightBlue = [UIColor colorWithRed:50/255.0f green:149/255.0f blue:212/255.0f alpha:1.0f];
-    UIColor * color = [UIColor colorWithRed:50/255.0f green:256/255.0f blue:0/255.0f alpha:1.0f];
-    UIColor *pumpkin = [UIColor colorWithRed:211/255.0f green:84/255.0f blue:0/255.0f alpha:1.0f];
-    UIColor *concrete = [UIColor colorWithRed:149/255.0f green:165/255.0f blue:166/255.0f alpha:1.0f];
-    
-    
-    
     int id_day = [[sub objectForKey:@"id_day"] intValue];
     
     switch (id_day)  {
             
         case 1: {
-            cell.backgroundColor = grayColor;
+            cell.backgroundColor = [EROColors mondayColor];
             break;
         }
         case 2: {
-            cell.backgroundColor = darkOrange;
+            cell.backgroundColor = [EROColors tuesdayColor];
             break;
         }
             
         case 3: {
-            cell.backgroundColor = lightOrange;
+            cell.backgroundColor = [EROColors wednesdayColor];
             break;
         }
             
         case 4: {
-            cell.backgroundColor = darkBlue;
+            cell.backgroundColor = [EROColors thursdayColor];
             break;
         }
         case 5: {
-            cell.backgroundColor = lightBlue;
+            cell.backgroundColor = [EROColors fridayColor];
             break;
         }
     }
