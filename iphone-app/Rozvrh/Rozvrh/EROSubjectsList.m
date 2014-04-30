@@ -31,32 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // disabled add button if list already exits in favourites
-    if ([EROScheduleSearchCriterion isScheduleCriterionAlreadyInFavourites:self.scheduleArguments]) {
-        self.addFavouriteButton.enabled = NO;
-    }
-    
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-    
-    // remove padding from table view
-    self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    
-    UIColor * colord4d4d4 = [UIColor colorWithRed:213/255.0f green:213/255.0f blue:213/255.0f alpha:0.3f];
-    self.tableView.separatorColor = colord4d4d4;
-    
-    // create navigation view
-    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.navigationItem.titleView.bounds.size.width, 150)];
-    
-    // add label to it
-    UILabel *navigationTitleLabel = [self createNavigationTitleLabel];
-    [titleView addSubview:navigationTitleLabel];
-    [navigationTitleLabel setCenter:titleView.center];
-    
-    self.navigationItem.titleView = titleView;
-    
-    
-    
+    [self styleView];
+
     NSLog(@"%@", self.scheduleArguments);
 }
 
@@ -305,20 +281,20 @@
     
     switch (self.segmentedControl.selectedSegmentIndex) {
         case 0:{
-            // display all lessons
-            self.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
-            break;
-        }
-            
-        case 1:{
             // display compulsory only
             self.lecturesArray = [ERODatabaseAccess getCompulsoryOnlyWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
             break;
         }
             
-        case 2: {
+        case 1:{
             //display optional only
             self.lecturesArray = [ERODatabaseAccess getOptionalOnlyWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
+            break;
+        }
+            
+        case 2: {
+            // display all lessons
+            self.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:self.scheduleArguments.facultyCode year:self.scheduleArguments.year departmentCode:self.scheduleArguments.departmentCode groupNumber:self.scheduleArguments.groupNumber];
             break;
         }
     }
@@ -326,4 +302,30 @@
     [self.tableView reloadData];
 
 }
+
+-(void) styleView {
+    // disabled add button if list already exits in favourites
+    if ([EROScheduleSearchCriterion isScheduleCriterionAlreadyInFavourites:self.scheduleArguments]) {
+        self.addFavouriteButton.enabled = NO;
+    }
+    
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    // remove padding from table view
+    self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    
+    UIColor * colord4d4d4 = [UIColor colorWithRed:213/255.0f green:213/255.0f blue:213/255.0f alpha:0.3f];
+    self.tableView.separatorColor = colord4d4d4;
+    
+    // create navigation view
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.navigationItem.titleView.bounds.size.width, 150)];
+    
+    // add label to it
+    UILabel *navigationTitleLabel = [self createNavigationTitleLabel];
+    [titleView addSubview:navigationTitleLabel];
+    [navigationTitleLabel setCenter:titleView.center];
+    
+    self.navigationItem.titleView = titleView;
+}
+
 @end

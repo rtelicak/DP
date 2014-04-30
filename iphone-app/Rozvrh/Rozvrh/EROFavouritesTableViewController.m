@@ -126,7 +126,7 @@
     EROScheduleSearchCriterion *tappedSelectedCriterion = [self.searchCriterionArray objectAtIndex:selectedIndexPath.row];
     targetController.scheduleArguments = tappedSelectedCriterion;
     
-    targetController.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:tappedSelectedCriterion.facultyCode year:tappedSelectedCriterion.year departmentCode:tappedSelectedCriterion.departmentCode groupNumber:tappedSelectedCriterion.groupNumber];
+    targetController.lecturesArray = [ERODatabaseAccess getCompulsoryOnlyWithFacultyCode:tappedSelectedCriterion.facultyCode year:tappedSelectedCriterion.year departmentCode:tappedSelectedCriterion.departmentCode groupNumber:tappedSelectedCriterion.groupNumber];
 
 }
 

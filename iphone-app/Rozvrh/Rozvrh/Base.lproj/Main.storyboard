@@ -48,7 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Hľadaj rozvrh">
+                                <state key="normal" title="Zobraz rozvrh">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -109,9 +109,9 @@
                                 <rect key="frame" x="20" y="73" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Všetky"/>
                                     <segment title="Povinné"/>
                                     <segment title="Nepovinné"/>
+                                    <segment title="Všetky"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentedControlValueChanged:" destination="U8u-LO-Rbk" eventType="valueChanged" id="yz3-pp-0eR"/>

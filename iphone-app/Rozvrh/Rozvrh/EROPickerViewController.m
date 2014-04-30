@@ -47,9 +47,8 @@
     [self styleView];
     [[self.submitPickerButton layer] setBorderWidth:1.0f];
     
-    // bac button text removed
-    self.navigationItem.hidesBackButton = YES;
-//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    // remove text from navigation back button
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 
@@ -222,7 +221,7 @@
     
     targetController.scheduleArguments = scheduleSearchCriterion;
     
-    targetController.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:self.selectedFaculty.kod year:self.selectedYear departmentCode:self.selectedDepartment groupNumber:self.selectedGroupNumber];
+    targetController.lecturesArray = [ERODatabaseAccess getCompulsoryOnlyWithFacultyCode:self.selectedFaculty.kod year:self.selectedYear departmentCode:self.selectedDepartment groupNumber:self.selectedGroupNumber];
 }
 
 
