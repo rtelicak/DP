@@ -26,46 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self populateLessonDetailView];
+    [self styleView];
     
     NSLog(@"%@", self.selectedLecture);
     
-    // subject name
-    self.subjectName.text = [[self.selectedLecture objectForKey:@"subjectName"]stringByReplacingOccurrencesOfString:@"_" withString:@" "];
     
-    // day
-    NSString *lectureDay = [NSString stringWithFormat:@"%@", [self.selectedLecture objectForKey:@"day"]];
-    self.subjectDay.text = lectureDay;
-    
-    // time
-    NSString *timeFrom = [self.selectedLecture objectForKey:@"timeFrom"];
-    timeFrom = [timeFrom substringToIndex:[timeFrom length] - 3];
-    
-    if ([[timeFrom substringToIndex:1] isEqualToString:@"0"]) {
-        timeFrom = [timeFrom substringFromIndex:1];
-    }
-    
-    NSString *timeTo = [self.selectedLecture objectForKey:@"timeTo"];
-    timeTo = [timeTo substringToIndex:[timeTo length] - 3];
-    
-    self.subjectTime.text = [NSString stringWithFormat:@"%@ - %@", timeFrom, timeTo];
-    
-    // room
-    self.roomName.text = [[self.selectedLecture objectForKey:@"room"]stringByReplacingOccurrencesOfString:@"_" withString:@" "];
-
-    // teacher
-    NSString *teacherTitle = [self.selectedLecture objectForKey:@"teacherDegree"];
-    
-    self.teacherNameAndSurname.text = [teacherTitle isEqual:@"(null)"] ?
-    [NSString stringWithFormat:@"%@ %@", [self.selectedLecture objectForKey:@"teacherName"], [self.selectedLecture objectForKey:@"teacherLastname"]]:
-    [NSString stringWithFormat:@"%@. %@ %@", [self.selectedLecture objectForKey:@"teacherDegree"], [self.selectedLecture objectForKey:@"teacherName"], [self.selectedLecture objectForKey:@"teacherLastname"]];
-
-    // lecture or seminar
-    NSString *lectureOrSeminar = [[self.selectedLecture objectForKey:@"subjectIsLecture"]  isEqual: [NSNumber numberWithInt:1]] ? @"prednaska" : @"cvicenie";
-    self.subjectLectureOrSeminar.text = lectureOrSeminar;
-    
-    // si subject required 
-    NSString *subjectRequired = [[self.selectedLecture objectForKey:@"subjectRequired"] isEqual: [NSNumber numberWithInt:1]] ? @"povinny" : @"nepovinny";
-    self.subjectRequired.text = subjectRequired;
     
     
     
@@ -142,15 +108,74 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) styleView {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    label.text = self.subjectName.text;
+    
+    [label sizeToFit];
+    self.navigationItem.titleView = label;
 }
-*/
+
+- (void) populateLessonDetailView {
+    // subject name
+    self.subjectName.text = [[self.selectedLecture objectForKey:@"subjectName"]stringByReplacingOccurrencesOfString:@"_" withString:@" "];
+    
+    // day
+    NSString *lectureDay = [NSString stringWithFormat:@"%@", [self.selectedLecture objectForKey:@"day"]];
+    self.subjectDay.text = lectureDay;
+    
+    // time
+    NSString *timeFrom = [self.selectedLecture objectForKey:@"timeFrom"];
+    timeFrom = [timeFrom substringToIndex:[timeFrom length] - 3];
+    
+    if ([[timeFrom substringToIndex:1] isEqualToString:@"0"]) {
+        timeFrom = [timeFrom substringFromIndex:1];
+    }
+    
+    NSString *timeTo = [self.selectedLecture objectForKey:@"timeTo"];
+    timeTo = [timeTo substringToIndex:[timeTo length] - 3];
+    
+    self.subjectTime.text = [NSString stringWithFormat:@"%@ - %@", timeFrom, timeTo];
+    
+    // room
+    self.roomName.text = [[self.selectedLecture objectForKey:@"room"]stringByReplacingOccurrencesOfString:@"_" withString:@" "];
+    
+    // teacher
+    NSString *teacherTitle = [self.selectedLecture objectForKey:@"teacherDegree"];
+    
+    self.teacherNameAndSurname.text = [teacherTitle isEqual:@"(null)"] ?
+    [NSString stringWithFormat:@"%@ %@", [self.selectedLecture objectForKey:@"teacherName"], [self.selectedLecture objectForKey:@"teacherLastname"]]:
+    [NSString stringWithFormat:@"%@. %@ %@", [self.selectedLecture objectForKey:@"teacherDegree"], [self.selectedLecture objectForKey:@"teacherName"], [self.selectedLecture objectForKey:@"teacherLastname"]];
+    
+    // lecture or seminar
+    NSString *lectureOrSeminar = [[self.selectedLecture objectForKey:@"subjectIsLecture"]  isEqual: [NSNumber numberWithInt:1]] ? @"prednaska" : @"cvicenie";
+    self.subjectLectureOrSeminar.text = lectureOrSeminar;
+    
+    // si subject required
+    NSString *subjectRequired = [[self.selectedLecture objectForKey:@"subjectRequired"] isEqual: [NSNumber numberWithInt:1]] ? @"povinny" : @"nepovinny";
+    self.subjectRequired.text = subjectRequired;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
