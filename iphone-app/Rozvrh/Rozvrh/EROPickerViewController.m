@@ -47,16 +47,9 @@
     [self styleView];
     [[self.submitPickerButton layer] setBorderWidth:1.0f];
     
-    // bac button text moved
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-    
-    //    [[self.submitPickerButton layer] setBorderColor:[UIColor greenColor].CGColor];
-    
-    
-    // Do any additional setup after loading the view.
-//    [self.pickerView setBackgroundColor:[UIColor redColor]];
-    
-//    NSLog(@"%@", self.pickerView);
+    // bac button text removed
+    self.navigationItem.hidesBackButton = YES;
+//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 
@@ -165,6 +158,8 @@
         case 0: {
             self.selectedFaculty = [self.faculties objectAtIndex:row];
             if ([self.selectedFaculty.kod isEqual:@"..."]) {
+                // empty all other componentns
+                [self emptyAllComponents];
                 return;
             }
             
@@ -177,7 +172,6 @@
         
         // year component
         case 1: {
-            // populate 3rd component with data
             self.selectedYear = [self.years objectAtIndex:row];
             
             [self refreshDepartmentComponent];
@@ -229,9 +223,6 @@
     targetController.scheduleArguments = scheduleSearchCriterion;
     
     targetController.lecturesArray = [ERODatabaseAccess getLessonsWithFacultyCode:self.selectedFaculty.kod year:self.selectedYear departmentCode:self.selectedDepartment groupNumber:self.selectedGroupNumber];
-    
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
 
 
@@ -291,6 +282,16 @@
                                               otherButtonTitles:nil];
         [alert show];
     }];
+}
+
+- (void) emptyAllComponents{
+    [self.years removeAllObjects];
+    [self.departments removeAllObjects];
+    [self.groups removeAllObjects];
+    
+    [self.pickerView reloadComponent:1];
+    [self.pickerView reloadComponent:2];
+    [self.pickerView reloadComponent:3];
 }
 
 -(void) styleView {
