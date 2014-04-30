@@ -21,4 +21,6 @@
 @property (strong, nonatomic) NSMutableArray *departments;
 @property (strong, nonatomic) NSMutableArray *groups;
 
+@property (strong, nonatomic) NSString *navigationBarTitle;
+
 @end

@@ -44,6 +44,7 @@
 {
     [super viewDidLoad];
     [self initializeView];
+    [self styleView];
     [[self.submitPickerButton layer] setBorderWidth:1.0f];
     
     // bac button text moved
@@ -292,6 +293,24 @@
     }];
 }
 
+-(void) styleView {
+    // navigation bar color
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:75/255.0f green:193/255.0f blue:210/255.0f alpha:1.0f];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    
+    
+    // navigationbar item
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    label.text = [ERODatabaseAccess getVersionFromDatabase];
+    
+    [label sizeToFit];
+    self.navigationItem.titleView = label;
+
+}
 
 
 

@@ -51,7 +51,8 @@
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     databaseAlreadyExits = [fileManager fileExistsAtPath:databasePath];
-    
+   
+    // simulate first launch of application
 //    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"isDatabaseUpdateNeeded"];
     NSDictionary *statusDictionary = [[NSUserDefaults standardUserDefaults] objectForKey:@"isDatabaseUpdateNeeded"];
     
@@ -167,9 +168,6 @@
                                           otherButtonTitles:nil];
     [alert show];
 }
-
-
-
 
 -(void) styleView {
     self.view.backgroundColor = [UIColor colorWithRed:75/255.0f green:193/255.0f blue:210/255.0f alpha:1.0f];
