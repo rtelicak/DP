@@ -276,6 +276,9 @@
     if ([EROScheduleSearchCriterion isScheduleCriterionAlreadyInFavourites:self.scheduleArguments]) {
         self.addFavouriteButton.enabled = NO;
     }
+    
+    // make sure status bar is black
+    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
 
     // remove padding from table view
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);

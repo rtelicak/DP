@@ -79,8 +79,8 @@
         // style cell
         cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16.0];
         cell.textLabel.textColor = [EROColors tableCellText];
-  
         cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chevron-icon.png"]];
+        
         return cell;
     } else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"emptyDataCell" forIndexPath:indexPath];

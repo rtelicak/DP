@@ -22,6 +22,7 @@
     NSString *documentsDir = documentsPath[0];
     self.databasePath = [documentsDir stringByAppendingPathComponent:self.databaseName];
     
+    // set tab bar (bottom bar) tint color
     [[UITabBar appearance] setTintColor:[EROColors mainColor]];
     
     return YES;

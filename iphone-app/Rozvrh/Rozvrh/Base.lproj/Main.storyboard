@@ -84,7 +84,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="departmentViewLabel" destination="fIR-X4-3zh" id="UJL-jV-P4F"/>
                         <outlet property="facultyViewLabel" destination="g8P-sq-cxH" id="wHI-m2-3Bm"/>
@@ -300,7 +299,6 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uxo-r0-2vO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -432,7 +430,6 @@
                             </view>
                         </subviews>
                     </view>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="imageView" destination="6jK-Yw-P6J" id="hts-55-Lrv"/>
                         <outlet property="loadingMessageLabel" destination="sXU-Up-Exa" id="nCL-G3-NM0"/>
@@ -451,7 +448,6 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ieS-iJ-Zes" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="n6Q-BM-Iaf"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="c29-cS-zN2">
                         <autoresizingMask key="autoresizingMask"/>

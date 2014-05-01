@@ -389,10 +389,12 @@
 }
 
 
-//
-//- (UIStatusBarStyle) preferredStatusBarStyle {
-//    return UIStatusBarStyleLightContent;
-//}
+-(void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBar.barTintColor = [EROColors mainColor];
+    
+    // status bar set to white
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+}
 
 
 
