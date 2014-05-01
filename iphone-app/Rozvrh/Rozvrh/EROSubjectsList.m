@@ -41,6 +41,13 @@
 - (void) viewWillAppear:(BOOL)animated {
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:animated];
     [super viewWillAppear:animated];
+    
+    self.addFavouriteButton.enabled = YES;
+    
+    // disabled add button if list already exits in favourites
+    if ([EROScheduleSearchCriterion isScheduleCriterionAlreadyInFavourites:self.scheduleArguments]) {
+        self.addFavouriteButton.enabled = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -271,11 +278,6 @@
 }
 
 -(void) styleView {
-    
-    // disabled add button if list already exits in favourites
-    if ([EROScheduleSearchCriterion isScheduleCriterionAlreadyInFavourites:self.scheduleArguments]) {
-        self.addFavouriteButton.enabled = NO;
-    }
     
     // make sure status bar is black
     self.navigationController.navigationBar.barStyle = UIBarStyleDefault;

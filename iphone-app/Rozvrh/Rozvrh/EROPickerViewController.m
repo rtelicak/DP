@@ -59,7 +59,7 @@
     // duplicate faculties to simulate circular picker
     self.faculties = [self duplicateFaculties:self.faculties];
     [self.pickerView selectRow:[self.faculties count] / 2 inComponent:0 animated:YES];
-
+    
     
     self.years = [[NSMutableArray alloc] init];
     self.departments = [[NSMutableArray alloc] init];
@@ -98,7 +98,7 @@
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-
+    
     switch (component) {
         case 0:{
             EROFaculty *faculty = [self.faculties objectAtIndex:row];
@@ -122,7 +122,7 @@
     for (int i = 0; i < duplicateConstant; i++) {
         [tmp addObjectsFromArray:sourceArray];
     }
-
+    
     return tmp;
 }
 
@@ -152,13 +152,14 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     switch (component) {
-        
-        // faculty component
+            
+            // faculty component
         case 0: {
             self.selectedFaculty = [self.faculties objectAtIndex:row];
             if ([self.selectedFaculty.kod isEqual:@"..."]) {
                 // empty all other componentns
                 [self emptyAllComponents];
+                [self fadeLabelsOut];
                 return;
             }
             
@@ -170,18 +171,18 @@
             
             break;
         }
-        
-        // year component
+            
+            // year component
         case 1: {
             self.selectedYear = [self.years objectAtIndex:row];
             
             [self refreshDepartmentComponent];
             [self refreshGroupComponent];
-
+            
             break;
         }
-        
-        // department component
+            
+            // department component
         case 2: {
             self.selectedDepartment = [self.departments objectAtIndex:row];
             
@@ -233,7 +234,7 @@
 
 
 - (IBAction)refreshButton:(id)sender {
-
+    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Aktualizácia"
                                                     message:@"Na vykonanie tejto akcie je potrebné internetové pripojenie."
                                                    delegate:self
@@ -317,7 +318,7 @@
 -(void) styleView {
     
     // ui picker
-//    self.pickerView.backgroundColor = [UIColor redColor];
+    //    self.pickerView.backgroundColor = [UIColor redColor];
     
     // submit button
     [[self.submitPickerButton layer] setBorderWidth:0.5f];
@@ -349,43 +350,61 @@
     [self.yearViewLabel setAlpha:0.0];
     [self.departmentViewLabel setAlpha:0.0];
     [self.groupViewLabel setAlpha:0.0];
-
+    
 }
 
 
 - (void) fadeLabelsIn {
-    [UIView animateWithDuration:0.10
-                          delay:0
-                        options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
-                     animations:^(void){
-                         [self.facultyViewLabel setAlpha:1.0];
-                     }
-                     completion:^(BOOL finished){
-                         if(finished)
-                         {
-                             [UIView animateWithDuration:0.10
-                                                   delay:0.10
-                                                 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
-                                              animations:^(void){
-                                  [self.yearViewLabel setAlpha:1.0];
-                                              }
-                                              completion:^(BOOL finished){
-                                                  if(finished)
-                                                      [UIView animateWithDuration:0.10 delay:0.2 options:UIViewAnimationOptionCurveLinear animations:
-                                                       ^(void) {
-                                                           [self.departmentViewLabel setAlpha:1.0];
-                                                       } completion:^(BOOL finished){
-                                                           if (finished) {
-                                                               [UIView animateWithDuration:0.10 delay:0.3 options:UIViewAnimationOptionCurveLinear animations:^(void){
-                                                                   [self.groupViewLabel setAlpha:1.0];
-                                                               } completion:^(BOOL finished){
-                                                                   // some callback available
-                                                               }];
-                                                           }
-                                                       }];
-                                              }];
-                         }
-                     }];
+    [UIView animateWithDuration:0.05 delay:0 options:UIViewAnimationOptionCurveLinear animations:^(void){
+        [self.facultyViewLabel setAlpha:1.0];
+    } completion:^(BOOL finished){
+         if(finished) {
+             [UIView animateWithDuration:0.05 delay:0.05 options:UIViewAnimationOptionCurveLinear animations:^(void){
+                 [self.yearViewLabel setAlpha:1.0];
+             } completion:^(BOOL finished){
+                  if(finished) {
+                      [UIView animateWithDuration:0.05 delay:0.1 options:UIViewAnimationOptionCurveLinear animations:
+                       ^(void) {
+                           [self.departmentViewLabel setAlpha:1.0];
+                       } completion:^(BOOL finished){
+                           if (finished) {
+                               [UIView animateWithDuration:0.05 delay:0.15 options:UIViewAnimationOptionCurveLinear animations:^(void){
+                                   [self.groupViewLabel setAlpha:1.0];
+                               } completion:^(BOOL finished){
+                                   // some callback available
+                               }];
+                           }
+                       }];
+                  }
+              }];
+         }
+     }];
+}
+
+- (void) fadeLabelsOut {
+    [UIView animateWithDuration:0.05 delay:0 options:UIViewAnimationOptionCurveLinear animations:^(void){
+        [self.groupViewLabel setAlpha:0];
+    } completion:^(BOOL finished){
+        if (finished) {
+            [UIView animateWithDuration:0.05 delay:0.05 options:UIViewAnimationOptionCurveLinear animations:^(void) {
+                [self.departmentViewLabel setAlpha:0];
+            } completion:^(BOOL finished){
+                if (finished) {
+                    [UIView animateWithDuration:0.05 delay:0.1 options:UIViewAnimationOptionCurveLinear animations:^(void) {
+                        [self.yearViewLabel setAlpha:0];
+                    } completion:^(BOOL finished){
+                        if (finished) {
+                            [UIView animateWithDuration:0.05 delay:0.15 options:UIViewAnimationOptionCurveLinear animations:^(void) {
+                                [self.facultyViewLabel setAlpha:0];
+                            } completion:^(BOOL finished){
+                                // calback available here
+                            }];
+                        }
+                    }];
+                }
+            }];
+        }
+    }];
 }
 
 

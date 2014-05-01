@@ -14,6 +14,8 @@
 
 @interface EROFavouritesTableViewController ()
 
+@property BOOL sourceIsEmpty;
+
 @end
 
 @implementation EROFavouritesTableViewController
@@ -32,8 +34,6 @@
     [super viewDidLoad];
     [self styleView];
     
-    self.searchCriterionArray = [EROUtility getFavouritesSelections];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -42,8 +42,7 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    self.searchCriterionArray = [EROUtility getFavouritesSelections];
-    [self.tableView reloadData];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,17 +59,15 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return self.searchCriterionArray.count > 0 ? self.searchCriterionArray.count : 1;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.searchCriterionArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    if (self.searchCriterionArray.count > 0 ) {
+    if (!self.sourceIsEmpty) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"searchCriterionCell" forIndexPath:indexPath];
         
         EROScheduleSearchCriterion *c = [self.searchCriterionArray objectAtIndex:indexPath.row];
@@ -82,6 +79,8 @@
         cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chevron-icon.png"]];
         
         return cell;
+
+
     } else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"emptyDataCell" forIndexPath:indexPath];
         
@@ -90,6 +89,10 @@
     
 
 
+}
+
+- (void) displayNoDataMessage {
+    self.searchCriterionArray = [[NSMutableArray alloc] initWithObjects:@"nic tu", nil];
 }
 
 // Override to support conditional editing of the table view.
@@ -109,6 +112,12 @@
 
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         
+        // check if source array is empty
+        if (!self.searchCriterionArray.count) {
+            self.sourceIsEmpty = YES;
+            [self displayNoDataMessage];
+            [self.tableView reloadData];
+        }
         
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -116,7 +125,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.searchCriterionArray count] > 0) {
+    if (!self.sourceIsEmpty) {
         
         return 60;
     } else {
@@ -133,10 +142,6 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
-    // remove default "back" title
-//    self.title = @"";
-
     
     EROSubjectsList *targetController = [segue destinationViewController];
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:sender];
@@ -171,7 +176,16 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-//    self.title = @"Obľúbené rozvrhy";
+    self.sourceIsEmpty = NO;
+    
+    self.searchCriterionArray = [EROUtility getFavouritesSelections];
+    
+    if (!self.searchCriterionArray.count) {
+        self.sourceIsEmpty = YES;
+        [self displayNoDataMessage];
+    }
+    
+    [self.tableView reloadData];
 }
 
 
