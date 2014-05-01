@@ -76,6 +76,11 @@
         EROScheduleSearchCriterion *c = [self.searchCriterionArray objectAtIndex:indexPath.row];
         cell.textLabel.text =  [NSString stringWithFormat:@"%@  %@. ročník %@ %@. krúžok", c.facultyCode, c.year, c.departmentCode, c.groupNumber];
         
+        // style cell
+        cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16.0];
+        cell.textLabel.textColor = [EROColors tableCellText];
+  
+        cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chevron-icon.png"]];
         return cell;
     } else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"emptyDataCell" forIndexPath:indexPath];
@@ -143,6 +148,9 @@
 }
 
 - (void) styleView {
+    
+    // navigation bar
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     
     // remove empty cells at the bottom
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];

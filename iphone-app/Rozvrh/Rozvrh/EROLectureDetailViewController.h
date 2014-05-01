@@ -12,12 +12,20 @@
 
 @property (nonatomic, strong) NSDictionary *selectedLecture;
 
-@property (weak, nonatomic) IBOutlet UILabel *subjectName;
+// just labels
 @property (weak, nonatomic) IBOutlet UILabel *subjectDay;
 @property (weak, nonatomic) IBOutlet UILabel *subjectTime;
 @property (weak, nonatomic) IBOutlet UILabel *roomName;
 @property (weak, nonatomic) IBOutlet UILabel *teacherNameAndSurname;
 @property (weak, nonatomic) IBOutlet UILabel *subjectLectureOrSeminar;
 @property (weak, nonatomic) IBOutlet UILabel *subjectRequired;
+
+// inputs
+@property (weak, nonatomic) IBOutlet UILabel *dayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *roomLabel;
+@property (weak, nonatomic) IBOutlet UILabel *teacherLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lectureTypeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *compulsoryLessonLabel;
 
 @end

@@ -16,6 +16,7 @@
 + (UIColor *) tableCellText;
 
 
+
 + (UIColor *) mondayColor;
 + (UIColor *) tuesdayColor;
 + (UIColor *) wednesdayColor;

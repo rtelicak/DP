@@ -90,7 +90,7 @@
     subjectNameLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
     [cell.contentView addSubview:subjectNameLabel];
     
-    dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(8.0, 5.0, 45.0, 60.0)];
+    dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 5.0, 45.0, 60.0)];
     dayLabel.tag = SECONDLABEL_TAG;
     dayLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:36.0];
     dayLabel.textAlignment = NSTextAlignmentLeft;
@@ -130,7 +130,7 @@
     photo = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 55.0, 71.0)];
     photo.tag = PHOTO_TAG;
     //    photo.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight;
-    [cell.contentView addSubview:photo];
+//    [cell.contentView addSubview:photo];
     
     // subject name
     subjectNameLabel.text = [[sub objectForKey:@"subjectName"]stringByReplacingOccurrencesOfString:@"_" withString:@" "];
@@ -280,7 +280,6 @@
     // remove padding from table view
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
-    UIColor * colord4d4d4 = [UIColor colorWithRed:213/255.0f green:213/255.0f blue:213/255.0f alpha:0.3f];
     self.tableView.separatorColor = [UIColor colorWithRed:205/255.0f green:201/255.0f blue:199/255.0f alpha:1.0f];
     
     // navigation bar

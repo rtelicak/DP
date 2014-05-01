@@ -320,8 +320,9 @@
 //    self.pickerView.backgroundColor = [UIColor redColor];
     
     // submit button
-//    [[self.submitPickerButton layer] setBorderWidth:1.0f];
-    self.submitPickerButton.backgroundColor = [EROColors buttonColor];
+    [[self.submitPickerButton layer] setBorderWidth:0.5f];
+    [[self.submitPickerButton layer] setBorderColor:[EROColors buttonColor].CGColor];
+    self.submitPickerButton.backgroundColor = [EROColors tableCellText];
     
     // navigation bar color
     self.navigationController.navigationBar.barTintColor = [EROColors mainColor];
