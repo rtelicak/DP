@@ -76,7 +76,7 @@
     label.backgroundColor = [UIColor clearColor];
     label.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
     label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = [UIColor whiteColor];
+    label.textColor = [EROColors mainLabelColor];
     label.text = self.subjectName.text;
     
     [label sizeToFit];

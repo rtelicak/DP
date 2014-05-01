@@ -22,6 +22,12 @@
     return [UIColor colorWithRed:72/255.0f green:72/255.0f blue:72/255.0f alpha:1.0f];
 }
 
++(UIColor *)tableCellText {
+    return [UIColor colorWithRed:96/255.0f green:99/255.0f blue:102/255.0f alpha:1.0f];
+}
+
+
+
 
 // week colors
 

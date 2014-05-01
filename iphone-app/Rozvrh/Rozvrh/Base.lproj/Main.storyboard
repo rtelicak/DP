@@ -142,6 +142,10 @@
                                     <outlet property="delegate" destination="U8u-LO-Rbk" id="vgn-e5-ooN"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="translucid-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="apt-xF-J3j">
+                                <rect key="frame" x="0.0" y="63" width="320" height="457"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -161,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5K3-ZB-LVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="389"/>
+            <point key="canvasLocation" x="2574" y="430"/>
         </scene>
         <!--Lecture Detail View Controller-->
         <scene sceneID="gEd-zN-CCW">

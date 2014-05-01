@@ -85,15 +85,17 @@
     subjectNameLabel.tag = MAINLABEL_TAG;
     subjectNameLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14.0];
     subjectNameLabel.textAlignment = NSTextAlignmentLeft;
-    subjectNameLabel.textColor = [UIColor whiteColor];
+//    subjectNameLabel.textColor = [UIColor whiteColor];
+    subjectNameLabel.textColor = [EROColors tableCellText];
     subjectNameLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
     [cell.contentView addSubview:subjectNameLabel];
     
-    dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.0, 5.0, 45.0, 60.0)];
+    dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(8.0, 5.0, 45.0, 60.0)];
     dayLabel.tag = SECONDLABEL_TAG;
     dayLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:36.0];
     dayLabel.textAlignment = NSTextAlignmentLeft;
-    dayLabel.textColor = [UIColor whiteColor];
+//    dayLabel.textColor = [UIColor whiteColor];
+    dayLabel.textColor = [UIColor colorWithRed:243/255.0f green:80/255.0f blue:80/255.0f alpha:1.0f];
     dayLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
     [cell.contentView addSubview:dayLabel];
     
@@ -101,7 +103,8 @@
     roomLabel.tag = SECONDLABEL_TAG;
     roomLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
     roomLabel.textAlignment = NSTextAlignmentLeft;
-    roomLabel.textColor = [UIColor whiteColor];
+//    roomLabel.textColor = [UIColor whiteColor];
+    roomLabel.textColor = [EROColors tableCellText];
     roomLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
     [cell.contentView addSubview:roomLabel];
     
@@ -109,14 +112,16 @@
     teacherLabel.tag = SECONDLABEL_TAG;
     teacherLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
     teacherLabel.textAlignment = NSTextAlignmentLeft;
-    teacherLabel.textColor = [UIColor whiteColor];
+//    teacherLabel.textColor = [UIColor whiteColor];
+    teacherLabel.textColor = [EROColors tableCellText];
     [cell.contentView addSubview:teacherLabel];
     
     
     timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(220.0, 20.0, 75.0, 25.0)];
     timeLabel.tag = SECONDLABEL_TAG;
     timeLabel.textAlignment = NSTextAlignmentRight;
-    timeLabel.textColor = [UIColor whiteColor];
+//    timeLabel.textColor = [UIColor whiteColor];
+    timeLabel.textColor = [EROColors tableCellText];
     [cell.contentView addSubview:timeLabel];
     timeLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:28];
     
@@ -162,33 +167,33 @@
     UIImage *theImage = [UIImage imageWithContentsOfFile:imagePath];
     photo.image = theImage;
     
-    int id_day = [[sub objectForKey:@"id_day"] intValue];
-    
-    switch (id_day)  {
-            
-        case 1: {
-            cell.backgroundColor = [EROColors mondayColor];
-            break;
-        }
-        case 2: {
-            cell.backgroundColor = [EROColors tuesdayColor];
-            break;
-        }
-            
-        case 3: {
-            cell.backgroundColor = [EROColors wednesdayColor];
-            break;
-        }
-            
-        case 4: {
-            cell.backgroundColor = [EROColors thursdayColor];
-            break;
-        }
-        case 5: {
-            cell.backgroundColor = [EROColors fridayColor];
-            break;
-        }
-    }
+//    int id_day = [[sub objectForKey:@"id_day"] intValue];
+//    
+//    switch (id_day)  {
+//            
+//        case 1: {
+//            cell.backgroundColor = [EROColors mondayColor];
+//            break;
+//        }
+//        case 2: {
+//            cell.backgroundColor = [EROColors tuesdayColor];
+//            break;
+//        }
+//            
+//        case 3: {
+//            cell.backgroundColor = [EROColors wednesdayColor];
+//            break;
+//        }
+//            
+//        case 4: {
+//            cell.backgroundColor = [EROColors thursdayColor];
+//            break;
+//        }
+//        case 5: {
+//            cell.backgroundColor = [EROColors fridayColor];
+//            break;
+//        }
+//    }
     
     return cell;
 }
@@ -276,7 +281,7 @@
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
     UIColor * colord4d4d4 = [UIColor colorWithRed:213/255.0f green:213/255.0f blue:213/255.0f alpha:0.3f];
-    self.tableView.separatorColor = colord4d4d4;
+    self.tableView.separatorColor = [UIColor colorWithRed:205/255.0f green:201/255.0f blue:199/255.0f alpha:1.0f];
     
     // navigation bar
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
