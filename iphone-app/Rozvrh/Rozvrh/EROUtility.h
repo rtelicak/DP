@@ -18,6 +18,7 @@
 + (NSMutableArray *)getFavouritesSelections;
 + (BOOL) getDatabaseUpdateStatus;
 + (void) setDatabaseUpdateStatus:(BOOL) status reason:(NSString*) reason;
++ (void) emptyFavoriteList;
 
 + (void) fillDatabase;
 + (void) createAndFillDatabase;

@@ -13,8 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    self.webServiceBasePath = [NSURL URLWithString:@"http://chalupaujajana.sk/rozvrh/web-app/home/"];
-    self.webServiceBasePath = [NSURL URLWithString:@"http://localhost:8888/DP/web-app/svc/"];
+    self.webServiceBasePath = [NSURL URLWithString:@"http://chalupaujajana.sk/rozvrh/web-app/svc/"];
+//    self.webServiceBasePath = [NSURL URLWithString:@"http://localhost:8888/DP/web-app/svc/"];
     self.databaseName = @"Rozvrh.db";
 
     

@@ -187,9 +187,6 @@
     [db close];
     
     NSLog(@"lectures done");
-    NSLog(@"importing to db done.");
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"finishedLoading" object:self userInfo:nil];
     
 }
 

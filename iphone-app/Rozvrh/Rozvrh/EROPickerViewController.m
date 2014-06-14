@@ -286,6 +286,11 @@
         } else {
             // update database
             [EROUtility setDatabaseUpdateStatus:YES reason:@"update"];
+            
+            // empty favourites
+            [EROUtility emptyFavoriteList];
+            
+            // dismiss current controller and launch db updating
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         

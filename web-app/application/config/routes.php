@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "home";
+$route['default_controller'] = "svc";
 $route['404_override'] = '';
 
 // custom routes for admin

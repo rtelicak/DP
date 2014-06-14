@@ -98,6 +98,11 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
++ (void)emptyFavoriteList {
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"EROFavourites"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 // FACULTIES
 +(void) populateFaculties {
     [[EROWebService sharedInstance] getFacultiesWithSuccess:^(id responseObject) {

@@ -13,6 +13,9 @@
 
 @interface EROInitVC ()
 
+//@property (strong, nonatomic) NSNumber *loadingCounter;
+@property int loadingCounter;
+
 @end
 
 
@@ -31,9 +34,6 @@
 {
     [super viewDidLoad];
     
-    // data preparing done notification
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishedLoading:) name:@"finishedLoading" object:nil];
-    
     // update loading data message label
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLoadingMessage:) name:@"updateLoadingMessage" object:nil];
     
@@ -44,6 +44,7 @@
     // TODO: fix me
     // have to call this from this method, to prevent modal segue error
     [self createAndCheckDatabase];
+    self.loadingCounter = 0;
 }
 
 -(void) createAndCheckDatabase {
@@ -52,9 +53,7 @@
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     databaseAlreadyExits = [fileManager fileExistsAtPath:databasePath];
-   
-    // simulate first launch of application
-//    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"isDatabaseUpdateNeeded"];
+    
     NSDictionary *statusDictionary = [[NSUserDefaults standardUserDefaults] objectForKey:@"isDatabaseUpdateNeeded"];
     
     // if the app is launched for the very first time
@@ -87,14 +86,21 @@
 - (void) updateLoadingMessage: (NSNotification *) notification {
     // update loading message info
     self.loadingMessageLabel.text = [notification.userInfo objectForKey:@"message"];
+    
+    self.loadingCounter++;
+    
+    // everything is loaded, hide initial screen
+    if (self.loadingCounter == 11) {
+        [self finishedLoading];
+    }
 }
 
-- (void)finishedLoading:(NSNotification *)notification {
-    
+- (void)finishedLoading {
     self.loadingMessageLabel.textColor = [EROColors mainColor];
     self.loadingMessageLabel.text = @"Success!";
-    
+    // using perfomSelector just because of delay feature
     [self performSelector:@selector(hideLoadingView) withObject:nil afterDelay:1.5];
+
 }
 
 - (void) hideLoadingView {
@@ -148,7 +154,7 @@
             NSArray *version = (NSArray *) responseObject;
             self.semesterLabel.text = [[version objectAtIndex:0] objectForKey:@"verzia"];
         });
-
+        
         self.mainLabel.text = @"Načítavam dáta, potrvá to asi minútku :)";
         [EROUtility setDatabaseUpdateStatus:NO reason:@""];
         
@@ -161,7 +167,7 @@
 }
 
 -(void) popupErrorInternetConnectionAlertView {
-    self.mainLabel.text = @"Pripojenie do internetu zlyhalo :(";
+    self.mainLabel.text = @"Pripojenie na server zlyhalo :(";
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Chyba."
                                                     message:@"Pripojenie do internetu zlyhalo, server je nedostupný."
                                                    delegate:self
@@ -176,7 +182,7 @@
     [self.imageView setImage:[UIImage imageNamed:@"welcome-screen-logo.png"]];
     [self.imageView setContentMode:UIViewContentModeScaleAspectFit];
     
-
+    
     self.semesterLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
     self.semesterLabel.textColor = [UIColor whiteColor];
     
@@ -185,11 +191,6 @@
     
     self.mainLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:16.0];
     self.mainLabel.textColor = [EROColors mainLabelColor];
-    
-    // todo: temporary, delete
-    self.mainLabel.text = @"Načítavam dáta, potrvá to asi minútku :)";
-    self.loadingMessageLabel.text = @"Ukladám predmety ...";
-    self.semesterLabel.text = @"Letný semester 2013/2014";
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
@@ -200,15 +201,15 @@
 
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
 
 @end
